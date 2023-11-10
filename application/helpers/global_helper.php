@@ -2,21 +2,19 @@
 function is_logged_in() //ini untuk mengecek apakah user sudah login atau belum
 {
     $ci = get_instance();
-    $ci->session->username || redirect('login');
-}
+    if (!$ci->session->email) {
+        redirect('login');
+    } else {
+        $role_id = $ci->session->role_id;
 
-function is_admin()
-{
-    $ci = get_instance();
-    $role = $ci->session->get_userdata('login_session')['role'];
+        $status  = true;
 
-    $status  = true;
+        if ($role_id != 1) {
+            $status = false;
+        }
 
-    if ($role != 'admin') {
-        $status = false;
+        return $status;
     }
-
-    return $status;
 }
 
 function set_pesan($message, $tipe = true) //ini untuk menampilkan message
