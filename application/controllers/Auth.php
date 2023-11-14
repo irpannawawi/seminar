@@ -13,7 +13,7 @@ class Auth extends CI_Controller
             }
         }
 
-        $this->form_validation->set_rules('email', 'email', 'trim|required');
+        $this->form_validation->set_rules('email', 'email', 'trim|required|valid_email');
         $this->form_validation->set_rules('password', 'Password', 'trim|required');
 
         if ($this->form_validation->run() == false) {
@@ -54,7 +54,7 @@ class Auth extends CI_Controller
             }
         } else {
             set_pesan('email tidak ada!', false);
-            redirect('auth/login');
+            redirect('login');
         }
     }
 
@@ -71,18 +71,21 @@ class Auth extends CI_Controller
             redirect('admin/user');
         }
         $this->form_validation->set_rules('name', 'Name', 'required|trim');
-        $this->form_validation->set_rules('email', 'Email', 'required|trim|valid_email|is_unique[user.email]', [
-            'is_unique' => 'Email sudah terdaftar!'
+        $this->form_validation->set_rules('email', 'Email', 'required|trim|valid_email|is_unique[users.email]', [
+            'is_unique' => 'Email sudah terdaftar!',
+            'valid_email' => 'Email tidak benar!'
         ]);
         $this->form_validation->set_rules('password1', 'Password', 'required|trim|min_length[3]|matches[password2]', [
             'matches' => 'Password tidak sama!',
             'min_length' => 'Password terlalu pendek!'
         ]);
-        $this->form_validation->set_rules('password2', 'Konfirm Password', 'required|trim|matches[password1]');
+        $this->form_validation->set_rules('password2', 'Konfirm Password', 'required|trim|matches[password1]', [
+            'matches' => 'Password tidak sama!'
+        ]);
 
         if ($this->form_validation->run() == false) {
             $data['title'] = 'Registration';
-            $this->load->view('auth/registration');
+            $this->load->view('registration');
         } else {
             $email = $this->input->post('email', true);
             $data = [
@@ -95,8 +98,8 @@ class Auth extends CI_Controller
 
             $this->db->insert('users', $data);
 
-            set_pesan('Congratulation! your account has been created. Please activate your account');
-            redirect('admin/auth');
+            set_pesan('Selamat, akun Anda telah dibuat!. Silakan cek email aktifkan akun Anda');
+            redirect('login');
         }
     }
 }

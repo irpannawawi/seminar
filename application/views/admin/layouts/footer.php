@@ -61,12 +61,16 @@
 <script src="<?= base_url('assets/backend') ?>/plugins/toastr/toastr.min.js"></script>
 <script>
     <?php if ($this->session->flashdata('success')) { ?>
-        var text = <?php echo json_encode($this->session->flashdata('success')) ?>;
-        toastr.success(text)
+        var message = <?php echo json_encode($this->session->flashdata('success')) ?>;
+        toastr.success(message)
     <?php } ?>
     <?php if ($this->session->flashdata('error')) { ?>
-        var text = <?php echo json_encode($this->session->flashdata('error')) ?>;
-        toastr.error(text)
+        var message = <?php echo json_encode($this->session->flashdata('error')) ?>;
+        toastr.error(message)
+    <?php } ?>
+    <?php if (validation_errors()) { ?>
+        var message = <?php echo json_encode(validation_errors()); ?>;
+        toastr.error(message)
     <?php } ?>
 
     // Switch

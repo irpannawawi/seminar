@@ -12,7 +12,8 @@ class Dashboard extends CI_Controller
     public function index()
     {
         $data['users'] = $this->db->get_where('users', ['email' => $this->session->email])->row_array();
-
+        $data['tes'] = $this->db->get('events')->row_array();
+        $data['title'] = 'Dashboard';
         $this->load->view('admin/layouts/header', $data);
         $this->load->view('admin/layouts/navbar');
         $this->load->view('admin/layouts/sidebar');

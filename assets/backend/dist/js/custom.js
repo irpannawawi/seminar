@@ -211,7 +211,4 @@ $(document).ready(function () {
 
     // Initialize Select2 Elements
     $('.select2').select2();
-
-    // File Upload (assuming this is a custom plugin)
-    $('.file-upload').file_upload();
 });
