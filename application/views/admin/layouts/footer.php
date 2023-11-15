@@ -56,6 +56,19 @@
 <script src="<?= base_url('assets/backend') ?>/dist/js/custom.js"></script>
 <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
 <script src="<?= base_url('assets/backend') ?>/dist/js/pages/dashboard.js"></script>
+<!-- DataTables  & Plugins -->
+<script src="<?= base_url('assets/backend') ?>/plugins/datatables/jquery.dataTables.min.js"></script>
+<script src="<?= base_url('assets/backend') ?>/plugins/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
+<script src="<?= base_url('assets/backend') ?>/plugins/datatables-responsive/js/dataTables.responsive.min.js"></script>
+<script src="<?= base_url('assets/backend') ?>/plugins/datatables-responsive/js/responsive.bootstrap4.min.js"></script>
+<script src="<?= base_url('assets/backend') ?>/plugins/datatables-buttons/js/dataTables.buttons.min.js"></script>
+<script src="<?= base_url('assets/backend') ?>/plugins/datatables-buttons/js/buttons.bootstrap4.min.js"></script>
+<script src="<?= base_url('assets/backend') ?>/plugins/datatables-buttons/js/buttons.html5.min.js"></script>
+<script src="<?= base_url('assets/backend') ?>/plugins/datatables-buttons/js/buttons.print.min.js"></script>
+<script src="<?= base_url('assets/backend') ?>/plugins/datatables-buttons/js/buttons.colVis.min.js"></script>
+<script src="<?= base_url('assets/backend') ?>/plugins/jszip/jszip.min.js"></script>
+<script src="<?= base_url('assets/backend') ?>/plugins/pdfmake/pdfmake.min.js"></script>
+<script src="<?= base_url('assets/backend') ?>/plugins/pdfmake/vfs_fonts.js"></script>
 <!-- Select2 -->
 <script src="<?= base_url('assets/backend') ?>/plugins/select2/js/select2.full.min.js"></script>
 <script src="<?= base_url('assets/backend') ?>/plugins/toastr/toastr.min.js"></script>
@@ -113,6 +126,26 @@
             }
         });
     }
+</script>
+<script>
+    $(function() {
+        $("#table-data").DataTable({
+            "responsive": true,
+            "lengthChange": false,
+            "autoWidth": false,
+            "buttons": ["csv", "excel", "pdf", "print"]
+        }).buttons().container().appendTo('#table-data_wrapper .col-md-6:eq(0)');
+
+        $('#example2').DataTable({
+            "paging": true,
+            "lengthChange": false,
+            "searching": false,
+            "ordering": true,
+            "info": true,
+            "autoWidth": false,
+            "responsive": true,
+        });
+    });
 </script>
 </body>
 

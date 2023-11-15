@@ -57,7 +57,7 @@
                         </div>
                         <div class="form-group">
                             <label>Kategori Event</label>
-                            <select class="select2" multiple="multiple" name="id_category[]" id="categories" data-placeholder="Select a State" style="width: 100%;">
+                            <select class="select2" multiple="multiple" name="id_category[]" id="id_category" data-placeholder="Select a State" style="width: 100%;">
                                 <?php foreach ($category as $key) : ?>
                                     <option value="<?= $key['id_category'] ?>" <?= set_select('id_category[]', $key['id_category'], (isset($id_category) && in_array($key['id_category'], $id_category))); ?>><?= $key['name_category'] ?></option>
                                 <?php endforeach ?>

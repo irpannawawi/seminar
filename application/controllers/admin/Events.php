@@ -26,6 +26,7 @@ class Events extends CI_Controller
     {
         $data['users'] = $this->db->get_where('users', ['email' => $this->session->email])->row_array();
         $data['category'] = $this->db->get('category')->result_array();
+        $data['title'] = 'Buat Event';
 
         // Ambil nilai dari tombol yang diklik
         $action = $this->input->post('action');
@@ -66,10 +67,25 @@ class Events extends CI_Controller
             $price = filter_var($price, FILTER_SANITIZE_NUMBER_INT);
 
             // Set aturan validasi
-            $this->form_validation->set_rules('title', 'Judul Event', 'required|is_unique[events.title]', [
-                'required' => 'Judul Event harus diisi.',
-                'is_unique' => 'Judul events sudah ada!'
-            ]);
+            if ($action == 'save_draft') {
+                $this->form_validation->set_rules('title', 'Judul Event', 'required|is_unique[events.title]', [
+                    'required' => 'Judul Event harus diisi.',
+                    'is_unique' => 'Judul events sudah ada!'
+                ]);
+            } elseif ($action == 'submit') {
+                $this->form_validation->set_rules('title', 'Judul Event', 'required|is_unique[events.title]', [
+                    'required' => 'Judul Event harus diisi.',
+                    'is_unique' => 'Judul events sudah ada!'
+                ]);
+                $this->form_validation->set_rules('id_category', 'Kategori Event', 'required');
+                $this->form_validation->set_rules('description', 'Deskripsi Event', 'required');
+                $this->form_validation->set_rules('snk', 'Syarat & Ketentuan Event', 'required');
+                $this->form_validation->set_rules('date', 'Tanggal Event', 'required');
+                $this->form_validation->set_rules('date_start', 'Tanggal Mulai Event', 'required');
+                $this->form_validation->set_rules('date_finish', 'Tanggal Selesai Event', 'required');
+                $this->form_validation->set_rules('price', 'Harga Event', 'required');
+                $this->form_validation->set_rules('kuota', 'Kuota Tiket Event', 'required');
+            }
 
             // Aturan validasi berdasarkan jenis lokasi
             if ($type_event == 'offline') {
@@ -101,7 +117,6 @@ class Events extends CI_Controller
 
             // Lakukan validasi
             if ($this->form_validation->run() == FALSE) {
-                $data['title'] = 'Buat Event';
                 $this->load->view('admin/layouts/header', $data);
                 $this->load->view('admin/layouts/navbar');
                 $this->load->view('admin/layouts/sidebar');
@@ -114,7 +129,6 @@ class Events extends CI_Controller
             }
         } else {
             // Jika tombol tidak diklik, tampilkan form create
-            $data['title'] = 'Buat Event';
             $this->load->view('admin/layouts/header', $data);
             $this->load->view('admin/layouts/navbar');
             $this->load->view('admin/layouts/sidebar');
@@ -126,11 +140,12 @@ class Events extends CI_Controller
     public function edit($id)
     {
         $data['users'] = $this->db->get_where('users', ['email' => $this->session->email])->row_array();
-        $data['events'] = $this->db->get('events')->row_array();
+        $data['events'] = $this->db->get_where('events', ['id_events' => $id])->row_array();
+        $data['category'] = $this->db->get('category')->result_array();
+        $data['title'] = 'Edit Event';
 
         // Ambil nilai dari tombol yang diklik
         $action = $this->input->post('action');
-        $id = $this->input->post('id_events');
 
         // Jika tombol 'publish' atau 'save_draft' diklik
         if ($action == 'publish' || $action == 'save_draft') {
@@ -146,7 +161,10 @@ class Events extends CI_Controller
             if ($this->upload->do_upload('image_events')) {
                 $upload_data = $this->upload->data();
                 $file_name = $upload_data['file_name'];
-            } else {
+            } elseif ($action == 'publish') {
+                // $error = $this->upload->display_errors();
+                // set_pesan('Gambar gagal di upload: ' . $error, false);
+                // redirect('admin/events/edit/' . $id);
                 $file_name = null;
             }
 
@@ -167,61 +185,71 @@ class Events extends CI_Controller
             $price = filter_var($price, FILTER_SANITIZE_NUMBER_INT);
 
             // Set aturan validasi
-            $this->form_validation->set_rules('title', 'Judul Event', 'required|is_unique[events.title]', [
-                'required' => 'Judul Event harus diisi.',
-                'is_unique' => 'Judul events sudah ada!'
-            ]);
+            if ($action == 'save_draft') {
+                $this->form_validation->set_rules('title', 'Judul Event', 'required', [
+                    'required' => 'Judul Event harus diisi.'
+                ]);
+            } elseif ($action == 'publish') {
+                $this->form_validation->set_rules('title', 'Judul Event', 'required', [
+                    'required' => 'Judul Event harus diisi.'
+                ]);
+                // $this->form_validation->set_rules('id_category', 'Kategori Event', 'required');
+                $this->form_validation->set_rules('description', 'Deskripsi Event', 'required');
+                $this->form_validation->set_rules('snk', 'Syarat & Ketentuan Event', 'required');
+                $this->form_validation->set_rules('date', 'Tanggal Event', 'required');
+                $this->form_validation->set_rules('date_start', 'Tanggal Mulai Event', 'required');
+                $this->form_validation->set_rules('date_finish', 'Tanggal Selesai Event', 'required');
+                $this->form_validation->set_rules('price', 'Harga Event', 'required');
+                $this->form_validation->set_rules('kuota', 'Kuota Tiket Event', 'required');
+            }
 
             // Aturan validasi berdasarkan jenis lokasi
             if ($type_event == 'offline') {
                 $this->form_validation->set_rules('location', 'Nama Tempat', 'required');
                 $this->form_validation->set_rules('url_location', 'URL Lokasi', 'required');
             } elseif ($type_event == 'online') {
-                $this->form_validation->set_rules('label', 'Label', 'required');
+                $this->form_validation->set_rules('label', 'Label Platform', 'required');
             }
-
-            $save = [
-                'title' => $title,
-                'slug' => strtolower(str_replace(' ', '-', $title)),
-                'id_category' => $categories,
-                'description' => $description,
-                'snk' => $snk,
-                'date' => $date,
-                'date_start' => $date_start,
-                'date_finish' => $date_finish,
-                'type_event' => $type_event,
-                'kuota' => $kuota,
-                'location' => $location,
-                'price' => $price,
-                'url_location' => $url_location,
-                'label' => $label,
-                'status' => ($action == 'publish') ? 'published' : 'draft',
-                'image' => $file_name,
-                'date_created' => time()
-            ];
 
             // Lakukan validasi
             if ($this->form_validation->run() == FALSE) {
-                $data['title'] = 'Edit Event';
                 $this->load->view('admin/layouts/header', $data);
                 $this->load->view('admin/layouts/navbar');
                 $this->load->view('admin/layouts/sidebar');
-                $this->load->view('admin/events/edit');
+                $this->load->view('admin/events/edit', $data);
                 $this->load->view('admin/layouts/footer');
             } else {
-                $this->db->set($save);
-                $this->db->where($id);
-                $this->db->update('events');
-                set_pesan('Events berhasil ' . ($action == 'publish' ? 'Event dipublished!' : 'draft disimpan!'));
+                $save = [
+                    'title' => $title,
+                    'slug' => strtolower(str_replace(' ', '-', $title)),
+                    'id_category' => $categories,
+                    'description' => $description,
+                    'snk' => $snk,
+                    'date' => $date,
+                    'date_start' => $date_start,
+                    'date_finish' => $date_finish,
+                    'type_event' => $type_event,
+                    'kuota' => $kuota,
+                    'location' => $location,
+                    'price' => $price,
+                    'url_location' => $url_location,
+                    'label' => $label,
+                    'status' => ($action == 'publish') ? 'published' : 'draft',
+                    'image' => $file_name,
+                    'date_created' => time()
+                ];
+
+                $this->db->where('id_events', $id);
+                $this->db->update('events', $save);
+                set_pesan('Events berhasil ' . ($action == 'publish' ? 'Event dipublish!' : 'disimpan!'));
                 redirect('admin/events');
             }
         } else {
             // Jika tombol tidak diklik, tampilkan form edit
-            $data['title'] = 'Edit Event';
             $this->load->view('admin/layouts/header', $data);
             $this->load->view('admin/layouts/navbar');
             $this->load->view('admin/layouts/sidebar');
-            $this->load->view('admin/events/edit');
+            $this->load->view('admin/events/edit', $data);
             $this->load->view('admin/layouts/footer');
         }
     }

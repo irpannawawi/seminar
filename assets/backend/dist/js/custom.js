@@ -171,7 +171,7 @@ $(document).ready(function () {
     tinymce.init({
         selector: 'textarea',
         // width: 1000,
-        height: 300,
+        height: 400,
         plugins: 'anchor autolink charmap codesample emoticons image link lists media searchreplace table visualblocks wordcount',
         toolbar: 'undo redo | blocks fontfamily fontsize | bold italic underline strikethrough | link image media table | align lineheight | numlist bullist indent outdent | emoticons charmap | removeformat',
         content_style: 'body{font-family:Helvetica,Arial, sans-serif; font-seize:16px}'
@@ -212,5 +212,6 @@ $(document).ready(function () {
     // Initialize Select2 Elements
     $('.select2').select2();
 
+    
     
 });
