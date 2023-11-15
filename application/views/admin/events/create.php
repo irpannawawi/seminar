@@ -63,6 +63,7 @@
                                 <?php endforeach ?>
                             </select>
                         </div>
+                        <p><i>Tambah kategori <a href="<?= site_url('admin/events/category') ?>">disini</a></i></p>
                     </div>
                 </div>
             </div>

@@ -49,11 +49,11 @@ class Auth extends CI_Controller
                     redirect('leader');
                 }
             } else {
-                set_pesan('password salah!', false);
+                set_pesan('Password salah!', false);
                 redirect('login');
             }
         } else {
-            set_pesan('email tidak ada!', false);
+            set_pesan('Email tidak ada!', false);
             redirect('login');
         }
     }
@@ -67,6 +67,7 @@ class Auth extends CI_Controller
 
     public function registration()
     {
+        $data['title'] = 'Registration';
         if ($this->session->userdata('email')) {
             redirect('admin/user');
         }
@@ -84,8 +85,7 @@ class Auth extends CI_Controller
         ]);
 
         if ($this->form_validation->run() == false) {
-            $data['title'] = 'Registration';
-            $this->load->view('registration');
+            $this->load->view('auth/registration');
         } else {
             $email = $this->input->post('email', true);
             $data = [
@@ -98,7 +98,7 @@ class Auth extends CI_Controller
 
             $this->db->insert('users', $data);
 
-            set_pesan('Selamat, akun Anda telah dibuat!. Silakan cek email aktifkan akun Anda');
+            set_pesan('Selamat, akun Anda telah dibuat!');
             redirect('login');
         }
     }

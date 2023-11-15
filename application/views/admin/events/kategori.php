@@ -60,7 +60,7 @@
         <div class="modal-content">
             <form action="<?= base_url('admin/events/category') ?>" method="post">
                 <div class="modal-header">
-                    <h4 class="modal-title">Tambah <?= $title; ?></h4>
+                    <h4 class="modal-title">Buat <?= $title; ?></h4>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>

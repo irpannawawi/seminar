@@ -14,8 +14,8 @@
     <link rel="stylesheet" href="<?= base_url('assets/backend') ?>/plugins/icheck-bootstrap/icheck-bootstrap.min.css">
     <!-- Theme style -->
     <link rel="stylesheet" href="<?= base_url('assets/backend') ?>/dist/css/adminlte.min.css">
-    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="<?= base_url('assets/backend') ?>/plugins/toastr/toastr.min.css">
+
 </head>
 
 <body class="hold-transition login-page">
@@ -23,13 +23,12 @@
         <div class="login-logo">
             <a href="<?= site_url('/login') ?>"><b>AcaraKu</b>.com</a>
         </div>
-        <!-- /.login-logo -->
         <div class="card">
             <div class="card-body login-card-body">
                 <form action="<?= site_url('auth') ?>" method="post" id="loginform">
                     <p class="login-box-msg">Masuk untuk memulai sesi</p>
                     <div class="form-group mb-3">
-                        <input type="text" class="form-control" placeholder="Email" id="email" name="email" value="<?= set_value('email') ?>">
+                        <input type="text" class="form-control" placeholder="Email" id="email" name="email" value="admin@gmail.com">
                     </div>
                     <div class="form-group mb-3">
                         <input type="password" name="password" id="password" class="form-control" placeholder="Password" value="admin">
@@ -45,7 +44,7 @@
                         </div>
                         <!-- /.col -->
                         <div class="col-4">
-                            <button type="submit" class="btn btn-primary btn-block">Sign In</button>
+                            <button type="submit" class="btn btn-primary btn-block">Masuk</button>
                         </div>
                         <!-- /.col -->
                     </div>
@@ -54,7 +53,7 @@
                         <a href="forgot-password.html">Lupa password?</a>
                     </p>
                     <p class="mb-0">
-                        <a href="javascript:void(0)" id="to-regis" class="text-center">Daftar akun partnership</a>
+                        <a href="<?= site_url('registration') ?>" class="text-center">Daftar akun partnership</a>
                     </p>
                 </form>
             </div>
@@ -90,6 +89,10 @@
         <?php if ($this->session->flashdata('error')) { ?>
             var message = <?= json_encode($this->session->flashdata('error')) ?>;
             toastr.error(message)
+        <?php } ?>
+        <?php if ($this->session->flashdata('success')) { ?>
+            var message = <?= json_encode($this->session->flashdata('success')) ?>;
+            toastr.success(message)
         <?php } ?>
     </script>
     <script>
