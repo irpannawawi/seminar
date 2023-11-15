@@ -30,7 +30,7 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">
+                    <a href="javascript:;" class="nav-link">
                         <i class="nav-icon fas fa-copy"></i>
                         <p>
                             Events
@@ -42,12 +42,30 @@
                         <li class="nav-item">
                             <a href="<?= site_url('admin/events/create') ?>" class="nav-link">
                                 <i class="far fa-circle nav-icon"></i>
-                                <p>Create Events</p>
+                                <p>Buat Event</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="<?= site_url('admin/events') ?>" class="nav-link">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Event</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="<?= site_url('admin/events/category') ?>" class="nav-link">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Kategori</p>
                             </a>
                         </li>
                     </ul>
                 </li>
                 <li class="nav-header">EXAMPLES</li>
+                <li class="nav-item">
+                    <a onclick="confirmDelete('<?= base_url('auth/logout'); ?>')" class="nav-link">
+                        <i class="fas fa-sign-out-alt"></i>
+                        <p>Logout</p>
+                    </a>
+                </li>
             </ul>
         </nav>
         <!-- /.sidebar-menu -->

@@ -59,6 +59,7 @@
 <!-- Select2 -->
 <script src="<?= base_url('assets/backend') ?>/plugins/select2/js/select2.full.min.js"></script>
 <script src="<?= base_url('assets/backend') ?>/plugins/toastr/toastr.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 <script>
     <?php if ($this->session->flashdata('success')) { ?>
         var message = <?php echo json_encode($this->session->flashdata('success')) ?>;
@@ -84,6 +85,33 @@
         });
 
         showElement.style.maxHeight = showElement.scrollHeight + 'px';
+    }
+
+    $(document).ready(function() {
+        $('.status-badge').each(function() {
+            var status = $(this).data('status');
+            var badgeClass = (status == 'draft') ? 'badge-info' : 'badge-success';
+            $(this).addClass(badgeClass);
+        });
+    });
+</script>
+
+<!-- sweet alert delete -->
+<script>
+    function confirmDelete(url) {
+        Swal.fire({
+            title: "Apakah Anda yakin?",
+            text: "Anda tidak akan dapat mengembalikan ini!",
+            icon: "warning",
+            showCancelButton: true,
+            confirmButtonColor: "#3085d6",
+            cancelButtonColor: "#d33",
+            confirmButtonText: "Ya, yakin!"
+        }).then((result) => {
+            if (result.isConfirmed) {
+                window.location.href = url;
+            }
+        });
     }
 </script>
 </body>

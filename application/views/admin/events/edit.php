@@ -1,4 +1,4 @@
-<?php echo form_open_multipart('admin/events/create'); ?>
+<?php echo form_open_multipart('admin/events/edit'); ?>
 <div class="content-header pr-5 pl-5">
     <div class="container-fluid">
         <div class="row mb-2">
@@ -9,7 +9,7 @@
                 <div class="float-right">
                     <a href="javascript:history.back()" class="btn btn-default float-r"><i class="fas fa-long-arrow-alt-left"></i> Kembali</a>
                     <button type="submit" class="btn btn-info" name="action" value="save_draft"><i class="fas fa-save"></i> Draf</button>
-                    <button type="submit" class="btn btn-success" name="action" value="submit"><i class="far fa-paper-plane"></i> Submit Event</button>
+                    <button type="submit" class="btn btn-success" name="action" value="publish"><i class="far fa-paper-plane"></i> Publish Event</button>
                 </div>
             </div><!-- /.col -->
         </div><!-- /.row -->
@@ -18,7 +18,6 @@
 <!-- /.content-header -->
 <section class="content">
     <div class="container-fluid pr-5 pl-5">
-        <!-- <form action="<?= site_url('admin/events/create') ?>" method="post"> -->
         <div class="row">
             <div class="col-lg-6 col-md-6 col-sm-12">
                 <div class="card card-default">
@@ -53,14 +52,14 @@
                     <div class="card-body">
                         <div class="form-group">
                             <label>Judul Event</label>
-                            <input type="text" class="form-control" name="title" id="title" value="<?= set_value('title') ?>">
+                            <input type="text" class="form-control" name="title" id="title" value="<?= $events->title ?>">
                         </div>
                         <div class="form-group">
                             <label>Kategori Event</label>
                             <select class="select2" multiple="multiple" name="id_category[]" id="categories" data-placeholder="Select a State" style="width: 100%;">
-                                <?php foreach ($category as $key) : ?>
-                                    <option value="<?= $key['id_category'] ?>" <?= set_select('id_category[]', $key['id_category'], (isset($id_category) && in_array($key['id_category'], $id_category))); ?>><?= $key['name_category'] ?></option>
-                                <?php endforeach ?>
+                                <option value="1" <?= set_select('id_category[]', '1', (isset($id_category) && in_array('1', $id_category))); ?>>Kategori 1</option>
+                                <option value="2" <?= set_select('id_category[]', '2', (isset($id_category) && in_array('2', $id_category))); ?>>Kategori 2</option>
+                                <option value="3" <?= set_select('id_category[]', '3', (isset($id_category) && in_array('3', $id_category))); ?>>Kategori 3</option>
                             </select>
                         </div>
                     </div>
