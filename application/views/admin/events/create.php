@@ -1,5 +1,5 @@
 <?php echo form_open_multipart('admin/events/create'); ?>
-<div class="content-header pr-5 pl-5">
+<div class="content-header pr-lg-5 pl-lg-5">
     <div class="container-fluid">
         <div class="row mb-2">
             <div class="col-sm-6">
@@ -17,7 +17,7 @@
 </div>
 <!-- /.content-header -->
 <section class="content">
-    <div class="container-fluid pr-5 pl-5">
+    <div class="container-fluid pr-lg-5 pl-lg-5">
         <!-- <form action="<?= site_url('admin/events/create') ?>" method="post"> -->
         <div class="row">
             <div class="col-lg-6 col-md-6 col-sm-12">

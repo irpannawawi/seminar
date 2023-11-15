@@ -1,4 +1,4 @@
-<div class="content-header pr-5 pl-5">
+<div class="content-header pr-lg-5 pl-lg-5">
     <div class="container-fluid">
         <div class="row mb-2">
             <div class="col-sm-6">
@@ -13,7 +13,7 @@
         </div><!-- /.row -->
     </div><!-- /.container-fluid -->
 </div>
-<section class="content pr-5 pl-5">
+<section class="content pr-lg-5 pl-lg-5">
     <div class="container-fluid">
         <div class="row">
             <div class="col-12">
