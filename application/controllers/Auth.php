@@ -6,10 +6,10 @@ class Auth extends CI_Controller
     public function index()
     {
         if ($this->session->email) {
-            if ($this->session->userdata('role_id') == 1) {
+            if ($this->session->role_id == 1) {
                 redirect('admin'); // apabila sudah login masuk ke role admin/dashboard
             } else {
-                redirect('leader'); // apabila sudah login masuk ke role user/myprofile
+                redirect('users'); // apabila sudah login masuk ke role users/dashboard
             }
         }
 
@@ -27,12 +27,12 @@ class Auth extends CI_Controller
 
     private function _login()
     {
-        $email = $this->input->post('email');
+        $email = htmlspecialchars($this->input->post('email'));
         $password = $this->input->post('password');
 
         $user = $this->db->get_where('users', ['email' => $email])->row_array();
 
-        // jika usernya ada
+        // cek user email
         if ($user) {
             // cek password
             if (password_verify($password, $user['password'])) {
@@ -46,7 +46,7 @@ class Auth extends CI_Controller
                 if ($user['role_id'] == 1) {
                     redirect('admin');
                 } else {
-                    redirect('leader');
+                    redirect('users');
                 }
             } else {
                 set_pesan('Password salah!', false);
@@ -67,37 +67,43 @@ class Auth extends CI_Controller
 
     public function registration()
     {
-        $data['title'] = 'Registration';
-        if ($this->session->userdata('email')) {
-            redirect('admin/user');
+        if ($this->session->email) {
+            if ($this->session->role_id == 1) {
+                redirect('admin'); // apabila sudah login masuk ke role admin/dashboard
+            } else {
+                redirect('users'); // apabila sudah login masuk ke role users/dashboard
+            }
         }
         $this->form_validation->set_rules('name', 'Name', 'required|trim');
         $this->form_validation->set_rules('email', 'Email', 'required|trim|valid_email|is_unique[users.email]', [
             'is_unique' => 'Email sudah terdaftar!',
             'valid_email' => 'Email tidak benar!'
         ]);
-        $this->form_validation->set_rules('password1', 'Password', 'required|trim|min_length[3]|matches[password2]', [
+        $this->form_validation->set_rules('password', 'Password', 'required|trim|min_length[3]|matches[password2]', [
             'matches' => 'Password tidak sama!',
             'min_length' => 'Password terlalu pendek!'
         ]);
-        $this->form_validation->set_rules('password2', 'Konfirm Password', 'required|trim|matches[password1]', [
+        $this->form_validation->set_rules('password2', 'Konfirm Password', 'required|trim|matches[password]', [
             'matches' => 'Password tidak sama!'
         ]);
 
+        $data['title'] = 'Registration - Tiket Seminar';
         if ($this->form_validation->run() == false) {
-            $this->load->view('auth/registration');
+            $this->load->view('auth/registration', $data);
         } else {
+            $name = $this->input->post('name', true);
             $email = $this->input->post('email', true);
+            $password = $this->input->post('password', true);
+
             $data = [
-                'name' => htmlspecialchars($this->input->post('name', true)),
+                'name' => htmlspecialchars($name),
                 'email' => htmlspecialchars($email),
-                'password' => password_hash($this->input->post('password1', true), PASSWORD_DEFAULT),
+                'password' => password_hash($password, PASSWORD_DEFAULT),
                 'role_id' => 2,
                 'date_created' => time()
             ];
 
             $this->db->insert('users', $data);
-
             set_pesan('Selamat, akun Anda telah dibuat!');
             redirect('login');
         }

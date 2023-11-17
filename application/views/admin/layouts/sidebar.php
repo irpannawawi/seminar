@@ -90,6 +90,24 @@
                         </li>
                     </ul>
                 </li>
+                <li class="nav-header">Setting & Integrasi</li>
+                <li class="nav-item">
+                    <a href="javascript:;" class="nav-link">
+                        <i class="fas fa-cog"></i>
+                        <p>
+                            Setting Website
+                            <i class="fas fa-angle-left right"></i>
+                        </p>
+                    </a>
+                    <ul class="nav nav-treeview">
+                        <li class="nav-item">
+                            <a href="<?= base_url('admin/setting/info'); ?>" class="nav-link">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Info Website</p>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
                 <li class="nav-item">
                     <a onclick="confirmDelete('<?= base_url('auth/logout'); ?>')" class="nav-link">
                         <i class="fas fa-sign-out-alt"></i>

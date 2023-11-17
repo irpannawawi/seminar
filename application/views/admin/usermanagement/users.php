@@ -41,7 +41,9 @@
                                     <tr>
                                         <td><?= $no++ ?></td>
                                         <td><?= $key['name'] ?></td>
-                                        <td><?= $key['name_role'] ?></td>
+                                        <td>
+                                            <span class="badge badge-pill status-badge badge-success"><?= $key['name_role'] ?></span>
+                                        </td>
                                         <td><?= $key['no_hp'] ?></td>
                                         <td><?= $key['email'] ?></td>
                                         <td class="text-center">
@@ -73,22 +75,22 @@
                 </div>
                 <div class="modal-body">
                     <div class="form-group">
-                        <label for="">Nama</label>
+                        <label>Nama</label>
                         <input type="text" name="name" id="name" class="form-control">
                         <?= form_error('name', '<small class="text-danger">', '</small>') ?>
                     </div>
                     <div class="form-group">
-                        <label for="">Email</label>
+                        <label>Email</label>
                         <input type="email" name="email" id="email" class="form-control">
                         <?= form_error('email', '<small class="text-danger">', '</small>') ?>
                     </div>
                     <div class="form-group">
-                        <label for="">Password</label>
+                        <label>Password</label>
                         <input type="password" name="password" id="password" class="form-control">
                         <?= form_error('password', '<small class="text-danger">', '</small>') ?>
                     </div>
                     <div class="form-group">
-                        <label for="">Role</label>
+                        <label>Role</label>
                         <select class="form-control" name="role_id" id="role_id">
                             <option selected disabled>Pilih role pengguna</option>
                             <?php foreach ($role as $key) : ?>
@@ -98,7 +100,7 @@
                         <?= form_error('role_id', '<small class="text-danger">', '</small>') ?>
                     </div>
                     <div class="form-group">
-                        <label for="">No HP</label>
+                        <label>No HP</label>
                         <input type="text" name="no_hp" id="no_hp" class="form-control">
                     </div>
                 </div>
@@ -128,34 +130,39 @@
                     </div>
                     <div class="modal-body">
                         <div class="form-group">
-                            <label for="">Nama</label>
+                            <label>Nama</label>
                             <input type="text" name="name" id="name" class="form-control" value="<?= $key['name'] ?>">
                             <?= form_error('name', '<small class="text-danger">', '</small>') ?>
                         </div>
                         <div class="form-group">
-                            <label for="">Email</label>
+                            <label>Email</label>
                             <input type="email" disabled name="email" id="email" class="form-control" value="<?= $key['email'] ?>">
-                            <?= form_error('email', '<small class="text-danger">', '</small>') ?>
                         </div>
                         <div class="form-group">
-                            <label for="">New Password</label>
+                            <label>New Password</label>
                             <input type="password" name="password" id="password" class="form-control">
                             <p class="text-danger"><i>Kosongkan jika tidak di ubah</i></p>
-                            <?= form_error('password', '<small class="text-danger">', '</small>') ?>
+                            <?= form_error('password1', '<small class="text-danger">', '</small>') ?>
                         </div>
                         <div class="form-group">
-                            <label for="">Role</label>
+                            <label>Konfirmasi Password</label>
+                            <input type="password" name="password2" id="password2" class="form-control">
+                            <?= form_error('password2', '<small class="text-danger">', '</small>') ?>
+                        </div>
+                        <div class="form-group">
+                            <label>Role</label>
                             <select class="form-control" name="role_id" id="role_id">
                                 <option selected disabled>Pilih role pengguna</option>
-                                <?php foreach ($role as $key) : ?>
-                                    <option value="<?= $key['id_role'] ?>"><?= $key['name_role'] ?></option>
+                                <?php foreach ($role as $roles) : ?>
+                                    <option value="<?= $roles['id_role'] ?>" <?php if ($key['role_id'] ==  $roles['id_role']) echo "selected"; ?>><?= $roles['name_role'] ?></option>
                                 <?php endforeach; ?>
                             </select>
                             <?= form_error('role_id', '<small class="text-danger">', '</small>') ?>
                         </div>
                         <div class="form-group">
-                            <label for="">No HP</label>
-                            <input type="text" name="no_hp" id="no_hp" class="form-control">
+                            <label>No Hp/WhatsApp</label>
+                            <input type="text" name="no_hp" id="no_hp" class="form-control" value="<?= $key['no_hp'] ?>">
+                            <?= form_error('no_hp', '<small class="text-danger">', '</small>') ?>
                         </div>
                     </div>
                     <div class="modal-footer justify-content-between">

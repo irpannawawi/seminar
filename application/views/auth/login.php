@@ -28,7 +28,7 @@
                 <form action="<?= site_url('auth') ?>" method="post" id="loginform">
                     <p class="login-box-msg">Masuk untuk memulai sesi</p>
                     <div class="form-group mb-3">
-                        <input type="text" class="form-control" placeholder="Email" id="email" name="email" value="admin@gmail.com">
+                        <input type="email" class="form-control" placeholder="Email" id="email" name="email" value="admin@gmail.com">
                     </div>
                     <div class="form-group mb-3">
                         <input type="password" name="password" id="password" class="form-control" placeholder="Password" value="admin">

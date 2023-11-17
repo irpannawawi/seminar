@@ -25,20 +25,30 @@
         </div>
         <div class="card">
             <div class="card-body login-card-body">
-                <form action="<?= site_url('auth') ?>" method="post" id="loginform">
-                    <p class="login-box-msg">Masuk untuk memulai sesi</p>
+                <form action="<?= site_url('registration') ?>" method="post" id="loginform">
+                    <p class="login-box-msg">Silahkan isi form Daftar Akun</p>
                     <div class="form-group mb-3">
-                        <input type="text" class="form-control" placeholder="Email" id="email" name="email" value="admin@gmail.com">
+                        <input type="text" class="form-control" placeholder="Nama Lengkap" id="name" name="name" value="<?= set_value('name') ?>">
+                        <?= form_error('name', '<small class="text-danger">', '</small>') ?>
                     </div>
                     <div class="form-group mb-3">
-                        <input type="password" name="password" id="password" class="form-control" placeholder="Password" value="admin">
+                        <input type="email" class="form-control" placeholder="Email" id="email" name="email" value="<?= set_value('email') ?>">
+                        <?= form_error('email', '<small class="text-danger">', '</small>') ?>
+                    </div>
+                    <div class="form-group mb-3">
+                        <input type="password" name="password" id="password" class="form-control" placeholder="Password">
+                        <?= form_error('password', '<small class="text-danger">', '</small>') ?>
+                    </div>
+                    <div class="form-group mb-3">
+                        <input type="password" name="password2" id="password2" class="form-control" placeholder="Konfirmasi Password">
+                        <?= form_error('password2', '<small class="text-danger">', '</small>') ?>
                     </div>
                     <div class="row">
                         <div class="col-8">
                             <div class="icheck-primary">
-                                <input type="checkbox" id="remember">
-                                <label for="remember">
-                                    Ingat saya
+                                <input type="checkbox" id="terms">
+                                <label for="terms">
+                                    Setuju Kebijakan
                                 </label>
                             </div>
                         </div>
@@ -53,7 +63,7 @@
                         <a href="forgot-password.html">Lupa password?</a>
                     </p>
                     <p class="mb-0">
-                        <a href="javascript:void(0)" id="to-regis" class="text-center">Daftar akun partnership</a>
+                        <a href="<?= site_url('auth') ?>" id="to-regis" class="text-center">Login Akun sudah ada</a>
                     </p>
                 </form>
             </div>
@@ -93,7 +103,7 @@
                         minlength: 3
                     },
                     terms: {
-                        required: false
+                        required: true
                     },
                 },
                 messages: {

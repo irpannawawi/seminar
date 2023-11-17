@@ -57,7 +57,7 @@ $route['registration'] = 'auth/registration';
 
 // user
 $route['admin'] = 'admin/dashboard';
-$route['leader'] = 'leader/dashboard';
+$route['users'] = 'users/dashboard';
 
 $route['404_override'] = '';
-$route['translate_uri_dashes'] = FALSE;
+$route['translate_uri_dashes'] = TRUE;

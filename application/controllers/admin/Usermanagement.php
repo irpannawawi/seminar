@@ -16,6 +16,7 @@ class Usermanagement extends CI_Controller
         $data['user'] = $this->users->usermanagement();
         $data['role'] = $this->users->get('users_role');
         $data['title'] = 'Akun Pengguna';
+
         $action = $this->input->post('action');
         $id = $this->input->post('id_user');
 
@@ -26,7 +27,6 @@ class Usermanagement extends CI_Controller
             $this->form_validation->set_rules('password', 'Password', 'trim|required');
         } elseif ($action == 'simpan') {
             $this->form_validation->set_rules('name', 'Nama', 'trim|required');
-            $this->form_validation->set_rules('email', 'Email', 'trim|required');
             $this->form_validation->set_rules('role_id', 'Role Pengguna', 'trim|required');
         }
 
@@ -39,20 +39,33 @@ class Usermanagement extends CI_Controller
         } else {
             $name = htmlspecialchars($this->input->post('name'));
             $email = htmlspecialchars($this->input->post('email'));
-            $password = htmlspecialchars(password_hash($this->input->post('password', true), PASSWORD_DEFAULT));
             $role = htmlspecialchars($this->input->post('role_id'));
+            $password = $this->input->post('password', true);
+            $password2 = $this->input->post('password2');
             $nohp = htmlspecialchars($this->input->post('no_hp'));
 
-            $save = [
+            $submit = [
                 'name' => $name,
                 'email' => $email,
-                'password' => $password,
                 'role_id' => $role,
+                'password' => htmlspecialchars(password_hash($password, PASSWORD_DEFAULT)),
                 'no_hp' => $nohp,
+                'date_created' => time(),
             ];
 
+            if (!empty($password) && $password == $password2) {
+                // Jika password tidak kosong dan password dan password2 cocok
+                $save['password'] = password_hash($password, PASSWORD_DEFAULT);
+            } else {
+                $save = [
+                    'name' => $name,
+                    'role_id' => $role,
+                    'no_hp' => $nohp,
+                ];
+            }
+
             if ($action == 'submit') {
-                $this->db->insert('users', $save);
+                $this->db->insert('users', $submit);
                 set_pesan('Akun pengguna berhasil di tambah!');
                 redirect('admin/usermanagement');
             } elseif ($action == 'simpan') {
@@ -106,17 +119,10 @@ class Usermanagement extends CI_Controller
 
         // Hapus kategori berdasarkan ID
         $this->db->where('id_user', $id);
-        $result = $this->db->delete('users');
+        $this->session->session_destroy('id_user', $id);
+        $this->db->delete('users');
 
-        if ($result) {
-            // Kategori berhasil dihapus
-            set_pesan('Pengguna telah berhasil dihapus.');
-        } else {
-            // Gagal menghapus kategori
-            set_pesan('Gagal menghapus Pengguna.', false);
-        }
-
-        // Redirect ke halaman kategori
-        redirect('admin/usermanagement/user');
+        set_pesan('Pengguna telah berhasil dihapus.');
+        redirect('admin/usermanagement');
     }
 }
