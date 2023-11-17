@@ -59,7 +59,37 @@
                         </li>
                     </ul>
                 </li>
-                <li class="nav-header">EXAMPLES</li>
+                <li class="nav-item">
+                    <a href="<?= base_url('admin/partnership'); ?>" class="nav-link">
+                        <i class="fas fa-users-cog"></i>
+                        <p>Partnership</p>
+                    </a>
+                </li>
+                <li class="nav-header">Session</li>
+                <li class="nav-item">
+                    <a href="javascript:;" class="nav-link">
+                        <i class="fas fa-users"></i>
+                        <p>
+                            Manajemen Akun
+                            <i class="fas fa-angle-left right"></i>
+                            <!-- <span class="badge badge-warning right">6</span> -->
+                        </p>
+                    </a>
+                    <ul class="nav nav-treeview">
+                        <li class="nav-item">
+                            <a href="<?= base_url('admin/usermanagement'); ?>" class="nav-link">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Akun Pengguna</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="<?= base_url('admin/usermanagement/role'); ?>" class="nav-link">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Role Pengguna</p>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
                 <li class="nav-item">
                     <a onclick="confirmDelete('<?= base_url('auth/logout'); ?>')" class="nav-link">
                         <i class="fas fa-sign-out-alt"></i>
