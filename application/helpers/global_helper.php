@@ -26,3 +26,15 @@ function set_pesan($message, $tipe = true) //ini untuk menampilkan message
         $ci->session->set_flashdata('error', $message);
     }
 }
+
+if (!function_exists('get_management')) {
+    function get_management($column_name)
+    {
+        $CI = &get_instance();
+        $CI->load->library('global_library');
+
+        $managements = $CI->global_library->get_managements();
+
+        return isset($managements[$column_name]) ? $managements[$column_name] : '';
+    }
+}

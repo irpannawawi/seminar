@@ -52,3 +52,20 @@ background-color: var(--colorPrimaryGlare);
 width: calc(33.333% - (2rem / 3));
 object-fit: contain;
 }
+.dot {
+    width: 12px;
+    height: 12px;
+}
+.rounded-circle {
+    border-radius: 50% !important;
+}
+.me-1 {
+    margin-right: 0.25rem !important;
+}
+.my-2 {
+    margin-top: 0.5rem !important;
+    margin-bottom: 0.5rem !important;
+}
+.footer-modal{
+    display: grid !important;
+}
