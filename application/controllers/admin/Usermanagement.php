@@ -119,7 +119,6 @@ class Usermanagement extends CI_Controller
 
         // Hapus kategori berdasarkan ID
         $this->db->where('id_user', $id);
-        $this->session->session_destroy('id_user', $id);
         $this->db->delete('users');
 
         set_pesan('Pengguna telah berhasil dihapus.');
