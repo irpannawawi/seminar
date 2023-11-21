@@ -65,6 +65,25 @@
                         <p>Partnership</p>
                     </a>
                 </li>
+                <li class="nav-header">Transaksi</li>
+                <li class="nav-item">
+                    <a href="javascript:;" class="nav-link">
+                        <i class="fas fa-cash-register"></i>
+                        <p>
+                            Penjualan
+                            <i class="fas fa-angle-left right"></i>
+                            <!-- <span class="badge badge-warning right">6</span> -->
+                        </p>
+                    </a>
+                    <ul class="nav nav-treeview">
+                        <li class="nav-item">
+                            <a href="<?= base_url('admin/usermanagement'); ?>" class="nav-link">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Akun Pengguna</p>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
                 <li class="nav-header">Session</li>
                 <li class="nav-item">
                     <a href="javascript:;" class="nav-link">

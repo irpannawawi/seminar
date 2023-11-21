@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') or exit('No direct script access allowed');
 
-class WebManagement extends CI_Controller
+class Webmanagement extends CI_Controller
 {
     public function __construct()
     {
