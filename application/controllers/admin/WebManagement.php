@@ -7,6 +7,7 @@ class WebManagement extends CI_Controller
     {
         parent::__construct();
         is_logged_in();
+        $this->load->model('Integrasi_model', 'integrasi');
     }
 
     // controllers/Admin.php
@@ -44,8 +45,8 @@ class WebManagement extends CI_Controller
                     if (file_exists($old_logo_path)) {
                         unlink($old_logo_path);
                     }
-                    $new_image = $this->upload->data();
-                    $file_name = $new_image['file_name'];
+                    $upload_data = $this->upload->data('file_name');
+                    $this->db->set('logo_web', $upload_data);
                 } else {
                     $error = array('error' => $this->upload->display_errors());
                     set_pesan($error, false);
@@ -56,9 +57,8 @@ class WebManagement extends CI_Controller
                 'sub_title'       => htmlspecialchars($this->input->post('sub_title')),
                 'description_web' => $this->input->post('description_web'),
                 'meta_google'     => $this->input->post('meta_google'),
-                'logo_web'        => $file_name,
-                'instagram'       => htmlspecialchars('https://', $this->input->post('instagram')),
-                'facebook'        => htmlspecialchars('https://', $this->input->post('facebook'))
+                'instagram'       => $this->input->post('instagram'),
+                'facebook'        => $this->input->post('facebook')
             ];
 
             $this->db->update('setting', $data);
@@ -70,33 +70,104 @@ class WebManagement extends CI_Controller
     public function wagw()
     {
         $data['users'] = $this->db->get_where('users', ['email' => $this->session->email])->row_array();
-        $data['wagw'] = $this->db->get('wagw')->result_array();
+        $data['wagw'] = $this->integrasi->wagw();
         $data['title'] = 'Integrasi WhatsApp';
 
-        $this->form_validation->set_rules('name', 'Nama', 'trim|required');
-        $this->form_validation->set_rules('number', 'Nomor WhatsApp', 'trim|required');
+        $api_response = $this->integrasi->get_profile();
 
-        if ($this->form_validation->run() == false) {
+        if ($api_response['status']) {
+            $data['infodevice'] = $api_response;
+
             $this->load->view('admin/layouts/header', $data);
             $this->load->view('admin/layouts/navbar');
             $this->load->view('admin/layouts/sidebar');
             $this->load->view('admin/setting/wa');
             $this->load->view('admin/layouts/footer');
         } else {
-            $name_device = htmlspecialchars($this->input->post('name'));
-            $number_device = htmlspecialchars($this->input->post('number'));
-
-            $data = [
-                'name' => $name_device,
-                'number' => $number_device,
-                'status' => 'disconnect',
-                'date_expired' => time(),
-                'date_created' => time(),
-            ];
-
-            $this->db->insert('wagw', $data);
-            set_pesan('Perangkat berhasil ditambah!');
+            set_pesan('Error: ' . $api_response['reason'], false);
             redirect('admin/webmanagement/wagw');
         }
+    }
+
+    public function savewagw()
+    {
+        $data =
+            [
+                'token' => $this->input->post('token', true),
+                'link_send' => $this->input->post('link_send', true),
+                'link_qr' => $this->input->post('link_qr', true),
+                'link_device' => $this->input->post('link_device', true)
+            ];
+        $this->db->update('wagw', $data);
+        set_pesan('Berhasil update integrasi');
+        redirect('admin/webmanagement/wagw');
+    }
+
+    public function generate_qr()
+    {
+        // Implementasikan logika untuk mendapatkan QR code dari API Foonte
+        $wagw = $this->integrasi->wagw();
+        $curl = curl_init();
+
+        curl_setopt_array($curl, array(
+            CURLOPT_URL => $wagw['link_qr'],
+            CURLOPT_RETURNTRANSFER => true,
+            CURLOPT_ENCODING => '',
+            CURLOPT_MAXREDIRS => 10,
+            CURLOPT_TIMEOUT => 0,
+            CURLOPT_FOLLOWLOCATION => true,
+            CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+            CURLOPT_CUSTOMREQUEST => 'POST',
+            CURLOPT_HTTPHEADER => array(
+                'Authorization: ' . $wagw['token']
+            ),
+        ));
+
+        $response = curl_exec($curl);
+
+        curl_close($curl);
+        // Kirim respons dalam bentuk JSON ke view
+        $this->output->set_content_type('application/json')->set_output(json_encode($response));
+    }
+
+    public function disconnect()
+    {
+        $wagw = $this->integrasi->wagw();
+        $curl = curl_init();
+
+        curl_setopt_array($curl, array(
+            CURLOPT_URL => 'https://api.fonnte.com/disconnect',
+            CURLOPT_RETURNTRANSFER => true,
+            CURLOPT_ENCODING => '',
+            CURLOPT_MAXREDIRS => 10,
+            CURLOPT_TIMEOUT => 0,
+            CURLOPT_FOLLOWLOCATION => true,
+            CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+            CURLOPT_CUSTOMREQUEST => 'POST',
+            CURLOPT_HTTPHEADER => array(
+                'Authorization: ' . $wagw['token']
+            ),
+        ));
+
+        $response = curl_exec($curl);
+        // Sebelum encode
+
+        if ($response === false) {
+            // Handle cURL error
+            set_pesan('Error during cURL request: ' . curl_error($curl), false);
+        } else {
+            // Decode respons JSON
+            $api_response = json_decode($response, true);
+
+            if ($api_response['status'] == true) {
+                set_pesan('Disconnect berhasil!');
+            } else {
+                set_pesan('Disconnect gagal: ' . $api_response['detail'], false);
+            }
+        }
+
+        curl_close($curl);
+
+        redirect('admin/webmanagement/wagw');
     }
 }
