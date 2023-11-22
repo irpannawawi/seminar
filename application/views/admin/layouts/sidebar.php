@@ -21,6 +21,7 @@
         <!-- Sidebar Menu -->
         <nav class="mt-2">
             <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+                <li class="nav-header">Events</li>
                 <li class="nav-item">
                     <a href="<?= site_url('admin') ?>" class="nav-link">
                         <i class="nav-icon fas fa-tachometer-alt"></i>
@@ -40,15 +41,21 @@
                     </a>
                     <ul class="nav nav-treeview">
                         <li class="nav-item">
+                            <a href="<?= site_url('admin/events') ?>" class="nav-link">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Event</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
                             <a href="<?= site_url('admin/events/create') ?>" class="nav-link">
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>Buat Event</p>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="<?= site_url('admin/events') ?>" class="nav-link">
+                            <a href="<?= site_url('admin/events/publish') ?>" class="nav-link">
                                 <i class="far fa-circle nav-icon"></i>
-                                <p>Event</p>
+                                <p>Event Publish</p>
                             </a>
                         </li>
                         <li class="nav-item">
@@ -72,7 +79,7 @@
                         <p>
                             Penjualan
                             <i class="fas fa-angle-left right"></i>
-                            <!-- <span class="badge badge-warning right">6</span> -->
+                            <span class="badge badge-warning right">6</span>
                         </p>
                     </a>
                     <ul class="nav nav-treeview">
@@ -80,31 +87,7 @@
                             <a href="<?= base_url('admin/usermanagement'); ?>" class="nav-link">
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>Akun Pengguna</p>
-                            </a>
-                        </li>
-                    </ul>
-                </li>
-                <li class="nav-header">Session</li>
-                <li class="nav-item">
-                    <a href="javascript:;" class="nav-link">
-                        <i class="fas fa-users"></i>
-                        <p>
-                            Manajemen Akun
-                            <i class="fas fa-angle-left right"></i>
-                            <!-- <span class="badge badge-warning right">6</span> -->
-                        </p>
-                    </a>
-                    <ul class="nav nav-treeview">
-                        <li class="nav-item">
-                            <a href="<?= base_url('admin/usermanagement'); ?>" class="nav-link">
-                                <i class="far fa-circle nav-icon"></i>
-                                <p>Akun Pengguna</p>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="<?= base_url('admin/usermanagement/role'); ?>" class="nav-link">
-                                <i class="far fa-circle nav-icon"></i>
-                                <p>Role Pengguna</p>
+                                <span class="badge badge-warning right">6</span>
                             </a>
                         </li>
                     </ul>
@@ -135,6 +118,30 @@
                         </li>
                     </ul>
                 </li>
+                <li class="nav-header">Session</li>
+                <li class="nav-item">
+                    <a href="javascript:;" class="nav-link">
+                        <i class="fas fa-users"></i>
+                        <p>
+                            Akun Management
+                            <i class="fas fa-angle-left right"></i>
+                            <!-- <span class="badge badge-warning right">6</span> -->
+                        </p>
+                    </a>
+                    <ul class="nav nav-treeview">
+                        <li class="nav-item">
+                            <a href="<?= base_url('admin/usermanagement'); ?>" class="nav-link">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Akun Pengguna</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="<?= base_url('admin/usermanagement/role'); ?>" class="nav-link">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Role Pengguna</p>
+                            </a>
+                        </li>
+                    </ul>
                 <li class="nav-item">
                     <a onclick="confirmDelete('<?= base_url('auth/logout'); ?>')" class="nav-link">
                         <i class="fas fa-sign-out-alt"></i>

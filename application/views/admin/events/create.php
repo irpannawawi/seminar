@@ -98,18 +98,29 @@
                     <div class="card-body">
                         <div class="form-group">
                             <div class="row">
-                                <div class="col-4">
+                                <div class="col-6">
                                     <div class="form-group">
-                                        <label>Tanggal</label>
-                                        <div class="input-group date" id="date_event" data-target-input="nearest">
-                                            <input type="text" name="date" class="form-control datetimepicker-input" data-target="#date_event" id="date_event" placeholder="Pilih tanggal">
-                                            <div class="input-group-append" data-target="#date_event" data-toggle="datetimepicker">
+                                        <label>Tanggal Mulai</label>
+                                        <div class="input-group date" id="date1" data-target-input="nearest">
+                                            <input type="text" name="date_start" class="form-control datetimepicker-input" data-target="#date1" id="date_start" placeholder="Pilih tanggal">
+                                            <div class="input-group-append" data-target="#date1" data-toggle="datetimepicker">
                                                 <div class="input-group-text"><i class="fa fa-calendar"></i></div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-4">
+                                <div class="col-6">
+                                    <div class="form-group">
+                                        <label>Tanggal Berakhir</label>
+                                        <div class="input-group date" id="date2" data-target-input="nearest">
+                                            <input type="text" name="date_finish" class="form-control datetimepicker-input" data-target="#date2" id="date_finish" placeholder="Pilih tanggal">
+                                            <div class="input-group-append" data-target="#date2" data-toggle="datetimepicker">
+                                                <div class="input-group-text"><i class="fa fa-calendar"></i></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6">
                                     <div class="form-group">
                                         <label>Jam Mulai</label>
                                         <div class="input-group date" id="timeevent1" data-target-input="nearest">
@@ -120,11 +131,11 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-4">
+                                <div class="col-6">
                                     <div class="form-group">
                                         <label>Jam Selesai</label>
                                         <div class="input-group date" id="timeevent2" data-target-input="nearest">
-                                            <input type="text" name="date_finish" id="date_finish" class="form-control datetimepicker-input" data-target="#timeevent2" placeholder="Pilih jam selesai">
+                                            <input type="text" name="time_finish" id="time_finish" class="form-control datetimepicker-input" data-target="#timeevent2" placeholder="Pilih jam selesai">
                                             <div class="input-group-append" data-target="#timeevent2" data-toggle="datetimepicker">
                                                 <div class="input-group-text"><i class="far fa-clock"></i></div>
                                             </div>

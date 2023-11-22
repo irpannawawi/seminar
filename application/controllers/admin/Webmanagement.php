@@ -15,11 +15,13 @@ class Webmanagement extends CI_Controller
     public function info()
     {
         $data['users'] = $this->db->get_where('users', ['email' => $this->session->email])->row_array();
+        $data['wagw'] = $this->integrasi->wagw();
         $data['title'] = 'Info Website';
 
         $this->form_validation->set_rules('title_web', 'Judul Website', 'trim|required');
         $this->form_validation->set_rules('sub_title', 'Sub Judul Website', 'trim|required');
         $this->form_validation->set_rules('description_web', 'Deskripsi Website', 'trim|required');
+        $this->form_validation->set_rules('token_wagw', 'Token WAGW', 'trim|required');
 
         if ($this->form_validation->run() == false) {
             $this->load->view('admin/layouts/header', $data);
@@ -60,7 +62,10 @@ class Webmanagement extends CI_Controller
                 'instagram'       => $this->input->post('instagram'),
                 'facebook'        => $this->input->post('facebook')
             ];
-
+            $wagw = [
+                'token' => $this->input->post('token_wagw', true)
+            ];
+            $this->db->update('wagw', $wagw);
             $this->db->update('setting', $data);
             set_pesan('Berhasil update info website!');
             redirect('admin/webmanagement/info');
@@ -93,7 +98,6 @@ class Webmanagement extends CI_Controller
     {
         $data =
             [
-                'token' => $this->input->post('token', true),
                 'link_send' => $this->input->post('link_send', true),
                 'link_qr' => $this->input->post('link_qr', true),
                 'link_device' => $this->input->post('link_device', true)
@@ -169,5 +173,9 @@ class Webmanagement extends CI_Controller
         curl_close($curl);
 
         redirect('admin/webmanagement/wagw');
+    }
+
+    public function sendMessage()
+    {
     }
 }

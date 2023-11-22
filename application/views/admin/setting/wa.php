@@ -22,8 +22,8 @@
                         <div class="card-body">
                             <div class="form-group">
                                 <label>Token Fonnte</label>
-                                <input type="text" class="form-control" name="token" value="<?= $wagw['token'] ?>">
-                                <p class="text-warning"><i>Dapatkan Token <a href="https://md.fonnte.com/new/device.php" target="_blank">Disini</a></i></p>
+                                <input type="text" class="form-control" value="<?= $wagw['token'] ?>" disabled>
+                                <p class="text-warning"><i>Ganti Token <a href="<?= site_url('admin/webmanagement/info') ?>">Disini</a></i></p>
                             </div>
                             <div class="form-group">
                                 <label>Link QR</label>
@@ -100,7 +100,7 @@
     $(document).ready(function() {
         $('#btn-generate-qr').click(function() {
             // Menampilkan efek loading
-            $('#qrContainer').html('<div class="loading">Tunggu...</div>');
+            $('#qrContainer').html('<div class="loading"></div>');
 
             $.ajax({
                 url: '<?= base_url('admin/webmanagement/generate_qr/') ?>',

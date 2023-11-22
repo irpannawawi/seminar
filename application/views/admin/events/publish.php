@@ -28,6 +28,8 @@
                                 <tr>
                                     <th>No</th>
                                     <th>Nama Event</th>
+                                    <th>Tanggal Event</th>
+                                    <th>Kuota</th>
                                     <th>Status</th>
                                     <th>Aksi</th>
                                 </tr>
@@ -39,24 +41,12 @@
                                     <tr>
                                         <td><?= $no++ ?></td>
                                         <td><?= $key['title'] ?></td>
-                                        <?php
-                                        if (empty($key['date_finish']) || empty($key['date_start'])) :
-                                        ?>
-                                            <td class="text-center">Belum berlangsung</td>
-                                            <?php else :
-                                            $dateFinishTimestamp = strtotime($key['date_finish']);
-                                            $dateStartTimestamp = strtotime($key['date_start']);
-
-                                            if ($dateStartTimestamp > time()) :
-                                            ?>
-                                                <td class="text-center">Belum berlangsung</td>
-                                            <?php elseif ($dateFinishTimestamp <= time()) :
-                                            ?>
-                                                <td class="text-center">Sudah berlangsung</td>
-                                            <?php else : ?>
-                                                <td class="text-center">Berlangsung</td>
-                                            <?php endif ?>
-                                        <?php endif ?>
+                                        <td class="text-center"><?= $key['date'] ?></td>
+                                        <td class="text-center"><?= $key['kuota'] ?></td>
+                                        <td class="text-center">
+                                            <span class="badge badge-pill status-badge" data-status="<?= $key['status'] ?>">Event <?= $key['status'] ?>
+                                            </span>
+                                        </td>
                                         <td class="text-center">
                                             <a href="<?= site_url('admin/events/edit/') . $key['id_events'] ?>" class="btn btn-secondary btn-sm"><i class="fas fa-pencil-alt"></i> Edit</a>
                                             <button onclick="confirmDelete('<?= base_url('admin/events/deleteEvents/' . $key['id_events']); ?>')" class="btn btn-danger btn-sm"><i class="fas fa-trash-alt"></i> Delete</button>

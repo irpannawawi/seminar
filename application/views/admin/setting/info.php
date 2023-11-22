@@ -69,6 +69,11 @@
                                     <label>Meta Google</label>
                                     <textarea class="form-control" name="meta_google" id="description"><?= get_management('meta_google') ?></textarea>
                                 </div>
+                                <div class="form-group">
+                                    <label>Token Whatsapp Gateway</label>
+                                    <input class="form-control" name="token_wagw" id="token_wagw" value="<?= $wagw['token'] ?>"></input>
+                                    <p class="text-warning"><i>Dapatkan Token <a href="https://md.fonnte.com/new/device.php" target="_blank">Disini</a></i></p>
+                                </div>
                             </div>
                         </div>
                     </div>

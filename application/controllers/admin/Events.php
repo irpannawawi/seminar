@@ -15,10 +15,23 @@ class Events extends CI_Controller
         $data['users'] = $this->db->get_where('users', ['email' => $this->session->email])->row_array();
         $data['events'] = $this->db->get('events')->result_array();
         $data['title'] = 'Events';
+
         $this->load->view('admin/layouts/header', $data);
         $this->load->view('admin/layouts/navbar');
         $this->load->view('admin/layouts/sidebar');
         $this->load->view('admin/events/event');
+        $this->load->view('admin/layouts/footer');
+    }
+
+    public function publish()
+    {
+        $data['users'] = $this->db->get_where('users', ['email' => $this->session->email])->row_array();
+        $data['events'] = $this->db->get('events')->result_array();
+        $data['title'] = 'Events Publish';
+        $this->load->view('admin/layouts/header', $data);
+        $this->load->view('admin/layouts/navbar');
+        $this->load->view('admin/layouts/sidebar');
+        $this->load->view('admin/events/publish');
         $this->load->view('admin/layouts/footer');
     }
 
@@ -54,9 +67,10 @@ class Events extends CI_Controller
             $categories = is_array($this->input->post('id_category')) ? implode(', ', $this->input->post('id_category')) : '';
             $description = $this->input->post('description');
             $snk = $this->input->post('snk');
-            $date = $this->input->post('date');
             $date_start = $this->input->post('date_start');
             $date_finish = $this->input->post('date_finish');
+            $time_start = $this->input->post('time_start');
+            $time_finish = $this->input->post('time_finish');
             $price = htmlspecialchars($this->input->post('price'));
             $kuota = htmlspecialchars($this->input->post('kuota'));
             $location = htmlspecialchars($this->input->post('location'));
@@ -101,9 +115,10 @@ class Events extends CI_Controller
                 'id_category' => $categories,
                 'description' => $description,
                 'snk' => $snk,
-                'date' => $date,
                 'date_start' => $date_start,
                 'date_finish' => $date_finish,
+                'time_start' => $time_start,
+                'time_finish' => $time_finish,
                 'type_event' => $type_event,
                 'kuota' => $kuota,
                 'location' => $location,

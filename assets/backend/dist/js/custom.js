@@ -200,7 +200,7 @@ $(document).ready(function () {
         return prefix === undefined ? rupiah : (rupiah ? 'Rp. ' + rupiah : '');
     }
     // Date picker
-    $('#date_event').datetimepicker({
+    $('#date1, #date2').datetimepicker({
         format: 'L'
     });
 
