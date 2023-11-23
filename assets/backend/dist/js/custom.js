@@ -169,7 +169,7 @@ $(document).ready(function () {
     
     // tny mce
     tinymce.init({
-        selector: 'textarea',
+        selector: 'textarea#example',
         // width: 1000,
         height: 400,
         plugins: 'anchor autolink charmap codesample emoticons image link lists media searchreplace table visualblocks wordcount',

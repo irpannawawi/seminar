@@ -40,7 +40,7 @@
                                         <td><?= $key['name_category'] ?></td>
                                         <td class="text-center">
                                             <a href="javascript:;" data-toggle="modal" data-target="#editModal<?= $key['id_category'] ?>" class="btn btn-secondary btn-sm"><i class="fas fa-pencil-alt"></i> Edit</a>
-                                            <button onclick="confirmDelete('<?= base_url('admin/events/deleteCategory/' . $key['id_category']); ?>')" class="btn btn-danger btn-sm"><i class="fas fa-trash-alt"></i> Delete</button>
+                                            <a href="<?= base_url('admin/events/deleteCategory/' . $key['id_category']); ?>" class="btn btn-danger btn-sm delete-btn"><i class="fas fa-trash-alt"></i> Delete</a>
                                         </td>
                                     </tr>
                                 <?php endforeach ?>

@@ -143,7 +143,7 @@
                         </li>
                     </ul>
                 <li class="nav-item">
-                    <a onclick="confirmDelete('<?= base_url('auth/logout'); ?>')" class="nav-link">
+                    <a href="<?= base_url('auth/logout'); ?>" class="nav-link delete-btn">
                         <i class="fas fa-sign-out-alt"></i>
                         <p>Logout</p>
                     </a>

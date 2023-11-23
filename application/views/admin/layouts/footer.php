@@ -111,21 +111,30 @@
 
 <!-- sweet alert delete -->
 <script>
-    function confirmDelete(url) {
-        Swal.fire({
-            title: "Apakah Anda yakin?",
-            text: "Anda tidak akan dapat mengembalikan ini!",
-            icon: "warning",
-            showCancelButton: true,
-            confirmButtonColor: "#3085d6",
-            cancelButtonColor: "#d33",
-            confirmButtonText: "Ya, yakin!"
-        }).then((result) => {
-            if (result.isConfirmed) {
-                window.location.href = url;
-            }
+    document.addEventListener('DOMContentLoaded', function() {
+        const deleteButtons = document.querySelectorAll('.delete-btn');
+
+        deleteButtons.forEach(button => {
+            button.addEventListener('click', function(event) {
+                event.preventDefault();
+
+                Swal.fire({
+                    title: "Apakah anda yakin?",
+                    text: "Anda tidak akan dapat mengembalikan ini!",
+                    icon: "warning",
+                    showCancelButton: true,
+                    confirmButtonColor: "#3085d6",
+                    cancelButtonColor: "#d33",
+                    confirmButtonText: "Ya, hapus!"
+                }).then((result) => {
+                    if (result.isConfirmed) {
+                        // Redirect to delete route if user confirms
+                        window.location.href = button.getAttribute('href');
+                    }
+                });
+            });
         });
-    }
+    });
 </script>
 <script>
     $(function() {

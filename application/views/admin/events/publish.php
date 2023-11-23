@@ -41,7 +41,7 @@
                                     <tr>
                                         <td><?= $no++ ?></td>
                                         <td><?= $key['title'] ?></td>
-                                        <td class="text-center"><?= $key['date'] ?></td>
+                                        <td class="text-center"><?= $key['date_start'] ?></td>
                                         <td class="text-center"><?= $key['kuota'] ?></td>
                                         <td class="text-center">
                                             <span class="badge badge-pill status-badge" data-status="<?= $key['status'] ?>">Event <?= $key['status'] ?>
@@ -49,7 +49,7 @@
                                         </td>
                                         <td class="text-center">
                                             <a href="<?= site_url('admin/events/edit/') . $key['id_events'] ?>" class="btn btn-secondary btn-sm"><i class="fas fa-pencil-alt"></i> Edit</a>
-                                            <button onclick="confirmDelete('<?= base_url('admin/events/deleteEvents/' . $key['id_events']); ?>')" class="btn btn-danger btn-sm"><i class="fas fa-trash-alt"></i> Delete</button>
+                                            <a href="<?= base_url('admin/events/deleteEvents/' . $key['id_events']); ?>" class="btn btn-danger btn-sm delete-btn"><i class="fas fa-trash-alt"></i> Delete</a>
                                         </td>
                                     </tr>
                                 <?php endforeach ?>

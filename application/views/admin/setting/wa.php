@@ -74,10 +74,7 @@
                         <?php endif; ?>
                     </div>
                     <div class="card-footer text-center">
-                        <?php if (isset($infodevice) && ($infodevice['device_status'] == 'connect')) : ?>
-                            <button type="button" class="btn btn-dark" disabled>
-                                <i class="fas fa-qrcode"></i> Generate QR Code
-                            </button>
+                        <?php if (isset($infodevice) && ($infodevice['status'] == 'true')) : ?>
                             <a href="<?= site_url('admin/webmanagement/disconnect') ?>" class="btn btn-danger">
                                 <i class="fas fa-unlink"></i> Disconnect
                             </a>

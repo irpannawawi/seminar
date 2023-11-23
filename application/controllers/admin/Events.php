@@ -7,7 +7,8 @@ class Events extends CI_Controller
     {
         parent::__construct();
         is_logged_in();
-        // $this->load->model('Events_model', 'events');
+        $this->load->model('Integrasi_model', 'integrasi');
+        $this->load->model('Events_model', 'events');
     }
 
     public function index()
@@ -16,11 +17,24 @@ class Events extends CI_Controller
         $data['events'] = $this->db->get('events')->result_array();
         $data['title'] = 'Events';
 
-        $this->load->view('admin/layouts/header', $data);
-        $this->load->view('admin/layouts/navbar');
-        $this->load->view('admin/layouts/sidebar');
-        $this->load->view('admin/events/event');
-        $this->load->view('admin/layouts/footer');
+        $this->form_validation->set_rules('pesan', 'Isi Pesan', 'required');
+
+        if ($this->form_validation->run() == false) {
+            $this->load->view('admin/layouts/header', $data);
+            $this->load->view('admin/layouts/navbar');
+            $this->load->view('admin/layouts/sidebar');
+            $this->load->view('admin/events/event');
+            $this->load->view('admin/layouts/footer');
+        } else {
+            $message = $this->input->post('pesan');
+            $event_id = $this->input->post('id_events');
+
+            $whatsappArray  = $this->events->eventspeserta($event_id);
+            $nowaValues = array_column($whatsappArray, 'nowa');
+            $whatsapp = implode(',', $nowaValues);
+
+            $this->sendMessage($message, $whatsapp);
+        }
     }
 
     public function publish()
@@ -357,6 +371,52 @@ class Events extends CI_Controller
         }
 
         // Redirect ke halaman kategori
+        redirect('admin/events');
+    }
+
+    private function sendMessage($message, $whatsapp)
+    {
+        $wagw = $this->integrasi->wagw();
+        $curl = curl_init();
+
+        curl_setopt_array($curl, array(
+            CURLOPT_URL => $wagw['link_send'],
+            CURLOPT_RETURNTRANSFER => true,
+            CURLOPT_ENCODING => '',
+            CURLOPT_MAXREDIRS => 10,
+            CURLOPT_TIMEOUT => 0,
+            CURLOPT_FOLLOWLOCATION => true,
+            CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+            CURLOPT_CUSTOMREQUEST => 'POST',
+            CURLOPT_POSTFIELDS => array(
+                'target' => $whatsapp,
+                'message' => $message,
+                'countryCode' => '62'
+            ),
+            CURLOPT_HTTPHEADER => array(
+                'Authorization: ' . $wagw['token']
+            ),
+        ));
+
+        $response = curl_exec($curl);
+        // Sebelum encode
+
+        if ($response === false) {
+            // Handle cURL error
+            set_pesan('Error during cURL request: ' . curl_error($curl), false);
+        } else {
+            // Decode respons JSON
+            $api_response = json_decode($response, true);
+
+            if ($api_response['status'] == true) {
+                set_pesan($api_response['detail']);
+            } else {
+                set_pesan('Kirim gagal: ' . $api_response['reason'], false);
+            }
+        }
+
+        curl_close($curl);
+
         redirect('admin/events');
     }
 }

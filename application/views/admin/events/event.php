@@ -42,7 +42,9 @@
                                         <?php
                                         if (empty($key['date_finish']) || empty($key['date_start'])) :
                                         ?>
-                                            <td class="text-center">Belum berlangsung</td>
+                                            <td class="text-center">
+                                                <span class="badge badge-pill status-badge badge-warning">Belum berlangsung</span>
+                                            </td>
                                             <?php else :
                                             $dateFinishTimestamp = strtotime($key['date_finish']);
                                             $dateStartTimestamp = strtotime($key['date_start']);
@@ -52,14 +54,15 @@
                                                 <td class="text-center">Belum berlangsung</td>
                                             <?php elseif ($dateFinishTimestamp <= time()) :
                                             ?>
-                                                <td class="text-center">Sudah berlangsung</td>
+                                                <td class="text-center">
+                                                    <span class="badge badge-pill status-badge badge-dark">Sudah berlangsung</span>
+                                                </td>
                                             <?php else : ?>
-                                                <td class="text-center">Berlangsung</td>
+                                                <td class="text-center"><span class="badge badge-pill status-badge badge-success">Berlangsung</span></td>
                                             <?php endif ?>
                                         <?php endif ?>
                                         <td class="text-center">
-                                            <a href="<?= site_url('admin/events/edit/') . $key['id_events'] ?>" class="btn btn-secondary btn-sm"><i class="fas fa-pencil-alt"></i> Edit</a>
-                                            <button onclick="confirmDelete('<?= base_url('admin/events/deleteEvents/' . $key['id_events']); ?>')" class="btn btn-danger btn-sm"><i class="fas fa-trash-alt"></i> Delete</button>
+                                            <a href="javascript:;" data-toggle="modal" data-target="#sendModal<?= $key['id_events'] ?>" class=" btn btn-success"><i class="fab fa-whatsapp"></i> Kirim WhatsApp</a>
                                         </td>
                                     </tr>
                                 <?php endforeach ?>
@@ -72,3 +75,31 @@
         </div>
     </div>
 </section>
+
+<!-- add modal -->
+<div class="modal fade" id="sendModal<?= $key['id_events'] ?>">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+            <form action="<?= base_url('admin/events') ?>" method="post">
+                <input type="hidden" name="id_events" value="<?= $key['id_events'] ?>">
+                <div class="modal-header">
+                    <h4 class="modal-title">Kirim Pesan WhatsApp</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <textarea name="pesan" id="pesan" cols="30" rows="20" class="form-control"></textarea>
+                    </div>
+                </div>
+                <div class="modal-footer justify-content-between">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="submit" name="action" value="submit" class="btn btn-primary">Submit</button>
+                </div>
+            </form>
+        </div>
+        <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+</div>
