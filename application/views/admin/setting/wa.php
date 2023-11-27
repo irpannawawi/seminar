@@ -20,22 +20,29 @@
                 <div class="card card-default">
                     <form action="<?= site_url('admin/webmanagement/savewagw') ?>" method="post">
                         <div class="card-body">
-                            <div class="form-group">
-                                <label>Token Fonnte</label>
-                                <input type="text" class="form-control" value="<?= $wagw['token'] ?>" disabled>
-                                <p class="text-warning"><i>Ganti Token <a href="<?= site_url('admin/webmanagement/info') ?>">Disini</a></i></p>
-                            </div>
-                            <div class="form-group">
-                                <label>Link QR</label>
-                                <input type="text" class="form-control" name="link_qr" value="<?= $wagw['link_qr'] ?>">
-                            </div>
-                            <div class="form-group">
-                                <label>Link Send</label>
-                                <input type="text" class="form-control" name="link_send" value="<?= $wagw['link_send'] ?>">
-                            </div>
-                            <div class="form-group">
-                                <label>Link Device</label>
-                                <input type="text" class="form-control" name="link_device" value="<?= $wagw['link_device'] ?>">
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6 col-sm-12">
+                                    <div class="form-group">
+                                        <label>Token Fonnte</label>
+                                        <input type="text" class="form-control" value="<?= $wagw['token'] ?>" disabled>
+                                        <p class="text-warning"><i>Ganti Token <a href="<?= site_url('admin/webmanagement/info') ?>">Disini</a></i></p>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Link QR</label>
+                                        <input type="text" class="form-control" name="link_qr" value="<?= $wagw['link_qr'] ?>">
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-12">
+                                    <div class="form-group">
+                                        <label>Link Send</label>
+                                        <input type="text" class="form-control" name="link_send" value="<?= $wagw['link_send'] ?>">
+                                        <p class="text-warning"><i>Documentasi <a href="https://docs.fonnte.com/">Disini</a></i></p>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Link Device</label>
+                                        <input type="text" class="form-control" name="link_device" value="<?= $wagw['link_device'] ?>">
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <div class="card-footer text-center">
@@ -49,19 +56,19 @@
                     <div class="card-body">
                         <?php if (isset($infodevice)) : ?>
                             <div class="form-group">
-                                <div class="d-flex align-items-center status">
+                                <div class="d-flex align-items-center">
                                     <i class="fas fa-mobile-alt mr-1"></i>
                                     <small><?= $infodevice['device'] ?></small>
                                 </div>
                             </div>
                             <div class="form-group">
-                                <div class="d-flex align-items-center status">
+                                <div class="d-flex align-items-center">
                                     <i class="fas fa-user-tie mr-1"></i>
                                     <small><?= $infodevice['name'] ?></small>
                                 </div>
                             </div>
                             <div class="form-group">
-                                <div class="d-flex align-items-center status">
+                                <div class="d-flex align-items-center ">
                                     <div class="dot rounded-circle me-1 <?= ($infodevice['device_status'] == 'connect') ? 'bg-success' : 'bg-danger' ?>"></div>
                                     <small><?= $infodevice['device_status'] ?></small>
                                 </div>

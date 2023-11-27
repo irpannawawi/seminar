@@ -42,7 +42,7 @@
                                         <td><?= $no++ ?></td>
                                         <td><?= $key['name'] ?></td>
                                         <td>
-                                            <span class="badge badge-pill status-badge badge-success"><?= $key['name_role'] ?></span>
+                                            <span class="badge badge-pill  badge-success"><?= $key['name_role'] ?></span>
                                         </td>
                                         <td><?= $key['no_hp'] ?></td>
                                         <td><?= $key['email'] ?></td>

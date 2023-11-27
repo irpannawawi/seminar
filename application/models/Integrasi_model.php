@@ -7,6 +7,10 @@ class Integrasi_model extends CI_Model
     {
         return $this->db->get('wagw')->row_array();
     }
+    public function setting()
+    {
+        return $this->db->get('setting')->row_array();
+    }
 
     public function get_profile()
     {

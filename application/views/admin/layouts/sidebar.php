@@ -11,7 +11,7 @@
         <!-- Sidebar user panel (optional) -->
         <div class="user-panel mt-3 pb-3 mb-3 d-flex">
             <div class="image">
-                <img src="<?= base_url('assets/backend') ?>/dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
+                <img src="<?= base_url('assets/backend') ?>/dist/img/avatar5.png" class="img-circle elevation-2" alt="User Image">
             </div>
             <div class="info">
                 <a href="#" class="d-block"><?php echo $users['name'] ?></a>
@@ -21,7 +21,6 @@
         <!-- Sidebar Menu -->
         <nav class="mt-2">
             <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
-                <li class="nav-header">Events</li>
                 <li class="nav-item">
                     <a href="<?= site_url('admin') ?>" class="nav-link">
                         <i class="nav-icon fas fa-tachometer-alt"></i>
@@ -36,7 +35,6 @@
                         <p>
                             Events
                             <i class="fas fa-angle-left right"></i>
-                            <!-- <span class="badge badge-warning right">6</span> -->
                         </p>
                     </a>
                     <ul class="nav nav-treeview">
@@ -67,15 +65,8 @@
                     </ul>
                 </li>
                 <li class="nav-item">
-                    <a href="<?= base_url('admin/partnership'); ?>" class="nav-link">
-                        <i class="fas fa-users-cog"></i>
-                        <p>Partnership</p>
-                    </a>
-                </li>
-                <li class="nav-header">Transaksi</li>
-                <li class="nav-item">
                     <a href="javascript:;" class="nav-link">
-                        <i class="fas fa-cash-register"></i>
+                        <i class="nav-icon fas fa-cash-register"></i>
                         <p>
                             Penjualan
                             <i class="fas fa-angle-left right"></i>
@@ -92,10 +83,9 @@
                         </li>
                     </ul>
                 </li>
-                <li class="nav-header">Setting & Integrasi</li>
                 <li class="nav-item">
                     <a href="javascript:;" class="nav-link">
-                        <i class="fas fa-cog"></i>
+                        <i class="nav-icon fas fa-cog"></i>
                         <p>
                             Web Management
                             <i class="fas fa-angle-left right"></i>
@@ -108,20 +98,35 @@
                                 <p>Info Website</p>
                             </a>
                         </li>
-                    </ul>
-                    <ul class="nav nav-treeview">
                         <li class="nav-item">
                             <a href="<?= base_url('admin/webmanagement/wagw'); ?>" class="nav-link">
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>Integrasi WhatsApp</p>
                             </a>
                         </li>
+                        <li class="nav-item">
+                            <a href="<?= base_url('admin/webmanagement/#'); ?>" class="nav-link">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Integrasi Email</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="<?= base_url('admin/webmanagement/pesan'); ?>" class="nav-link">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Pesan Setting</p>
+                            </a>
+                        </li>
                     </ul>
                 </li>
-                <li class="nav-header">Session</li>
+                <li class="nav-item">
+                    <a href="<?= base_url('admin/partnership'); ?>" class="nav-link">
+                        <i class="nav-icon fas fa-users-cog"></i>
+                        <p>Partnership</p>
+                    </a>
+                </li>
                 <li class="nav-item">
                     <a href="javascript:;" class="nav-link">
-                        <i class="fas fa-users"></i>
+                        <i class="nav-icon fas fa-users"></i>
                         <p>
                             Akun Management
                             <i class="fas fa-angle-left right"></i>
@@ -144,7 +149,7 @@
                     </ul>
                 <li class="nav-item">
                     <a href="<?= base_url('auth/logout'); ?>" class="nav-link delete-btn">
-                        <i class="fas fa-sign-out-alt"></i>
+                        <i class="nav-icon fas fa-sign-out-alt"></i>
                         <p>Logout</p>
                     </a>
                 </li>

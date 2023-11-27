@@ -37,9 +37,6 @@
 <script src="<?= base_url('assets/backend') ?>/plugins/chart.js/Chart.min.js"></script>
 <!-- Sparkline -->
 <script src="<?= base_url('assets/backend') ?>/plugins/sparklines/sparkline.js"></script>
-<!-- JQVMap -->
-<script src="<?= base_url('assets/backend') ?>/plugins/jqvmap/jquery.vmap.min.js"></script>
-<script src="<?= base_url('assets/backend') ?>/plugins/jqvmap/maps/jquery.vmap.usa.js"></script>
 <!-- jQuery Knob Chart -->
 <script src="<?= base_url('assets/backend') ?>/plugins/jquery-knob/jquery.knob.min.js"></script>
 <!-- daterangepicker -->
@@ -73,7 +70,9 @@
 <script src="<?= base_url('assets/backend') ?>/plugins/select2/js/select2.full.min.js"></script>
 <script src="<?= base_url('assets/backend') ?>/plugins/toastr/toastr.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
 <script>
+    // message modal
     <?php if ($this->session->flashdata('success')) { ?>
         var message = <?php echo json_encode($this->session->flashdata('success')) ?>;
         toastr.success(message)
@@ -100,17 +99,16 @@
         showElement.style.maxHeight = showElement.scrollHeight + 'px';
     }
 
+    // badge status event
     $(document).ready(function() {
-        $('.status-badge').each(function() {
+        $('.status').each(function() {
             var status = $(this).data('status');
             var badgeClass = (status == 'draft') ? 'badge-info' : 'badge-success';
             $(this).addClass(badgeClass);
         });
     });
-</script>
 
-<!-- sweet alert delete -->
-<script>
+    // sweet alert delete
     document.addEventListener('DOMContentLoaded', function() {
         const deleteButtons = document.querySelectorAll('.delete-btn');
 
@@ -135,10 +133,10 @@
             });
         });
     });
-</script>
-<script>
+
+    // table data
     $(function() {
-        $("#table-data").DataTable({
+        $("#table-data, #table-peserta").DataTable({
             "responsive": true,
             "lengthChange": false,
             "autoWidth": false,

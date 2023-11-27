@@ -67,7 +67,7 @@
                                 </div>
                                 <div class="form-group">
                                     <label>Meta Google</label>
-                                    <textarea class="form-control" name="meta_google" id="description"><?= get_management('meta_google') ?></textarea>
+                                    <textarea class="form-control" name="meta_google" id="meta_google"><?= get_management('meta_google') ?></textarea>
                                 </div>
                                 <div class="form-group">
                                     <label>Token Whatsapp Gateway</label>

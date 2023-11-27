@@ -13,7 +13,6 @@
     <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
     <link rel="stylesheet" href="<?= base_url('assets/backend') ?>/plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css">
     <link rel="stylesheet" href="<?= base_url('assets/backend') ?>/plugins/icheck-bootstrap/icheck-bootstrap.min.css">
-    <link rel="stylesheet" href="<?= base_url('assets/backend') ?>/plugins/jqvmap/jqvmap.min.css">
     <link rel="stylesheet" href="<?= base_url('assets/backend') ?>/dist/css/adminlte.min.css">
     <link rel="stylesheet" href="<?= base_url('assets/backend') ?>/dist/css/custom.css">
     <link rel="stylesheet" href="<?= base_url('assets/backend') ?>/plugins/overlayScrollbars/css/OverlayScrollbars.min.css">

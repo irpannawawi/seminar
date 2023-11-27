@@ -99,12 +99,37 @@ class Webmanagement extends CI_Controller
         $data =
             [
                 'link_send' => $this->input->post('link_send', true),
+                'format_message' => $this->input->post('format_message', true),
                 'link_qr' => $this->input->post('link_qr', true),
                 'link_device' => $this->input->post('link_device', true)
             ];
         $this->db->update('wagw', $data);
         set_pesan('Berhasil update integrasi');
         redirect('admin/webmanagement/wagw');
+    }
+
+    public function pesan()
+    {
+        $data['users'] = $this->db->get_where('users', ['email' => $this->session->email])->row_array();
+        $data['setting'] = $this->integrasi->setting();
+        $data['title'] = 'Pesan Setting Pendaftaran';
+
+        if ($this->input->post()) {
+            // Jika ada input post, lakukan update
+            $update_data = [
+                'sukses_bayar' => $this->input->post('sukses_bayar', true),
+                'sukses_bayar_email' => $this->input->post('sukses_bayar_email', true),
+            ];
+            $this->db->update('setting', $update_data);
+            set_pesan('Berhasil update format pesan');
+            redirect('admin/webmanagement/pesan');
+        } else {
+            $this->load->view('admin/layouts/header', $data);
+            $this->load->view('admin/layouts/navbar');
+            $this->load->view('admin/layouts/sidebar');
+            $this->load->view('admin/setting/pesan');
+            $this->load->view('admin/layouts/footer');
+        }
     }
 
     public function generate_qr()
@@ -173,51 +198,5 @@ class Webmanagement extends CI_Controller
         curl_close($curl);
 
         redirect('admin/webmanagement/wagw');
-    }
-
-    public function sendMessage()
-    {
-        $wagw = $this->integrasi->wagw();
-        $curl = curl_init();
-
-        curl_setopt_array($curl, array(
-            CURLOPT_URL => $wagw['link_send'],
-            CURLOPT_RETURNTRANSFER => true,
-            CURLOPT_ENCODING => '',
-            CURLOPT_MAXREDIRS => 10,
-            CURLOPT_TIMEOUT => 0,
-            CURLOPT_FOLLOWLOCATION => true,
-            CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
-            CURLOPT_CUSTOMREQUEST => 'POST',
-            CURLOPT_POSTFIELDS => array(
-                'target' => '085380945896',
-                'message' => 'Testing!',
-                'countryCode' => '62'
-            ),
-            CURLOPT_HTTPHEADER => array(
-                'Authorization: ' . $wagw['token']
-            ),
-        ));
-
-        $response = curl_exec($curl);
-        // Sebelum encode
-
-        if ($response === false) {
-            // Handle cURL error
-            set_pesan('Error during cURL request: ' . curl_error($curl), false);
-        } else {
-            // Decode respons JSON
-            $api_response = json_decode($response, true);
-
-            if ($api_response['status'] == true) {
-                set_pesan($api_response['detail']);
-            } else {
-                set_pesan('Kirim gagal: ' . $api_response['reason'], false);
-            }
-        }
-
-        curl_close($curl);
-
-        redirect('admin/events');
     }
 }

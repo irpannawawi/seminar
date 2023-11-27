@@ -17,6 +17,14 @@ class Events extends CI_Controller
         $data['events'] = $this->db->get('events')->result_array();
         $data['title'] = 'Events';
 
+        // Menggabungkan data events dan peserta
+        $data['event_peserta'] = [];
+        foreach ($data['events'] as $event) {
+            $event_id = $event['id_events'];
+            $data['event_peserta'][$event_id]['event'] = $event;
+            $data['event_peserta'][$event_id]['peserta'] = $this->events->pesertabyevent($event_id);
+        }
+
         $this->form_validation->set_rules('pesan', 'Isi Pesan', 'required');
 
         if ($this->form_validation->run() == false) {
@@ -29,19 +37,27 @@ class Events extends CI_Controller
             $message = $this->input->post('pesan');
             $event_id = $this->input->post('id_events');
 
-            $whatsappArray  = $this->events->eventspeserta($event_id);
-            $nowaValues = array_column($whatsappArray, 'nowa');
-            $whatsapp = implode(',', $nowaValues);
+            $pesertaEvent = $this->events->pesertabyevent($event_id);
+            $whatsapp = '';
+            foreach ($pesertaEvent as $peserta) {
+                $nowa = $peserta['nowa'];
+                $name = $peserta['name_peserta'];
+                $whatsapp .= $nowa . '|' . $name . ',';
+            }
 
-            $this->sendMessage($message, $whatsapp);
+            // Hapus koma di akhir string
+            $whatsapp = rtrim($whatsapp, ',');
+
+            $this->sendMessage($whatsapp, $message);
         }
     }
 
     public function publish()
     {
         $data['users'] = $this->db->get_where('users', ['email' => $this->session->email])->row_array();
-        $data['events'] = $this->db->get('events')->result_array();
+        $data['events'] = $this->db->order_by('date_created', 'DESC')->get('events')->result_array();
         $data['title'] = 'Events Publish';
+
         $this->load->view('admin/layouts/header', $data);
         $this->load->view('admin/layouts/navbar');
         $this->load->view('admin/layouts/sidebar');
@@ -91,8 +107,10 @@ class Events extends CI_Controller
             $url_location = htmlspecialchars($this->input->post('url_location'));
             $type_event = $this->input->post('type_event');
             $label = htmlspecialchars($this->input->post('label'));
-
             $price = filter_var($price, FILTER_SANITIZE_NUMBER_INT);
+            if (empty($price)) {
+                $price = 'FREE';
+            }
 
             // Set aturan validasi
             if ($action == 'save_draft') {
@@ -105,12 +123,13 @@ class Events extends CI_Controller
                     'required' => 'Judul Event harus diisi.',
                     'is_unique' => 'Judul events sudah ada!'
                 ]);
-                $this->form_validation->set_rules('id_category', 'Kategori Event', 'required');
+                $this->form_validation->set_rules('id_category[]', 'Kategori Event', 'required');
                 $this->form_validation->set_rules('description', 'Deskripsi Event', 'required');
                 $this->form_validation->set_rules('snk', 'Syarat & Ketentuan Event', 'required');
-                $this->form_validation->set_rules('date', 'Tanggal Event', 'required');
                 $this->form_validation->set_rules('date_start', 'Tanggal Mulai Event', 'required');
                 $this->form_validation->set_rules('date_finish', 'Tanggal Selesai Event', 'required');
+                $this->form_validation->set_rules('time_start', 'Jam Mulai Event', 'required');
+                $this->form_validation->set_rules('time_finish', 'Jam Selesai Event', 'required');
                 $this->form_validation->set_rules('price', 'Harga Event', 'required');
                 $this->form_validation->set_rules('kuota', 'Kuota Tiket Event', 'required');
             }
@@ -154,7 +173,7 @@ class Events extends CI_Controller
             } else {
                 $this->db->insert('events', $save);
                 set_pesan('Events berhasil ' . ($action == 'submit' ? 'ditambahkan!' : 'disimpan sebagai draft!'));
-                redirect('admin/events');
+                redirect('admin/events/publish');
             }
         } else {
             // Jika tombol tidak diklik, tampilkan form create
@@ -191,9 +210,6 @@ class Events extends CI_Controller
                 $upload_data = $this->upload->data();
                 $file_name = $upload_data['file_name'];
             } elseif ($action == 'publish') {
-                // $error = $this->upload->display_errors();
-                // set_pesan('Gambar gagal di upload: ' . $error, false);
-                // redirect('admin/events/edit/' . $id);
                 $file_name = null;
             }
 
@@ -201,17 +217,20 @@ class Events extends CI_Controller
             $categories = is_array($this->input->post('id_category')) ? implode(', ', $this->input->post('id_category')) : '';
             $description = $this->input->post('description');
             $snk = $this->input->post('snk');
-            $date = $this->input->post('date');
             $date_start = $this->input->post('date_start');
             $date_finish = $this->input->post('date_finish');
+            $time_start = $this->input->post('time_start');
+            $time_finish = $this->input->post('time_finish');
             $price = htmlspecialchars($this->input->post('price'));
             $kuota = htmlspecialchars($this->input->post('kuota'));
             $location = htmlspecialchars($this->input->post('location'));
             $url_location = htmlspecialchars($this->input->post('url_location'));
             $type_event = $this->input->post('type_event');
             $label = htmlspecialchars($this->input->post('label'));
-
             $price = filter_var($price, FILTER_SANITIZE_NUMBER_INT);
+            if (empty($price)) {
+                $price = 'FREE';
+            }
 
             // Set aturan validasi
             if ($action == 'save_draft') {
@@ -225,9 +244,10 @@ class Events extends CI_Controller
                 // $this->form_validation->set_rules('id_category', 'Kategori Event', 'required');
                 $this->form_validation->set_rules('description', 'Deskripsi Event', 'required');
                 $this->form_validation->set_rules('snk', 'Syarat & Ketentuan Event', 'required');
-                $this->form_validation->set_rules('date', 'Tanggal Event', 'required');
                 $this->form_validation->set_rules('date_start', 'Tanggal Mulai Event', 'required');
                 $this->form_validation->set_rules('date_finish', 'Tanggal Selesai Event', 'required');
+                $this->form_validation->set_rules('time_start', 'Jam Mulai Event', 'required');
+                $this->form_validation->set_rules('time_finish', 'Jam Selesai Event', 'required');
                 $this->form_validation->set_rules('price', 'Harga Event', 'required');
                 $this->form_validation->set_rules('kuota', 'Kuota Tiket Event', 'required');
             }
@@ -254,9 +274,10 @@ class Events extends CI_Controller
                     'id_category' => $categories,
                     'description' => $description,
                     'snk' => $snk,
-                    'date' => $date,
                     'date_start' => $date_start,
                     'date_finish' => $date_finish,
+                    'time_start' => $time_start,
+                    'time_finish' => $time_finish,
                     'type_event' => $type_event,
                     'kuota' => $kuota,
                     'location' => $location,
@@ -271,7 +292,7 @@ class Events extends CI_Controller
                 $this->db->where('id_events', $id);
                 $this->db->update('events', $save);
                 set_pesan('Events berhasil ' . ($action == 'publish' ? 'Event dipublish!' : 'disimpan!'));
-                redirect('admin/events');
+                redirect('admin/events/publish');
             }
         } else {
             // Jika tombol tidak diklik, tampilkan form edit
@@ -374,7 +395,7 @@ class Events extends CI_Controller
         redirect('admin/events');
     }
 
-    private function sendMessage($message, $whatsapp)
+    private function sendMessage($whatsapp, $message)
     {
         $wagw = $this->integrasi->wagw();
         $curl = curl_init();

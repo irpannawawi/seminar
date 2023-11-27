@@ -57,9 +57,9 @@
                         </div>
                         <div class="form-group">
                             <label>Kategori Event</label>
-                            <select class="select2" multiple="multiple" name="id_category[]" id="id_category" data-placeholder="Select a State" style="width: 100%;">
+                            <select class="select2" multiple="multiple" name="id_category[]" id="id_category" data-placeholder="Pilih Kategori" style="width: 100%;">
                                 <?php foreach ($category as $key) : ?>
-                                    <option value="<?= $key['id_category'] ?>" <?= set_select('id_category[]', $key['id_category'], (isset($id_category) && in_array($key['id_category'], $id_category))); ?>><?= $key['name_category'] ?></option>
+                                    <option value="<?= $key['id_category'] ?>" <?= set_select('id_category[]', $key['id_category']); ?>><?= $key['name_category'] ?></option>
                                 <?php endforeach ?>
                             </select>
                         </div>
@@ -77,11 +77,11 @@
                     <div class="card-body">
                         <div class="form-group">
                             <label>Description Event</label>
-                            <textarea class="form-control" name="description" id="description"></textarea>
+                            <textarea class="form-control" name="description" id="description"><?= set_value('description') ?></textarea>
                         </div>
                         <div class="form-group">
                             <label>Syarat & Ketentuan Event</label>
-                            <textarea class="form-control" name="snk" id="snk"></textarea>
+                            <textarea class="form-control" name="snk" id="snk"><?= set_value('snk') ?></textarea>
                         </div>
                     </div>
                 </div>
@@ -102,7 +102,7 @@
                                     <div class="form-group">
                                         <label>Tanggal Mulai</label>
                                         <div class="input-group date" id="date1" data-target-input="nearest">
-                                            <input type="text" name="date_start" class="form-control datetimepicker-input" data-target="#date1" id="date_start" placeholder="Pilih tanggal">
+                                            <input type="text" name="date_start" class="form-control datetimepicker-input" data-target="#date1" id="date_start" placeholder="Pilih tanggal" value="<?= set_value('date_start') ?>">
                                             <div class="input-group-append" data-target="#date1" data-toggle="datetimepicker">
                                                 <div class="input-group-text"><i class="fa fa-calendar"></i></div>
                                             </div>
@@ -113,7 +113,7 @@
                                     <div class="form-group">
                                         <label>Tanggal Berakhir</label>
                                         <div class="input-group date" id="date2" data-target-input="nearest">
-                                            <input type="text" name="date_finish" class="form-control datetimepicker-input" data-target="#date2" id="date_finish" placeholder="Pilih tanggal">
+                                            <input type="text" name="date_finish" class="form-control datetimepicker-input" data-target="#date2" id="date_finish" placeholder="Pilih tanggal" value="<?= set_value('date_finish') ?>">
                                             <div class="input-group-append" data-target="#date2" data-toggle="datetimepicker">
                                                 <div class="input-group-text"><i class="fa fa-calendar"></i></div>
                                             </div>
@@ -124,7 +124,7 @@
                                     <div class="form-group">
                                         <label>Jam Mulai</label>
                                         <div class="input-group date" id="timeevent1" data-target-input="nearest">
-                                            <input type="text" name="date_start" id="date_start" class="form-control datetimepicker-input" data-target="#timeevent1" placeholder="Pilih jam mulai">
+                                            <input type="text" name="time_start" id="time_start" class="form-control datetimepicker-input" data-target="#timeevent1" placeholder="Pilih jam mulai" value="<?= set_value('time_start') ?>">
                                             <div class="input-group-append" data-target="#timeevent1" data-toggle="datetimepicker">
                                                 <div class="input-group-text"><i class="far fa-clock"></i></div>
                                             </div>
@@ -135,7 +135,7 @@
                                     <div class="form-group">
                                         <label>Jam Selesai</label>
                                         <div class="input-group date" id="timeevent2" data-target-input="nearest">
-                                            <input type="text" name="time_finish" id="time_finish" class="form-control datetimepicker-input" data-target="#timeevent2" placeholder="Pilih jam selesai">
+                                            <input type="text" name="time_finish" id="time_finish" class="form-control datetimepicker-input" data-target="#timeevent2" placeholder="Pilih jam selesai" value="<?= set_value('time_finish') ?>">
                                             <div class="input-group-append" data-target="#timeevent2" data-toggle="datetimepicker">
                                                 <div class="input-group-text"><i class="far fa-clock"></i></div>
                                             </div>
@@ -168,11 +168,11 @@
                             </div>
                         </div>
                         <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="type_event" id="type_event" onchange="toggleInput('offlineInput')" value="offline">
+                            <input class="form-check-input" type="radio" name="type_event" id="type_event" onchange="toggleInput('offlineInput')" value="offline" <?= set_radio('type_event', 'offline', (isset($type_event) && $type_event === 'offline')); ?>>
                             <label class="form-check-label">Offline</label>
                         </div>
                         <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="type_event" id="type_event" onchange="toggleInput('onlineInput')" value="online">
+                            <input class="form-check-input" type="radio" name="type_event" id="type_event" onchange="toggleInput('onlineInput')" value="online" <?= set_radio('type_event', 'online', (isset($type_event) && $type_event === 'online')); ?>>
                             <label class="form-check-label">Online</label>
                         </div>
                         <div class="hidden" id="offlineInput">

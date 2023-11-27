@@ -106,33 +106,44 @@
                     <div class="card-body">
                         <div class="form-group">
                             <div class="row">
-                                <div class="col-4">
+                                <div class="col-6">
                                     <div class="form-group">
-                                        <label>Tanggal</label>
-                                        <div class="input-group date" id="date_event" data-target-input="nearest">
-                                            <input type="text" name="date" class="form-control datetimepicker-input" data-target="#date_event" id="date" placeholder="Pilih tanggal" value="<?= set_value('date', $events['date']) ?>">
-                                            <div class="input-group-append" data-target="#date_event" data-toggle="datetimepicker">
+                                        <label>Tanggal Mulai</label>
+                                        <div class="input-group date" id="date1" data-target-input="nearest">
+                                            <input type="text" name="date_start" class="form-control datetimepicker-input" data-target="#date1" id="date_start" placeholder="Pilih tanggal" value="<?= set_value('date_start', $events['date_start']) ?>">
+                                            <div class="input-group-append" data-target="#date1" data-toggle="datetimepicker">
                                                 <div class="input-group-text"><i class="fa fa-calendar"></i></div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-4">
+                                <div class="col-6">
+                                    <div class="form-group">
+                                        <label>Tanggal Berakhir</label>
+                                        <div class="input-group date" id="date2" data-target-input="nearest">
+                                            <input type="text" name="date_finish" class="form-control datetimepicker-input" data-target="#date2" id="date_finish" placeholder="Pilih tanggal" value="<?= set_value('date_finish', $events['date_finish']) ?>">
+                                            <div class="input-group-append" data-target="#date2" data-toggle="datetimepicker">
+                                                <div class="input-group-text"><i class="fa fa-calendar"></i></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6">
                                     <div class="form-group">
                                         <label>Jam Mulai</label>
                                         <div class="input-group date" id="timeevent1" data-target-input="nearest">
-                                            <input type="text" name="date_start" id="date_start" class="form-control datetimepicker-input" data-target="#timeevent1" placeholder="Pilih jam mulai" value="<?= set_value('date_start', $events['date_start']) ?>">
+                                            <input type="text" name="time_start" id="time_start" class="form-control datetimepicker-input" data-target="#timeevent1" placeholder="Pilih jam mulai" value="<?= set_value('time_start', $events['time_start']) ?>">
                                             <div class="input-group-append" data-target="#timeevent1" data-toggle="datetimepicker">
                                                 <div class="input-group-text"><i class="far fa-clock"></i></div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-4">
+                                <div class="col-6">
                                     <div class="form-group">
                                         <label>Jam Selesai</label>
                                         <div class="input-group date" id="timeevent2" data-target-input="nearest">
-                                            <input type="text" name="date_finish" id="date_finish" class="form-control datetimepicker-input" data-target="#timeevent2" placeholder="Pilih jam selesai" value="<?= set_value('date_finish', $events['date_finish']) ?>">
+                                            <input type="text" name="time_finish" id="time_finish" class="form-control datetimepicker-input" data-target="#timeevent2" placeholder="Pilih jam selesai" value="<?= set_value('time_finish', $events['time_finish']) ?>">
                                             <div class="input-group-append" data-target="#timeevent2" data-toggle="datetimepicker">
                                                 <div class="input-group-text"><i class="far fa-clock"></i></div>
                                             </div>

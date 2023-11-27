@@ -14,4 +14,16 @@ class Events_model extends CI_Model
 
         return $result;
     }
+
+    public function getEvent($event_id)
+    {
+        $query = "SELECT * FROM events WHERE id_events = $event_id";
+        return $this->db->query($query)->row_array();
+    }
+
+    function pesertabyevent($event_id)
+    {
+        $this->db->where('events_id', $event_id);
+        return $this->db->get('peserta')->result_array();
+    }
 }

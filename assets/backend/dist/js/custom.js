@@ -169,7 +169,7 @@ $(document).ready(function () {
     
     // tny mce
     tinymce.init({
-        selector: 'textarea#example',
+        selector: 'textarea#description,textarea#snk,textarea#meta_google,textarea#description_web',
         // width: 1000,
         height: 400,
         plugins: 'anchor autolink charmap codesample emoticons image link lists media searchreplace table visualblocks wordcount',
@@ -178,10 +178,14 @@ $(document).ready(function () {
     });
     
     /* Rupiah */
-    var priceInput = document.getElementById('price');
-    priceInput.addEventListener('input', function (e) {
-        this.value = formatRupiah(this.value, 'Rp. ');
-    });
+    document.addEventListener('DOMContentLoaded', function() {
+        var priceInput = document.getElementById('price');
+        if (priceInput) {
+            priceInput.addEventListener('input', function (e) {
+                this.value = formatRupiah(this.value, 'Rp. ');
+            });
+        }
+    });       
     
     /* Fungsi */
     function formatRupiah(angka, prefix) {
