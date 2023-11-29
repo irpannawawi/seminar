@@ -33,10 +33,6 @@
 </script>
 <!-- Bootstrap 4 -->
 <script src="<?= base_url('assets/backend') ?>/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
-<!-- ChartJS -->
-<script src="<?= base_url('assets/backend') ?>/plugins/chart.js/Chart.min.js"></script>
-<!-- Sparkline -->
-<script src="<?= base_url('assets/backend') ?>/plugins/sparklines/sparkline.js"></script>
 <!-- jQuery Knob Chart -->
 <script src="<?= base_url('assets/backend') ?>/plugins/jquery-knob/jquery.knob.min.js"></script>
 <!-- daterangepicker -->
@@ -44,13 +40,8 @@
 <script src="<?= base_url('assets/backend') ?>/plugins/daterangepicker/daterangepicker.js"></script>
 <!-- Tempusdominus Bootstrap 4 -->
 <script src="<?= base_url('assets/backend') ?>/plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
-<!-- Summernote -->
-<script src="<?= base_url('assets/backend') ?>/plugins/summernote/summernote-bs4.min.js"></script>
-<!-- overlayScrollbars -->
-<script src="<?= base_url('assets/backend') ?>/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
 <!-- AdminLTE App -->
 <script src="<?= base_url('assets/backend') ?>/dist/js/adminlte.js"></script>
-<script src="<?= base_url('assets/backend') ?>/dist/js/custom.js"></script>
 <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
 <script src="<?= base_url('assets/backend') ?>/dist/js/pages/dashboard.js"></script>
 <!-- DataTables  & Plugins -->
@@ -58,18 +49,14 @@
 <script src="<?= base_url('assets/backend') ?>/plugins/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
 <script src="<?= base_url('assets/backend') ?>/plugins/datatables-responsive/js/dataTables.responsive.min.js"></script>
 <script src="<?= base_url('assets/backend') ?>/plugins/datatables-responsive/js/responsive.bootstrap4.min.js"></script>
-<script src="<?= base_url('assets/backend') ?>/plugins/datatables-buttons/js/dataTables.buttons.min.js"></script>
-<script src="<?= base_url('assets/backend') ?>/plugins/datatables-buttons/js/buttons.bootstrap4.min.js"></script>
-<script src="<?= base_url('assets/backend') ?>/plugins/datatables-buttons/js/buttons.html5.min.js"></script>
-<script src="<?= base_url('assets/backend') ?>/plugins/datatables-buttons/js/buttons.print.min.js"></script>
-<script src="<?= base_url('assets/backend') ?>/plugins/datatables-buttons/js/buttons.colVis.min.js"></script>
-<script src="<?= base_url('assets/backend') ?>/plugins/jszip/jszip.min.js"></script>
-<script src="<?= base_url('assets/backend') ?>/plugins/pdfmake/pdfmake.min.js"></script>
-<script src="<?= base_url('assets/backend') ?>/plugins/pdfmake/vfs_fonts.js"></script>
 <!-- Select2 -->
 <script src="<?= base_url('assets/backend') ?>/plugins/select2/js/select2.full.min.js"></script>
 <script src="<?= base_url('assets/backend') ?>/plugins/toastr/toastr.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<!-- custom -->
+<script src="<?= base_url('assets/backend') ?>/dist/js/custom.js"></script>
+<script src="<?= base_url('assets/backend') ?>/dist/js/event/create.js"></script>
+<script src="<?= base_url('assets/backend') ?>/dist/js/event/table.js"></script>
 
 <script>
     // message modal
@@ -86,45 +73,50 @@
         toastr.error(message)
     <?php } ?>
 
-    // Switch
-    function toggleInput(showId) {
-        var showElement = document.getElementById(showId);
-
-        // Hide all elements with class 'hidden'
-        var hiddenElements = document.querySelectorAll('.hidden');
-        hiddenElements.forEach(function(element) {
-            element.style.maxHeight = '0';
-        });
-
-        showElement.style.maxHeight = showElement.scrollHeight + 'px';
-    }
-
-    // badge status event
-    $(document).ready(function() {
-        $('.status').each(function() {
-            var status = $(this).data('status');
-            var badgeClass = (status == 'draft') ? 'badge-info' : 'badge-success';
-            $(this).addClass(badgeClass);
-        });
+    /* Rupiah */
+    document.addEventListener('DOMContentLoaded', function() {
+        var priceInput = document.getElementById('price');
+        if (priceInput) {
+            priceInput.addEventListener('input', function(e) {
+                this.value = formatRupiah(this.value, 'Rp. ');
+            });
+        }
     });
 
+    /* Fungsi */
+    function formatRupiah(angka, prefix) {
+        var numberString = angka.replace(/[^,\d]/g, '').toString(),
+            split = numberString.split(','),
+            sisa = split[0].length % 3,
+            rupiah = split[0].substr(0, sisa),
+            ribuan = split[0].substr(sisa).match(/\d{3}/g);
+
+        if (ribuan) {
+            separator = sisa ? '.' : '';
+            rupiah += separator + ribuan.join('.');
+        }
+
+        rupiah = split[1] !== undefined ? rupiah + ',' + split[1] : rupiah;
+        return prefix === undefined ? rupiah : (rupiah ? 'Rp. ' + rupiah : '');
+    }
+
     // sweet alert delete
-    document.addEventListener('DOMContentLoaded', function() {
+    document.addEventListener('DOMContentLoaded', () => {
         const deleteButtons = document.querySelectorAll('.delete-btn');
 
         deleteButtons.forEach(button => {
-            button.addEventListener('click', function(event) {
+            button.addEventListener('click', event => {
                 event.preventDefault();
 
                 Swal.fire({
-                    title: "Apakah anda yakin?",
-                    text: "Anda tidak akan dapat mengembalikan ini!",
-                    icon: "warning",
+                    title: 'Apakah anda yakin?',
+                    text: 'Anda tidak akan dapat mengembalikan ini!',
+                    icon: 'warning',
                     showCancelButton: true,
-                    confirmButtonColor: "#3085d6",
-                    cancelButtonColor: "#d33",
-                    confirmButtonText: "Ya, hapus!"
-                }).then((result) => {
+                    confirmButtonColor: '#3085d6',
+                    cancelButtonColor: '#d33',
+                    confirmButtonText: 'Ya, hapus!'
+                }).then(result => {
                     if (result.isConfirmed) {
                         // Redirect to delete route if user confirms
                         window.location.href = button.getAttribute('href');
@@ -134,27 +126,17 @@
         });
     });
 
-    // table data
-    $(function() {
-        $("#table-data, #table-peserta").DataTable({
-            "responsive": true,
-            "lengthChange": false,
-            "autoWidth": false,
-            // "buttons": ["csv", "excel", "pdf", "print"]
-        }).buttons().container().appendTo('#table-data_wrapper .col-md-6:eq(0)');
+    // jika pilih nama bank nya maka sesuaikan dengan code nya jga yg di json
+    // $(document).ready(function() {
+    //     $('#name_bank').change(function() {
+    //         var selectedCode = $('#name_bank option:selected').data('code');
 
-        $('#example2').DataTable({
-            "paging": true,
-            "lengthChange": false,
-            "searching": false,
-            "ordering": true,
-            "info": true,
-            "autoWidth": false,
-            "responsive": true,
-        });
-    });
+    //         if (selectedCode) {
+    //             $('#code').val(selectedCode);
+    //         }
+    //     });
+    // });
 </script>
-
 
 </body>
 

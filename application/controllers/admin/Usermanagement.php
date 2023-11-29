@@ -62,10 +62,20 @@ class Usermanagement extends CI_Controller
                     'role_id' => $role,
                     'no_hp' => $nohp,
                 ];
+                $partner = [
+                    'role_id' => $role,
+                    'kuota_tiket' => 0,
+                    'total_terjual' => 0,
+                ];
             }
 
             if ($action == 'submit') {
                 $this->db->insert('users', $submit);
+
+                $user_id = $this->db->insert_id();
+                $partner['user_id'] = $user_id;
+                $this->db->insert('partnership', $partner);
+
                 set_pesan('Akun pengguna berhasil di tambah!');
                 redirect('admin/usermanagement');
             } elseif ($action == 'simpan') {

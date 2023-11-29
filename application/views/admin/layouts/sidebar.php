@@ -39,21 +39,27 @@
                     </a>
                     <ul class="nav nav-treeview">
                         <li class="nav-item">
-                            <a href="<?= site_url('admin/events') ?>" class="nav-link">
-                                <i class="far fa-circle nav-icon"></i>
-                                <p>Event</p>
-                            </a>
-                        </li>
-                        <li class="nav-item">
                             <a href="<?= site_url('admin/events/create') ?>" class="nav-link">
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>Buat Event</p>
                             </a>
                         </li>
                         <li class="nav-item">
+                            <a href="<?= site_url('admin/events') ?>" class="nav-link">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Data Event</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
                             <a href="<?= site_url('admin/events/publish') ?>" class="nav-link">
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>Event Publish</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="<?= site_url('admin/events/draft') ?>" class="nav-link">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Event Draf</p>
                             </a>
                         </li>
                         <li class="nav-item">
@@ -79,6 +85,36 @@
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>Akun Pengguna</p>
                                 <span class="badge badge-warning right">6</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="<?= base_url('admin/partnership'); ?>" class="nav-link">
+                        <i class="nav-icon fas fa-users-cog"></i>
+                        <p>Partnership</p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="javascript:;" class="nav-link">
+                        <i class="nav-icon fas fa-users"></i>
+                        <p>
+                            Akun Management
+                            <i class="fas fa-angle-left right"></i>
+                            <!-- <span class="badge badge-warning right">6</span> -->
+                        </p>
+                    </a>
+                    <ul class="nav nav-treeview">
+                        <li class="nav-item">
+                            <a href="<?= base_url('admin/usermanagement'); ?>" class="nav-link">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Akun Pengguna</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="<?= base_url('admin/usermanagement/role'); ?>" class="nav-link">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Role Pengguna</p>
                             </a>
                         </li>
                     </ul>
@@ -119,34 +155,11 @@
                     </ul>
                 </li>
                 <li class="nav-item">
-                    <a href="<?= base_url('admin/partnership'); ?>" class="nav-link">
-                        <i class="nav-icon fas fa-users-cog"></i>
-                        <p>Partnership</p>
+                    <a href="<?= base_url('admin/rekening'); ?>" class="nav-link">
+                        <i class="nav-icon fas fa-money-check"></i>
+                        <p>Rekening Management</p>
                     </a>
                 </li>
-                <li class="nav-item">
-                    <a href="javascript:;" class="nav-link">
-                        <i class="nav-icon fas fa-users"></i>
-                        <p>
-                            Akun Management
-                            <i class="fas fa-angle-left right"></i>
-                            <!-- <span class="badge badge-warning right">6</span> -->
-                        </p>
-                    </a>
-                    <ul class="nav nav-treeview">
-                        <li class="nav-item">
-                            <a href="<?= base_url('admin/usermanagement'); ?>" class="nav-link">
-                                <i class="far fa-circle nav-icon"></i>
-                                <p>Akun Pengguna</p>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="<?= base_url('admin/usermanagement/role'); ?>" class="nav-link">
-                                <i class="far fa-circle nav-icon"></i>
-                                <p>Role Pengguna</p>
-                            </a>
-                        </li>
-                    </ul>
                 <li class="nav-item">
                     <a href="<?= base_url('auth/logout'); ?>" class="nav-link delete-btn">
                         <i class="nav-icon fas fa-sign-out-alt"></i>

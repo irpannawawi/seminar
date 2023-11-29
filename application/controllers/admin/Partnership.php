@@ -7,11 +7,13 @@ class Partnership extends CI_Controller
     {
         parent::__construct();
         is_logged_in();
+        $this->load->model('Partner_model', 'partner');
     }
 
     public function index()
     {
         $data['users'] = $this->db->get_where('users', ['email' => $this->session->email])->row_array();
+        $data['partner'] = $this->partner->get_partnership_data();
         $data['title'] = 'Partnership';
 
         $this->load->view('admin/layouts/header', $data);

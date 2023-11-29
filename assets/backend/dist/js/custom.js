@@ -177,32 +177,6 @@ $(document).ready(function () {
         content_style: 'body{font-family:Helvetica,Arial, sans-serif; font-seize:16px}'
     });
     
-    /* Rupiah */
-    document.addEventListener('DOMContentLoaded', function() {
-        var priceInput = document.getElementById('price');
-        if (priceInput) {
-            priceInput.addEventListener('input', function (e) {
-                this.value = formatRupiah(this.value, 'Rp. ');
-            });
-        }
-    });       
-    
-    /* Fungsi */
-    function formatRupiah(angka, prefix) {
-        var numberString = angka.replace(/[^,\d]/g, '').toString(),
-            split = numberString.split(','),
-            sisa = split[0].length % 3,
-            rupiah = split[0].substr(0, sisa),
-            ribuan = split[0].substr(sisa).match(/\d{3}/g);
-    
-        if (ribuan) {
-            separator = sisa ? '.' : '';
-            rupiah += separator + ribuan.join('.');
-        }
-    
-        rupiah = split[1] !== undefined ? rupiah + ',' + split[1] : rupiah;
-        return prefix === undefined ? rupiah : (rupiah ? 'Rp. ' + rupiah : '');
-    }
     // Date picker
     $('#date1, #date2').datetimepicker({
         format: 'L'
@@ -216,6 +190,41 @@ $(document).ready(function () {
     // Initialize Select2 Elements
     $('.select2').select2();
 
+    // badge status event
+    $(document).ready(function() {
+        $('.status').each(function() {
+            var status = $(this).data('status');
+            var badgeClass = (status == 'draft') ? 'badge-info' : 'badge-success';
+            $(this).addClass(badgeClass);
+        });
+    });
+
+    // sweet alert delete
+    document.addEventListener('DOMContentLoaded', () => {
+        const deleteButtons = document.querySelectorAll('.delete-btn');
+    
+        deleteButtons.forEach(button => {
+            button.addEventListener('click', event => {
+                event.preventDefault();
+    
+                Swal.fire({
+                    title: 'Apakah anda yakin?',
+                    text: 'Anda tidak akan dapat mengembalikan ini!',
+                    icon: 'warning',
+                    showCancelButton: true,
+                    confirmButtonColor: '#3085d6',
+                    cancelButtonColor: '#d33',
+                    confirmButtonText: 'Ya, hapus!'
+                }).then(result => {
+                    if (result.isConfirmed) {
+                        // Redirect to delete route if user confirms
+                        window.location.href = button.getAttribute('href');
+                    }
+                });
+            });
+        });
+    });
+    
     
     
 });

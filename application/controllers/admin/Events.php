@@ -14,8 +14,10 @@ class Events extends CI_Controller
     public function index()
     {
         $data['users'] = $this->db->get_where('users', ['email' => $this->session->email])->row_array();
-        $data['events'] = $this->db->get('events')->result_array();
-        $data['title'] = 'Events';
+        $data['events'] = $this->db
+            ->where('status', 'published')
+            ->get('events')->result_array();
+        $data['title'] = 'Data Events';
 
         // Menggabungkan data events dan peserta
         $data['event_peserta'] = [];
@@ -55,13 +57,32 @@ class Events extends CI_Controller
     public function publish()
     {
         $data['users'] = $this->db->get_where('users', ['email' => $this->session->email])->row_array();
-        $data['events'] = $this->db->order_by('date_created', 'DESC')->get('events')->result_array();
+        $data['events'] = $this->db
+            ->where('status', 'published')
+            ->order_by('date_created', 'DESC')
+            ->get('events')->result_array();
         $data['title'] = 'Events Publish';
 
         $this->load->view('admin/layouts/header', $data);
         $this->load->view('admin/layouts/navbar');
         $this->load->view('admin/layouts/sidebar');
         $this->load->view('admin/events/publish');
+        $this->load->view('admin/layouts/footer');
+    }
+
+    public function draft()
+    {
+        $data['users'] = $this->db->get_where('users', ['email' => $this->session->email])->row_array();
+        $data['events'] = $this->db
+            ->where('status', 'draft')
+            ->order_by('date_created', 'DESC')
+            ->get('events')->result_array();
+        $data['title'] = 'Events Draft';
+
+        $this->load->view('admin/layouts/header', $data);
+        $this->load->view('admin/layouts/navbar');
+        $this->load->view('admin/layouts/sidebar');
+        $this->load->view('admin/events/draft');
         $this->load->view('admin/layouts/footer');
     }
 
@@ -173,7 +194,7 @@ class Events extends CI_Controller
             } else {
                 $this->db->insert('events', $save);
                 set_pesan('Events berhasil ' . ($action == 'submit' ? 'ditambahkan!' : 'disimpan sebagai draft!'));
-                redirect('admin/events/publish');
+                redirect('admin/events/create');
             }
         } else {
             // Jika tombol tidak diklik, tampilkan form create
