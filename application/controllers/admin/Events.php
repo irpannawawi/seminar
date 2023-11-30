@@ -101,7 +101,7 @@ class Events extends CI_Controller
             $config['upload_path'] = 'assets/frontend/img/events';
             $config['allowed_types'] = '*'; // Sesuaikan dengan jenis file yang diizinkan
             $config['max_size'] = 2000;
-            $config['file_name'] = get_management('title_web') . uniqid();
+            $config['file_name'] = get_setting('title_web') . uniqid();
 
             $this->upload->initialize($config);
 
@@ -222,7 +222,7 @@ class Events extends CI_Controller
             $config['upload_path'] = './assets/frontend/img/events/';
             $config['allowed_types'] = '*';
             $config['max_size'] = 2000;
-            $config['file_name'] = get_management('title_web') . uniqid();
+            $config['file_name'] = get_setting('title_web') . uniqid();
 
             $this->upload->initialize($config);
 

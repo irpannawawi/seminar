@@ -12,7 +12,7 @@ class Global_library
         $this->CI->load->database();
     }
 
-    public function get_managements()
+    public function get_settings()
     {
         return $this->CI->db->get('setting')->row_array();
     }

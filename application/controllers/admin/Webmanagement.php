@@ -38,12 +38,12 @@ class Webmanagement extends CI_Controller
                 $config['upload_path']   = 'assets/backend/dist/img/';
                 $config['allowed_types'] = 'jpg|png|jpeg';
                 $config['max_size']      = 2048; // 2MB
-                $config['file_name'] = get_management('title_web') . uniqid();
+                $config['file_name'] = get_setting('title_web') . uniqid();
 
                 $this->upload->initialize($config);
 
                 if ($this->upload->do_upload('logo_web')) {
-                    $old_logo_path = 'assets/backend/dist/img/' . get_management('logo_Web');
+                    $old_logo_path = 'assets/backend/dist/img/' . get_setting('logo_Web');
                     if (file_exists($old_logo_path)) {
                         unlink($old_logo_path);
                     }
@@ -65,8 +65,8 @@ class Webmanagement extends CI_Controller
             $wagw = [
                 'token' => $this->input->post('token_wagw', true)
             ];
-            $this->db->update('wagw', $wagw);
             $this->db->update('setting', $data);
+            $this->db->update('wagw', $wagw);
             set_pesan('Berhasil update info website!');
             redirect('admin/webmanagement/info');
         }

@@ -1,140 +1,81 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title><?= $title; ?></title>
-
-    <!-- Google Font: Source Sans Pro -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="<?= base_url('assets/backend') ?>/plugins/fontawesome-free/css/all.min.css">
-    <!-- icheck bootstrap -->
-    <link rel="stylesheet" href="<?= base_url('assets/backend') ?>/plugins/icheck-bootstrap/icheck-bootstrap.min.css">
-    <!-- Theme style -->
-    <link rel="stylesheet" href="<?= base_url('assets/backend') ?>/dist/css/adminlte.min.css">
-    <link rel="stylesheet" href="<?= base_url('assets/backend') ?>/plugins/toastr/toastr.min.css">
-
-</head>
-
-<body class="hold-transition login-page">
-    <div class="login-box">
-        <div class="login-logo">
-            <a href="<?= site_url('/login') ?>"><b>AcaraKu</b>.com</a>
-        </div>
-        <div class="card">
-            <div class="card-body login-card-body">
-                <form action="<?= site_url('auth') ?>" method="post" id="loginform">
-                    <p class="login-box-msg">Masuk untuk memulai sesi</p>
-                    <div class="form-group mb-3">
-                        <input type="email" class="form-control" placeholder="Email" id="email" name="email" value="admin@gmail.com">
-                    </div>
-                    <div class="form-group mb-3">
-                        <input type="password" name="password" id="password" class="form-control" placeholder="Password" value="admin">
-                    </div>
-                    <div class="row">
-                        <div class="col-8">
-                            <div class="icheck-primary">
-                                <input type="checkbox" id="remember">
-                                <label for="remember">
-                                    Ingat saya
-                                </label>
-                            </div>
-                        </div>
-                        <!-- /.col -->
-                        <div class="col-4">
-                            <button type="submit" class="btn btn-primary btn-block">Masuk</button>
-                        </div>
-                        <!-- /.col -->
-                    </div>
-
-                    <p class="mb-1">
-                        <a href="forgot-password.html">Lupa password?</a>
-                    </p>
-                    <p class="mb-0">
-                        <a href="<?= site_url('registration') ?>" class="text-center">Daftar akun partnership</a>
-                    </p>
-                </form>
+<!-- ========== MAIN CONTENT ========== -->
+<main id="content" role="main" class="flex-grow-1">
+    <!-- Form -->
+    <div class="container content-space-3 content-space-b-lg-3">
+        <div class="flex-grow-1 mx-auto" style="max-width: 28rem;">
+            <!-- Heading -->
+            <div class="text-center mb-5 mb-md-7">
+                <h1 class="h2">Selamat datang kembali</h1>
+                <p>Masuk untuk mengelola akun Anda.</p>
             </div>
-            <!-- /.login-card-body -->
+            <!-- End Heading -->
+
+            <!-- Form -->
+            <form method="post" action="<?= site_url('auth') ?>" class="needs-validation" novalidate>
+                <!-- Form -->
+                <div class="mb-4">
+                    <label class="form-label" for="email">Email Anda</label>
+                    <input type="email" class="form-control form-control-lg" name="email" id="email" placeholder="Masukan email Anda" aria-label="Masukan email Anda" required>
+                    <?= form_error('email', '<span class="invalid-feedback">', '</span>'); ?>
+                </div>
+                <!-- End Form -->
+
+                <!-- Form -->
+                <div class="mb-4">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <label class="form-label" for="passowrd">Password</label>
+
+                        <a class="form-label-link" href="#">Lupa Password?</a>
+                    </div>
+
+                    <div class="input-group input-group-merge" data-hs-validation-validate-class>
+                        <input type="password" class="js-toggle-password form-control form-control-lg" name="password" id="passowrd" placeholder="Masukan password Anda" aria-label="8+ characters required" data-hs-toggle-password-options='{
+                                        "target": "#changePassTarget",
+                                        "defaultClass": "bi-eye-slash",
+                                        "showClass": "bi-eye",
+                                        "classChangeTarget": "#changePassIcon"
+                                    }'>
+                        <a id="changePassTarget" class="input-group-append input-group-text" href="javascript:;">
+                            <i id="changePassIcon" class="bi-eye"></i>
+                        </a>
+                    </div>
+                    <?= form_error('password', '<span class="invalid-feedback">', '</span>'); ?>
+                </div>
+                <!-- End Form -->
+
+                <div class="d-grid mb-3">
+                    <button type="submit" class="btn btn-primary btn-lg">Masuk</button>
+                </div>
+
+                <div class="text-center">
+                    <p>Ingin bergabung menjadi Leader? <a class="link" href="#">Daftar disini</a></p>
+                </div>
+            </form>
+            <!-- End Form -->
         </div>
     </div>
-    <!-- /.login-box -->
+    <!-- End Col -->
+    <!-- End Form -->
+</main>
+<!-- ========== END MAIN CONTENT ========== -->
 
-    <!-- jQuery -->
-    <script src="<?= base_url('assets/backend') ?>/plugins/jquery/jquery.min.js"></script>
-    <!-- jquery-validation -->
-    <script src="<?= base_url('assets/backend') ?>/plugins/jquery-validation/jquery.validate.min.js"></script>
-    <script src="<?= base_url('assets/backend') ?>/plugins/jquery-validation/additional-methods.min.js"></script>
-    <!-- Bootstrap 4 -->
-    <script src="<?= base_url('assets/backend') ?>/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <!-- AdminLTE App -->
-    <script src="<?= base_url('assets/backend') ?>/dist/js/adminlte.min.js"></script>
-    <!-- toastr -->
-    <script src="<?= base_url('assets/backend') ?>/plugins/toastr/toastr.min.js"></script>
+<!-- JS Global Compulsory  -->
+<script src="<?= base_url('assets/frontend/') ?>vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 
-    <!-- <script>
-        $('#to-regis').on("click", function() {
-            $("#loginform").slideUp();
-            $("#regisform").slideDown();
-        });
+<!-- JS Implementing Plugins -->
+<script src="<?= base_url('assets/frontend/') ?>vendor/hs-toggle-password/dist/js/hs-toggle-password.js"></script>
 
-        $('#to-login').on("click", function() {
-            $("#regisform").slideUp();
-            $("#loginform").slideDown();
-        });
-    </script> -->
-    <script>
-        <?php if ($this->session->flashdata('error')) { ?>
-            var message = <?= json_encode($this->session->flashdata('error')) ?>;
-            toastr.error(message)
-        <?php } ?>
-        <?php if ($this->session->flashdata('success')) { ?>
-            var message = <?= json_encode($this->session->flashdata('success')) ?>;
-            toastr.success(message)
-        <?php } ?>
-    </script>
-    <script>
-        $(function() {
-            $('#loginform').validate({
-                rules: {
-                    email: {
-                        required: true,
-                        email: true,
-                    },
-                    password: {
-                        required: true,
-                        minlength: 3
-                    },
-                    terms: {
-                        required: false
-                    },
-                },
-                messages: {
-                    email: {
-                        required: "Harap masukkan alamat email",
-                        email: "Masukkan alamat email yang valid"
-                    },
-                    password: {
-                        required: "Harap masukan kata sandi",
-                        minlength: "Kata sandi Anda harus terdiri dari minimal 8 karakter"
-                    }
-                },
-                errorElement: 'span',
-                errorPlacement: function(error, element) {
-                    error.addClass('invalid-feedback');
-                    element.closest('.form-group').append(error);
-                },
-                highlight: function(element, errorClass, validClass) {
-                    $(element).addClass('is-invalid');
-                },
-                unhighlight: function(element, errorClass, validClass) {
-                    $(element).removeClass('is-invalid');
-                }
-            });
-        });
-    </script>
+<!-- JS Front -->
+<script src="<?= base_url('assets/frontend/') ?>js/theme.min.js"></script>
+
+<!-- JS Plugins Init. -->
+<script>
+    (function() {
+        // INITIALIZATION OF TOGGLE PASSWORD
+        // =======================================================
+        new HSTogglePassword('.js-toggle-password')
+    })()
+</script>
 </body>
 
 </html>

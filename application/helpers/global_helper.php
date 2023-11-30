@@ -27,13 +27,13 @@ function set_pesan($message, $tipe = true) //ini untuk menampilkan message
     }
 }
 
-if (!function_exists('get_management')) {
-    function get_management($column_name)
+if (!function_exists('get_setting')) {
+    function get_setting($column_name)
     {
         $CI = &get_instance();
         $CI->load->library('global_library');
 
-        $managements = $CI->global_library->get_managements();
+        $managements = $CI->global_library->get_settings();
 
         return isset($managements[$column_name]) ? $managements[$column_name] : '';
     }

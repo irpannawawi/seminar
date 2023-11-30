@@ -29,22 +29,22 @@
                             <div class="col-lg-6 col-md-6 col-sm-12">
                                 <div class="form-group">
                                     <label>Judul Website</label>
-                                    <input type="text" class="form-control" name="title_web" id="title_web" value="<?= get_management('title_web') ?>">
+                                    <input type="text" class="form-control" name="title_web" id="title_web" value="<?= get_setting('title_web') ?>">
                                 </div>
                                 <div class="form-group">
                                     <label>Sub Judul Website</label>
-                                    <input type="text" class="form-control" name="sub_title" id="sub_title" value="<?= get_management('sub_title') ?>">
+                                    <input type="text" class="form-control" name="sub_title" id="sub_title" value="<?= get_setting('sub_title') ?>">
                                 </div>
                                 <div class="form-group">
                                     <label>Deskripsi Website</label>
-                                    <textarea class="form-control" name="description_web" id="description_web"><?= get_management('description_web') ?></textarea>
+                                    <textarea class="form-control" name="description_web" id="description_web"><?= get_setting('description_web') ?></textarea>
                                 </div>
                                 <div class="form-group row">
                                     <label>Logo Web</label>
                                     <div class="col-sm-12">
                                         <div class="row">
                                             <div class="col-sm-1">
-                                                <img src="<?= base_url('assets/backend/dist/img/') . get_management('logo_web'); ?>" class="img-thumbnail">
+                                                <img src="<?= base_url('assets/backend/dist/img/') . get_setting('logo_web'); ?>" class="img-thumbnail">
                                             </div>
                                             <div class="col-sm-11">
                                                 <div class="custom-file">
@@ -59,15 +59,15 @@
                             <div class="col-lg-6 col-md-6 col-sm-12">
                                 <div class="form-group">
                                     <label>Instagram</label>
-                                    <input type="text" class="form-control" name="instagram" value="<?= get_management('instagram') ?>">
+                                    <input type="text" class="form-control" name="instagram" value="<?= get_setting('instagram') ?>">
                                 </div>
                                 <div class="form-group">
                                     <label>Facebook</label>
-                                    <input type="text" class="form-control" name="facebook" value="<?= get_management('facebook') ?>">
+                                    <input type="text" class="form-control" name="facebook" value="<?= get_setting('facebook') ?>">
                                 </div>
                                 <div class="form-group">
                                     <label>Meta Google</label>
-                                    <textarea class="form-control" name="meta_google" id="meta_google"><?= get_management('meta_google') ?></textarea>
+                                    <textarea class="form-control" name="meta_google" id="meta_google"><?= get_setting('meta_google') ?></textarea>
                                 </div>
                                 <div class="form-group">
                                     <label>Token Whatsapp Gateway</label>

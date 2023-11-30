@@ -17,8 +17,9 @@ class Auth extends CI_Controller
         $this->form_validation->set_rules('password', 'Password', 'trim|required');
 
         if ($this->form_validation->run() == false) {
-            $data['title'] = 'Login - Tiket Seminar';
-            $this->load->view('auth/login', $data);
+            $data['title'] = 'Login';
+            $this->load->view('frontend/layout/header', $data);
+            $this->load->view('auth/login');
         } else {
             // validasi sukses
             $this->_login();
@@ -62,7 +63,7 @@ class Auth extends CI_Controller
     {
         $this->session->unset_userdata('email');
         set_pesan('Anda telah keluar dari sistem');
-        redirect('login');
+        redirect('auth');
     }
 
     public function registration()
