@@ -38,7 +38,7 @@
             <nav class="js-mega-menu navbar-nav-wrap">
                 <!-- Default Logo -->
                 <a class="navbar-brand" href="<?= site_url('/') ?>" aria-label="Front">
-                    <img class="navbar-brand-logo" src="<?= base_url('assets/backend/dist/img/') . get_setting('logo_web') ?>" alt="Logo"> Tenden
+                    <img class="navbar-brand-logo" src="<?= base_url('assets/backend/dist/img/') . get_setting('logo_web') ?>" alt="Logo"> <?= get_setting('title_web') ?>
                 </a>
                 <!-- End Default Logo -->
                 <!-- Toggler -->

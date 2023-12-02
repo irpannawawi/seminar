@@ -135,21 +135,38 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="<?= base_url('admin/webmanagement/wagw'); ?>" class="nav-link">
+                            <a href="<?= base_url('admin/webmanagement/pesan'); ?>" class="nav-link">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Pesan Setting</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="<?= base_url('admin/webmanagement/other'); ?>" class="nav-link">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Lainnya</p>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="javascript:;" class="nav-link">
+                        <i class="nav-icon fas fa-cog"></i>
+                        <p>
+                            Integrasi Management
+                            <i class="fas fa-angle-left right"></i>
+                        </p>
+                    </a>
+                    <ul class="nav nav-treeview">
+                        <li class="nav-item">
+                            <a href="<?= base_url('admin/integrasimanagement/wagw'); ?>" class="nav-link">
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>Integrasi WhatsApp</p>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="<?= base_url('admin/webmanagement/#'); ?>" class="nav-link">
+                            <a href="<?= base_url('admin/integrasimanagement/#'); ?>" class="nav-link">
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>Integrasi Email</p>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="<?= base_url('admin/webmanagement/pesan'); ?>" class="nav-link">
-                                <i class="far fa-circle nav-icon"></i>
-                                <p>Pesan Setting</p>
                             </a>
                         </li>
                     </ul>

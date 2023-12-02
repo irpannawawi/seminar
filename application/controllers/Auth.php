@@ -63,7 +63,7 @@ class Auth extends CI_Controller
     {
         $this->session->unset_userdata('email');
         set_pesan('Anda telah keluar dari sistem');
-        redirect('auth');
+        redirect('/');
     }
 
     public function registration()

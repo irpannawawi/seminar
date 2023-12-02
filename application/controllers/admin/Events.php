@@ -413,7 +413,7 @@ class Events extends CI_Controller
         }
 
         // Redirect ke halaman kategori
-        redirect('admin/events');
+        redirect('admin/events/publish');
     }
 
     private function sendMessage($whatsapp, $message)

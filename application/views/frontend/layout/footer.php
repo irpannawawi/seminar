@@ -151,41 +151,14 @@
 
 <!-- JS Front -->
 <script src="<?= base_url('assets/frontend/') ?>js/theme.min.js"></script>
+<script src="<?= base_url('assets/frontend/') ?>js/custom.js"></script>
 
 <!-- JS Plugins Init. -->
 <script>
     (function() {
-        // INITIALIZATION OF SWIPER
-        // =======================================================
-        var autoplay = new Swiper('.js-swiper-autoplay', {
-            spaceBetween: 30,
-            centeredSlides: true,
-            autoplay: {
-                delay: 2500,
-                disableOnInteraction: false,
-            },
-            pagination: {
-                el: '.js-swiper-autoplay-pagination',
-                clickable: true,
-            },
-            navigation: {
-                nextEl: '.js-swiper-autoplay-button-next',
-                prevEl: '.js-swiper-autoplay-button-prev',
-            },
-        });
-
         // INITIALIZATION OF HEADER
         // =======================================================
         new HSHeader('#header').init()
-
-
-        // INITIALIZATION OF MEGA MENU
-        // =======================================================
-        new HSMegaMenu('.js-mega-menu', {
-            desktop: {
-                position: 'left'
-            }
-        })
 
 
         // INITIALIZATION OF SHOW ANIMATIONS
@@ -215,44 +188,27 @@
         // =======================================================
         HSCore.components.HSTyped.init('.js-typedjs')
 
-
         // INITIALIZATION OF SWIPER
         // =======================================================
-        var sliderThumbs = new Swiper('.js-swiper-thumbs', {
-            watchSlidesVisibility: true,
-            watchSlidesProgress: true,
-            history: false,
-            breakpoints: {
-                480: {
-                    slidesPerView: 2,
-                    spaceBetween: 15,
-                },
-                768: {
-                    slidesPerView: 3,
-                    spaceBetween: 15,
-                },
-                1024: {
-                    slidesPerView: 3,
-                    spaceBetween: 15,
-                },
+        var preloader = new Swiper('.js-swiper-preloader', {
+            slidesPerView: 4,
+            spaceBetween: 30,
+            pagination: {
+                el: '.js-swiper-preloader-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.js-swiper-preloader-button-next',
+                prevEl: '.js-swiper-preloader-button-prev',
             },
             on: {
-                'afterInit': function(swiper) {
-                    swiper.el.querySelectorAll('.js-swiper-pagination-progress-body-helper')
-                        .forEach($progress => $progress.style.transitionDuration = `${swiper.params.autoplay.delay}ms`)
+                'imagesReady': function(swiper) {
+                    const preloader = swiper.el.querySelector('.js-swiper-preloader')
+                    preloader.parentNode.removeChild(preloader)
                 }
             }
         });
-
-        var sliderMain = new Swiper('.js-swiper-main', {
-            effect: 'fade',
-            autoplay: true,
-            loop: true,
-            thumbs: {
-                swiper: sliderThumbs
-            }
-        })
-    })()
+    })();
 </script>
 </body>
 

@@ -7,9 +7,43 @@
 .navbar-brand-logo{
     margin-right: 10px;
 }
-.input-search{
+/* .input-search{
     display: flex;
     background-color: #fff;
     box-shadow: 0 0.375rem 1.5rem 0 rgba(140,152,164,.125);
     border-radius: 0.5rem;
+} */
+img, svg{
+    vertical-align: middle;
+}
+.card>figure{
+    grid-area: img;
+    overflow: hidden;
+    margin: 10px;
+    border-radius: 10px!important;
+}
+.card>div {
+    grid-area: text;
+    margin: 15px;
+    place-self: center;
+    text-align: left;
+    display: grid;
+    place-items: start;
+}
+.text-truncate {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.btn-category{
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 12px;
+    letter-spacing: 0px;
+    background-color: #ffa84b;
+    border-radius: 50px 50px 50px 50px;
+    padding: 4px;
+    line-height: 1.5;
+    font-weight: 600;
+    display: inline-block;
 }

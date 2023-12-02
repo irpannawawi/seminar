@@ -18,7 +18,7 @@
         <div class="row">
             <div class="col-lg-6 col-md-6 col-sm-12">
                 <div class="card card-default">
-                    <form action="<?= site_url('admin/webmanagement/savewagw') ?>" method="post">
+                    <form action="<?= site_url('admin/integrasimanagement/savewagw') ?>" method="post">
                         <div class="card-body">
                             <div class="row">
                                 <div class="col-lg-6 col-md-6 col-sm-12">
@@ -68,6 +68,18 @@
                                 </div>
                             </div>
                             <div class="form-group">
+                                <div class="d-flex align-items-center">
+                                    <i class="fas fa-history mr-1"></i>
+                                    <small><?= $infodevice['expired'] ?></small>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="d-flex align-items-center">
+                                    <i class="fas fa-inbox mr-1"></i>
+                                    <small><?= $infodevice['messages'] . ' | ' . $infodevice['quota'] ?></small>
+                                </div>
+                            </div>
+                            <div class="form-group">
                                 <div class="d-flex align-items-center ">
                                     <div class="dot rounded-circle me-1 <?= ($infodevice['device_status'] == 'connect') ? 'bg-success' : 'bg-danger' ?>"></div>
                                     <small><?= $infodevice['device_status'] ?></small>
@@ -81,8 +93,8 @@
                         <?php endif; ?>
                     </div>
                     <div class="card-footer text-center">
-                        <?php if (isset($infodevice) && ($infodevice['status'] == 'true')) : ?>
-                            <a href="<?= site_url('admin/webmanagement/disconnect') ?>" class="btn btn-danger">
+                        <?php if (isset($infodevice) && ($infodevice['device_status'] == 'connect')) : ?>
+                            <a href="<?= site_url('admin/integrasimanagement/disconnect') ?>" class="btn btn-danger">
                                 <i class="fas fa-unlink"></i> Disconnect
                             </a>
                         <?php else : ?>
@@ -107,7 +119,7 @@
             $('#qrContainer').html('<div class="loading"></div>');
 
             $.ajax({
-                url: '<?= base_url('admin/webmanagement/generate_qr/') ?>',
+                url: '<?= base_url('admin/integrasimanagement/generate_qr/') ?>',
                 type: 'GET',
                 success: function(response) {
                     var qrData = JSON.parse(response);
