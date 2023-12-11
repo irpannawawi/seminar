@@ -3,7 +3,7 @@
     <!-- Brand Logo -->
     <a href="index3.html" class="brand-link">
         <img src="<?= base_url('assets/backend/dist/img/') . get_setting('logo_web') ?>" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
-        <span class="brand-text font-weight-light">AdminLTE 3</span>
+        <span class="brand-text font-weight-light"><?php echo get_setting('title_web') ?></span>
     </a>
 
     <!-- Sidebar -->
@@ -88,6 +88,12 @@
                             </a>
                         </li>
                     </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="<?= base_url('admin/absensi'); ?>" class="nav-link">
+                        <i class="nav-icon fas fa-user-check"></i>
+                        <p>Absensi</p>
+                    </a>
                 </li>
                 <li class="nav-item">
                     <a href="<?= base_url('admin/partnership'); ?>" class="nav-link">

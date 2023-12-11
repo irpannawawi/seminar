@@ -115,7 +115,7 @@
         <div class="modal-dialog modal-dialog-centered modal-lg">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title">Peserta Event : <b><?= $event['title'] ?></b> | <a href="#">Cek Kehadiran <i class="fas fa-external-link-alt"></i></a></h5>
+                    <h5 class="modal-title">Peserta Event : <b><?= $event['title'] ?></b> | <a href="<?= site_url('admin/absensi') ?>">Cek Kehadiran <i class="fas fa-external-link-alt"></i></a></h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>

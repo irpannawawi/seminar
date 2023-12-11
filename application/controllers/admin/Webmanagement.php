@@ -82,7 +82,9 @@ class Webmanagement extends CI_Controller
             // Jika ada input post, lakukan update
             $update_data = [
                 'sukses_bayar' => $this->input->post('sukses_bayar', true),
+                'tagihan_bayar' => $this->input->post('tagihan_bayar', true),
                 'sukses_bayar_email' => $this->input->post('sukses_bayar_email', true),
+                'tagihan_bayar_email' => $this->input->post('tagihan_bayar_email', true),
             ];
             $this->db->update('setting', $update_data);
             set_pesan('Berhasil update format pesan');

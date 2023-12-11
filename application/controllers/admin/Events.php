@@ -16,6 +16,7 @@ class Events extends CI_Controller
         $data['users'] = $this->db->get_where('users', ['email' => $this->session->email])->row_array();
         $data['events'] = $this->db
             ->where('status', 'published')
+            ->order_by('date_created', 'DESC')
             ->get('events')->result_array();
         $data['title'] = 'Data Events';
 
