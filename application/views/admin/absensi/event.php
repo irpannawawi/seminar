@@ -7,7 +7,6 @@
             <div class="col-sm-6">
                 <div class="float-right">
                     <a href="javascript:history.back()" class="btn btn-default float-r"><i class="fas fa-long-arrow-alt-left"></i> Kembali</a>
-                    <a class="btn btn-info" href="<?= site_url('admin/events/create') ?>"><i class="far fa-calendar-plus"></i> Buat Event</a>
                 </div>
             </div><!-- /.col -->
         </div><!-- /.row -->

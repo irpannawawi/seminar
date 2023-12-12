@@ -434,7 +434,7 @@ class Events extends CI_Controller
             CURLOPT_POSTFIELDS => array(
                 'target' => $whatsapp,
                 'message' => $message,
-                'countryCode' => '62'
+                'url' => 'https://md.fonnte.com/images/wa-logo.png',
             ),
             CURLOPT_HTTPHEADER => array(
                 'Authorization: ' . $wagw['token']

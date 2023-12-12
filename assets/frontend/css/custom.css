@@ -47,3 +47,6 @@ img, svg{
     font-weight: 600;
     display: inline-block;
 }
+.list__event>div{
+    margin: 15px;
+}

@@ -23,6 +23,8 @@
 
     <!-- CSS Implementing Plugins -->
     <link rel="stylesheet" href="<?= base_url('assets/frontend/') ?>vendor/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="<?= base_url('assets/frontend/') ?>vendor/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="<?= base_url('assets/frontend/') ?>vendor/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="<?= base_url('assets/frontend/') ?>vendor/hs-mega-menu/dist/hs-mega-menu.min.css">
     <link rel="stylesheet" href="<?= base_url('assets/frontend/') ?>vendor/swiper/swiper-bundle.min.css">
 

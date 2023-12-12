@@ -92,6 +92,7 @@
                     <li>{var3} = Waktu Pelaksanaan</li>
                     <li>{var4} = Jumlah Tiket</li>
                     <li>{var5} = Rekening Bank</li>
+                    <li>{var6} = QR Code</li>
                 </ul>
             </div>
             <div class="modal-footer justify-content-between">

@@ -3296,19 +3296,19 @@ textarea.form-control-lg {
 
 .btn-dark {
     --bs-btn-color: #fff;
-    --bs-btn-bg: #21325b;
-    --bs-btn-border-color: #21325b;
+    --bs-btn-bg: #1e2022;
+    --bs-btn-border-color: #1e2022;
     --bs-btn-hover-color: #fff;
-    --bs-btn-hover-bg: #425174;
-    --bs-btn-hover-border-color: #37476b;
+    --bs-btn-hover-bg: #515151;
+    --bs-btn-hover-border-color: #2a2f3a;
     --bs-btn-focus-shadow-rgb: 66,81,116;
     --bs-btn-active-color: #fff;
-    --bs-btn-active-bg: #4d5b7c;
-    --bs-btn-active-border-color: #37476b;
+    --bs-btn-active-bg: #52545c;
+    --bs-btn-active-border-color: #30353f;
     --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
     --bs-btn-disabled-color: #fff;
-    --bs-btn-disabled-bg: #21325b;
-    --bs-btn-disabled-border-color: #21325b
+    --bs-btn-disabled-bg: #1e2022;
+    --bs-btn-disabled-border-color: #1e2022
 }
 
 .btn-outline-primary {
@@ -4659,7 +4659,8 @@ textarea.form-control-lg {
 }
 
 .card-img,.card-img-bottom,.card-img-top {
-    width: 100%
+    width: 100%;
+    height: 100%;
 }
 
 .card-img,.card-img-top {
