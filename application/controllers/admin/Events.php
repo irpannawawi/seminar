@@ -100,16 +100,16 @@ class Events extends CI_Controller
         if ($action == 'submit' || $action == 'save_draft') {
             // Konfigurasi upload file
             $config['upload_path'] = 'assets/frontend/img/events';
-            $config['allowed_types'] = '*'; // Sesuaikan dengan jenis file yang diizinkan
+            $config['allowed_types'] = 'jpeg|png|jpg'; // Sesuaikan dengan jenis file yang diizinkan
             $config['max_size'] = 2000;
-            $config['file_name'] = get_setting('title_web') . uniqid();
+            $config['file_name'] = uniqid();
 
             $this->upload->initialize($config);
 
             // Lakukan upload file
             if ($this->upload->do_upload('image_events')) {
-                $upload_data = $this->upload->data();
-                $file_name = $upload_data['file_name'];
+                $file_name = $this->upload->data('file_name');
+                $this->db->set('image', $file_name);
             } else {
                 // Jika upload gagal, tidak masalah, file tidak wajib diisi
                 $file_name = null;
@@ -137,13 +137,11 @@ class Events extends CI_Controller
             // Set aturan validasi
             if ($action == 'save_draft') {
                 $this->form_validation->set_rules('title', 'Judul Event', 'required|is_unique[events.title]', [
-                    'required' => 'Judul Event harus diisi.',
-                    'is_unique' => 'Judul events sudah ada!'
+                    'required' => 'Judul Event harus diisi.'
                 ]);
             } elseif ($action == 'submit') {
                 $this->form_validation->set_rules('title', 'Judul Event', 'required|is_unique[events.title]', [
-                    'required' => 'Judul Event harus diisi.',
-                    'is_unique' => 'Judul events sudah ada!'
+                    'required' => 'Judul Event harus diisi.'
                 ]);
                 $this->form_validation->set_rules('id_category[]', 'Kategori Event', 'required');
                 $this->form_validation->set_rules('description', 'Deskripsi Event', 'required');
@@ -181,7 +179,6 @@ class Events extends CI_Controller
                 'url_location' => $url_location,
                 'label' => $label,
                 'status' => ($action == 'submit') ? 'published' : 'draft',
-                'image' => $file_name,
                 'date_created' => time()
             ];
 
@@ -401,19 +398,37 @@ class Events extends CI_Controller
             redirect('login');
         }
 
-        // Hapus kategori berdasarkan ID
+        // Ambil nama file gambar event sebelum menghapus record dari database
+        $this->db->select('image');
         $this->db->where('id_events', $id);
-        $result = $this->db->delete('events');
+        $query = $this->db->get('events');
+        $row = $query->row_array();
 
-        if ($result) {
-            // Kategori berhasil dihapus
-            set_pesan('Event telah berhasil dihapus.');
+        // Pemeriksaan untuk memastikan $row tidak null sebelum mengakses propertinya
+        if ($row !== null) {
+            // Hapus record dari database
+            $this->db->where('id_events', $id);
+            $result = $this->db->delete('events');
+
+            if ($result) {
+                // Jika record berhasil dihapus, hapus juga gambar dari folder
+                $gambar_path = FCPATH . 'assets/frontend/img/event/' . $row['image'];
+                if (file_exists($gambar_path)) {
+                    unlink($gambar_path);
+                }
+
+                // Event berhasil dihapus
+                set_pesan('Event telah berhasil dihapus.');
+            } else {
+                // Gagal menghapus event
+                set_pesan('Gagal menghapus event.', false);
+            }
         } else {
-            // Gagal menghapus Events
-            set_pesan('Gagal menghapus event.', false);
+            // ID event tidak ditemukan
+            set_pesan('Event tidak ditemukan.', false);
         }
 
-        // Redirect ke halaman kategori
+        // Redirect ke halaman event
         redirect('admin/events/publish');
     }
 

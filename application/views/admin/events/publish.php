@@ -48,6 +48,7 @@
                                             <span class="badge badge-pill status" data-status="<?= $key['status'] ?>">Event <?= $key['status'] ?></span>
                                         </td>
                                         <td class=" text-center">
+                                            <a href="#" class="btn btn-primary btn-sm"><i class="fas fa-reply"></i> Repost</a>
                                             <a href="<?= site_url('admin/events/edit/') . $key['id_events'] ?>" class="btn btn-secondary btn-sm"><i class="fas fa-pencil-alt"></i> Edit</a>
                                             <a href="<?= base_url('admin/events/deleteEvents/' . $key['id_events']); ?>" class="btn btn-danger btn-sm delete-btn"><i class="fas fa-trash-alt"></i> Delete</a>
                                         </td>
