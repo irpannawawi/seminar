@@ -150,7 +150,12 @@ hr {
 
 p {
     margin-top: 0;
-    margin-bottom: 1rem
+    margin-bottom: 1rem;
+    color: #000;
+}
+
+span {
+    color: #000;
 }
 
 abbr[title] {
@@ -19420,7 +19425,7 @@ input[type=number] {
 
 .card {
     border-width: 0;
-    box-shadow: 0 .375rem 1.5rem 0 rgba(140,152,164,.125)
+    box-shadow: 0 0.375rem 1.5rem 0 rgba(140,152,164,.125);
 }
 
 .card table tr th {

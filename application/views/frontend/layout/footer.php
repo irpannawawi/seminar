@@ -1,3 +1,5 @@
+</main>
+<!-- ========== END MAIN CONTENT ========== -->
 <!-- ========== FOOTER ========== -->
 <footer class="bg-light">
     <div class="container pb-1 pb-lg-7">
@@ -141,13 +143,14 @@
 <script src="<?= base_url('assets/frontend/') ?>vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 
 <!-- JS Implementing Plugins -->
+<script src="<?= base_url('assets/frontend/') ?>vendor/hs-sticky-block/dist/hs-sticky-block.min.js"></script>
 <script src="<?= base_url('assets/frontend/') ?>vendor/hs-header/dist/hs-header.min.js"></script>
-<script src="<?= base_url('assets/frontend/') ?>vendor/hs-mega-menu/dist/hs-mega-menu.min.js"></script>
-<script src="<?= base_url('assets/frontend/') ?>vendor/hs-show-animation/dist/hs-show-animation.min.js"></script>
+<!-- <script src="<?= base_url('assets/frontend/') ?>vendor/hs-show-animation/dist/hs-show-animation.min.js"></script> -->
 <script src="<?= base_url('assets/frontend/') ?>vendor/hs-go-to/dist/hs-go-to.min.js"></script>
 <script src="<?= base_url('assets/frontend/') ?>vendor/aos/dist/aos.js"></script>
 <script src="<?= base_url('assets/frontend/') ?>vendor/typed.js/lib/typed.min.js"></script>
 <script src="<?= base_url('assets/frontend/') ?>vendor/swiper/swiper-bundle.min.js"></script>
+<script src="<?= base_url('assets/frontend/') ?>vendor/quill/dist/quill.min.js"></script>
 
 <!-- JS Front -->
 <script src="<?= base_url('assets/frontend/') ?>js/theme.min.js"></script>
@@ -156,6 +159,12 @@
 <!-- JS Plugins Init. -->
 <script>
     (function() {
+        // INITIALIZATION OF STICKY BLOCKS
+        // =======================================================
+        new HSStickyBlock('.js-sticky-block', {
+            targetSelector: document.getElementById('header').classList.contains('navbar-fixed') ? '#header' : null
+        })
+
         // INITIALIZATION OF HEADER
         // =======================================================
         new HSHeader('#header').init()
@@ -187,27 +196,6 @@
         // INITIALIZATION OF TEXT ANIMATION (TYPING)
         // =======================================================
         HSCore.components.HSTyped.init('.js-typedjs')
-
-        // INITIALIZATION OF SWIPER
-        // =======================================================
-        var preloader = new Swiper('.js-swiper-preloader', {
-            slidesPerView: 4,
-            spaceBetween: 30,
-            pagination: {
-                el: '.js-swiper-preloader-pagination',
-                clickable: true,
-            },
-            navigation: {
-                nextEl: '.js-swiper-preloader-button-next',
-                prevEl: '.js-swiper-preloader-button-prev',
-            },
-            on: {
-                'imagesReady': function(swiper) {
-                    const preloader = swiper.el.querySelector('.js-swiper-preloader')
-                    preloader.parentNode.removeChild(preloader)
-                }
-            }
-        });
     })();
 </script>
 </body>

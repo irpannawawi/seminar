@@ -16,7 +16,7 @@
     ?>
 
     <!-- Favicon -->
-    <link rel="shortcut icon" href="<?= base_url('assets/frontend/') ?>favicon.ico">
+    <link rel="shortcut icon" href="<?= base_url('assets/backend/dist/img/') . get_setting('logo_web') ?>">
 
     <!-- Font -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
@@ -27,6 +27,7 @@
     <link rel="stylesheet" href="<?= base_url('assets/frontend/') ?>vendor/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="<?= base_url('assets/frontend/') ?>vendor/hs-mega-menu/dist/hs-mega-menu.min.css">
     <link rel="stylesheet" href="<?= base_url('assets/frontend/') ?>vendor/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="<?= base_url('assets/frontend/') ?>vendor/quill/dist/quill.snow.css">
 
     <!-- CSS Front Template -->
     <link rel="stylesheet" href="<?= base_url('assets/frontend/') ?>css/theme.min.css">
@@ -81,3 +82,5 @@
     </header>
 
     <!-- ========== END HEADER ========== -->
+    <!-- ========== MAIN CONTENT ========== -->
+    <main id="content" role="main" class="bg-light">

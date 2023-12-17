@@ -116,7 +116,9 @@ class Events extends CI_Controller
             }
 
             $title = htmlspecialchars($this->input->post('title'));
-            $categories = is_array($this->input->post('id_category')) ? implode(', ', $this->input->post('id_category')) : '';
+            // $categories = is_array($this->input->post('id_category')) ? implode(', ', $this->input->post('id_category')) : '';
+            $categories = $this->input->post('id_category');
+            $categories_json = json_encode($categories);
             $description = $this->input->post('description');
             $snk = $this->input->post('snk');
             $date_start = $this->input->post('date_start');
@@ -165,7 +167,7 @@ class Events extends CI_Controller
             $save = [
                 'title' => $title,
                 'slug' => strtolower(str_replace(' ', '-', $title)),
-                'id_category' => $categories,
+                'id_category' => $categories_json,
                 'description' => $description,
                 'snk' => $snk,
                 'date_start' => $date_start,
