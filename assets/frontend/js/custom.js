@@ -1,4 +1,10 @@
 (function() {
+    // INITIALIZATION OF STICKY BLOCKS
+    // =======================================================
+    new HSStickyBlock('.js-sticky-block', {
+        targetSelector: document.getElementById('header').classList.contains('navbar-fixed') ? '#header' : null
+    })
+
     // INITIALIZATION OF HEADER
     // =======================================================
     new HSHeader('#header').init()
@@ -31,4 +37,4 @@
     // =======================================================
     HSCore.components.HSTyped.init('.js-typedjs')
 
-})();
+});

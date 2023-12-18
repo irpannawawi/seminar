@@ -1,3 +1,71 @@
+:root {
+    --bs-blue: #c9a85d;
+    --bs-indigo: #6610f2;
+    --bs-purple: #6f42c1;
+    --bs-pink: #d63384;
+    --bs-red: #ed4c78;
+    --bs-orange: #fd7e14;
+    --bs-yellow: #f5ca99;
+    --bs-green: #198754;
+    --bs-teal: #00c9a7;
+    --bs-cyan: #09a5be;
+    --bs-black: #000;
+    --bs-white: #fff;
+    --bs-gray: #8c98a4;
+    --bs-gray-dark: #71869d;
+    --bs-gray-100: #f7faff;
+    --bs-gray-200: #f8fafd;
+    --bs-gray-300: #e7eaf3;
+    --bs-gray-400: #bdc5d1;
+    --bs-gray-500: #97a4af;
+    --bs-gray-600: #8c98a4;
+    --bs-gray-700: #677788;
+    --bs-gray-800: #71869d;
+    --bs-gray-900: #1e2022;
+    --bs-primary: #c9a85d;
+    --bs-secondary: #71869d;
+    --bs-success: #00c9a7;
+    --bs-info: #09a5be;
+    --bs-warning: #f5ca99;
+    --bs-danger: #ed4c78;
+    --bs-light: #f7faff;
+    --bs-dark: #21325b;
+    --bs-primary-rgb: 55,125,255;
+    --bs-secondary-rgb: 113,134,157;
+    --bs-success-rgb: 0,201,167;
+    --bs-info-rgb: 9,165,190;
+    --bs-warning-rgb: 245,202,153;
+    --bs-danger-rgb: 237,76,120;
+    --bs-light-rgb: 247,250,255;
+    --bs-dark-rgb: 33,50,91;
+    --bs-white-rgb: 255,255,255;
+    --bs-black-rgb: 0,0,0;
+    --bs-body-color-rgb: 103,119,136;
+    --bs-body-bg-rgb: 255,255,255;
+    --bs-font-sans-serif: system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans","Liberation Sans",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    --bs-font-monospace: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+    --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
+    --bs-body-font-family: Inter,sans-serif;
+    --bs-body-font-size: 1rem;
+    --bs-body-font-weight: 400;
+    --bs-body-line-height: 1.5;
+    --bs-body-color: #677788;
+    --bs-body-bg: #fff;
+    --bs-border-width: 0.0625rem;
+    --bs-border-style: solid;
+    --bs-border-color: rgba(33, 50, 91, 0.1);
+    --bs-border-color-translucent: rgba(0, 0, 0, 0.175);
+    --bs-border-radius: 0.5rem;
+    --bs-border-radius-sm: 0.3125rem;
+    --bs-border-radius-lg: 0.75rem;
+    --bs-border-radius-xl: 1rem;
+    --bs-border-radius-2xl: 2rem;
+    --bs-border-radius-pill: 50rem;
+    --bs-link-color: #c9a85d;
+    --bs-link-hover-color: #b29248;
+    --bs-code-color: #d63384;
+    --bs-highlight-bg: #fdf4eb
+}
 .navbar-brand{
     color: #c9a85d !important;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -76,17 +144,28 @@ span.text-truncate{
     border-radius: 15px;
     width: 100%;
 }
-@media screen and (min-width: 1120px){
+@media screen and (min-width: 1024px){
     .event-detail-cart-amount {
         display: grid;
         grid-template-columns: 1fr;
         grid-gap: 10px;
+    }
+    .event-detail-cart-amount-label {
+        flex-direction: row !important;
+        align-items: center !important;
     }
 }
 @media screen and (min-width: 920px){
     .event-detail-cart-amount-label {
         flex-direction: row !important;
         align-items: center !important;
+    }
+}
+@media screen and (max-width: 720px){
+    .event-detail-cart-amount-label {
+        flex-direction: row !important;
+        align-items: center !important;
+        margin-bottom: 15px;
     }
 }
 .event-detail-cart-amount-label {
@@ -122,4 +201,130 @@ span.text-truncate{
 }
 .cart-ticket-name{
     font-size: .875rem;
+}
+.sub-total-price{
+    font-weight: 700;
+}
+.event-box {
+    position: relative;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.ticket-card {
+    position: relative;
+    width: 100%;
+    border-radius: 4px;
+    border: 0.7px solid #dee2ee;
+    background-color: #fff;
+    margin-bottom: 13px;
+    padding: 15px 45px;
+}
+.ticket-hole:after, .ticket-hole:before {
+    content: "";
+    position: absolute;
+    top: 4em;
+    height: 35px;
+    width: 17px;
+    background-color: #fff;
+}
+
+.ticket-hole:before {
+    left: -2px;
+    border-radius: 0 2.8em 2.8em 0;
+    border: 1px solid #dee2ee;
+    border-left-color: #fff;
+}
+.ticket-hole:after {
+    right: -2px;
+    border-radius: 2.8em 0 0 2.8em;
+    border: 1px solid #dee2ee;
+    border-right-color: #fff;
+}
+.ticket-stripes:after, .ticket-stripes:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 2px;
+    background-image: -webkit-gradient(linear,left top,left bottom,color-stop(33%,#dee2ee),color-stop(0,hsla(0,0%,100%,0)));
+    background-image: -webkit-linear-gradient(#dee2ee 33%,hsla(0,0%,100%,0) 0);
+    background-image: linear-gradient(#dee2ee 33%,hsla(0,0%,100%,0) 0);
+    background-position: 100%;
+    background-size: 4px 8px;
+    background-repeat: repeat-y;
+}
+
+.ticket-stripes:before {
+    left: 35px;
+}
+.ticket-stripes:after {
+    right: 35px;
+}
+.ticket-card-title {
+    display: -webkit-flex;
+    display: -moz-box;
+    display: flex;
+    -webkit-justify-content: space-between;
+    -moz-box-pack: justify;
+    justify-content: space-between;
+    margin-bottom: 8px;
+    font-size: 20px;
+    font-weight: 600;
+}
+.ticket-footer, .ticket-price {
+    display: -webkit-flex;
+    display: -moz-box;
+    display: flex;
+    -webkit-flex-direction: column;
+    -moz-box-orient: vertical;
+    -moz-box-direction: normal;
+    flex-direction: column;
+}
+
+.ticket-footer {
+    position: relative;
+    padding-top: 15px;
+}
+.ticket-price {
+    -webkit-flex-grow: 1;
+    -moz-box-flex: 1;
+    flex-grow: 1;
+}
+.ticket-price span.price {
+    font-size: 18px;
+    font-weight: 600;
+    color: #35405a;
+}
+.ticket-price h5, .ticket-price span.price {
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+}
+.counter {
+    width: 97px;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: flex;
+    -webkit-justify-content: space-between;
+    -moz-box-pack: justify;
+    justify-content: space-between;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    align-items: center;
+    margin-right: 0;
+    margin-top: 0;
+}
+.counter button{
+    border-radius: 100%;
+}
+.counter{
+    min-width: 120px;
+}
+.btn-warning.disabled {
+    background-color: #e6e6e6;
+}
+.ticket-date, .ticket-date span{
+    font-size: .875rem;
+    color: var(--bs-primary);
 }
