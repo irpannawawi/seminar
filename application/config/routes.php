@@ -61,6 +61,7 @@ $route['users'] = 'users/dashboard';
 
 // event
 $route['event/(:num)/(:any)'] = 'frontend/event/detail/$1/$2';
+$route['checkout'] = 'frontend/event/checkout';
 
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = TRUE;

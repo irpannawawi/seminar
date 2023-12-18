@@ -156,7 +156,10 @@
 <script src="<?= base_url('assets/frontend/') ?>js/theme.min.js"></script>
 <script src="<?= base_url('assets/frontend/') ?>js/custom.js"></script>
 <script src="<?= base_url('assets/frontend/') ?>js/event/detail-event.js"></script>
-
+<script>
+    const baseurl = '<?= base_url() ?>';
+    const segment = '<?= $this->uri->segment(2); ?>';
+</script>
 </body>
 
 </html>

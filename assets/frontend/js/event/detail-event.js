@@ -49,5 +49,16 @@ document.addEventListener('DOMContentLoaded', function() {
         handleButtonClick(false);
     });
 
+    // Menambah event listener untuk tombol beli tiket
+    document.getElementById('buy').addEventListener('click', function() {
+        if (counterValue > 0) {
+            // Buat URL checkout dengan parameter yang sesuai
+            const checkoutUrl = baseurl + `checkout`;
+            
+            // Arahkan ke halaman checkout
+            window.location.href = checkoutUrl;
+        }
+    });
+
     updateCounter();
 });

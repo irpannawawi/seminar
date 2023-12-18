@@ -19,14 +19,13 @@
                     </div>
                     <div class="detail__event card-bordered mb-3">
                         <p class="cart-ticket-name"><i class="bi bi-ticket-perforated"></i></p>
-                        <hr>
                         <div class="event-detail-cart-amount">
                             <div class="event-detail-cart-amount-label" id="hitung">
                                 <span id="qty-desktop" class="amount-label-qty">Total Bayar</span>
                                 <label class="sub-total-price"><span id="sub-total-price"></span></label>
                             </div>
                             <div class="event-detail-cart-checkout">
-                                <button class="btn btn-primary btn-block" disabled>Beli Tiket</button>
+                                <button class="btn btn-primary btn-block" id="buy" disabled>Beli Tiket</button>
                             </div>
                         </div>
                     </div>
@@ -84,6 +83,7 @@
                     </div>
                 </div>
                 <!-- Nav -->
+                <hr>
                 <div class="text-center">
                     <ul class="nav nav-segment nav-pills mb-7" role="tablist">
                         <li class="nav-item">
@@ -93,7 +93,6 @@
                             <a class="nav-link" id="nav-two-eg1-tab" href="#nav-two-eg1" data-bs-toggle="pill" data-bs-target="#nav-two-eg1" role="tab" aria-controls="nav-two-eg1" aria-selected="false">Tiket</a>
                         </li>
                     </ul>
-                    <hr>
                 </div>
                 <!-- End Nav -->
 

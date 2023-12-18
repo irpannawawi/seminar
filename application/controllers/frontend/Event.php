@@ -12,7 +12,16 @@ class Event extends CI_Controller
         $data['title'] = $data['event']['title'];
 
         $this->load->view('frontend/layout/header', $data);
-        $this->load->view('frontend/event_detail');
+        $this->load->view('frontend/events/event_detail');
+        $this->load->view('frontend/layout/footer');
+    }
+
+    public function checkout()
+    {
+        $data['title'] = 'Checkout';
+
+        $this->load->view('frontend/layout/header', $data);
+        $this->load->view('frontend/events/checkout');
         $this->load->view('frontend/layout/footer');
     }
 }
