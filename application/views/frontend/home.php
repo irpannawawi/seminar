@@ -37,7 +37,7 @@
                         <div class="d-flex w-100 justify-content-between d-mobile-none d-block position-relative" style="height:60px">
                             <div class="position-absolute" style="bottom:0;left:0">
                                 <h5>Harga</h5>
-                                <h3 class="btn-price mb-0">IDR <?= isset($event['price']) ? number_format($event['price'], 0) : 'FREE' ?></h3>
+                                <h3 class="btn-price mb-0"><?= isset($event['price']) ? rupiah($event['price'], 0) : 'FREE' ?></h3>
                             </div>
                             <div class="position-absolute" style="bottom:0;right:0">
                                 <a href="<?= site_url('event/' . $event['id_events'] . '/' . $event['slug']) ?>" class="btn btn-dark d-flex px-4">Order</a>

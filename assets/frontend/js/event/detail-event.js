@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
     let counterValue = 0;
     let availableQuota = parseInt(document.getElementById('count-2').innerText);
-    let pricePerTicket = parseFloat(document.getElementById('price').innerText);
+    let pricePerTicket = parseFloat(document.getElementById('price').innerHtml);
     let titleElement = document.getElementById('title');
     let hitungElement = document.getElementById('hitung');
 
@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', function() {
             checkoutButton.removeAttribute('disabled');
             hitungElement.classList.remove('d-none');
         } else {
-            ticketParagraph.innerHTML = 'Kamu belum memiliki tiket, Silakan pilih tiket terlebih dulu di <b>tab menu TIKET</b>';
+            ticketParagraph.innerHTML = 'Kamu belum memiliki tiket, Silakan tentukan jumlah tiket terlebih dulu di <b>tab menu Tiket</b>';
             ticketParagraph.classList.remove('text-truncate', 'col', 'px-0');
             checkoutButton.setAttribute('disabled', true);
             hitungElement.classList.add('d-none');

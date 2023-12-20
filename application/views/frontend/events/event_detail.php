@@ -19,6 +19,7 @@
                     </div>
                     <div class="detail__event card-bordered mb-3">
                         <p class="cart-ticket-name"><i class="bi bi-ticket-perforated"></i></p>
+                        <hr>
                         <div class="event-detail-cart-amount">
                             <div class="event-detail-cart-amount-label" id="hitung">
                                 <span id="qty-desktop" class="amount-label-qty">Total Bayar</span>
@@ -124,7 +125,7 @@
                                                         <div class="align-items-center">
                                                             <div class="ticket-price">
                                                                 <h5 class="mb-0">Harga Tiket</h5>
-                                                                <span id="price" class="price">IDR <?= isset($event['price']) ? number_format($event['price'], 0) : 'FREE' ?></span>
+                                                                <span id="price" class="price"><?= isset($event['price']) ? rupiah($event['price']) : 'FREE' ?></span>
                                                             </div>
                                                         </div>
                                                         <div class="ticket-buy align-items-center">
