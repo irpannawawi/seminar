@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
     let counterValue = 0;
     let availableQuota = parseInt(document.getElementById('count-2').innerText);
-    let pricePerTicket = parseFloat(document.getElementById('price').innerHtml);
+    let pricePerTicket = parseFloat(document.getElementById('price').innerText.replace('IDR ', '').replace('.', ''));
     let titleElement = document.getElementById('title');
     let hitungElement = document.getElementById('hitung');
 

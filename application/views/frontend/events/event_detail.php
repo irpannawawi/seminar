@@ -99,14 +99,14 @@
 
                 <!-- Tab Content -->
                 <div class="tab-content">
-                    <div class="tab-pane fade show active" id="nav-one-eg1" role="tabpanel" aria-labelledby="nav-one-eg1-tab">
+                    <div class="tab-pane fade" id="nav-one-eg1" role="tabpanel" aria-labelledby="nav-one-eg1-tab">
                         <h2>Deskripsi</h2>
                         <?= $event['description'] ?>
                         <h2>Syarat dan Ketentuan</h2>
                         <?= $event['snk'] ?>
                     </div>
 
-                    <div class="tab-pane fade" id="nav-two-eg1" role="tabpanel" aria-labelledby="nav-two-eg1-tab">
+                    <div class="tab-pane fade show active" id="nav-two-eg1" role="tabpanel" aria-labelledby="nav-two-eg1-tab">
                         <div class="event-box">
                             <div class="ticket-list">
                                 <div>
