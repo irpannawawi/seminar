@@ -20,7 +20,7 @@
             <div class="col-12">
                 <div class="card">
                     <div class="card-header">
-                        <h3 class="card-title"><?php echo 'Data ' . $title ?></h3>
+                        <h3 class="card-title badge"><?= 'Data ' . $title ?></h3>
                     </div>
                     <!-- /.card-header -->
                     <div class="card-body">
@@ -41,7 +41,7 @@
                                 foreach ($events as $key) : ?>
                                     <tr>
                                         <td><?= $no++ ?></td>
-                                        <td><?= $key['title'] ?></td>
+                                        <td><?= $key['title'] ?> <a target="_blank" href="<?= site_url('event/' . $key['id_events'] . '/' . $key['slug']) ?>"><i class="fas fa-external-link-alt"></i></a></td>
                                         <td class="text-center"><?= date('d M Y', strtotime($key['date_start'])) ?></td>
                                         <td class="text-center"><?= $key['kuota'] ?></td>
                                         <td class="text-center">

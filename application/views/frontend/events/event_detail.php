@@ -61,8 +61,17 @@
                                 <b>Lokasi Acara</b>
                             </h1>
                             <div class="d-flex mt-2 mb-2">
-                                <i class="bi bi-geo-alt-fill text-dark"></i>
-                                <span style="margin-left: 8px;" class="text-truncate"><?= $event['location'] ?></span>
+                                <?php if ($event['type_event'] == 'offline') : ?>
+                                    <i class="bi bi-geo-alt-fill text-dark"></i>
+                                    <span style="margin-left: 8px;" class="text-truncate">
+                                        <?= $event['location'] ?>
+                                    </span>
+                                <?php else : ?>
+                                    <i class="bi bi-camera-reels text-dark"></i>
+                                    <span style="margin-left: 8px;" class="text-truncate">
+                                        <?= $event['label'] ?>
+                                    </span>
+                                <?php endif ?>
                             </div>
                             <h1 class="h5">
                                 <b>Tanggal Pelaksanaan</b>
@@ -78,8 +87,23 @@
                         </div>
                         <div class="col-12 col-md-6 mb-3">
                             <h1 class="h5">
-                                <b>Penyelenggara</b>
+                                <b>Informasi Tiket</b>
                             </h1>
+                            <div class="d-flex mt-2 mb-2">
+                                <i class="bi bi-ticket-perforated-fill text-dark"></i>
+                                <span style="margin-left: 8px;" class="text-truncate"><?= $event['kuota'] ?> Kuota Tiket</span>
+                            </div>
+                            <h1 class="h5">
+                                <b>Tanggal Pelaksanaan</b>
+                            </h1>
+                            <div class="d-flex mt-2 mb-2">
+                                <i class="bi bi-calendar text-dark"></i>
+                                <span style="margin-left: 8px;" class="text-truncate"><?= date('d M Y', strtotime($event['date_start'])) ?></span>
+                            </div>
+                            <div class="d-flex mt-2 mb-2">
+                                <i class="bi bi-calendar text-dark"></i>
+                                <span style="margin-left: 8px;" class="text-truncate"><?= date('d M Y', strtotime($event['date_finish'])) ?></span>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -99,14 +123,14 @@
 
                 <!-- Tab Content -->
                 <div class="tab-content">
-                    <div class="tab-pane fade" id="nav-one-eg1" role="tabpanel" aria-labelledby="nav-one-eg1-tab">
+                    <div class="tab-pane fade show active" id="nav-one-eg1" role="tabpanel" aria-labelledby="nav-one-eg1-tab">
                         <h2>Deskripsi</h2>
                         <?= $event['description'] ?>
                         <h2>Syarat dan Ketentuan</h2>
                         <?= $event['snk'] ?>
                     </div>
 
-                    <div class="tab-pane fade show active" id="nav-two-eg1" role="tabpanel" aria-labelledby="nav-two-eg1-tab">
+                    <div class="tab-pane fade" id="nav-two-eg1" role="tabpanel" aria-labelledby="nav-two-eg1-tab">
                         <div class="event-box">
                             <div class="ticket-list">
                                 <div>

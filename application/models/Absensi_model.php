@@ -5,7 +5,7 @@ class Absensi_model extends CI_Model
 {
     public function get_absensi($id_events)
     {
-        $this->db->select('absensi.*, events.title, peserta.name_peserta');
+        $this->db->select('*');
         $this->db->from('absensi');
         $this->db->join('events', 'absensi.id_events = events.id_events');
         $this->db->join('peserta', 'absensi.id_peserta = peserta.id_peserta');
