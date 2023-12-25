@@ -26,4 +26,12 @@ class Events_model extends CI_Model
         $this->db->where('events_id', $event_id);
         return $this->db->get('peserta')->result_array();
     }
+    public function getMax($table, $field, $kode = null)
+    {
+        $this->db->select_max($field);
+        if ($kode != null) {
+            $this->db->like($field, $kode, 'after');
+        }
+        return $this->db->get($table)->row_array()[$field];
+    }
 }

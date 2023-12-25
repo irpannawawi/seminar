@@ -30,8 +30,17 @@
                                 <span style="margin-left: 8px;" class="mobile-text-small text-truncate"><?= $event['time_start'] . ' - ' . $event['time_finish'] ?></span>
                             </div>
                             <div class="d-flex mt-2 mb-2 align-items-center">
-                                <i class="bi bi-geo-alt-fill"></i>
-                                <span style="margin-left: 8px;" class="mobile-text-small text-truncate"><?= $event['location'] ?></span>
+                                <?php if ($event['type_event'] == 'offline') : ?>
+                                    <i class="bi bi-geo-alt-fill text-dark"></i>
+                                    <span style="margin-left: 8px;" class="text-truncate">
+                                        <?= $event['location'] ?>
+                                    </span>
+                                <?php else : ?>
+                                    <i class="bi bi-camera-reels text-dark"></i>
+                                    <span style="margin-left: 8px;" class="text-truncate">
+                                        <?= $event['label'] . '/' . $event['type_event'] ?>
+                                    </span>
+                                <?php endif ?>
                             </div>
                         </div>
                         <div class="d-flex w-100 justify-content-between d-mobile-none d-block position-relative" style="height:60px">

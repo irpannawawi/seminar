@@ -40,7 +40,7 @@
                                         <td><?= $no++ ?></td>
                                         <td><?= $absensi['name_peserta'] ?></td>
                                         <td><?= $absensi['date_absensi'] ?></td>
-                                        <td><?= $absensi['status'] ?></td>
+                                        <td><?= $absensi['status_kehadiran'] ?></td>
                                     </tr>
                                 <?php endforeach ?>
                             </tbody>

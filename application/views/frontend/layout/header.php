@@ -32,6 +32,9 @@
     <!-- CSS Front Template -->
     <link rel="stylesheet" href="<?= base_url('assets/frontend/') ?>css/theme.min.css">
     <link rel="stylesheet" href="<?= base_url('assets/frontend/') ?>css/custom.css">
+
+    <!-- JS Global Compulsory  -->
+    <script src="<?= base_url('assets/frontend/') ?>vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 
 <body>

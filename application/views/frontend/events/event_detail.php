@@ -1,58 +1,52 @@
-<div class="container" style="padding-top: 1.5rem!important; padding-bottom: 3rem!important;">
+<div hidden id="eventId"><?= $event['id_events'] ?></div>
+<div class="container events">
     <div class="row">
+
         <?php $this->load->view('frontend/layout/breadcrumb'); ?>
 
-        <div class="col-12 col-md-4 order-1 order-md-2 mb-3">
-            <!-- Sticky Block -->
-            <div id="stickyBlockStartPoint">
-                <div class="js-sticky-block" data-hs-sticky-block-options='{
-                        "parentSelector": "#stickyBlockStartPoint",
-                        "breakpoint": "lg",
-                        "startPoint": "#stickyBlockStartPoint",
-                        "endPoint": "#stickyBlockEndPoint",
-                        "stickyOffsetTop": 20,
-                        "stickyOffsetBottom": 0
-                    }'>
-                    <!-- Step -->
-                    <div class="detail__event card-bordered mb-3">
-                        <img src="<?= base_url('assets/frontend/img/events/') . $event['image'] ?>" alt="" class="image card-event-image">
-                    </div>
-                    <div class="detail__event card-bordered mb-3">
-                        <p class="cart-ticket-name"><i class="bi bi-ticket-perforated"></i></p>
-                        <hr>
-                        <div class="event-detail-cart-amount">
-                            <div class="event-detail-cart-amount-label" id="hitung">
-                                <span id="qty-desktop" class="amount-label-qty">Total Bayar</span>
-                                <label class="sub-total-price"><span id="sub-total-price"></span></label>
-                            </div>
-                            <div class="event-detail-cart-checkout">
-                                <button class="btn btn-primary btn-block" id="buy" disabled>Beli Tiket</button>
-                            </div>
+        <div class="col-12 col-md-4 order-1 order-md-2 mb-3 ">
+            <!-- Step -->
+            <div class="detail__event shadow-sm mb-4">
+                <img src="<?= base_url('assets/frontend/img/events/') . $event['image'] ?>" alt="" class="image card-event-image">
+            </div>
+            <div class="sidebar__event">
+                <div class="detail__event shadow-sm mb-4">
+                    <p class="cart-ticket-name"><i class="bi bi-ticket-perforated"></i></p>
+                    <hr>
+                    <div class="event-detail-cart-amount">
+                        <div class="event-detail-cart-amount-label" id="hitung">
+                            <span id="qty-desktop" class="amount-label-qty">Total Bayar</span>
+                            <label class="sub-total-price"><span id="sub-total-price"></span></label>
+                        </div>
+                        <div class="event-detail-cart-checkout">
+                            <button class="btn btn-primary btn-block" id="buy" disabled>
+                                <span id="buy-text">Beli Tiket</span>
+                                <span id="buy-loader" class="d-none ml-2 spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                            </button>
                         </div>
                     </div>
-                    <div class="d-flex justify-content-sm-start align-items-center">
-                        <span class="text-cap mb-0 me-2">Bagikan:</span>
-
-                        <div class="d-flex gap-2">
-                            <a class="btn btn-soft-secondary btn-sm btn-icon rounded-circle" href="#">
-                                <i class="bi-facebook"></i>
-                            </a>
-                            <a class="btn btn-soft-secondary btn-sm btn-icon rounded-circle" href="#">
-                                <i class="bi-twitter"></i>
-                            </a>
-                            <a class="btn btn-soft-secondary btn-sm btn-icon rounded-circle" href="#">
-                                <i class="bi-instagram"></i>
-                            </a>
-                            <a class="btn btn-soft-secondary btn-sm btn-icon rounded-circle" href="#">
-                                <i class="bi-telegram"></i>
-                            </a>
-                        </div>
+                </div>
+                <div class="d-flex justify-content-sm-start align-items-center">
+                    <span class="text-cap mb-0 me-2">Bagikan:</span>
+                    <div class="d-flex gap-2">
+                        <a class="btn btn-soft-secondary btn-sm btn-icon rounded-circle" href="#">
+                            <i class="bi-facebook"></i>
+                        </a>
+                        <a class="btn btn-soft-secondary btn-sm btn-icon rounded-circle" href="#">
+                            <i class="bi-twitter"></i>
+                        </a>
+                        <a class="btn btn-soft-secondary btn-sm btn-icon rounded-circle" href="#">
+                            <i class="bi-instagram"></i>
+                        </a>
+                        <a class="btn btn-soft-secondary btn-sm btn-icon rounded-circle" href="#">
+                            <i class="bi-telegram"></i>
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
         <div class="col-12 col-md-8 order-1 order-md-1">
-            <div class="detail__event card-bordered">
+            <div class="detail__event padding shadow-sm">
                 <div class="mb-2">
                     <h1 class="h2" id="title"><?= $event['title'] ?></h1>
                     <div class="row mt-3">
@@ -64,12 +58,12 @@
                                 <?php if ($event['type_event'] == 'offline') : ?>
                                     <i class="bi bi-geo-alt-fill text-dark"></i>
                                     <span style="margin-left: 8px;" class="text-truncate">
-                                        <?= $event['location'] ?>
+                                        <a title="Klik ke GMaps" href="<?= $event['url_location'] ?>"><?= $event['location'] ?></a>
                                     </span>
                                 <?php else : ?>
                                     <i class="bi bi-camera-reels text-dark"></i>
                                     <span style="margin-left: 8px;" class="text-truncate">
-                                        <?= $event['label'] ?>
+                                        <?= $event['label'] . '/' . $event['type_event'] ?>
                                     </span>
                                 <?php endif ?>
                             </div>
@@ -78,11 +72,11 @@
                             </h1>
                             <div class="d-flex mt-2 mb-2">
                                 <i class="bi bi-calendar text-dark"></i>
-                                <span style="margin-left: 8px;" class="text-truncate"><?= date('d M Y', strtotime($event['date_start'])) ?></span>
+                                <span style="margin-left: 8px;" class="text-truncate"><?= date('d M Y', strtotime($event['date_start'])) . ' - ' . $event['time_start'] ?></span>
                             </div>
                             <div class="d-flex mt-2 mb-2">
                                 <i class="bi bi-calendar text-dark"></i>
-                                <span style="margin-left: 8px;" class="text-truncate"><?= date('d M Y', strtotime($event['date_finish'])) ?></span>
+                                <span style="margin-left: 8px;" class="text-truncate"><?= date('d M Y', strtotime($event['date_finish'])) . ' - ' . $event['time_finish'] ?></span>
                             </div>
                         </div>
                         <div class="col-12 col-md-6 mb-3">
@@ -94,15 +88,10 @@
                                 <span style="margin-left: 8px;" class="text-truncate"><?= $event['kuota'] ?> Kuota Tiket</span>
                             </div>
                             <h1 class="h5">
-                                <b>Tanggal Pelaksanaan</b>
+                                <b>Jam Pelaksanaan</b>
                             </h1>
-                            <div class="d-flex mt-2 mb-2">
-                                <i class="bi bi-calendar text-dark"></i>
-                                <span style="margin-left: 8px;" class="text-truncate"><?= date('d M Y', strtotime($event['date_start'])) ?></span>
-                            </div>
-                            <div class="d-flex mt-2 mb-2">
-                                <i class="bi bi-calendar text-dark"></i>
-                                <span style="margin-left: 8px;" class="text-truncate"><?= date('d M Y', strtotime($event['date_finish'])) ?></span>
+                            <div class="d-flex mt-2 mb-2 category__event">
+                                <span class="text-truncate">Kategori</span>
                             </div>
                         </div>
                     </div>
@@ -174,7 +163,6 @@
                 <!-- End Tab Content -->
             </div>
         </div>
-        <!-- Sticky Block End Point -->
-        <div id="stickyBlockEndPoint"></div>
     </div>
 </div>
+<script src="<?= base_url('assets/frontend/') ?>js/event/detail-event.js"></script>

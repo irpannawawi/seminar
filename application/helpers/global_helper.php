@@ -39,6 +39,42 @@ if (!function_exists('get_setting')) {
     }
 }
 
+if (!function_exists('cek_trx')) {
+    function cek_trx($status)
+    {
+        $CI = &get_instance();
+        $CI->load->database();
+
+        // Gunakan Query Builder untuk mengambil jumlah transaksi
+        $CI->db->select('COUNT(id_transaksi) as total_trx');
+        $CI->db->from('transaksi');
+        $CI->db->where('status_transaksi', $status);
+        $query = $CI->db->get();
+
+        // Periksa apakah query berhasil dijalankan
+        if ($query) {
+            // Ambil hasil query
+            $result = $query->row();
+
+            // Ambil jumlah transaksi
+            $total_trx = $result->total_trx;
+
+            // Kembalikan jumlah transaksi
+            echo '<span class="badge badge-warning right">' . $total_trx . '</span>';
+        } else {
+            // Jika query gagal, kembalikan false atau nilai default
+            return false;
+        }
+    }
+}
+if (!function_exists('kodeunik')) {
+    function kodeunik($length = 3)
+    {
+        // Menghasilkan angka acak dengan panjang 3 digit
+        return str_pad(rand(1, 999), $length, '0', STR_PAD_LEFT);
+    }
+}
+
 if (!function_exists('format_indo')) {
     function format_indo($date)
     {

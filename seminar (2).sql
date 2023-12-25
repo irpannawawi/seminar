@@ -90,7 +90,7 @@ CREATE TABLE `partnership` (
   `role_id` int NOT NULL,
   `user_id` int NOT NULL,
   `kuota_tiket` varchar(128) CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT NULL,
-  `total_terjual` varchar(128) CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT NULL
+  `tiket_terjual` varchar(128) CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
 --

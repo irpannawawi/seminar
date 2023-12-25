@@ -28,8 +28,7 @@
                                 <tr>
                                     <th>No</th>
                                     <th>Nama</th>
-                                    <th>Kuota Tiket</th>
-                                    <th>Total Terjual</th>
+                                    <th>Tiket Terjual</th>
                                     <!-- <th>Aksi</th> -->
                                 </tr>
                             </thead>
@@ -40,8 +39,7 @@
                                     <tr>
                                         <td><?= $no++ ?></td>
                                         <td><?= $key['name'] ?></td>
-                                        <td><?= $key['kuota_tiket'] ?></td>
-                                        <td><?= $key['total_terjual'] ?></td>
+                                        <td><?= $key['tiket_terjual'] ?></td>
                                         <!-- <td class="text-center">
                                             <a href="javascript:;" data-toggle="modal" data-target="#editModal<?= $key['id_leader'] ?>" class="btn btn-secondary btn-sm"><i class="fas fa-pencil-alt"></i> Edit</a>
                                             <a href="<?= base_url('admin/events/deleteCategory/' . $key['id_leader']); ?>" class="btn btn-danger btn-sm delete-btn"><i class="fas fa-trash-alt"></i> Delete</a>

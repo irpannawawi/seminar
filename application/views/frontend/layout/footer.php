@@ -139,9 +139,6 @@
 </div>
 <!-- ========== END SECONDARY CONTENTS ========== -->
 
-<!-- JS Global Compulsory  -->
-<script src="<?= base_url('assets/frontend/') ?>vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-
 <!-- JS Implementing Plugins -->
 <script src="<?= base_url('assets/frontend/') ?>vendor/hs-sticky-block/dist/hs-sticky-block.min.js"></script>
 <script src="<?= base_url('assets/frontend/') ?>vendor/hs-header/dist/hs-header.min.js"></script>
@@ -155,7 +152,6 @@
 <!-- JS Front -->
 <script src="<?= base_url('assets/frontend/') ?>js/theme.min.js"></script>
 <script src="<?= base_url('assets/frontend/') ?>js/custom.js"></script>
-<script src="<?= base_url('assets/frontend/') ?>js/event/detail-event.js"></script>
 <script>
     const baseurl = '<?= base_url() ?>';
     const segment = '<?= $this->uri->segment(2); ?>';

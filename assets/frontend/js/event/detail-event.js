@@ -52,13 +52,25 @@ document.addEventListener('DOMContentLoaded', function() {
     // Menambah event listener untuk tombol beli tiket
     document.getElementById('buy').addEventListener('click', function() {
         if (counterValue > 0) {
+            // Ambil ID Event dari elemen HTML tersembunyi
+            const eventId = document.getElementById('eventId').innerText;
+    
+            // Ambil elemen untuk text dan loader
+            const buyText = document.getElementById('buy-text');
+            const buyLoader = document.getElementById('buy-loader');
+    
+            // Ganti teks tombol dengan loader saat proses
+            buyText.textContent = 'Loading...';
+            buyLoader.classList.remove('d-none');
+    
             // Buat URL checkout dengan parameter yang sesuai
-            const checkoutUrl = baseurl + `checkout`;
+            const checkoutUrl = baseurl + `checkout?id_events=${eventId}&quantity=${counterValue}`;
             
             // Arahkan ke halaman checkout
             window.location.href = checkoutUrl;
         }
     });
+    
 
     updateCounter();
 });
