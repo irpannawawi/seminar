@@ -4,13 +4,13 @@
 
         <?php $this->load->view('frontend/layout/breadcrumb'); ?>
 
-        <div class="col-12 col-md-4 order-1 order-md-2 mb-3 ">
+        <div class="col-12 col-md-4 order-1 order-md-2 mb-3">
             <!-- Step -->
             <div class="detail__event shadow-sm mb-4">
                 <img src="<?= base_url('assets/frontend/img/events/') . $event['image'] ?>" alt="" class="image card-event-image">
             </div>
             <div class="sidebar__event">
-                <div class="detail__event shadow-sm mb-4">
+                <div class="detail__event box__payment shadow-sm mb-4">
                     <p class="cart-ticket-name"><i class="bi bi-ticket-perforated"></i></p>
                     <hr>
                     <div class="event-detail-cart-amount">

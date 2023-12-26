@@ -9,7 +9,7 @@
                 <!-- Card -->
                 <div class="card card-bordered card-transition list__event">
                     <figure>
-                        <a href="#">
+                        <a href="<?= base_url('assets/frontend/img/events/') . $event['image'] ?>" class="image-popup-vertical-fit" title="<?= $event['title'] ?>">
                             <img class="card-img" src="<?= base_url('assets/frontend/img/events/') . $event['image'] ?>" alt="<?= $event['title'] ?>">
                         </a>
                     </figure>

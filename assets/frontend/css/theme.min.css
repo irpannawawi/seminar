@@ -22549,7 +22549,7 @@ input[type=number] {
 }
 
 .nav-segment.nav-pills {
-    border-radius: 50rem
+    border-radius: 50rem;
 }
 
 .nav-segment.nav-pills .nav-link {

@@ -121,8 +121,13 @@ class Events extends CI_Controller
             $categories_json = json_encode($categories);
             $description = $this->input->post('description');
             $snk = $this->input->post('snk');
-            $date_start = $this->input->post('date_start');
-            $date_finish = $this->input->post('date_finish');
+            $date_start_input = $this->input->post('date_start');
+            $date_finish_input = $this->input->post('date_finish');
+
+            // Ubah format tanggal
+            $date_start = date('Y-m-d', strtotime($date_start_input));
+            $date_finish = date('Y-m-d', strtotime($date_finish_input));
+
             $time_start = $this->input->post('time_start');
             $time_finish = $this->input->post('time_finish');
             $price = htmlspecialchars($this->input->post('price'));

@@ -152,6 +152,15 @@ span.text-truncate{
     border-radius: 15px;
     padding: 13px;
 }
+@media (max-width: 768px) {
+    .box__payment {
+        position: fixed;
+        bottom: -26px;
+        left: 0;
+        width: 100%;
+        z-index: 1000;
+    }
+}  
 .detail__event img{
     border-radius: 15px;
     width: 100%;

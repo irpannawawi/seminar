@@ -152,9 +152,25 @@
 <!-- JS Front -->
 <script src="<?= base_url('assets/frontend/') ?>js/theme.min.js"></script>
 <script src="<?= base_url('assets/frontend/') ?>js/custom.js"></script>
+<script src="<?= base_url('assets/frontend/') ?>js/home/magnific.js"></script>
 <script>
     const baseurl = '<?= base_url() ?>';
     const segment = '<?= $this->uri->segment(2); ?>';
+</script>
+<script>
+    $(document).ready(function() {
+
+        $('.image-popup-vertical-fit').magnificPopup({
+            type: 'image',
+            closeOnContentClick: true,
+            mainClass: 'mfp-img-mobile',
+            image: {
+                verticalFit: true
+            }
+
+        });
+
+    });
 </script>
 </body>
 

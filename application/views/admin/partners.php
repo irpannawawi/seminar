@@ -17,8 +17,8 @@
 <section class="content pr-lg-5 pl-lg-5">
     <div class="container-fluid">
         <div class="row mb-3">
-            <div class="col 12">
-                <select id="eventsId" name="eventsId" class="select2" data-placeholder="Pilih events" style="width: 100%;">
+            <div class="col-12">
+                <select id="eventsId" name="eventsId" class="select2">
                     <option selected disabled>Pilih events terlebih dahulu</option>
                     <?php foreach ($events as $key) : ?>
                         <option value="<?= $key['id_events'] ?>"><?= $key['title'] ?></option>
