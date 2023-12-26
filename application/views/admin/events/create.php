@@ -168,11 +168,11 @@
                             </div>
                         </div>
                         <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="type_event" id="type_event" onchange="toggleInput('offlineInput')" value="offline" <?= set_radio('type_event', 'offline', (isset($type_event) && $type_event === 'offline')); ?>>
+                            <input class="form-check-input" type="radio" name="type_event" id="offlineRadio" onchange="toggleInput('offlineInput')" value="offline" <?= set_radio('type_event', 'offline', (isset($type_event) && $type_event === 'offline')); ?>>
                             <label class="form-check-label">Offline</label>
                         </div>
                         <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="type_event" id="type_event" onchange="toggleInput('onlineInput')" value="online" <?= set_radio('type_event', 'online', (isset($type_event) && $type_event === 'online')); ?>>
+                            <input class="form-check-input" type="radio" name="type_event" id="onlineRadio" onchange="toggleInput('onlineInput')" value="online" <?= set_radio('type_event', 'online', (isset($type_event) && $type_event === 'online')); ?>>
                             <label class="form-check-label">Online</label>
                         </div>
                         <div class="hidden" id="offlineInput">

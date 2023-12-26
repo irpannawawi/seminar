@@ -3,7 +3,7 @@ function toggleInput(showId) {
 
     // Hide all elements with class 'hidden'
     var hiddenElements = document.querySelectorAll('.hidden');
-    hiddenElements.forEach(function(element) {
+    hiddenElements.forEach(function (element) {
         element.style.maxHeight = '0';
     });
 
