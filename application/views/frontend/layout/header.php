@@ -41,6 +41,7 @@
 
 <body>
     <!-- ========== HEADER ========== -->
+    <!-- <header id="header" class="navbar navbar-expand-lg navbar-end navbar-light header__sticky"> -->
     <header id="header" class="navbar navbar-expand-lg navbar-end navbar-light">
         <div class="container">
             <nav class="js-mega-menu navbar-nav-wrap">
