@@ -2,9 +2,11 @@ document.addEventListener('DOMContentLoaded', function() {
     let subTotal = parseFloat(document.getElementById('subtotal').innerText.replace('IDR ', '').replace(/\./g, ''));
     let kodeunik = parseInt(document.getElementById('kodeunik').innerText);
     const total = document.getElementById('total');
+    const nominal = document.getElementById('nominal');
 
     const hitung = subTotal + kodeunik;
     total.innerHTML = `Rp. ${hitung.toLocaleString(undefined, { minimumFractionDigits: 0, maximumFractionDigits: 0 })}`;
+    nominal.value = `${hitung.toLocaleString(undefined, { minimumFractionDigits: 0, maximumFractionDigits: 0, useGrouping: false })}`;
 });
 
 document.addEventListener('DOMContentLoaded', function() {

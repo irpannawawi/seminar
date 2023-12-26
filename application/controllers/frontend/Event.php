@@ -98,6 +98,7 @@ class Event extends CI_Controller
                 'bukti_transfer' => $this->input->post('bukti_transfer'), // Sesuaikan dengan nama input form untuk bukti transfer
                 'code_promo' => $this->input->post('code_promo') ?? '',
                 'tiket' => $this->input->post('tiket'),
+                'nominal' => $this->input->post('nominal'),
                 'status_transaksi' => 'Tertunda' // Sesuaikan dengan status awal transaksi
             );
 

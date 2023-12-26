@@ -23,14 +23,8 @@
 </div>
 <!-- ./wrapper -->
 
-<!-- jQuery -->
-<script src="<?= base_url('assets/backend') ?>/plugins/jquery/jquery.min.js"></script>
-<!-- jQuery UI 1.11.4 -->
-<script src="<?= base_url('assets/backend') ?>/plugins/jquery-ui/jquery-ui.min.js"></script>
-<!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
-<script>
-    $.widget.bridge('uibutton', $.ui.button)
-</script>
+
+
 <!-- Bootstrap 4 -->
 <script src="<?= base_url('assets/backend') ?>/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
 <!-- jQuery Knob Chart -->
@@ -52,79 +46,39 @@
 <!-- Select2 -->
 <script src="<?= base_url('assets/backend') ?>/plugins/select2/js/select2.full.min.js"></script>
 <script src="<?= base_url('assets/backend') ?>/plugins/toastr/toastr.min.js"></script>
+
+<!-- sweetalert2 -->
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
 <!-- custom -->
 <script src="<?= base_url('assets/backend') ?>/dist/js/custom.js"></script>
 <script src="<?= base_url('assets/backend') ?>/dist/js/event/create.js"></script>
 <script src="<?= base_url('assets/backend') ?>/dist/js/event/table.js"></script>
+<script src="<?= base_url('assets/backend/') ?>dist/js/event/partnership.js"></script>
+
+<script>
+    const baseurl = '<?= base_url() ?>';
+</script>
+
+<!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
+<script>
+    $.widget.bridge('uibutton', $.ui.button)
+</script>
 
 <script>
     // message modal
     <?php if ($this->session->flashdata('success')) { ?>
-        var message = <?php echo json_encode($this->session->flashdata('success')) ?>;
-        toastr.success(message)
+        var successMessage = <?php echo json_encode($this->session->flashdata('success')) ?>;
+        toastr.success(successMessage)
     <?php } ?>
     <?php if ($this->session->flashdata('error')) { ?>
-        var message = <?php echo json_encode($this->session->flashdata('error')) ?>;
-        toastr.error(message)
+        var failedMessage = <?php echo json_encode($this->session->flashdata('error')) ?>;
+        toastr.error(failedMessage)
     <?php } ?>
     <?php if (validation_errors()) { ?>
-        var message = <?php echo json_encode(validation_errors()); ?>;
-        toastr.error(message)
+        var validationMessage = <?php echo json_encode(validation_errors()); ?>;
+        toastr.error(validationMessage)
     <?php } ?>
-
-    /* Rupiah */
-    document.addEventListener('DOMContentLoaded', function() {
-        var priceInput = document.getElementById('price');
-        if (priceInput) {
-            priceInput.addEventListener('input', function(e) {
-                this.value = formatRupiah(this.value, 'Rp. ');
-            });
-        }
-    });
-
-    /* Fungsi */
-    function formatRupiah(angka, prefix) {
-        var numberString = angka.replace(/[^,\d]/g, '').toString(),
-            split = numberString.split(','),
-            sisa = split[0].length % 3,
-            rupiah = split[0].substr(0, sisa),
-            ribuan = split[0].substr(sisa).match(/\d{3}/g);
-
-        if (ribuan) {
-            separator = sisa ? '.' : '';
-            rupiah += separator + ribuan.join('.');
-        }
-
-        rupiah = split[1] !== undefined ? rupiah + ',' + split[1] : rupiah;
-        return prefix === undefined ? rupiah : (rupiah ? 'Rp. ' + rupiah : '');
-    }
-
-    // sweet alert delete
-    document.addEventListener('DOMContentLoaded', () => {
-        const deleteButtons = document.querySelectorAll('.delete-btn');
-
-        deleteButtons.forEach(button => {
-            button.addEventListener('click', event => {
-                event.preventDefault();
-
-                Swal.fire({
-                    title: 'Apakah anda yakin?',
-                    text: 'Anda tidak akan dapat mengembalikan ini!',
-                    icon: 'warning',
-                    showCancelButton: true,
-                    confirmButtonColor: '#3085d6',
-                    cancelButtonColor: '#d33',
-                    confirmButtonText: 'Ya, hapus!'
-                }).then(result => {
-                    if (result.isConfirmed) {
-                        // Redirect to delete route if user confirms
-                        window.location.href = button.getAttribute('href');
-                    }
-                });
-            });
-        });
-    });
 
     // jika pilih nama bank nya maka sesuaikan dengan code nya jga yg di json
     // $(document).ready(function() {

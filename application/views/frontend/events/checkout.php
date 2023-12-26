@@ -81,6 +81,7 @@
                                 <dl class="row">
                                     <dt class="col-sm-6">Total</dt>
                                     <dd class="col-sm-6 text-sm-end mb-0" id="total"></dd>
+                                    <input type="hidden" name="nominal" id="nominal">
                                 </dl>
                                 <!-- End Row -->
                             </div>

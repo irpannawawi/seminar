@@ -13,6 +13,21 @@
         </div><!-- /.row -->
     </div><!-- /.container-fluid -->
 </div>
+
+<section class="content pr-lg-5 pl-lg-5">
+    <div class="container-fluid">
+        <div class="row mb-3">
+            <div class="col 12">
+                <select id="eventsId" name="eventsId" class="select2" data-placeholder="Pilih events" style="width: 100%;">
+                    <option selected disabled>Pilih events terlebih dahulu</option>
+                    <?php foreach ($events as $key) : ?>
+                        <option value="<?= $key['id_events'] ?>"><?= $key['title'] ?></option>
+                    <?php endforeach ?>
+                </select>
+            </div>
+        </div>
+    </div>
+</section>
 <section class="content pr-lg-5 pl-lg-5">
     <div class="container-fluid">
         <div class="row">
@@ -21,6 +36,9 @@
                     <div class="card-header">
                         <h3 class="card-title"><?php echo 'Data ' . $title ?></h3>
                     </div>
+                    <div id="loading-overlay" class="overlay">
+                        <div class="loading"></div>
+                    </div>
                     <!-- /.card-header -->
                     <div class="card-body">
                         <table id="table-data" class="table table-bordered table-striped">
@@ -28,8 +46,9 @@
                                 <tr>
                                     <th>No</th>
                                     <th>Nama</th>
+                                    <th>Kuota Tiket</th>
                                     <th>Tiket Terjual</th>
-                                    <!-- <th>Aksi</th> -->
+                                    <th>Aksi</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -39,11 +58,11 @@
                                     <tr>
                                         <td><?= $no++ ?></td>
                                         <td><?= $key['name'] ?></td>
+                                        <td><?= $key['kuota_tiket'] ?></td>
                                         <td><?= $key['tiket_terjual'] ?></td>
-                                        <!-- <td class="text-center">
-                                            <a href="javascript:;" data-toggle="modal" data-target="#editModal<?= $key['id_leader'] ?>" class="btn btn-secondary btn-sm"><i class="fas fa-pencil-alt"></i> Edit</a>
-                                            <a href="<?= base_url('admin/events/deleteCategory/' . $key['id_leader']); ?>" class="btn btn-danger btn-sm delete-btn"><i class="fas fa-trash-alt"></i> Delete</a>
-                                        </td> -->
+                                        <td class="text-center">
+                                            <a href="javascript:;" data-toggle="modal" data-target="#tambahModal<?= $key['id_leader'] ?>" class="btn btn-primary btn-sm"><i class="fas fa-plus"></i> Tambah Tiket</a>
+                                        </td>
                                     </tr>
                                 <?php endforeach ?>
                             </tbody>
@@ -58,21 +77,21 @@
 
 <!-- edit modal -->
 <?php foreach ($partner as $key) : ?>
-    <div class="modal fade" id="editModal<?= $key['id_leader'] ?>">
+    <div class="modal fade" id="tambahModal<?= $key['id_leader'] ?>">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
-                <form action="<?= base_url('admin/events/category') ?>" method="post">
+                <form action="<?= base_url('admin/partnership') ?>" method="post">
                     <input type="hidden" name="id_leader" value="<?= $key['id_leader'] ?>">
                     <div class="modal-header">
-                        <h4 class="modal-title">Edit <?= $title; ?></h4>
+                        <h4 class="modal-title">Tambah Tiket</h4>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
                     </div>
                     <div class="modal-body">
                         <div class="form-group">
-                            <label for="">Nama Kategori</label>
-                            <input type="text" name="name_category" id="name_category" class="form-control" value="<?= $key['name_category'] ?>">
+                            <label>Kuota Tiket</label>
+                            <input type="text" name="kuota_tiket" id="kuota_tiket" class="form-control" value="<?= $key['kuota_tiket'] ?>">
                         </div>
                     </div>
                     <div class="modal-footer justify-content-between">

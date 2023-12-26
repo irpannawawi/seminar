@@ -77,7 +77,7 @@
                                 <td><b>Nama Event: </b></td>
                                 <td><?= $value['title']; ?></td><br>
                                 <td><b>Nominal: </b></td>
-                                <td><?= rupiah($value['price']); ?></td><br>
+                                <td><?= rupiah($value['nominal']); ?></td><br>
                                 <td><b>Bank Tujuan: </b></td>
                                 <td><?= $value['bank_transfer']; ?></td><br>
                                 <td><b>Tanggal Transaksi: </b></td>
