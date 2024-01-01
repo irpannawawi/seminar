@@ -57,7 +57,7 @@ $route['registration'] = 'auth/registration';
 
 // user
 $route['admin'] = 'admin/dashboard';
-$route['users'] = 'users/dashboard';
+$route['leader'] = 'leader/dashboard';
 
 // event
 $route['event/(:num)/(:any)'] = 'frontend/event/detail/$1/$2';

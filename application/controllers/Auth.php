@@ -9,7 +9,7 @@ class Auth extends CI_Controller
             if ($this->session->role_id == 1) {
                 redirect('admin'); // apabila sudah login masuk ke role admin/dashboard
             } else {
-                redirect('users'); // apabila sudah login masuk ke role users/dashboard
+                redirect('leader'); // apabila sudah login masuk ke role leader/dashboard
             }
         }
 
@@ -47,7 +47,7 @@ class Auth extends CI_Controller
                 if ($user['role_id'] == 1) {
                     redirect('admin');
                 } else {
-                    redirect('users');
+                    redirect('leader');
                 }
             } else {
                 set_pesan('Password salah!', false);
@@ -72,7 +72,7 @@ class Auth extends CI_Controller
             if ($this->session->role_id == 1) {
                 redirect('admin'); // apabila sudah login masuk ke role admin/dashboard
             } else {
-                redirect('users'); // apabila sudah login masuk ke role users/dashboard
+                redirect('leader'); // apabila sudah login masuk ke role leader/dashboard
             }
         }
         $this->form_validation->set_rules('name', 'Name', 'required|trim');

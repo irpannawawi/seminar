@@ -7,8 +7,9 @@ class Penjualan_model extends CI_Model
     {
         $this->db->select('*');
         $this->db->from('transaksi');
-        $this->db->join('events', 'events.id_events = transaksi.events_id');
-        $this->db->join('peserta', 'peserta.id_peserta = transaksi.peserta_id');
+        $this->db->join('events', 'events.id_events = transaksi.events_id', 'left');
+        $this->db->join('peserta', 'peserta.id_peserta = transaksi.peserta_id', 'left');
+        $this->db->join('users', 'users.id_user = transaksi.user_id', 'left'); // Gunakan LEFT JOIN pada kolom user_id
 
         $query = $this->db->get();
 

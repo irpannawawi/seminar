@@ -7,6 +7,7 @@ class Penjualan extends CI_Controller
     {
         parent::__construct();
         is_logged_in();
+
         $this->load->model('Penjualan_model', 'penjualan');
     }
 

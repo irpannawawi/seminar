@@ -7,6 +7,7 @@ class Integrasimanagement extends CI_Controller
     {
         parent::__construct();
         is_logged_in();
+
         $this->load->model('Integrasi_model', 'integrasi');
     }
 

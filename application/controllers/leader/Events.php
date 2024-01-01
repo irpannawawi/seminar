@@ -1,0 +1,60 @@
+<?php
+defined('BASEPATH') or exit('No direct script access allowed');
+
+class Events extends CI_Controller
+{
+    public function __construct()
+    {
+        parent::__construct();
+        $this->load->model('Events_model', 'events');
+        is_logged_in();
+    }
+
+    public function index()
+    {
+        $data['users'] = $this->db->get_where('users', ['email' => $this->session->email])->row_array();
+        $data['events'] = $this->db
+            ->where('status', 'published')
+            ->order_by('date_created', 'DESC')
+            ->get('events')->result_array();
+
+        $data['title'] = 'Events';
+        $data['rekening'] = $this->db->get('rekening')->result_array();
+
+        $this->form_validation->set_rules('jml_tiket', 'Jumlah Tiket', 'numeric|trim|required');
+        $this->form_validation->set_rules('bank_transfer', 'Bank Transfer', 'trim|required');
+
+        if ($this->form_validation->run() == false) {
+            $this->load->view('leader/layouts/header', $data);
+            $this->load->view('leader/layouts/navbar');
+            $this->load->view('leader/layouts/sidebar');
+            $this->load->view('leader/events');
+            $this->load->view('leader/layouts/footer');
+        } else {
+            // Jika validasi berhasil
+            // Mengenerate ID Transaksi
+            $number = str_pad(rand(100000000000, 999999999999), 13);
+            $idOrder = 'TS' . $number;
+
+            $id_user =  $data['users']['id_user'];
+            $price = $this->input->post('price');
+            $jmlTiket = $this->input->post('jml_tiket');
+            $nominal = $price * $jmlTiket;
+
+            $save = [
+                'id_order' => $idOrder,
+                'user_id' => $id_user,
+                'bank_transfer' => $this->input->post('bank_transfer'),
+                'events_id' => $this->input->post('id_events'),
+                'tiket' => $jmlTiket,
+                'nominal' => $nominal,
+                'date_transaksi' => time(),
+                'status_transaksi' => 'Tertunda'
+            ];
+
+            $this->db->insert('transaksi', $save);
+            set_pesan('Berhasil request, Silahkan Bayar!');
+            redirect('leader/tiket');
+        }
+    }
+}
