@@ -38,9 +38,9 @@
                                 foreach ($absensi as $absensi) : ?>
                                     <tr>
                                         <td><?= $no++ ?></td>
-                                        <td><?= $absensi['name_peserta'] ?></td>
+                                        <td><?= $absensi['name'] ?></td>
                                         <td><?= $absensi['date_absensi'] ?></td>
-                                        <td><?= $absensi['status_kehadiran'] ?></td>
+                                        <td><?= status_absensi($absensi['status_kehadiran']) ?></td>
                                     </tr>
                                 <?php endforeach ?>
                             </tbody>

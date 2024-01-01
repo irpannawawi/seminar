@@ -43,7 +43,7 @@ class Event extends CI_Controller
         $data['quantity'] = $quantity;
         $data['subtotal'] = $data['event']['price'] * $data['quantity'];
 
-        $this->form_validation->set_rules('name_peserta', 'Nama Lengkap', 'required|trim', [
+        $this->form_validation->set_rules('name', 'Nama Lengkap', 'required|trim', [
             'required' => 'Nama Lengkap harus diisi.',
         ]);
         $this->form_validation->set_rules('email', 'Email', 'required|valid_email|trim', [
@@ -71,7 +71,7 @@ class Event extends CI_Controller
             // Ambil data peserta dari form
             $peserta_data = array(
                 'events_id' => $this->input->post('events_id'),
-                'name_peserta' => $this->input->post('name_peserta'),
+                'name' => $this->input->post('name'),
                 'nowa' => $this->input->post('nowa'),
                 'email' => $this->input->post('email'),
                 'date_participate' => time(),

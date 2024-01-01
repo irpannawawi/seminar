@@ -100,3 +100,30 @@ if (!function_exists('format_indo')) {
         $ci->output->set_content_type('application/json')->set_output(json_encode($data));
     }
 }
+
+if (!function_exists('status_transaksi')) {
+    function status_transaksi($status)
+    {
+        $status_data = [
+            'Tertunda' => '<span class="badge badge-warning">Tertunda</span>',
+            'Refund' => '<span class="badge badge-secondary">Refund</span>',
+            'Lunas' => '<span class="badge badge-success">Lunas</span>',
+            'Dibatalkan' => '<span class="badge badge-danger">Dibatalkan</span>',
+            'Proses' => '<span class="badge badge-info">Proses</span>',
+        ];
+
+        return isset($status_data[$status]) ? $status_data[$status] : '<span class="badge badge-secondary">Undefined</span>';
+    }
+}
+
+if (!function_exists('status_absensi')) {
+    function status_absensi($status)
+    {
+        $status_data = [
+            'Hadir' => '<span class="badge badge-success">Hadir</span>',
+            'Tidak Hadir' => '<span class="badge badge-warning">Tidak Hadir</span>',
+        ];
+
+        return isset($status_data[$status]) ? $status_data[$status] : '<span class="badge badge-secondary">Undefined</span>';
+    }
+}

@@ -11,8 +11,8 @@
                     <h4 class="mb-3">Data Diri</h4>
                     <div class="mb-3">
                         <label class="form-label">Nama Lengkap</label>
-                        <input type="text" id="name_peserta" name="name_peserta" class="form-control" placeholder="beserta gelar lengkap" value="<?= set_value('name_peserta') ?>">
-                        <?= form_error('name_peserta', '<span class="text-danger pl-3">', '</span>'); ?>
+                        <input type="text" id="name" name="name" class="form-control" placeholder="beserta gelar lengkap" value="<?= set_value('name') ?>">
+                        <?= form_error('name', '<span class="text-danger pl-3">', '</span>'); ?>
                     </div>
                     <div class="mb-3">
                         <label class="form-label">Email</label>

@@ -140,7 +140,7 @@
                                             <?php foreach ($event_data['peserta'] as $peserta) : ?>
                                                 <tr>
                                                     <td><?= $no++; ?></td>
-                                                    <td><?= $peserta['name_peserta']; ?></td>
+                                                    <td><?= $peserta['name']; ?></td>
                                                     <td><a target="_blank" href="<?= 'https://wa.me/62' . $peserta['nowa'] ?>"><?= $peserta['nowa'] ?></a></td>
                                                     <td><?= $peserta['email']; ?></td>
                                                     <td><?= date('d M Y', strtotime($peserta['date_participate'])) ?></td>

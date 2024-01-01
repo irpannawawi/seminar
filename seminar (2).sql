@@ -110,7 +110,7 @@ CREATE TABLE `peserta` (
   `id_peserta` int NOT NULL,
   `events_id` int NOT NULL,
   `order_id` int NOT NULL,
-  `name_peserta` varchar(128) NOT NULL,
+  `name` varchar(128) NOT NULL,
   `nowa` varchar(50) NOT NULL,
   `email` varchar(128) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
   `date_participate` int NOT NULL,
@@ -121,7 +121,7 @@ CREATE TABLE `peserta` (
 -- Dumping data for table `peserta`
 --
 
-INSERT INTO `peserta` (`id_peserta`, `events_id`, `order_id`, `name_peserta`, `nowa`, `email`, `date_participate`, `status`) VALUES
+INSERT INTO `peserta` (`id_peserta`, `events_id`, `order_id`, `name`, `nowa`, `email`, `date_participate`, `status`) VALUES
 (1, 32, 1, 'Sandi Maulidika', '085380945896', 'SMA Negeri', 1700031633, 'testing'),
 (2, 32, 2, 'Voni Puspita Sari', '082182877737', 'SMA Negeri', 1700031633, 'testing'),
 (3, 40, 3, 'Ajeng Anu', '085380945896', 'SMA Negeri', 1700031633, 'testing'),

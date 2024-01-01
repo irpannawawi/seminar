@@ -44,7 +44,7 @@
                                         <td><?= $key['title'] ?></td>
                                         <td><?= $key['tiket'] ?></td>
                                         <td><?= rupiah($key['nominal']) ?></td>
-                                        <td><?= $status[$key['status_transaksi']] ?></td>
+                                        <td><?= status_transaksi($key['status_transaksi']) ?></td>
                                         <td class="text-center">
                                             <?php if ($key['status_transaksi'] = 'Dibatalkan') : ?>
                                                 <a href="javascript:;" data-toggle="modal" data-target="#tiketModal<?= $key['id_transaksi']  ?>" class="btn btn-success btn-sm">

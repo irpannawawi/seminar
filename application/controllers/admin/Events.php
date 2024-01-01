@@ -44,7 +44,7 @@ class Events extends CI_Controller
             $whatsapp = '';
             foreach ($pesertaEvent as $peserta) {
                 $nowa = $peserta['nowa'];
-                $name = $peserta['name_peserta'];
+                $name = $peserta['name'];
                 $whatsapp .= $nowa . '|' . $name . ',';
             }
 

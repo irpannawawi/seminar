@@ -17,9 +17,10 @@ class Tiket extends CI_Controller
         $data['title'] = 'Tiket';
         $data['status'] = [
             'Tertunda' => '<span class="badge badge-warning">Tertunda</span>',
-            'Refund' => '<span class="badge badge-info">Refund</span>',
+            'Refund' => '<span class="badge badge-secondary">Refund</span>',
             'Lunas' => '<span class="badge badge-success">Lunas</span>',
             'Dibatalkan' => '<span class="badge badge-danger">Dibatalkan</span>',
+            'Proses' => '<span class="badge badge-info">Proses</span>',
         ];
 
         $this->load->view('leader/layouts/header', $data);

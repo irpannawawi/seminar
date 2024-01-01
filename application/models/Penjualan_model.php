@@ -5,7 +5,7 @@ class Penjualan_model extends CI_Model
 {
     public function get_data()
     {
-        $this->db->select('*');
+        $this->db->select('transaksi.*, events.*, peserta.name AS peserta_name, users.name AS user_name');
         $this->db->from('transaksi');
         $this->db->join('events', 'events.id_events = transaksi.events_id', 'left');
         $this->db->join('peserta', 'peserta.id_peserta = transaksi.peserta_id', 'left');
