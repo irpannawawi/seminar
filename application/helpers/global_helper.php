@@ -75,32 +75,98 @@ if (!function_exists('kodeunik')) {
     }
 }
 
-if (!function_exists('format_indo')) {
-    function format_indo($date)
+if (!function_exists('tanggal')) {
+    function tanggal($tanggal)
     {
-        date_default_timezone_set('Asia/Jakarta');
-        // array hari dan bulan
-        $Hari = array("Minggu", "Senin", "Selasa", "Rabu", "Kamis", "Jumat", "Sabtu");
-        $Bulan = array("Januari", "Februari", "Maret", "April", "Mei", "Juni", "Juli", "Agustus", "September", "Oktober", "November", "Desember");
-
-        // pemisahan tahun, bulan, hari, dan waktu
-        $tahun = substr($date, 0, 4);
-        $bulan = substr($date, 5, 2);
-        $tgl = substr($date, 8, 2);
-        $waktu = substr($date, 11, 5);
-        $hari = date("w", strtotime($date));
-        $result = $Hari[$hari] . ", " . $tgl . " " . $Bulan[(int)$bulan - 1] . " " . $tahun . " " . $waktu;
-
-        return $result;
+        $ubahTanggal = gmdate($tanggal, time() + 60 * 60 * 8);
+        $pecahTanggal = explode('-', $ubahTanggal);
+        $tanggal = $pecahTanggal[2];
+        $bulan = $pecahTanggal[1];
+        $tahun = $pecahTanggal[0];
+        $namaHari = nama_hari(date('l', mktime(0, 0, 0, $bulan, $tanggal, $tahun)));
+        return $namaHari . ', ' . $tanggal . ' ' . bulan_panjang($bulan) . ' ' . $tahun;
     }
-
-    function output_json($data) //ini untuk mengubah data menjadi json
+}
+if (!function_exists('tgl')) {
+    function tgl($tanggal)
     {
-        $ci = get_instance();
-        $ci->output->set_content_type('application/json')->set_output(json_encode($data));
+        $ubahTanggal = gmdate($tanggal, time() + 60 * 60 * 8);
+        $pecahTanggal = explode('-', $ubahTanggal);
+        $tanggal = $pecahTanggal[2];
+        $bulan = bulan_panjang($pecahTanggal[1]);
+        $tahun = $pecahTanggal[0];
+        return $tanggal . ' ' . $bulan . ' ' . $tahun;
+    }
+}
+if (!function_exists('bulan_panjang')) {
+    function bulan_panjang($bulan)
+    {
+        switch ($bulan) {
+            case 1:
+                return 'Januari';
+                break;
+            case 2:
+                return 'Februari';
+                break;
+            case 3:
+                return 'Maret';
+                break;
+            case 4:
+                return 'April';
+                break;
+            case 5:
+                return 'Mei';
+                break;
+            case 6:
+                return 'Juni';
+                break;
+            case 7:
+                return 'Juli';
+                break;
+            case 8:
+                return 'Agustus';
+                break;
+            case 9:
+                return 'September';
+                break;
+            case 10:
+                return 'Oktober';
+                break;
+            case 11:
+                return 'November';
+                break;
+            case 12:
+                return 'Desember';
+                break;
+        }
+    }
+}
+if (!function_exists('nama_hari')) {
+    function nama_hari($hari)
+    {
+        if ($hari == 'Sunday') {
+            return 'Minggu';
+        } elseif ($hari == 'Monday') {
+            return 'Senin';
+        } elseif ($hari == 'Tuesday') {
+            return 'Selasa';
+        } elseif ($hari == 'Wednesday') {
+            return 'Rabu';
+        } elseif ($hari == 'Thursday') {
+            return 'Kamis';
+        } elseif ($hari == 'Friday') {
+            return 'Jumat';
+        } elseif ($hari == 'Saturday') {
+            return 'Sabtu';
+        }
     }
 }
 
+function output_json($data) //ini untuk mengubah data menjadi json
+{
+    $ci = get_instance();
+    $ci->output->set_content_type('application/json')->set_output(json_encode($data));
+}
 if (!function_exists('status_transaksi')) {
     function status_transaksi($status)
     {
@@ -125,5 +191,22 @@ if (!function_exists('status_absensi')) {
         ];
 
         return isset($status_data[$status]) ? $status_data[$status] : '<span class="badge badge-secondary">Undefined</span>';
+    }
+}
+
+if (!function_exists('total_tiket')) {
+    function total_tiket($column_name)
+    {
+        $ci = &get_instance();
+        $ci->load->database();
+
+        $user_id = $ci->session->id_user; // Mengambil user_id dari session
+
+        $ci->db->select_sum($column_name, 'total_tiket');
+        $ci->db->where('user_id', $user_id);
+
+        $query = $ci->db->get('partnership');
+
+        return $query->row()->total_tiket;
     }
 }

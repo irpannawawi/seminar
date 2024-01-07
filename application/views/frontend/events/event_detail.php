@@ -72,11 +72,11 @@
                             </h1>
                             <div class="d-flex mt-2 mb-2">
                                 <i class="bi bi-calendar text-dark"></i>
-                                <span style="margin-left: 8px;" class="text-truncate"><?= date('d M Y', strtotime($event['date_start'])) . ' - ' . $event['time_start'] ?></span>
+                                <span style="margin-left: 8px;" class="text-truncate"><?= tanggal($event['date_start']) ?></span>
                             </div>
                             <div class="d-flex mt-2 mb-2">
                                 <i class="bi bi-calendar text-dark"></i>
-                                <span style="margin-left: 8px;" class="text-truncate"><?= date('d M Y', strtotime($event['date_finish'])) . ' - ' . $event['time_finish'] ?></span>
+                                <span style="margin-left: 8px;" class="text-truncate"><?= tanggal($event['date_finish']) ?></span>
                             </div>
                         </div>
                         <div class="col-12 col-md-6 mb-3">

@@ -24,10 +24,51 @@ class Penjualan extends CI_Controller
             'Proses' => '<span class="badge badge-info">Proses</span>',
         ];
 
-        $this->load->view('admin/layouts/header', $data);
-        $this->load->view('admin/layouts/navbar');
-        $this->load->view('admin/layouts/sidebar');
-        $this->load->view('admin/penjualan/transaksi');
-        $this->load->view('admin/layouts/footer');
+        $action = $this->input->post('action');
+        $id = $this->input->post('id_transaksi');
+
+        $this->form_validation->set_rules('status_transaksi', 'Status Transaksi', 'trim|required');
+
+        if ($this->form_validation->run() == false) {
+            $this->load->view('admin/layouts/header', $data);
+            $this->load->view('admin/layouts/navbar');
+            $this->load->view('admin/layouts/sidebar');
+            $this->load->view('admin/penjualan/transaksi');
+            $this->load->view('admin/layouts/footer');
+        } else {
+            if ($action == 'leader') {
+                // Pengecekan apakah sudah ada data pada kolom 'events_id' berdasarkan 'user_id'
+                $user_id = $this->input->post('user_id');
+                $role_id = $this->session->role_id;
+                $events_id = $this->input->post('events_id', true);
+                $existingPartnership = $this->db->get_where('partnership', ['user_id' => $user_id, 'events_id' => $events_id])->row_array();
+
+                if (!$existingPartnership) {
+                    // Jika belum ada, lakukan insert
+                    $partnership = [
+                        'role_id' => $role_id,
+                        'user_id' => $user_id,
+                        'events_id' => $events_id,
+                        'kuota_tiket' => $this->input->post('tiket', true),
+                    ];
+                    $this->db->insert('partnership', $partnership);
+                    $id_leader = $this->db->insert_id();
+
+                    $transaksi = [
+                        'status_transaksi' => $this->input->post('status_transaksi'),
+                        'leader_id' => $id_leader
+                    ];
+                    $this->db->where('id_transaksi', $id);
+                    $this->db->update('transaksi', $transaksi);
+
+                    set_pesan('Berhasil update transaksi!');
+                    redirect('admin/penjualan/transaksi');
+                } else {
+                    // Jika sudah ada, tampilkan pesan atau lakukan aksi lain sesuai kebutuhan
+                    set_pesan('Gagal update transaksi! Data sudah ada.', false);
+                    redirect('admin/penjualan/transaksi');
+                }
+            }
+        }
     }
 }

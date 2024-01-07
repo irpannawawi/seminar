@@ -52,4 +52,46 @@ class Tiket extends CI_Controller
         // Redirect ke halaman kategori
         redirect('leader/tiket');
     }
+
+    public function buktiTf()
+    {
+        $data['users'] = $this->db->get_where('users', ['email' => $this->session->email])->row_array();
+        $id_user =  $data['users']['id_user'];
+        $id_trx = $this->input->post('id_transaksi');
+
+        // Periksa apakah transaksi dengan ID tertentu ditemukan
+        $transaksi = $this->Leader_model->getTransaksi($id_user, $id_trx);
+
+        if (!$transaksi) {
+            $error = "Transaksi tidak ditemukan.";
+            set_pesan($error, false);
+            redirect('leader/tiket');
+        }
+
+        $config['upload_path'] = FCPATH . 'assets/backend/dist/img/bukti_tf/';
+        $config['allowed_types'] = 'jpg|png|jpeg';
+        $config['max_size'] = 2014;
+        $config['encrypt_name'] = TRUE;
+
+        $this->upload->initialize($config);
+
+        if ($this->upload->do_upload('bukti_tf')) {
+            $old_image = $transaksi['bukti_tf'];;
+            if ($old_image && file_exists($config['upload_path'])) {
+                unlink(FCPATH . 'assets/backend/dist/img/bukti_tf/' . $old_image);
+            }
+            $new_image = $this->upload->data('file_name');
+
+            $this->db->set('bukti_tf', $new_image);
+            $this->db->where('id_transaksi', $id_trx);
+            $this->db->update('transaksi');
+        } else {
+            $error = $this->upload->display_errors();
+            set_pesan($error, false);
+            redirect('leader/tiket');
+        }
+
+        set_pesan('Bukti transfer berhasil diupload');
+        redirect('leader/tiket');
+    }
 }

@@ -48,7 +48,6 @@
                                     <th>Nama</th>
                                     <th>Kuota Tiket</th>
                                     <th>Tiket Terjual</th>
-                                    <th>Aksi</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -58,11 +57,8 @@
                                     <tr>
                                         <td><?= $no++ ?></td>
                                         <td><?= $key['name'] ?></td>
-                                        <td><?= $key['kuota_tiket'] ?></td>
-                                        <td><?= $key['tiket_terjual'] ?></td>
-                                        <td class="text-center">
-                                            <a href="javascript:;" data-toggle="modal" data-target="#tambahModal<?= $key['id_leader'] ?>" class="btn btn-primary btn-sm"><i class="fas fa-plus"></i> Tambah Tiket</a>
-                                        </td>
+                                        <td><?= $key['kuota_tiket'] ?? 0 ?></td>
+                                        <td><?= $key['tiket_terjual'] ?? 0 ?></td>
                                     </tr>
                                 <?php endforeach ?>
                             </tbody>
@@ -74,34 +70,3 @@
         </div>
     </div>
 </section>
-
-<!-- edit modal -->
-<?php foreach ($partner as $key) : ?>
-    <div class="modal fade" id="tambahModal<?= $key['id_leader'] ?>">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <form action="<?= base_url('admin/partnership') ?>" method="post">
-                    <input type="hidden" name="id_leader" value="<?= $key['id_leader'] ?>">
-                    <div class="modal-header">
-                        <h4 class="modal-title">Tambah Tiket</h4>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        <div class="form-group">
-                            <label>Kuota Tiket</label>
-                            <input type="text" name="kuota_tiket" id="kuota_tiket" class="form-control" value="<?= $key['kuota_tiket'] ?>">
-                        </div>
-                    </div>
-                    <div class="modal-footer justify-content-between">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                        <button type="submit" name="action" value="simpan" class="btn btn-primary">Simpan</button>
-                    </div>
-                </form>
-            </div>
-            <!-- /.modal-content -->
-        </div>
-        <!-- /.modal-dialog -->
-    </div>
-<?php endforeach ?>

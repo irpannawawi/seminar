@@ -23,7 +23,7 @@
                             </a>
                             <div class="d-flex mt-2 mb-2 align-items-center">
                                 <i class="bi bi-calendar"></i>
-                                <span style="margin-left: 8px;" class="mobile-text-small text-truncate"><?= date('D, d M Y', strtotime($event['date_start'])) ?></span>
+                                <span style="margin-left: 8px;" class="mobile-text-small text-truncate"><?= tanggal($event['date_start']) ?></span>
                             </div>
                             <div class="d-flex mt-2 mb-2 align-items-center">
                                 <i class="bi bi-clock"></i>

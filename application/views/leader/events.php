@@ -86,7 +86,7 @@
                     <input type="hidden" name="price" value="<?= $event['price'] ?>">
                     <input type="hidden" name="id_events" value="<?= $event['id_events'] ?>">
                     <div class="modal-header">
-                        <h4 class="modal-title"><?= $event['title'] ?></h4>
+                        <h4 class="modal-title"><?= $event['title'] . ' [Sisa ' . $event['sisa_kuota'] . ' Tiket]'  ?></h4>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>

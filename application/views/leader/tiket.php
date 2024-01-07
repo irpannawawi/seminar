@@ -50,6 +50,9 @@
                                                 <a href="javascript:;" data-toggle="modal" data-target="#tiketModal<?= $key['id_transaksi']  ?>" class="btn btn-success btn-sm">
                                                     <i class="fas fa-shopping-basket"></i> Bayar
                                                 </a>
+                                                <a href="javascript:;" data-toggle="modal" data-target="#uploadModal<?= $key['id_transaksi'] ?>" class="btn btn-info btn-sm">
+                                                    <i class="fas fa-shopping-basket"></i> Upload Bukti TF
+                                                </a>
                                             <?php else : ?>
                                                 <a href="javascript:;" data-toggle="modal" data-target="#tiketModal<?= $key['id_transaksi']  ?>" class="btn btn-success btn-sm">
                                                     <i class="fas fa-shopping-basket"></i> Bayar
@@ -69,40 +72,31 @@
     </div>
 </section>
 
-<!-- <?php foreach ($events as $event) : ?>
-    <div class="modal fade" id="tiketModal<?= $event['id_events'] ?>">
+<?php foreach ($transaksi as $key) : ?>
+    <div class="modal fade" id="uploadModal<?= $key['id_transaksi'] ?>">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
-                <form action="<?= base_url('leader/events') ?>" method="post">
-                    <input type="hidden" name="price" value="<?= $event['price'] ?>">
-                    <input type="hidden" name="id_events" value="<?= $event['id_events'] ?>">
+                <form action="<?= base_url('leader/tiket/buktitf') ?>" method="post" enctype="multipart/form-data">
+                    <input type="hidden" name="id_transaksi" value="<?= $key['id_transaksi'] ?>">
                     <div class="modal-header">
-                        <h4 class="modal-title"><?= $event['title'] ?></h4>
+                        <h4 class="modal-title">Bukti Transfer</h4>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
                     </div>
                     <div class="modal-body">
                         <div class="form-group">
-                            <label>Jumlah Tiket</label>
-                            <input type="text" name="jml_tiket" id="jml_tiket" class="form-control">
-                        </div>
-                        <div class="form-group">
-                            <label>Bank Transfer</label>
-                            <select name="bank_transfer" id="bank_transfer" class="form-control">
-                                <option disabled selected>Pilih Bank Transfer</option>
-                                <?php foreach ($rekening as $key) : ?>
-                                    <option value="<?= $key['name_bank'] ?>"><?= $key['name_bank'] ?></option>
-                                <?php endforeach ?>
-                            </select>
+                            <label>Upload Gambar</label>
+                            <input type="file" name="bukti_tf" id="bukti_tf" class="form-control">
+                            <p class="text-warning">Maximal 2MB, Format JPEG|JPG|PNG</p>
                         </div>
                     </div>
                     <div class="modal-footer justify-content-between">
                         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                        <button type="submit" name="action" value="submit" class="btn btn-primary">Submit</button>
+                        <button type="submit" class="btn btn-primary">Submit</button>
                     </div>
                 </form>
             </div>
         </div>
     </div>
-<?php endforeach ?> -->
+<?php endforeach ?>

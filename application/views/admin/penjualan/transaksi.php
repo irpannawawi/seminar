@@ -90,7 +90,7 @@
                                 <td><b>Status Pembayaran: </b></td>
                                 <td><?= $value['status_transaksi']; ?></td><br>
                                 <td><b>Bukti Transfer: </b></td>
-                                <td><a href="#">Download</a></td>
+                                <td><a href="#">Lihat Bukti Transfer</a></td>
                             </tr>
                         </div>
                         <form action="" method=" post">
@@ -106,7 +106,7 @@
                     </div>
                     <div class="modal-footer justify-content-between">
                         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                        <button type="submit" class="btn btn-primary">Simpan</button>
+                        <button type="submit" class="btn btn-primary">Submit</button>
                     </div>
                 </form>
             </div>
@@ -119,7 +119,10 @@
     <div class="modal fade" id="leaderDetailModal<?= $value['id_transaksi'] ?>">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
-                <form action="<?= base_url('admin/events/category') ?>" method="post">
+                <form action="<?= site_url('admin/penjualan/transaksi') ?>" method="post">
+                    <input type="hidden" name="events_id" value="<?= $value['id_events'] ?>">
+                    <input type="hidden" name="id_transaksi" value="<?= $value['id_transaksi'] ?>">
+                    <input type="hidden" name="user_id" value="<?= $value['user_id'] ?>">
                     <div class="modal-header">
                         <h4 class="modal-title">Detail <?= $value['user_name']; ?></h4>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -144,23 +147,34 @@
                                 <td><b>Status Pembayaran: </b></td>
                                 <td><?= $value['status_transaksi']; ?></td><br>
                                 <td><b>Bukti Transfer: </b></td>
-                                <td><a href="#">Download</a></td>
+                                <td><a target="_blank" href="<?= site_url('assets/backend/dist/img/bukti_tf/') . $value['bukti_tf'] ?>">Lihat Bukti Transfer</a></td>
                             </tr>
                         </div>
-                        <form action="" method=" post">
-                            <div class="form-group">
-                                <label>Ubah Status Transaksi</label>
-                                <select name="" id="" class="form-control">
-                                    <option value="Tertunda">Tertunda</option>
-                                    <option value="Refund">Refund</option>
-                                    <option value="Lunas">Lunas</option>
-                                </select>
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="form-group">
+                                    <label>Ubah Status Transaksi</label>
+                                    <select name="status_transaksi" id="status_transaksi" class="form-control">
+                                        <option value="Tertunda">Tertunda</option>
+                                        <option value="Refund">Refund</option>
+                                        <option value="Lunas">Lunas</option>
+                                        <option value="Prosses">Proses</option>
+                                        <option value="Dibatalkan">Batal</option>
+                                    </select>
+                                </div>
                             </div>
-                        </form>
+                            <div class="col-6">
+                                <div class="form-group">
+                                    <label>Tiket</label>
+                                    <input type="text" name="tiket" id="tiket" class="form-control">
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
                     <div class="modal-footer justify-content-between">
                         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                        <button type="submit" class="btn btn-primary">Simpan</button>
+                        <button type="submit" value="leader" name="action" class="btn btn-primary">Submit</button>
                     </div>
                 </form>
             </div>

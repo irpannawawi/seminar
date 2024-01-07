@@ -42,8 +42,8 @@
                                     <tr>
                                         <td><?= $no++ ?></td>
                                         <td><?= $key['title'] ?> <a target="_blank" href="<?= site_url('event/' . $key['id_events'] . '/' . $key['slug']) ?>"><i class="fas fa-external-link-alt"></i></a></td>
-                                        <td class="text-center"><?= date('d M Y', strtotime($key['date_start'])) ?></td>
-                                        <td class="text-center"><?= $key['kuota'] ?></td>
+                                        <td class="text-center"><?= tanggal($key['date_start']) ?></td>
+                                        <td class="text-center"><?= $key['sisa_kuota'] ?></td>
                                         <td class="text-center">
                                             <span class="badge badge-pill status" data-status="<?= $key['status'] ?>">Event <?= $key['status'] ?></span>
                                         </td>

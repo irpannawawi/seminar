@@ -31,30 +31,41 @@ class Events extends CI_Controller
             $this->load->view('leader/events');
             $this->load->view('leader/layouts/footer');
         } else {
-            // Jika validasi berhasil
-            // Mengenerate ID Transaksi
-            $number = str_pad(rand(100000000000, 999999999999), 13);
-            $idOrder = 'TS' . $number;
-
-            $id_user =  $data['users']['id_user'];
-            $price = $this->input->post('price');
+            $id_events = $this->input->post('id_events');
             $jmlTiket = $this->input->post('jml_tiket');
-            $nominal = $price * $jmlTiket;
 
-            $save = [
-                'id_order' => $idOrder,
-                'user_id' => $id_user,
-                'bank_transfer' => $this->input->post('bank_transfer'),
-                'events_id' => $this->input->post('id_events'),
-                'tiket' => $jmlTiket,
-                'nominal' => $nominal,
-                'date_transaksi' => time(),
-                'status_transaksi' => 'Tertunda'
-            ];
+            // Cek ketersediaan tiket
+            $availableTickets = $this->db->get_where('events', ['id_events' => $id_events])->row()->sisa_kuota;
 
-            $this->db->insert('transaksi', $save);
-            set_pesan('Berhasil request, Silahkan Bayar!');
-            redirect('leader/tiket');
+            if ($availableTickets >= $jmlTiket) {
+                // Jika tiket tersedia, lanjutkan transaksi
+                // Mengenerate ID Transaksi
+                $number = str_pad(rand(100000000000, 999999999999), 13);
+                $idOrder = 'TS' . $number;
+
+                $id_user = $data['users']['id_user'];
+                $price = $this->input->post('price');
+                $nominal = $price * $jmlTiket;
+
+                $save = [
+                    'id_order' => $idOrder,
+                    'user_id' => $id_user,
+                    'bank_transfer' => $this->input->post('bank_transfer'),
+                    'events_id' => $id_events,
+                    'tiket' => $jmlTiket,
+                    'nominal' => $nominal,
+                    'date_transaksi' => time(),
+                    'status_transaksi' => 'Tertunda'
+                ];
+
+                $this->db->insert('transaksi', $save);
+                set_pesan('Berhasil request, Silahkan Bayar!');
+                redirect('leader/tiket');
+            } else {
+                // Jika tiket tidak tersedia, berikan pesan
+                set_pesan('Maaf, tiket tidak tersedia.', false);
+                redirect('leader/events');
+            }
         }
     }
 }

@@ -34,9 +34,6 @@ $(document).ready(function () {
                                 <td>${item.name}</td>
                                 <td>${item.kuota_tiket}</td>
                                 <td>${item.tiket_terjual}</td>
-                                <td class="text-center">
-                                    <a href="javascript:;" data-toggle="modal" data-target="#tambahModal${item.id_leader}" class="btn btn-primary btn-sm"><i class="fas fa-plus"></i> Tambah Tiket</a>
-                                </td>
                             </tr>`;
                 tableData.find('tbody').append(row);
             });

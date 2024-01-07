@@ -74,7 +74,7 @@ class Event extends CI_Controller
                 'name' => $this->input->post('name'),
                 'nowa' => $this->input->post('nowa'),
                 'email' => $this->input->post('email'),
-                'date_participate' => time(),
+                'date_participate' => date('Y-m-d'),
                 'domisili' => $this->input->post('domisili')
             );
 
@@ -94,7 +94,7 @@ class Event extends CI_Controller
                 'peserta_id' => $peserta_id,
                 'events_id' => $this->input->post('events_id'),
                 'bank_transfer' => $this->input->post('bank'),
-                'date_transaksi' => time(),
+                'date_transaksi' => date('Y-m-d'),
                 'bukti_transfer' => $this->input->post('bukti_transfer'), // Sesuaikan dengan nama input form untuk bukti transfer
                 'code_promo' => $this->input->post('code_promo') ?? '',
                 'tiket' => $this->input->post('tiket'),
