@@ -76,20 +76,8 @@
                             <label>Kategori Event</label>
                             <select class="select2" multiple="multiple" name="id_category[]" id="id_category" data-placeholder="Pilih Kategori" style="width: 100%;">
                                 <?php foreach ($category as $cat) : ?>
-                                    <?php
-                                    // Periksa apakah kategori ini sudah dipilih pada event
-                                    $selected = '';
-                                    if (isset($event['categories'])) {
-                                        foreach ($event['categories'] as $selectedCat) {
-                                            if ($selectedCat->id_category == $cat['id_category']) {
-                                                $selected = 'selected';
-                                                break;
-                                            }
-                                        }
-                                    }
-                                    ?>
-                                    <option value="<?= $cat['id_category'] ?>" <?= set_select('id_category[]', $cat['id_category'], $selected); ?>>
-                                        <?= $cat['name_category'] ?>
+                                    <option <?= $events['id_category'] == $cat['id_category'] ? 'selected' : '' ?> value="<?= $cat['id_category'] ?>">
+                                        <?= $category['name_category'] ?>
                                     </option>
                                 <?php endforeach ?>
                             </select>

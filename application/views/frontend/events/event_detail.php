@@ -144,7 +144,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="ticket-buy align-items-center">
-                                                            <label for="">Kuota:</label>
+                                                            <label>Sisa:</label>
                                                             <span id="count-2"><?= $event['sisa_kuota'] ?></span>
                                                             <div class="counter">
                                                                 <button id="decrement1" class="btn btn-sm btn-warning disabled left" type="button">-</button>

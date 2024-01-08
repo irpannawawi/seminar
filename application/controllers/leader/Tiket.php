@@ -71,7 +71,7 @@ class Tiket extends CI_Controller
         $config['upload_path'] = FCPATH . 'assets/backend/dist/img/bukti_tf/';
         $config['allowed_types'] = 'jpg|png|jpeg';
         $config['max_size'] = 2014;
-        $config['encrypt_name'] = TRUE;
+        $config['file_name'] = uniqid() . date('Y-m-d');
 
         $this->upload->initialize($config);
 

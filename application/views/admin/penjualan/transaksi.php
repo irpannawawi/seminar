@@ -40,7 +40,7 @@
                                         <td><?= $no++ ?></td>
                                         <td><?= ($value['user_id'] !== null) ? $value['user_name'] . ' [Leader]' : $value['peserta_name'] ?></td>
                                         <td><?= $value['title'] ?></td>
-                                        <td><?= date('d M Y', $value['date_transaksi']) ?></td>
+                                        <td><?= tanggal($value['date_transaksi']) ?></td>
                                         <td><?= status_transaksi($value['status_transaksi']) ?></td>
                                         <td class="text-center">
                                             <?php
@@ -141,13 +141,13 @@
                                 <td><b>Bank Tujuan: </b></td>
                                 <td><?= $value['bank_transfer']; ?></td><br>
                                 <td><b>Tanggal Transaksi: </b></td>
-                                <td><?= $value['date_transaksi']; ?></td><br>
+                                <td><?= tanggal($value['date_transaksi']); ?></td><br>
                                 <td><b>Jumlah Tiket: </b></td>
                                 <td><?= $value['tiket']; ?></td><br>
                                 <td><b>Status Pembayaran: </b></td>
                                 <td><?= $value['status_transaksi']; ?></td><br>
                                 <td><b>Bukti Transfer: </b></td>
-                                <td><a target="_blank" href="<?= site_url('assets/backend/dist/img/bukti_tf/') . $value['bukti_tf'] ?>">Lihat Bukti Transfer</a></td>
+                                <td><a data-toggle="modal" data-target="#lihatModal<?= $value['id_transaksi'] ?>" href="<?= site_url('assets/backend/dist/img/bukti_tf/') . $value['bukti_tf'] ?>">Lihat Bukti Transfer</a></td>
                             </tr>
                         </div>
                         <div class="row">
@@ -181,5 +181,27 @@
             <!-- /.modal-content -->
         </div>
         <!-- /.modal-dialog -->
+    </div>
+<?php endforeach ?>
+<?php foreach ($transaksi as $key) : ?>
+    <div class="modal fade" id="lihatModal<?= $key['id_transaksi'] ?>">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Bukti Transfer</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <img style="width: 100%;" src="<?= base_url('assets/backend/dist/img/bukti_tf/') . $key['bukti_tf'] ?>" alt="<?= $key['bukti_tf'] ?>">
+                    </div>
+                </div>
+                <div class="modal-footer justify-content-between">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
     </div>
 <?php endforeach ?>

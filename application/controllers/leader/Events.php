@@ -54,7 +54,7 @@ class Events extends CI_Controller
                     'events_id' => $id_events,
                     'tiket' => $jmlTiket,
                     'nominal' => $nominal,
-                    'date_transaksi' => time(),
+                    'date_transaksi' => date('Y-m-d'),
                     'status_transaksi' => 'Tertunda'
                 ];
 

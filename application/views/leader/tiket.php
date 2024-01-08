@@ -46,18 +46,20 @@
                                         <td><?= rupiah($key['nominal']) ?></td>
                                         <td><?= status_transaksi($key['status_transaksi']) ?></td>
                                         <td class="text-center">
-                                            <?php if ($key['status_transaksi'] = 'Dibatalkan') : ?>
+                                            <?php if ($key['status_transaksi'] == 'Lunas') : ?>
+                                                <a href="javascript:;" data-toggle="modal" data-target="#lihatModal<?= $key['id_transaksi'] ?>" class="btn btn-info btn-sm"><i class="far fa-eye"></i></i> Lihat Bukti Transfer</a>
+                                            <?php elseif ($key['bukti_tf'] != NULL) : ?>
+                                                <a href="javascript:;" data-toggle="modal" data-target="#tiketModal<?= $key['id_transaksi']  ?>" class="btn btn-success btn-sm">
+                                                    <i class="fas fa-shopping-basket"></i> Bayar
+                                                </a>
+                                                <a href="javascript:;" data-toggle="modal" data-target="#lihatModal<?= $key['id_transaksi'] ?>" class="btn btn-info btn-sm"><i class="far fa-eye"></i></i> Lihat Bukti Transfer</a>
+                                            <?php else : ?>
                                                 <a href="javascript:;" data-toggle="modal" data-target="#tiketModal<?= $key['id_transaksi']  ?>" class="btn btn-success btn-sm">
                                                     <i class="fas fa-shopping-basket"></i> Bayar
                                                 </a>
                                                 <a href="javascript:;" data-toggle="modal" data-target="#uploadModal<?= $key['id_transaksi'] ?>" class="btn btn-info btn-sm">
                                                     <i class="fas fa-shopping-basket"></i> Upload Bukti TF
                                                 </a>
-                                            <?php else : ?>
-                                                <a href="javascript:;" data-toggle="modal" data-target="#tiketModal<?= $key['id_transaksi']  ?>" class="btn btn-success btn-sm">
-                                                    <i class="fas fa-shopping-basket"></i> Bayar
-                                                </a>
-                                                <a href="<?= base_url('leader/tiket/deleteTiket/' . $key['id_order']); ?>" class="btn btn-danger btn-sm delete-btn"><i class="fas fa-trash-alt"></i> Batal</a>
                                             <?php endif ?>
                                         </td>
                                     </tr>
@@ -96,6 +98,28 @@
                         <button type="submit" class="btn btn-primary">Submit</button>
                     </div>
                 </form>
+            </div>
+        </div>
+    </div>
+<?php endforeach ?>
+<?php foreach ($transaksi as $key) : ?>
+    <div class="modal fade" id="lihatModal<?= $key['id_transaksi'] ?>">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Bukti Transfer</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <img style="width: 100%;" src="<?= base_url('assets/backend/dist/img/bukti_tf/') . $key['bukti_tf'] ?>" alt="<?= $key['bukti_tf'] ?>">
+                    </div>
+                </div>
+                <div class="modal-footer justify-content-between">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
             </div>
         </div>
     </div>

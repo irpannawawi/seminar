@@ -45,14 +45,18 @@ class Penjualan extends CI_Controller
 
                 if (!$existingPartnership) {
                     // Jika belum ada, lakukan insert
-                    $partnership = [
-                        'role_id' => $role_id,
-                        'user_id' => $user_id,
-                        'events_id' => $events_id,
-                        'kuota_tiket' => $this->input->post('tiket', true),
-                    ];
-                    $this->db->insert('partnership', $partnership);
-                    $id_leader = $this->db->insert_id();
+                    $transaksi_status = $this->input->post('status_transaksi');
+                    if ($transaksi_status == 'Lunas') {
+                        // Insert ke tabel partnership jika status_transaksi adalah "Lunas"
+                        $partnership = [
+                            'role_id' => $role_id,
+                            'user_id' => $user_id,
+                            'events_id' => $events_id,
+                            'kuota_tiket' => $this->input->post('tiket', true),
+                        ];
+                        $this->db->insert('partnership', $partnership);
+                        $id_leader = $this->db->insert_id();
+                    }
 
                     $transaksi = [
                         'status_transaksi' => $this->input->post('status_transaksi'),
