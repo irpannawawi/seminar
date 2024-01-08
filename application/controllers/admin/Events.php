@@ -116,7 +116,6 @@ class Events extends CI_Controller
             }
 
             $title = htmlspecialchars($this->input->post('title'));
-            // $categories = is_array($this->input->post('id_category')) ? implode(', ', $this->input->post('id_category')) : '';
             $categories = $this->input->post('id_category');
             $categories_json = json_encode($categories);
             $description = $this->input->post('description');
@@ -258,6 +257,21 @@ class Events extends CI_Controller
             if (empty($price)) {
                 $price = 'FREE';
             }
+
+            // Konversi nilai category_id dari JSON ke array
+            $categoryIds = json_decode($data['events']['id_category']);
+
+            // Ambil nama kategori berdasarkan category_id
+            $this->db->select('name_category');
+            $this->db->from('category');
+            $this->db->where_in('id_category', $categoryIds);
+            $query = $this->db->get();
+
+            // Ambil hasil query
+            $categories = $query->result();
+
+            // Simpan hasil ke dalam data event
+            $data['events']['categories'] = $categories;
 
             // Set aturan validasi
             if ($action == 'save_draft') {

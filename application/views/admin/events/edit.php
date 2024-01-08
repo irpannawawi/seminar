@@ -38,13 +38,22 @@
                     <div class="card-body">
                         <div class="form-group">
                             <fieldset class="upload_dropZone text-center mb-3 p-4">
-                                <svg class="upload_svg" width="60" height="60" aria-hidden="true">
-                                    <use href="#icon-imageUpload"></use>
-                                </svg>
-                                <p class="small my-2">*Max 2MB | JPEG | JPG | PNG<br>Tarik gambar untuk upload <br><i>atau</i></p>
-                                <input name="image_events" id="image_events" data-post-url="https://someplace.com/image/uploads/backgrounds/" class="position-absolute invisible" type="file" accept="image/jpeg, image/png, image/jpg" />
-                                <label class="btn btn-upload mb-3" for="image_events">Pilih file gambar</label>
-                                <div class="upload_gallery d-flex flex-wrap justify-content-center gap-3 mb-0"></div>
+                                <div class="row">
+                                    <div class="col-6">
+                                        <svg class="upload_svg" width="60" height="60" aria-hidden="true">
+                                            <use href="#icon-imageUpload"></use>
+                                        </svg>
+                                        <p class="small my-2">*Max 2MB | JPEG | JPG | PNG<br>Tarik gambar untuk upload <br><i>atau</i></p>
+                                        <input name="image_events" id="image_events" data-post-url="https://someplace.com/image/uploads/backgrounds/" class="position-absolute invisible" type="file" accept="image/jpeg, image/png, image/jpg" />
+                                        <label class="btn btn-upload mb-3" for="image_events">Pilih file gambar</label>
+                                    </div>
+                                    <div class="col-6">
+
+                                        <div class="upload_gallery d-flex flex-wrap justify-content-center gap-3 mb-0">
+                                            <img class="upload_img mt-2" alt="" src="<?= base_url('assets/frontend/img/events/') . $events['image'] ?>">
+                                        </div>
+                                    </div>
+                                </div>
                             </fieldset>
                         </div>
                     </div>
@@ -65,9 +74,23 @@
                         </div>
                         <div class="form-group">
                             <label>Kategori Event</label>
-                            <select class="select2" multiple="multiple" name="id_category[]" id="id_category" data-placeholder="Select a State" style="width: 100%;">
-                                <?php foreach ($category as $key) : ?>
-                                    <option value="<?= $key['id_category'] ?>" <?= set_select('id_category[]', $key['id_category'], (isset($id_category) && in_array($key['id_category'], $id_category))); ?>><?= $key['name_category'] ?></option>
+                            <select class="select2" multiple="multiple" name="id_category[]" id="id_category" data-placeholder="Pilih Kategori" style="width: 100%;">
+                                <?php foreach ($category as $cat) : ?>
+                                    <?php
+                                    // Periksa apakah kategori ini sudah dipilih pada event
+                                    $selected = '';
+                                    if (isset($event['categories'])) {
+                                        foreach ($event['categories'] as $selectedCat) {
+                                            if ($selectedCat->id_category == $cat['id_category']) {
+                                                $selected = 'selected';
+                                                break;
+                                            }
+                                        }
+                                    }
+                                    ?>
+                                    <option value="<?= $cat['id_category'] ?>" <?= set_select('id_category[]', $cat['id_category'], $selected); ?>>
+                                        <?= $cat['name_category'] ?>
+                                    </option>
                                 <?php endforeach ?>
                             </select>
                             <?= form_error('id_category', '<small class="text-danger">', '</small>') ?>

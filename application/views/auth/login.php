@@ -25,7 +25,7 @@
                     <div class="d-flex justify-content-between align-items-center">
                         <label class="form-label" for="passowrd">Password</label>
 
-                        <a class="form-label-link" href="#">Lupa Password?</a>
+                        <!-- <a class="form-label-link" href="#">Lupa Password?</a> -->
                     </div>
 
                     <div class="input-group input-group-merge" data-hs-validation-validate-class>
@@ -48,7 +48,7 @@
                 </div>
 
                 <div class="text-center">
-                    <p>Ingin bergabung menjadi Leader? <a class="link" href="#">Daftar disini</a></p>
+                    <p>Ingin bergabung menjadi Leader? <a class="link" href="#">Hubungi Admin</a></p>
                 </div>
             </form>
             <!-- End Form -->

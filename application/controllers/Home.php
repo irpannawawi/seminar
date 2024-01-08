@@ -5,12 +5,13 @@ class Home extends CI_Controller
 {
     public function index()
     {
-        $data['event'] = $this->db
+        // Ambil data dari tabel events
+        $data['events'] = $this->db
             ->order_by('date_created', 'desc')
             ->get('events')->result_array();
 
         $this->load->view('frontend/layout/header', $data);
-        $this->load->view('frontend/home');
+        $this->load->view('frontend/home', $data);
         $this->load->view('frontend/layout/footer');
     }
 }

@@ -4,7 +4,7 @@
     </div>
 
     <div class="row gx-3 mx-n2">
-        <?php foreach ($event as $event) : ?>
+        <?php foreach ($events as $event) : ?>
             <div class="col-md-6 mb-4">
                 <!-- Card -->
                 <div class="card card-bordered card-transition list__event">

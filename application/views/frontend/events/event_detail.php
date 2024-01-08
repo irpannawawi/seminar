@@ -91,7 +91,9 @@
                                 <b>Jam Pelaksanaan</b>
                             </h1>
                             <div class="d-flex mt-2 mb-2 category__event">
-                                <span class="text-truncate">Kategori</span>
+                                <?php foreach ($event['categories'] as $category) : ?>
+                                    <span class="text-truncate" style="margin-right: 5px;"><?= $category->name_category; ?></span>
+                                <?php endforeach ?>
                             </div>
                         </div>
                     </div>

@@ -17,6 +17,21 @@ class Event extends CI_Controller
         }
         $data['title'] = $data['event']['title'];
 
+        // Konversi nilai category_id dari JSON ke array
+        $categoryIds = json_decode($data['event']['id_category']);
+
+        // Ambil nama kategori berdasarkan category_id
+        $this->db->select('name_category');
+        $this->db->from('category');
+        $this->db->where_in('id_category', $categoryIds);
+        $query = $this->db->get();
+
+        // Ambil hasil query
+        $categories = $query->result();
+
+        // Simpan hasil ke dalam data event
+        $data['event']['categories'] = $categories;
+
         $this->load->view('frontend/layout/header', $data);
         $this->load->view('frontend/events/event_detail');
         $this->load->view('frontend/layout/footer');
