@@ -35,26 +35,16 @@
                     </div>
                     <!-- /.card-header -->
                     <!-- form start -->
-                    <div class="card-body">
-                        <div class="form-group">
-                            <fieldset class="upload_dropZone text-center mb-3 p-4">
-                                <div class="row">
-                                    <div class="col-6">
-                                        <svg class="upload_svg" width="60" height="60" aria-hidden="true">
-                                            <use href="#icon-imageUpload"></use>
-                                        </svg>
-                                        <p class="small my-2">*Max 2MB | JPEG | JPG | PNG<br>Tarik gambar untuk upload <br><i>atau</i></p>
-                                        <input name="image_events" id="image_events" data-post-url="https://someplace.com/image/uploads/backgrounds/" class="position-absolute invisible" type="file" accept="image/jpeg, image/png, image/jpg" />
-                                        <label class="btn btn-upload mb-3" for="image_events">Pilih file gambar</label>
-                                    </div>
-                                    <div class="col-6">
-
-                                        <div class="upload_gallery d-flex flex-wrap justify-content-center gap-3 mb-0">
-                                            <img class="upload_img mt-2" alt="" src="<?= base_url('assets/frontend/img/events/') . $events['image'] ?>">
-                                        </div>
-                                    </div>
-                                </div>
-                            </fieldset>
+                    <div class="file-upload">
+                        <button class="btn btn-success file-upload-btn" type="button" onclick="$('.file-upload-input').trigger( 'click' )"><i class="fas fa-file-upload"></i> <?= $events['image'] ?></button>
+                        <div class="image-upload-wrap">
+                            <input class="file-upload-input" type='file' name="image_events" id="image_events" onchange="readURL(this);" accept="image/*" />
+                            <div class="drag-text">
+                                <h3><i class="fas fa-file-import"></i> Seret file disini untuk mengganti gambar</h3>
+                            </div>
+                        </div>
+                        <div class="file-upload-content">
+                            <img class="file-upload-image" src="#" alt="your image" />
                         </div>
                     </div>
                 </div>
@@ -74,12 +64,10 @@
                         </div>
                         <div class="form-group">
                             <label>Kategori Event</label>
-                            <select class="select2" multiple="multiple" name="id_category[]" id="id_category" data-placeholder="Pilih Kategori" style="width: 100%;">
-                                <?php foreach ($category as $cat) : ?>
-                                    <option <?= $events['id_category'] == $cat['id_category'] ? 'selected' : '' ?> value="<?= $cat['id_category'] ?>">
-                                        <?= $category['name_category'] ?>
-                                    </option>
-                                <?php endforeach ?>
+                            <select class="select2" multiple="multiple" name="id_category[]" id="id_category" data-placeholder="Pilih Kategori">
+                                <?php foreach ($category as $key) : ?>
+                                    <option <?= (in_array($key['name_category'], array_column($categories, 'name_category'))) ? 'selected' : '' ?> value="<?= $key['id_category'] ?>"><?= $key['name_category'] ?></option>
+                                <?php endforeach; ?>
                             </select>
                             <?= form_error('id_category', '<small class="text-danger">', '</small>') ?>
                         </div>
@@ -120,22 +108,16 @@
                                 <div class="col-6">
                                     <div class="form-group">
                                         <label>Tanggal Mulai</label>
-                                        <div class="input-group date" id="date1" data-target-input="nearest">
-                                            <input type="text" name="date_start" class="form-control datetimepicker-input" data-target="#date1" id="date_start" placeholder="Pilih tanggal" value="<?= set_value('date_start', $events['date_start']) ?>">
-                                            <div class="input-group-append" data-target="#date1" data-toggle="datetimepicker">
-                                                <div class="input-group-text"><i class="fa fa-calendar"></i></div>
-                                            </div>
+                                        <div class="input-group date">
+                                            <input type="date" name="date_start" class="form-control" id="date_start" value="<?= set_value('date_start', date('d/m/Y', strtotime($events['date_start']))) ?>">
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-6">
                                     <div class="form-group">
                                         <label>Tanggal Berakhir</label>
-                                        <div class="input-group date" id="date2" data-target-input="nearest">
-                                            <input type="text" name="date_finish" class="form-control datetimepicker-input" data-target="#date2" id="date_finish" placeholder="Pilih tanggal" value="<?= set_value('date_finish', $events['date_finish']) ?>">
-                                            <div class="input-group-append" data-target="#date2" data-toggle="datetimepicker">
-                                                <div class="input-group-text"><i class="fa fa-calendar"></i></div>
-                                            </div>
+                                        <div class="input-group date">
+                                            <input type="date" name="date_finish" class="form-control" id="date_finish" value="<?= set_value('date_finish', date('d/m/Y', strtotime($events['date_finish']))) ?>">
                                         </div>
                                     </div>
                                 </div>

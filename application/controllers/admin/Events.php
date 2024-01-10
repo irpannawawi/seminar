@@ -116,17 +116,11 @@ class Events extends CI_Controller
             }
 
             $title = htmlspecialchars($this->input->post('title'));
-            $categories = $this->input->post('id_category');
-            $categories_json = json_encode($categories);
+            $categories_json = json_encode($this->input->post('id_category'));
             $description = $this->input->post('description');
             $snk = $this->input->post('snk');
-            $date_start_input = $this->input->post('date_start');
-            $date_finish_input = $this->input->post('date_finish');
-
-            // Ubah format tanggal
-            $date_start = date('Y-m-d', strtotime($date_start_input));
-            $date_finish = date('Y-m-d', strtotime($date_finish_input));
-
+            $date_start = $this->input->post('date_start');
+            $date_finish = $this->input->post('date_finish');
             $time_start = $this->input->post('time_start');
             $time_finish = $this->input->post('time_finish');
             $price = htmlspecialchars($this->input->post('price'));
@@ -218,29 +212,24 @@ class Events extends CI_Controller
         $data['category'] = $this->db->get('category')->result_array();
         $data['title'] = 'Edit Event';
 
+        // Konversi nilai category_id dari JSON ke array
+        $categoryIds = json_decode($data['events']['id_category']);
+
+        $this->db->select('name_category');
+        $this->db->from('category');
+        $this->db->where_in('id_category', $categoryIds);
+        $query = $this->db->get();
+
+        $categories = $query->result();
+        $data['categories'] = $categories;
+
         // Ambil nilai dari tombol yang diklik
         $action = $this->input->post('action');
 
         // Jika tombol 'publish' atau 'save_draft' diklik
         if ($action == 'publish' || $action == 'save_draft') {
-            // Konfigurasi upload file
-            $config['upload_path'] = './assets/frontend/img/events/';
-            $config['allowed_types'] = '*';
-            $config['max_size'] = 2000;
-            $config['file_name'] = get_setting('title_web') . uniqid();
-
-            $this->upload->initialize($config);
-
-            // Lakukan upload file
-            if ($this->upload->do_upload('image_events')) {
-                $upload_data = $this->upload->data();
-                $file_name = $upload_data['file_name'];
-            } elseif ($action == 'publish') {
-                $file_name = null;
-            }
-
             $title = htmlspecialchars($this->input->post('title'));
-            $categories = is_array($this->input->post('id_category')) ? implode(', ', $this->input->post('id_category')) : '';
+            $categories = json_encode($this->input->post('id_category'));
             $description = $this->input->post('description');
             $snk = $this->input->post('snk');
             $date_start = $this->input->post('date_start');
@@ -257,21 +246,6 @@ class Events extends CI_Controller
             if (empty($price)) {
                 $price = 'FREE';
             }
-
-            // Konversi nilai category_id dari JSON ke array
-            $categoryIds = json_decode($data['events']['id_category']);
-
-            // Ambil nama kategori berdasarkan category_id
-            $this->db->select('name_category');
-            $this->db->from('category');
-            $this->db->where_in('id_category', $categoryIds);
-            $query = $this->db->get();
-
-            // Ambil hasil query
-            $categories = $query->result();
-
-            // Simpan hasil ke dalam data event
-            $data['events']['categories'] = $categories;
 
             // Set aturan validasi
             if ($action == 'save_draft') {
@@ -327,9 +301,30 @@ class Events extends CI_Controller
                     'url_location' => $url_location,
                     'label' => $label,
                     'status' => ($action == 'publish') ? 'published' : 'draft',
-                    'image' => $file_name,
                     'date_created' => time()
                 ];
+
+                $upload_image = $_FILES['image_events']['name'];
+                if ($upload_image) {
+                    $config['upload_path'] = './assets/frontend/img/events/';
+                    $config['allowed_types'] = '*';
+                    $config['max_size']      = 2048; // 2MB
+                    $config['file_name'] = get_setting('title_web') . uniqid();
+
+                    $this->upload->initialize($config);
+
+                    // Lakukan upload file
+                    if ($this->upload->do_upload('image_events')) {
+                        $upload_data = $this->upload->data('file_name');
+                        $this->db->set('image', $upload_data);
+                    } else {
+                        // Handle error upload jika diperlukan
+                        $error = $this->upload->display_errors();
+                        // Tambahkan log atau pesan kesalahan sesuai kebutuhan
+                        set_pesan('Gagal mengupload file: ' . $error, false);
+                        redirect('admin/events/edit/' . $id);
+                    }
+                }
 
                 $this->db->where('id_events', $id);
                 $this->db->update('events', $save);
