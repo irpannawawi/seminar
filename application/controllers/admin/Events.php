@@ -341,6 +341,140 @@ class Events extends CI_Controller
         }
     }
 
+    public function repost($id)
+    {
+        $data['users'] = $this->db->get_where('users', ['email' => $this->session->email])->row_array();
+        $data['events'] = $this->db->get_where('events', ['id_events' => $id])->row_array();
+        $data['category'] = $this->db->get('category')->result_array();
+        $data['title'] = 'Edit Event';
+
+        // Konversi nilai category_id dari JSON ke array
+        $categoryIds = json_decode($data['events']['id_category']);
+
+        $this->db->select('name_category');
+        $this->db->from('category');
+        $this->db->where_in('id_category', $categoryIds);
+        $query = $this->db->get();
+
+        $categories = $query->result();
+        $data['categories'] = $categories;
+
+        // Ambil nilai dari tombol yang diklik
+        $action = $this->input->post('action');
+
+        // Jika tombol 'publish' atau 'save_draft' diklik
+        if ($action == 'publish' || $action == 'save_draft') {
+            $title = htmlspecialchars($this->input->post('title'));
+            $categories = json_encode($this->input->post('id_category'));
+            $description = $this->input->post('description');
+            $snk = $this->input->post('snk');
+            $date_start = $this->input->post('date_start');
+            $date_finish = $this->input->post('date_finish');
+            $time_start = $this->input->post('time_start');
+            $time_finish = $this->input->post('time_finish');
+            $price = htmlspecialchars($this->input->post('price'));
+            $kuota = htmlspecialchars($this->input->post('kuota'));
+            $location = htmlspecialchars($this->input->post('location'));
+            $url_location = htmlspecialchars($this->input->post('url_location'));
+            $type_event = $this->input->post('type_event');
+            $label = htmlspecialchars($this->input->post('label'));
+            $price = filter_var($price, FILTER_SANITIZE_NUMBER_INT);
+            if (empty($price)) {
+                $price = 'FREE';
+            }
+
+            // Set aturan validasi
+            if ($action == 'save_draft') {
+                $this->form_validation->set_rules('title', 'Judul Event', 'required', [
+                    'required' => 'Judul Event harus diisi.'
+                ]);
+            } elseif ($action == 'publish') {
+                $this->form_validation->set_rules('title', 'Judul Event', 'required', [
+                    'required' => 'Judul Event harus diisi.'
+                ]);
+                // $this->form_validation->set_rules('id_category', 'Kategori Event', 'required');
+                $this->form_validation->set_rules('description', 'Deskripsi Event', 'required');
+                $this->form_validation->set_rules('snk', 'Syarat & Ketentuan Event', 'required');
+                $this->form_validation->set_rules('date_start', 'Tanggal Mulai Event', 'required');
+                $this->form_validation->set_rules('date_finish', 'Tanggal Selesai Event', 'required');
+                $this->form_validation->set_rules('time_start', 'Jam Mulai Event', 'required');
+                $this->form_validation->set_rules('time_finish', 'Jam Selesai Event', 'required');
+                $this->form_validation->set_rules('price', 'Harga Event', 'required');
+                $this->form_validation->set_rules('kuota', 'Kuota Tiket Event', 'required');
+            }
+
+            // Aturan validasi berdasarkan jenis lokasi
+            if ($type_event == 'offline') {
+                $this->form_validation->set_rules('location', 'Nama Tempat', 'required');
+                $this->form_validation->set_rules('url_location', 'URL Lokasi', 'required');
+            } elseif ($type_event == 'online') {
+                $this->form_validation->set_rules('label', 'Label Platform', 'required');
+            }
+
+            // Lakukan validasi
+            if ($this->form_validation->run() == FALSE) {
+                $this->load->view('admin/layouts/header', $data);
+                $this->load->view('admin/layouts/navbar');
+                $this->load->view('admin/layouts/sidebar');
+                $this->load->view('admin/events/repost', $data);
+                $this->load->view('admin/layouts/footer');
+            } else {
+                $save = [
+                    'title' => $title,
+                    'slug' => strtolower(str_replace(' ', '-', $title)),
+                    'id_category' => $categories,
+                    'description' => $description,
+                    'snk' => $snk,
+                    'date_start' => $date_start,
+                    'date_finish' => $date_finish,
+                    'time_start' => $time_start,
+                    'time_finish' => $time_finish,
+                    'type_event' => $type_event,
+                    'kuota' => $kuota,
+                    'sisa_kuota' => $kuota,
+                    'location' => $location,
+                    'price' => $price,
+                    'url_location' => $url_location,
+                    'label' => $label,
+                    'status' => ($action == 'publish') ? 'published' : 'draft',
+                    'date_created' => time()
+                ];
+
+                $config['upload_path'] = './assets/frontend/img/events/';
+                $config['allowed_types'] = '*';
+                $config['max_size']      = 2048; // 2MB
+                $config['file_name'] = get_setting('title_web') . uniqid();
+
+                $this->upload->initialize($config);
+
+                // Lakukan upload file
+                if ($this->upload->do_upload('image_events')) {
+                    $upload_data = $this->upload->data('file_name');
+                    $this->db->set('image', $upload_data);
+                } else {
+                    // Handle error upload jika diperlukan
+                    $error = $this->upload->display_errors();
+                    // Tambahkan log atau pesan kesalahan sesuai kebutuhan
+                    set_pesan('Gagal mengupload file: ' . $error, false);
+                    redirect('admin/events/edit/' . $id);
+                }
+
+                $this->db->insert('events', $save);
+                set_pesan('Events berhasil ' . ($action == 'publish' ? 'Event dipublish!' : 'disimpan!'));
+                redirect('admin/events/publish');
+            }
+        } else {
+            // Jika tombol tidak diklik, tampilkan form edit
+            $this->load->view('admin/layouts/header', $data);
+            $this->load->view('admin/layouts/navbar');
+            $this->load->view('admin/layouts/sidebar');
+            $this->load->view('admin/events/repost', $data);
+            $this->load->view('admin/layouts/footer');
+        }
+    }
+
+
+
     public function category()
     {
         $data['users'] = $this->db->get_where('users', ['email' => $this->session->email])->row_array();
@@ -430,7 +564,7 @@ class Events extends CI_Controller
 
             if ($result) {
                 // Jika record berhasil dihapus, hapus juga gambar dari folder
-                $gambar_path = FCPATH . 'assets/frontend/img/event/' . $row['image'];
+                $gambar_path = FCPATH . 'assets/frontend/img/events/' . $row['image'];
                 if (file_exists($gambar_path)) {
                     unlink($gambar_path);
                 }
