@@ -60,7 +60,8 @@ class Penjualan extends CI_Controller
 
                     $transaksi = [
                         'status_transaksi' => $this->input->post('status_transaksi'),
-                        'leader_id' => $id_leader
+                        'leader_id' => $id_leader,
+                        'tiket' => $this->input->post('tiket', true)
                     ];
                     $this->db->where('id_transaksi', $id);
                     $this->db->update('transaksi', $transaksi);

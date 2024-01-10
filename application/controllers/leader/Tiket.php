@@ -14,6 +14,8 @@ class Tiket extends CI_Controller
         $data['users'] = $this->db->get_where('users', ['email' => $this->session->email])->row_array();
         $id_user =  $data['users']['id_user'];
         $data['transaksi'] = $this->Leader_model->getTransaksi($id_user);
+        // var_dump($data['transaksi']);
+        // die;
         $data['title'] = 'Tiket';
         $data['status'] = [
             'Tertunda' => '<span class="badge badge-warning">Tertunda</span>',
@@ -53,16 +55,16 @@ class Tiket extends CI_Controller
         redirect('leader/tiket');
     }
 
-    public function buktiTf()
+    public function buktiTf($id)
     {
         $data['users'] = $this->db->get_where('users', ['email' => $this->session->email])->row_array();
         $id_user =  $data['users']['id_user'];
-        $id_trx = $this->input->post('id_transaksi');
 
         // Periksa apakah transaksi dengan ID tertentu ditemukan
-        $transaksi = $this->Leader_model->getTransaksi($id_user, $id_trx);
+        $data['transaksi'] = $this->Leader_model->getTransaksi($id_user, $id);
+        $bukti_tf = $data['transaksi'][0]['bukti_tf'];
 
-        if (!$transaksi) {
+        if (!$data['transaksi']) {
             $error = "Transaksi tidak ditemukan.";
             set_pesan($error, false);
             redirect('leader/tiket');
@@ -76,14 +78,14 @@ class Tiket extends CI_Controller
         $this->upload->initialize($config);
 
         if ($this->upload->do_upload('bukti_tf')) {
-            $old_image = $transaksi['bukti_tf'];;
+            $old_image = $bukti_tf;
             if ($old_image && file_exists($config['upload_path'])) {
                 unlink(FCPATH . 'assets/backend/dist/img/bukti_tf/' . $old_image);
             }
             $new_image = $this->upload->data('file_name');
 
             $this->db->set('bukti_tf', $new_image);
-            $this->db->where('id_transaksi', $id_trx);
+            $this->db->where('id_transaksi', $id);
             $this->db->update('transaksi');
         } else {
             $error = $this->upload->display_errors();

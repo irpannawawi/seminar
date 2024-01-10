@@ -41,27 +41,24 @@
                                         <td><?= $no++ ?></td>
                                         <td><?= $event['title'] ?></td>
                                         <?php
-                                        if (empty($event['date_finish']) || empty($event['date_start'])) :
-                                        ?>
-                                            <td class="text-center">
-                                                <span class="badge badge-pill badge-info">Belum berlangsung</span>
-                                            </td>
-                                            <?php else :
-                                            $dateFinishTimestamp = strtotime($event['date_finish']);
+                                        if (!empty($event['date_finish']) && !empty($event['date_start']) && !empty($event['time_finish'])) {
+                                            $dateTimeFinish = $event['date_finish'] . ' ' . $event['time_finish'];
+                                            $dateTimeFinishTimestamp = strtotime($dateTimeFinish);
                                             $dateStartTimestamp = strtotime($event['date_start']);
 
-                                            if ($dateStartTimestamp > time()) :
-                                            ?>
-                                                <td class="text-center"><span class="badge badge-pill badge-info">Belum berlangsung</span></td>
-                                            <?php elseif ($dateFinishTimestamp <= time()) :
-                                            ?>
-                                                <td class="text-center">
-                                                    <span class="badge badge-pill badge-secondary">Sudah Berlangsung</span>
-                                                </td>
-                                            <?php else : ?>
-                                                <td class="text-center"><span class="badge badge-pill badge-warning">Sedang Berlangsung</span></td>
-                                            <?php endif ?>
-                                        <?php endif ?>
+                                            if ($dateStartTimestamp > time()) {
+                                                $badgeClass = 'badge-info';
+                                                $badgeText = 'Belum berlangsung';
+                                            } elseif ($dateTimeFinishTimestamp <= time()) {
+                                                $badgeClass = 'badge-secondary';
+                                                $badgeText = 'Sudah Berlangsung';
+                                            } else {
+                                                $badgeClass = 'badge-warning';
+                                                $badgeText = 'Sedang Berlangsung';
+                                            }
+                                        ?>
+                                            <td class="text-center"><span class="badge badge-pill <?= $badgeClass ?>"><?= $badgeText ?></span></td>
+                                        <?php } ?>
                                         <td class="text-center">
                                             <a href="javascript:;" data-toggle="modal" data-target="#infoModal<?= $event['id_events'] ?>" class="btn btn-info">
                                                 <i class="fas fa-users"></i> Cek Peserta

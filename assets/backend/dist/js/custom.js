@@ -79,3 +79,11 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
+
+function copyText() {
+     
+    /* Copy text into clipboard */
+    navigator.clipboard.writeText
+        ("Geeksforgeeks is best learning platform.");
+}
+

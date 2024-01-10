@@ -55,7 +55,6 @@
 <script src="<?= base_url('assets/backend') ?>/dist/js/event/create.js"></script>
 <script src="<?= base_url('assets/backend') ?>/dist/js/event/table.js"></script>
 <script src="<?= base_url('assets/backend') ?>/dist/js/event/partnership.js"></script>
-
 <script>
     const baseurl = '<?= base_url() ?>';
 </script>

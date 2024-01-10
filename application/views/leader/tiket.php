@@ -49,12 +49,12 @@
                                             <?php if ($key['status_transaksi'] == 'Lunas') : ?>
                                                 <a href="javascript:;" data-toggle="modal" data-target="#lihatModal<?= $key['id_transaksi'] ?>" class="btn btn-info btn-sm"><i class="far fa-eye"></i></i> Lihat Bukti Transfer</a>
                                             <?php elseif ($key['bukti_tf'] != NULL) : ?>
-                                                <a href="javascript:;" data-toggle="modal" data-target="#tiketModal<?= $key['id_transaksi']  ?>" class="btn btn-success btn-sm">
+                                                <a href="javascript:;" data-toggle="modal" data-target="#bayarModal<?= $key['id_transaksi']  ?>" class="btn btn-success btn-sm">
                                                     <i class="fas fa-shopping-basket"></i> Bayar
                                                 </a>
                                                 <a href="javascript:;" data-toggle="modal" data-target="#lihatModal<?= $key['id_transaksi'] ?>" class="btn btn-info btn-sm"><i class="far fa-eye"></i></i> Lihat Bukti Transfer</a>
                                             <?php else : ?>
-                                                <a href="javascript:;" data-toggle="modal" data-target="#tiketModal<?= $key['id_transaksi']  ?>" class="btn btn-success btn-sm">
+                                                <a href="javascript:;" data-toggle="modal" data-target="#bayarModal<?= $key['id_transaksi']  ?>" class="btn btn-success btn-sm">
                                                     <i class="fas fa-shopping-basket"></i> Bayar
                                                 </a>
                                                 <a href="javascript:;" data-toggle="modal" data-target="#uploadModal<?= $key['id_transaksi'] ?>" class="btn btn-info btn-sm">
@@ -103,6 +103,39 @@
     </div>
 <?php endforeach ?>
 <?php foreach ($transaksi as $key) : ?>
+    <div class="modal fade" id="bayarModal<?= $key['id_transaksi'] ?>">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <form action="<?= base_url('leader/tiket/buktitf') ?>" method="post" enctype="multipart/form-data">
+                    <div class="modal-header">
+                        <h4 class="modal-title">Bukti Transfer</h4>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="form-group">
+                            <td>Nama Bank</td>
+                            <td><b><?= $key['name_bank'] ?></b></td><br>
+                            <td>Rekening Bank</td>
+                            <td id="norek"><b><?= $key['nomor_rekening'] ?></b></td>
+                            <a href="javascript:void(0);" onclick="copyText()">
+                                <i class="far fa-copy"></i>
+                            </a><br>
+                            <td>Nama Rekening</td>
+                            <td><b><?= $key['name_rekening'] ?></b></td>
+                        </div>
+                    </div>
+                    <div class="modal-footer justify-content-between">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+<?php endforeach ?>
+<?php foreach ($transaksi as $key) : ?>
     <div class="modal fade" id="lihatModal<?= $key['id_transaksi'] ?>">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
@@ -116,6 +149,15 @@
                     <div class="form-group">
                         <img style="width: 100%;" src="<?= base_url('assets/backend/dist/img/bukti_tf/') . $key['bukti_tf'] ?>" alt="<?= $key['bukti_tf'] ?>">
                     </div>
+                    <form action="<?= base_url('leader/tiket/buktitf/' . $key['id_transaksi']) ?>" method="post" enctype="multipart/form-data">
+                        <div class="form-group">
+                            <div class="upload-ulang d-flex">
+                                <label>Upload ulang</label>
+                                <input type="file" name="bukti_tf" class="form-control">
+                                <button type="submit" class="btn btn-success">Submit</button>
+                            </div>
+                        </div>
+                    </form>
                 </div>
                 <div class="modal-footer justify-content-between">
                     <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>

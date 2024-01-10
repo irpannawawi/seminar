@@ -8,6 +8,7 @@ class Leader_model extends CI_Model
         $this->db->select('*');
         $this->db->from('transaksi');
         $this->db->join('events', 'transaksi.events_id = events.id_events');
+        $this->db->join('rekening', 'transaksi.bank_transfer = rekening.name_bank');
         $this->db->where('transaksi.user_id', $id_user);
         $this->db->order_by('date_transaksi', 'DESC');
 
