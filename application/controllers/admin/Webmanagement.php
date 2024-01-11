@@ -98,16 +98,4 @@ class Webmanagement extends CI_Controller
             $this->load->view('admin/layouts/footer');
         }
     }
-
-    public function other()
-    {
-        $data['users'] = $this->db->get_where('users', ['email' => $this->session->email])->row_array();
-        $data['title'] = 'Setting Website';
-
-        $this->load->view('admin/layouts/header', $data);
-        $this->load->view('admin/layouts/navbar');
-        $this->load->view('admin/layouts/sidebar');
-        $this->load->view('admin/setting/other');
-        $this->load->view('admin/layouts/footer');
-    }
 }

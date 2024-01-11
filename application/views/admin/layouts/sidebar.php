@@ -145,12 +145,6 @@
                                 <p>Pesan Setting</p>
                             </a>
                         </li>
-                        <li class="nav-item">
-                            <a href="<?= base_url('admin/webmanagement/other'); ?>" class="nav-link">
-                                <i class="far fa-circle nav-icon"></i>
-                                <p>Lainnya</p>
-                            </a>
-                        </li>
                     </ul>
                 </li>
                 <li class="nav-item">
@@ -169,7 +163,7 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="<?= base_url('admin/integrasimanagement/#'); ?>" class="nav-link">
+                            <a href="<?= base_url('admin/integrasimanagement/mailer'); ?>" class="nav-link">
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>Integrasi Email</p>
                             </a>

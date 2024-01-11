@@ -21,7 +21,7 @@
                 <select id="eventsId" name="eventsId" class="select2">
                     <option selected disabled>Pilih events terlebih dahulu</option>
                     <?php foreach ($events as $key) : ?>
-                        <option value="<?= $key['id_events'] ?>"><?= $key['title'] ?></option>
+                        <option value="<?= $key['id_events'] ?>"><?= $key['title'] . ' - ' . tanggal($key['date_start']) ?></option>
                     <?php endforeach ?>
                 </select>
             </div>

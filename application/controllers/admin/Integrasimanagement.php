@@ -1,6 +1,10 @@
 <?php
 defined('BASEPATH') or exit('No direct script access allowed');
 
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\SMTP;
+use PHPMailer\PHPMailer\Exception;
+
 class Integrasimanagement extends CI_Controller
 {
     public function __construct()
@@ -117,5 +121,94 @@ class Integrasimanagement extends CI_Controller
         curl_close($curl);
 
         redirect('admin/integrasimanagement/wagw');
+    }
+
+    // email
+    public function mailer()
+    {
+        $data['users'] = $this->db->get_where('users', ['email' => $this->session->email])->row_array();
+        $data['mailer'] = $this->integrasi->mailer();
+        $data['title'] = 'Integrasi Email';
+
+        $this->form_validation->set_rules('mail_host', 'Mail Host', 'required');
+        $this->form_validation->set_rules('mail_address', 'Mail Address', 'required');
+        $this->form_validation->set_rules('mail_password', 'Mail password', 'required');
+        $this->form_validation->set_rules('mail_port', 'Mail port', 'required');
+        $this->form_validation->set_rules('mail_reply', 'Mail reply', 'required');
+        $this->form_validation->set_rules('mail_name', 'Mail name', 'required');
+
+        if ($this->form_validation->run() == false) {
+            $this->load->view('admin/layouts/header', $data);
+            $this->load->view('admin/layouts/navbar');
+            $this->load->view('admin/layouts/sidebar');
+            $this->load->view('admin/setting/mailer');
+            $this->load->view('admin/layouts/footer');
+        } else {
+            $save = [
+                'mail_host' => $this->input->post('mail_host'),
+                'mail_address' => $this->input->post('mail_address'),
+                'mail_password' => $this->input->post('mail_password'),
+                'mail_port' => $this->input->post('mail_port'),
+                'mail_reply' => $this->input->post('mail_reply'),
+                'mail_name' => $this->input->post('mail_name')
+            ];
+
+            $this->db->update('mailer', $save);
+            set_pesan('Mailer berhasil diupdate!');
+            redirect('admin/integrasimanagement/mailer');
+        }
+    }
+
+    public function testing()
+    {
+        $recive = $this->input->post('email_penerima');
+        $subject = $this->input->post('subject');
+        $pesan = $this->input->post('pesan');
+
+        if ($this->send_email($recive, $subject, $pesan)) {
+            set_pesan('Berhasil kirim pesan!');
+        } else {
+            set_pesan('Gagal kirim pesan!', false);
+        }
+        redirect('admin/integrasimanagement/mailer');
+    }
+
+    private function send_email($recive, $subject, $pesan)
+    {
+        $mailer = $this->integrasi->mailer();
+
+        // PHPMailer object
+        $mail = new PHPMailer(true);
+        //Server settings
+        $mail->SMTPDebug = SMTP::DEBUG_SERVER;
+        $mail->isSMTP();
+        $mail->Host     = $mailer['mail_host'];
+        $mail->SMTPAuth = true;
+        $mail->Username = $mailer['mail_address'];
+        $mail->Password = $mailer['mail_password'];
+        $mail->Port     = $mailer['mail_port'];
+        $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
+
+        //Recipients
+        $mail->setFrom($mailer['mail_address'], $mailer['mail_name']);
+        $mail->addAddress($recive);     //Add a recipient
+        $mail->addReplyTo($mailer['mail_reply'], $mailer['mail_name']);
+
+        //Attachments
+        // $mail->addAttachment('/var/tmp/file.tar.gz');
+
+        //Content
+        $mail->isHTML(true);
+        $mail->Subject = $subject;
+        $mail->Body    = $pesan;
+
+        // Send email
+        if (!$mail->send()) {
+            set_pesan($mail->ErrorInfo, false);
+            redirect($_SERVER['HTTP_REFERER']);
+        } else {
+            set_pesan('Berhasil kirim pesan!');
+            redirect($_SERVER['HTTP_REFERER']);
+        }
     }
 }

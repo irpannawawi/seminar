@@ -14,8 +14,7 @@ class Tiket extends CI_Controller
         $data['users'] = $this->db->get_where('users', ['email' => $this->session->email])->row_array();
         $id_user =  $data['users']['id_user'];
         $data['transaksi'] = $this->Leader_model->getTransaksi($id_user);
-        // var_dump($data['transaksi']);
-        // die;
+
         $data['title'] = 'Tiket';
         $data['status'] = [
             'Tertunda' => '<span class="badge badge-warning">Tertunda</span>',
