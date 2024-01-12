@@ -13,10 +13,7 @@ class Events extends CI_Controller
     public function index()
     {
         $data['users'] = $this->db->get_where('users', ['email' => $this->session->email])->row_array();
-        $data['events'] = $this->db
-            ->where('status', 'published')
-            ->order_by('date_created', 'DESC')
-            ->get('events')->result_array();
+        $data['events'] = $this->events->getEventSB();
 
         $data['title'] = 'Events';
         $data['rekening'] = $this->db->get('rekening')->result_array();
@@ -55,7 +52,8 @@ class Events extends CI_Controller
                     'tiket' => $jmlTiket,
                     'nominal' => $nominal,
                     'date_transaksi' => date('Y-m-d'),
-                    'status_transaksi' => 'Tertunda'
+                    'status_transaksi' => 'Tertunda',
+                    'by_order' => 1
                 ];
 
                 $this->db->insert('transaksi', $save);

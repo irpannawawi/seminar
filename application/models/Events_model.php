@@ -15,6 +15,20 @@ class Events_model extends CI_Model
         return $result;
     }
 
+    public function getEventSB()
+    {
+        $currentDate = date('Y-m-d');
+
+        $this->db->select('*');
+        $this->db->from('events');
+        $this->db->where("date_finish >=", $currentDate);
+        $this->db->order_by('date_finish', 'ASC');
+
+        $query = $this->db->get();
+
+        return $query->result_array();
+    }
+
     public function getEvent($event_id)
     {
         $query = "SELECT * FROM events WHERE id_events = $event_id";

@@ -46,6 +46,14 @@
                     </a>
                 </li>
                 <li class="nav-item">
+                    <a href="<?= site_url('leader/transaksi') ?>" class="nav-link">
+                        <i class="nav-icon fas fa-ticket-alt"></i>
+                        <p>
+                            Transaksi
+                        </p>
+                    </a>
+                </li>
+                <li class="nav-item">
                     <a href="<?= base_url('auth/logout'); ?>" class="nav-link delete-btn">
                         <i class="nav-icon fas fa-sign-out-alt"></i>
                         <p>Logout</p>

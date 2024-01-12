@@ -39,7 +39,7 @@ class Penjualan extends CI_Controller
             if ($action == 'leader') {
                 // Pengecekan apakah sudah ada data pada kolom 'events_id' berdasarkan 'user_id'
                 $user_id = $this->input->post('user_id');
-                $role_id = $this->session->role_id;
+                // $role_id = $this->input->post('role_id');
                 $events_id = $this->input->post('events_id', true);
                 $existingPartnership = $this->db->get_where('partnership', ['user_id' => $user_id, 'events_id' => $events_id])->row_array();
 
@@ -49,7 +49,7 @@ class Penjualan extends CI_Controller
                     if ($transaksi_status == 'Lunas') {
                         // Insert ke tabel partnership jika status_transaksi adalah "Lunas"
                         $partnership = [
-                            'role_id' => $role_id,
+                            'role_id' => 2,
                             'user_id' => $user_id,
                             'events_id' => $events_id,
                             'kuota_tiket' => $this->input->post('tiket', true),

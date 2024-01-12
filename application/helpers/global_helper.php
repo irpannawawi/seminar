@@ -194,19 +194,19 @@ if (!function_exists('status_absensi')) {
     }
 }
 
-if (!function_exists('total_tiket')) {
-    function total_tiket($column_name)
-    {
-        $ci = &get_instance();
-        $ci->load->database();
+// if (!function_exists('total_tiket')) {
+//     function total_tiket($column_name)
+//     {
+//         $ci = &get_instance();
+//         $ci->load->database();
 
-        $user_id = $ci->session->id_user; // Mengambil user_id dari session
+//         $user_id = $ci->session->id_user; // Mengambil user_id dari session
 
-        $ci->db->select_sum($column_name, 'total_tiket');
-        $ci->db->where('user_id', $user_id);
+//         $ci->db->select_sum($column_name, 'total_tiket');
+//         $ci->db->where('user_id', $user_id);
 
-        $query = $ci->db->get('partnership');
+//         $query = $ci->db->get('partnership');
 
-        return $query->row()->total_tiket;
-    }
-}
+//         return $query->row()->total_tiket;
+//     }
+// }

@@ -78,7 +78,7 @@
     <div class="modal fade" id="uploadModal<?= $key['id_transaksi'] ?>">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
-                <form action="<?= base_url('leader/tiket/buktitf') ?>" method="post" enctype="multipart/form-data">
+                <form action="<?= base_url('leader/tiket/buktitf/') . $key['id_transaksi'] ?>" method="post" enctype="multipart/form-data">
                     <input type="hidden" name="id_transaksi" value="<?= $key['id_transaksi'] ?>">
                     <div class="modal-header">
                         <h4 class="modal-title">Bukti Transfer</h4>
@@ -108,7 +108,7 @@
             <div class="modal-content">
                 <form action="<?= base_url('leader/tiket/buktitf') ?>" method="post" enctype="multipart/form-data">
                     <div class="modal-header">
-                        <h4 class="modal-title">Bukti Transfer</h4>
+                        <h4 class="modal-title">Info Rekening</h4>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>

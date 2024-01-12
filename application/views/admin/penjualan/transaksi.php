@@ -123,6 +123,7 @@
                     <input type="hidden" name="events_id" value="<?= $value['id_events'] ?>">
                     <input type="hidden" name="id_transaksi" value="<?= $value['id_transaksi'] ?>">
                     <input type="hidden" name="user_id" value="<?= $value['user_id'] ?>">
+                    <!-- <input type="hidden" name="role_id" value="<?= $users['role_id'] ?>"> -->
                     <div class="modal-header">
                         <h4 class="modal-title">Detail <?= $value['user_name']; ?></h4>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
