@@ -47,7 +47,7 @@
                 </li>
                 <li class="nav-item">
                     <a href="<?= site_url('leader/transaksi') ?>" class="nav-link">
-                        <i class="nav-icon fas fa-ticket-alt"></i>
+                        <i class="nav-icon fas fa-cash-register"></i>
                         <p>
                             Transaksi
                         </p>

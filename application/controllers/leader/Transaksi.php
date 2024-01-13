@@ -8,12 +8,49 @@ class Transaksi extends CI_Controller
         parent::__construct();
         is_logged_in();
         $this->load->model('Partner_model', 'partner');
+        $this->load->model('Leader_model', 'leader');
     }
+
     public function index()
     {
         $data['users'] = $this->db->get_where('users', ['email' => $this->session->email])->row_array();
         $data['title'] = 'Transaksi';
 
+        // Handling search
+        if ($this->input->post('search')) {
+            $keyword = $this->input->post('keyword');
+            $this->session->set_userdata('keyword', $keyword);
+        } else {
+            $keyword = $this->session->userdata('keyword');
+        }
+
+        // Pagination config
+        $config['total_rows'] = $this->leader->count_all_transaksi($keyword);
+        $config['per_page'] = 5;
+
+        $this->pagination->initialize($config);
+
+        // Get current page offset
+        $data['start'] = $this->uri->segment(3);
+
+        // Get transactions
+        $data['transaksi'] = $this->leader->getTransaksiLeader($config['per_page'], $data['start'], $keyword);
+
+        // Load views
+        $this->load->view('leader/layouts/header', $data);
+        $this->load->view('leader/layouts/navbar');
+        $this->load->view('leader/layouts/sidebar');
+        $this->load->view('leader/transaksi/transaksi', $data);
+        $this->load->view('leader/layouts/footer');
+    }
+
+    public function search()
+    {
+        $data['users'] = $this->db->get_where('users', ['email' => $this->session->email])->row_array();
+        $data['title'] = 'Tambah Transaksi';
+        $keyword = $this->input->post('keyword');
+
+        $data['transaksi'] = $this->leader->search_transaksi($keyword);
         $this->load->view('leader/layouts/header', $data);
         $this->load->view('leader/layouts/navbar');
         $this->load->view('leader/layouts/sidebar');
