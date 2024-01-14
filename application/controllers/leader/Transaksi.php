@@ -17,16 +17,11 @@ class Transaksi extends CI_Controller
         $data['title'] = 'Transaksi';
 
         // Handling search
-        if ($this->input->post('search')) {
-            $keyword = $this->input->post('keyword');
-            $this->session->set_userdata('keyword', $keyword);
-        } else {
-            $keyword = $this->session->userdata('keyword');
-        }
+        $keyword = $this->input->post('keyword');
 
         // Pagination config
         $config['total_rows'] = $this->leader->count_all_transaksi($keyword);
-        $config['per_page'] = 5;
+        $config['per_page'] = 10;
 
         $this->pagination->initialize($config);
 
@@ -41,20 +36,6 @@ class Transaksi extends CI_Controller
         $this->load->view('leader/layouts/navbar');
         $this->load->view('leader/layouts/sidebar');
         $this->load->view('leader/transaksi/transaksi', $data);
-        $this->load->view('leader/layouts/footer');
-    }
-
-    public function search()
-    {
-        $data['users'] = $this->db->get_where('users', ['email' => $this->session->email])->row_array();
-        $data['title'] = 'Tambah Transaksi';
-        $keyword = $this->input->post('keyword');
-
-        $data['transaksi'] = $this->leader->search_transaksi($keyword);
-        $this->load->view('leader/layouts/header', $data);
-        $this->load->view('leader/layouts/navbar');
-        $this->load->view('leader/layouts/sidebar');
-        $this->load->view('leader/transaksi/transaksi');
         $this->load->view('leader/layouts/footer');
     }
 

@@ -27,7 +27,7 @@
                                     <input type="text" value="<?= set_value('keyword') ?>" name="keyword" class="form-control float-right" placeholder="Search" autocomplete="off" autofocus>
 
                                     <div class="input-group-append">
-                                        <button type="submit" name="search" class="btn btn-default">
+                                        <button type="submit" class="btn btn-default">
                                             <i class="fas fa-search"></i>
                                         </button>
                                     </div>
@@ -51,10 +51,8 @@
                             </thead>
                             <tbody>
                                 <?php if (empty($transaksi)) : ?>
-                                    <tr>
-                                        <td rowspan="6">
-                                            Data tidak ditemukan!
-                                        </td>
+                                    <tr class="text-center bg-red">
+                                        <td colspan="7">Data <b><?= set_value('keyword') ?></b> tidak ditemukan!</td>
                                     </tr>
                                 <?php endif ?>
                                 <?php
