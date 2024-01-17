@@ -51,7 +51,8 @@ class Events extends CI_Controller
             // Hapus koma di akhir string
             $whatsapp = rtrim($whatsapp, ',');
 
-            $this->sendMessage($whatsapp, $message);
+            // $this->sendMessage($whatsapp, $message);
+            sendWhatsapp($whatsapp, $message);
         }
     }
 
@@ -582,51 +583,5 @@ class Events extends CI_Controller
 
         // Redirect ke halaman event
         redirect('admin/events/publish');
-    }
-
-    private function sendMessage($whatsapp, $message)
-    {
-        $wagw = $this->integrasi->wagw();
-        $curl = curl_init();
-
-        curl_setopt_array($curl, array(
-            CURLOPT_URL => $wagw['link_send'],
-            CURLOPT_RETURNTRANSFER => true,
-            CURLOPT_ENCODING => '',
-            CURLOPT_MAXREDIRS => 10,
-            CURLOPT_TIMEOUT => 0,
-            CURLOPT_FOLLOWLOCATION => true,
-            CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
-            CURLOPT_CUSTOMREQUEST => 'POST',
-            CURLOPT_POSTFIELDS => array(
-                'target' => $whatsapp,
-                'message' => $message,
-                'url' => 'https://md.fonnte.com/images/wa-logo.png',
-            ),
-            CURLOPT_HTTPHEADER => array(
-                'Authorization: ' . $wagw['token']
-            ),
-        ));
-
-        $response = curl_exec($curl);
-        // Sebelum encode
-
-        if ($response === false) {
-            // Handle cURL error
-            set_pesan('Error during cURL request: ' . curl_error($curl), false);
-        } else {
-            // Decode respons JSON
-            $api_response = json_decode($response, true);
-
-            if ($api_response['status'] == true) {
-                set_pesan($api_response['detail']);
-            } else {
-                set_pesan('Kirim gagal: ' . $api_response['reason'], false);
-            }
-        }
-
-        curl_close($curl);
-
-        redirect('admin/events');
     }
 }

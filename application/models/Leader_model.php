@@ -3,6 +3,16 @@ defined('BASEPATH') or exit('No direct script access allowed');
 
 class Leader_model extends CI_Model
 {
+    public function getEventTransaksi($id_leader)
+    {
+        $this->db->select('events.*');
+        $this->db->from('partnership');
+        $this->db->join('events', 'partnership.events_id = events.id_events');
+        $this->db->where('partnership.id_leader', $id_leader);
+        $this->db->where('events.date_finish >=', date('Y-m-d')); // Tampilkan hanya yang date_finish >= waktu sekarang
+
+        return $this->db->get()->result_array();
+    }
     public function getTransaksi($id_user)
     {
         $this->db->select('*');
@@ -34,7 +44,7 @@ class Leader_model extends CI_Model
         return $this->db->get()->row()->total;
     }
 
-    public function getTransaksiLeader($limit, $start, $keyword = null)
+    public function getTransaksiLeader($limit = null, $offset = null, $keyword = null)
     {
         $this->db->select('transaksi.*, events.title, peserta.name');
         $this->db->from('transaksi');
@@ -50,7 +60,7 @@ class Leader_model extends CI_Model
         }
 
         $this->db->order_by('transaksi.date_transaksi', 'DESC');
-        $this->db->limit($limit, $start);
+        $this->db->limit($limit, $offset);
 
         return $this->db->get()->result_array();
     }

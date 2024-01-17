@@ -55,11 +55,9 @@
                                         <td colspan="7">Data <b><?= set_value('keyword') ?></b> tidak ditemukan!</td>
                                     </tr>
                                 <?php endif ?>
-                                <?php
-                                $no = 1;
-                                foreach ($transaksi as $key) : ?>
+                                <?php foreach ($transaksi as $key) : ?>
                                     <tr>
-                                        <td><?= $no++ ?></td>
+                                        <td><?= ++$offset ?></td>
                                         <td><?= $key['id_order'] ?></td>
                                         <td><?= $key['title'] ?></td>
                                         <td><?= $key['name'] ?></td>
@@ -75,7 +73,7 @@
                     </div>
                     <!-- /.card-body -->
                     <div class="card-footer clearfix">
-                        <?php echo $this->pagination->create_links(); ?>
+                        <?= $pagination ?>
                     </div>
                 </div>
             </div>

@@ -71,22 +71,11 @@
                     </ul>
                 </li>
                 <li class="nav-item">
-                    <a href="javascript:;" class="nav-link">
+                    <a href="<?= base_url('admin/penjualan/transaksi'); ?>" class="nav-link">
                         <i class="nav-icon fas fa-cash-register"></i>
-                        <p>
-                            Penjualan
-                            <i class="fas fa-angle-left right"></i>
-                        </p>
+                        <p>Transaksi</p>
+                        <?= cek_trx('Tertunda') ?>
                     </a>
-                    <ul class="nav nav-treeview">
-                        <li class="nav-item">
-                            <a href="<?= base_url('admin/penjualan/transaksi'); ?>" class="nav-link">
-                                <i class="far fa-circle nav-icon"></i>
-                                <p>Transaksi</p>
-                                <?= cek_trx('Tertunda') ?>
-                            </a>
-                        </li>
-                    </ul>
                 </li>
                 <li class="nav-item">
                     <a href="<?= base_url('admin/absensi'); ?>" class="nav-link">
@@ -96,15 +85,15 @@
                 </li>
                 <li class="nav-item">
                     <a href="<?= base_url('admin/partnership'); ?>" class="nav-link">
-                        <i class="nav-icon fas fa-users-cog"></i>
+                        <i class="nav-icon fas fa-users"></i>
                         <p>Partnership</p>
                     </a>
                 </li>
                 <li class="nav-item">
                     <a href="javascript:;" class="nav-link">
-                        <i class="nav-icon fas fa-users"></i>
+                        <i class="nav-icon fas fa-users-cog"></i>
                         <p>
-                            Akun Management
+                            User Management
                             <i class="fas fa-angle-left right"></i>
                             <!-- <span class="badge badge-warning right">6</span> -->
                         </p>

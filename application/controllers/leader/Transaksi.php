@@ -9,6 +9,7 @@ class Transaksi extends CI_Controller
         is_logged_in();
         $this->load->model('Partner_model', 'partner');
         $this->load->model('Leader_model', 'leader');
+        $this->load->model('Integrasi_model', 'integrasi');
     }
 
     public function index()
@@ -26,12 +27,13 @@ class Transaksi extends CI_Controller
         $this->pagination->initialize($config);
 
         // Get current page offset
-        $data['start'] = $this->uri->segment(3);
+        $data['offset'] = $this->uri->segment(4);
+        $limit = $config['per_page'];
 
         // Get transactions
-        $data['transaksi'] = $this->leader->getTransaksiLeader($config['per_page'], $data['start'], $keyword);
+        $data['transaksi'] = $this->leader->getTransaksiLeader($limit, $data['offset'], $keyword);
+        $data['pagination'] = $this->pagination->create_links();
 
-        // Load views
         $this->load->view('leader/layouts/header', $data);
         $this->load->view('leader/layouts/navbar');
         $this->load->view('leader/layouts/sidebar');
@@ -43,7 +45,9 @@ class Transaksi extends CI_Controller
     {
         $data['users'] = $this->db->get_where('users', ['email' => $this->session->email])->row_array();
         $data['title'] = 'Tambah Transaksi';
-        $data['events'] = $this->partner->getEventSB();
+        $user_id = $this->session->id_user;
+        $data['events'] = $this->leader->getEventTransaksi($user_id);
+        $setting = $this->db->get('setting')->row_array();
 
         $this->form_validation->set_rules('qty', 'Qty Tiket', 'required');
         $this->form_validation->set_rules('name', 'Nama Peserta', 'required');
@@ -71,10 +75,13 @@ class Transaksi extends CI_Controller
                 $this->db->trans_start(); // Memulai transaksi database
 
                 // Simpan data peserta ke dalam tabel 'peserta'
+                $nowa = $this->input->post('nowa');
+                $name = $this->input->post('name');
+                $event_id = $this->input->post('event');
                 $peserta_data = array(
                     'events_id' => $this->input->post('event'),
-                    'name' => $this->input->post('name'),
-                    'nowa' => $this->input->post('nowa'),
+                    'name' => $name,
+                    'nowa' => $nowa,
                     'email' => $this->input->post('email'),
                     'date_participate' => date('Y-m-d'),
                     'domisili' => $this->input->post('domisili')
@@ -90,7 +97,7 @@ class Transaksi extends CI_Controller
                 $transaksi_data = array(
                     'id_order' => $idOrder,
                     'peserta_id' => $peserta_id,
-                    'events_id' => $this->input->post('event'),
+                    'events_id' => $event_id,
                     'date_transaksi' => date('Y-m-d'),
                     'tiket' => $qty_requested,
                     'status_transaksi' => 'Lunas',
@@ -105,19 +112,31 @@ class Transaksi extends CI_Controller
                 $this->db->set('kuota_tiket', 'kuota_tiket - ' . $qty_requested, FALSE);
                 $this->db->update('partnership');
 
-                $this->db->trans_complete(); // Menyelesaikan transaksi database
+                $this->db->trans_complete();
 
                 if ($this->db->trans_status() === FALSE) {
-                    // Jika terjadi kesalahan dalam transaksi, rollback
                     $this->db->trans_rollback();
                     set_pesan('Gagal tambah peserta');
                 } else {
-                    // Jika transaksi berhasil, commit
                     $this->db->trans_commit();
                     set_pesan('Berhasil tambah peserta');
                 }
 
-                redirect('leader/transaksi');
+                $query = $this->db->get_where('events', array('id_events' => $event_id));
+                // Memastikan data ditemukan
+                if ($query->num_rows() > 0) {
+                    $event_title = $query->row()->title;
+                    $waktu = tanggal($query->row()->date_start);
+                }
+                $whatsapp = '';
+
+                // Menambahkan informasi ke variabel WhatsApp
+                $whatsapp .= $nowa . '|' . $name . '|' . $event_title . '|' . $idOrder . '|' . $waktu . '|' . $qty_requested;
+
+                sendWhatsapp($whatsapp, $setting['sukses_bayar']);
+                // sendWhatsappQR($whatsapp, $setting['sukses_bayar']);
+
+                redirect($_SERVER['HTTP_REFERER']);
             } else {
                 // Jika kuota_tiket tidak mencukupi, berikan pesan dan redirect
                 set_pesan('Kuota tiket tidak mencukupi!', false);

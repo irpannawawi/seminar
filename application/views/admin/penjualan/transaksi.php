@@ -65,7 +65,7 @@
     <div class="modal fade" id="detailModal<?= $value['id_transaksi'] ?>">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
-                <form action="<?= base_url('admin/events/category') ?>" method="post">
+                <form action="<?= base_url('admin/penjualan/') ?>" method="post">
                     <div class="modal-header">
                         <h4 class="modal-title">Detail <?= $value['peserta_name']; ?></h4>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -96,10 +96,12 @@
                         <form action="" method=" post">
                             <div class="form-group">
                                 <label>Ubah Status Transaksi</label>
-                                <select name="" id="" class="form-control">
+                                <select name="status_transaksi" id="status_transaksi" class="form-control">
                                     <option value="Tertunda">Tertunda</option>
                                     <option value="Refund">Refund</option>
                                     <option value="Lunas">Lunas</option>
+                                    <option value="Prosses">Proses</option>
+                                    <option value="Dibatalkan">Batal</option>
                                 </select>
                             </div>
                         </form>
@@ -167,7 +169,7 @@
                             <div class="col-6">
                                 <div class="form-group">
                                     <label>Tiket</label>
-                                    <input type="text" name="tiket" id="tiket" class="form-control">
+                                    <input type="text" name="tiket" id="tiket" value="0" class="form-control">
                                 </div>
                             </div>
                         </div>

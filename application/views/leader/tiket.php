@@ -58,7 +58,7 @@
                                                     <i class="fas fa-shopping-basket"></i> Bayar
                                                 </a>
                                                 <a href="javascript:;" data-toggle="modal" data-target="#uploadModal<?= $key['id_transaksi'] ?>" class="btn btn-info btn-sm">
-                                                    <i class="fas fa-shopping-basket"></i> Upload Bukti TF
+                                                    <i class="fas fa-upload"></i> Upload Bukti TF
                                                 </a>
                                             <?php endif ?>
                                         </td>
