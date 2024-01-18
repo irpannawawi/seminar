@@ -78,13 +78,16 @@ class Transaksi extends CI_Controller
                 $nowa = $this->input->post('nowa');
                 $name = $this->input->post('name');
                 $event_id = $this->input->post('event');
+                $email = $this->input->post('email');
+                $domisili = $this->input->post('domisili');
+
                 $peserta_data = array(
-                    'events_id' => $this->input->post('event'),
+                    'events_id' => $event_id,
                     'name' => $name,
                     'nowa' => $nowa,
-                    'email' => $this->input->post('email'),
+                    'email' => $email,
                     'date_participate' => date('Y-m-d'),
-                    'domisili' => $this->input->post('domisili')
+                    'domisili' => $domisili
                 );
                 $this->db->insert('peserta', $peserta_data);
                 $peserta_id = $this->db->insert_id();
@@ -110,37 +113,42 @@ class Transaksi extends CI_Controller
                 // Update nilai kuota_tiket di tabel 'partnership'
                 $this->db->where('id_leader', $partner['id_leader']);
                 $this->db->set('kuota_tiket', 'kuota_tiket - ' . $qty_requested, FALSE);
+                $this->db->set('tiket_terjual', 'tiket_terjual + ' . $qty_requested, FALSE);
                 $this->db->update('partnership');
 
                 $this->db->trans_complete();
 
                 if ($this->db->trans_status() === FALSE) {
                     $this->db->trans_rollback();
-                    set_pesan('Gagal tambah peserta');
+                    set_pesan('Gagal tambah peserta', false);
                 } else {
                     $this->db->trans_commit();
                     set_pesan('Berhasil tambah peserta');
                 }
 
-                $query = $this->db->get_where('events', array('id_events' => $event_id));
                 // Memastikan data ditemukan
+                $query = $this->db->get_where('events', array('id_events' => $event_id));
                 if ($query->num_rows() > 0) {
                     $event_title = $query->row()->title;
-                    $waktu = tanggal($query->row()->date_start);
+                    $waktu = $query->row()->date_start;
+                    $type_event = $query->row()->type_event; // Menambahkan ini
                 }
                 $whatsapp = '';
 
                 // Menambahkan informasi ke variabel WhatsApp
-                $whatsapp .= $nowa . '|' . $name . '|' . $event_title . '|' . $idOrder . '|' . $waktu . '|' . $qty_requested;
+                $whatsapp = $nowa . '|' . $name . '|' . $event_title . '|' . $idOrder . '|' . $waktu . '|' . $qty_requested;
 
-                sendWhatsapp($whatsapp, $setting['sukses_bayar']);
-                // sendWhatsappQR($whatsapp, $setting['sukses_bayar']);
+                if ($type_event == 'offline') {
+                    sendWhatsappQR($whatsapp, 'Wa qr');
+                } else {
+                    sendWhatsapp($whatsapp, $setting['sukses_bayar']);
+                    send_email($email, $event_title);
+                }
 
                 redirect($_SERVER['HTTP_REFERER']);
             } else {
-                // Jika kuota_tiket tidak mencukupi, berikan pesan dan redirect
                 set_pesan('Kuota tiket tidak mencukupi!', false);
-                redirect('leader/transaksi/add');
+                redirect($_SERVER['HTTP_REFERER']);
             }
         }
     }

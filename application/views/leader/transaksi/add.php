@@ -21,7 +21,7 @@
                     <form action="<?= site_url('leader/transaksi/add') ?>" method="post">
                         <div class="card-body">
                             <div class="row">
-                                <div class="col-lg-12 col-md-12 col-sm-12">
+                                <div class="col">
                                     <div class="form-group">
                                         <label>Events</label>
                                         <select class="form-control select2" name="event" id="event">
@@ -62,7 +62,11 @@
 
         // Fungsi untuk menambahkan formulir tambahan
         function appendAdditionalForm(eventName) {
-            var additionalForm = '<div class="additional-form">' +
+            var additionalForm =
+                '<div class="additional-form">' +
+
+                '<div class="row">' +
+                '<div class="col-6">' +
                 '<div class="form-group">' +
                 '<label for="qty">Qty</label>' +
                 '<input type="text" class="form-control" name="qty" id="qty" value="<?= set_value('qty') ?>">' +
@@ -71,6 +75,9 @@
                 '<label for="nama">Nama</label>' +
                 '<input type="text" class="form-control" name="name" id="name" value="<?= set_value('name') ?>">' +
                 '</div>' +
+                '</div>' +
+
+                '<div class="col-6">' +
                 '<div class="form-group">' +
                 '<label for="email">Email</label>' +
                 '<input type="email" class="form-control" name="email" id="email" value="<?= set_value('email') ?>">' +
@@ -79,6 +86,9 @@
                 '<label for="no_whatsapp">No. Whatsapp</label>' +
                 '<input type="text" class="form-control" name="nowa" id="nowa" value="<?= set_value('nowa') ?>">' +
                 '</div>' +
+                '</div>' +
+                '</div>' +
+
                 '<div class="form-group">' +
                 '<label for="no_whatsapp">Domisili</label>' +
                 '<input type="text" class="form-control" name="domisili" id="domisili" value="<?= set_value('domisili') ?>">' +

@@ -12,7 +12,7 @@ class Tiket extends CI_Controller
     public function index()
     {
         $data['users'] = $this->db->get_where('users', ['email' => $this->session->email])->row_array();
-        $id_user =  $data['users']['id_user'];
+        $id_user = $this->session->id_user;
         $data['transaksi'] = $this->Leader_model->getTransaksi($id_user);
 
         $data['title'] = 'Tiket';

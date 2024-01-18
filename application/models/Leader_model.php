@@ -3,16 +3,20 @@ defined('BASEPATH') or exit('No direct script access allowed');
 
 class Leader_model extends CI_Model
 {
-    public function getEventTransaksi($id_leader)
+    public function getEventTransaksi($user_id)
     {
         $this->db->select('events.*');
         $this->db->from('partnership');
-        $this->db->join('events', 'partnership.events_id = events.id_events');
-        $this->db->where('partnership.id_leader', $id_leader);
-        $this->db->where('events.date_finish >=', date('Y-m-d')); // Tampilkan hanya yang date_finish >= waktu sekarang
+        $this->db->join('transaksi', 'partnership.user_id = transaksi.user_id AND partnership.events_id = transaksi.events_id', 'inner');
+        $this->db->join('events', 'partnership.events_id = events.id_events', 'inner');
+        $this->db->where('partnership.user_id', $user_id);
+        $this->db->where('transaksi.status_transaksi', 'Lunas');
+        $this->db->where('events.date_finish >=', date('Y-m-d'));
+        $this->db->group_by('events.id_events');
 
         return $this->db->get()->result_array();
     }
+
     public function getTransaksi($id_user)
     {
         $this->db->select('*');
@@ -20,7 +24,7 @@ class Leader_model extends CI_Model
         $this->db->join('events', 'transaksi.events_id = events.id_events');
         $this->db->join('rekening', 'transaksi.bank_transfer = rekening.name_bank');
         $this->db->where('transaksi.user_id', $id_user);
-        $this->db->order_by('date_transaksi', 'DESC');
+        $this->db->order_by('id_transaksi', 'DESC');
 
         $query = $this->db->get();
         return $query->result_array();

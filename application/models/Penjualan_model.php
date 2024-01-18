@@ -10,7 +10,7 @@ class Penjualan_model extends CI_Model
         $this->db->join('events', 'events.id_events = transaksi.events_id', 'left');
         $this->db->join('peserta', 'peserta.id_peserta = transaksi.peserta_id', 'left');
         $this->db->join('users', 'users.id_user = transaksi.user_id', 'left');
-        $this->db->order_by('transaksi.date_transaksi', 'DESC');
+        $this->db->order_by('id_transaksi', 'DESC');
 
         $query = $this->db->get();
 
