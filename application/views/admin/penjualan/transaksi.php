@@ -75,12 +75,14 @@
                     <div class="modal-body">
                         <div class="form-group">
                             <tr>
+                                <td><b>Order By: </b></td>
+                                <td><?= $value['name']; ?></td><br>
                                 <td><b>Nama: </b></td>
                                 <td><?= $value['peserta_name']; ?></td><br>
                                 <td><b>Nama Event: </b></td>
                                 <td><?= $value['title']; ?></td><br>
                                 <td><b>Nominal: </b></td>
-                                <td><?= rupiah($value['nominal']); ?></td><br>
+                                <td><?= ($value['nominal'] !== null) ? rupiah($value['nominal']) : 0; ?></td><br>
                                 <td><b>Bank Tujuan: </b></td>
                                 <td><?= $value['bank_transfer']; ?></td><br>
                                 <td><b>Tanggal Transaksi: </b></td>

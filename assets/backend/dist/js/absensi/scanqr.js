@@ -2,7 +2,7 @@ $(document).ready(function() {
     let scanner = new Instascan.Scanner({ 
         video: document.getElementById('reader'),
         backgroundScan: false,
-        mirror: true
+        mirror: false
     });
 
     scanner.addListener('scan', function (content) {
@@ -12,8 +12,7 @@ $(document).ready(function() {
             type: 'POST',
             data: { id_order: content },
             success: function(response) {
-                if (response != null && response != "") {
-                    response = JSON.parse(response);
+                if (response.success) {
                     // Update the view with the fetched data
                     $('#id_order').html(response.id_order);
                     $('#name').html(response.name);
@@ -24,8 +23,6 @@ $(document).ready(function() {
                 } else {
                     toastr.error('Data ' + content + ' Tidak Ditemukan')
                 }
-                scanner.clear();
-                document.getElementById('reader').remove();
             },
             error: function(xhr, status, error) {
                 toastr.error(error)
@@ -54,18 +51,18 @@ Instascan.Camera.getCameras().then(function(cameras) {
                         if (cameras[item - 1]) {
                             scanner.start(cameras[item - 1]);
                         } else {
-                            alert('Selected camera not available!');
+                            toastr.error('Selected camera not available!');
                         }
                     } else {
-                        alert('Invalid camera selection!');
+                        toastr.error('Invalid camera selection!');
                     }
                 });
             });
         }
     } else {
-        alert('No cameras found.');
+        toastr.error('No cameras found.');
     }
     }).catch(function(e) {
-        alert(`${e}`);
+        toastr.error(`${e}`);
     });
 });

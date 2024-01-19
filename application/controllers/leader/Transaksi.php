@@ -104,7 +104,7 @@ class Transaksi extends CI_Controller
                     'date_transaksi' => date('Y-m-d'),
                     'tiket' => $qty_requested,
                     'status_transaksi' => 'Lunas',
-                    'by_order' => $this->session->role_id
+                    'by_order' => $data['users']['name']
                 );
 
                 // Simpan data transaksi ke dalam tabel 'transaksi'

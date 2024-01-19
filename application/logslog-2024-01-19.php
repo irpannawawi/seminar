@@ -9780,3 +9780,4493 @@ INFO - 2024-01-19 10:32:11 --> Model "Absensi_model" initialized
 INFO - 2024-01-19 10:32:11 --> Model "Penjualan_model" initialized
 INFO - 2024-01-19 10:32:11 --> Final output sent to browser
 DEBUG - 2024-01-19 10:32:11 --> Total execution time: 0.0542
+INFO - 2024-01-19 10:51:39 --> Config Class Initialized
+INFO - 2024-01-19 10:51:39 --> Hooks Class Initialized
+DEBUG - 2024-01-19 10:51:39 --> UTF-8 Support Enabled
+INFO - 2024-01-19 10:51:39 --> Utf8 Class Initialized
+INFO - 2024-01-19 10:51:39 --> URI Class Initialized
+INFO - 2024-01-19 10:51:39 --> Router Class Initialized
+INFO - 2024-01-19 10:51:39 --> Output Class Initialized
+INFO - 2024-01-19 10:51:39 --> Security Class Initialized
+DEBUG - 2024-01-19 10:51:39 --> Global POST, GET and COOKIE data sanitized
+INFO - 2024-01-19 10:51:39 --> Input Class Initialized
+INFO - 2024-01-19 10:51:39 --> Language Class Initialized
+INFO - 2024-01-19 10:51:39 --> Loader Class Initialized
+INFO - 2024-01-19 10:51:39 --> Helper loaded: url_helper
+INFO - 2024-01-19 10:51:39 --> Helper loaded: global_helper
+INFO - 2024-01-19 10:51:39 --> Helper loaded: security_helper
+INFO - 2024-01-19 10:51:39 --> Helper loaded: file_helper
+INFO - 2024-01-19 10:51:39 --> Helper loaded: mata_uang_helper
+INFO - 2024-01-19 10:51:39 --> Helper loaded: download_helper
+INFO - 2024-01-19 10:51:39 --> Helper loaded: wagw_helper
+INFO - 2024-01-19 10:51:39 --> Helper loaded: mail_helper
+INFO - 2024-01-19 10:51:39 --> Helper loaded: qr_helper
+INFO - 2024-01-19 10:51:39 --> Database Driver Class Initialized
+INFO - 2024-01-19 10:51:39 --> Session: Class initialized using 'files' driver.
+INFO - 2024-01-19 10:51:39 --> Helper loaded: form_helper
+INFO - 2024-01-19 10:51:39 --> Form Validation Class Initialized
+DEBUG - 2024-01-19 10:51:39 --> Encryption: Auto-configured driver 'openssl'.
+INFO - 2024-01-19 10:51:39 --> Encryption: OpenSSL initialized with method AES-128-CBC.
+INFO - 2024-01-19 10:51:39 --> Encryption Class Initialized
+INFO - 2024-01-19 10:51:39 --> Upload Class Initialized
+INFO - 2024-01-19 10:51:39 --> Email Class Initialized
+INFO - 2024-01-19 10:51:39 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2024-01-19 10:51:39 --> Pagination Class Initialized
+INFO - 2024-01-19 10:51:39 --> Controller Class Initialized
+INFO - 2024-01-19 10:51:39 --> Model "Events_model" initialized
+INFO - 2024-01-19 10:51:39 --> Model "Absensi_model" initialized
+INFO - 2024-01-19 10:51:39 --> Model "Penjualan_model" initialized
+DEBUG - 2024-01-19 10:51:39 --> Global_library class already loaded. Second attempt ignored.
+DEBUG - 2024-01-19 10:51:39 --> Global_library class already loaded. Second attempt ignored.
+INFO - 2024-01-19 10:51:39 --> File loaded: C:\laragon\www\seminar\application\views\admin/layouts/header.php
+INFO - 2024-01-19 10:51:39 --> File loaded: C:\laragon\www\seminar\application\views\admin/layouts/navbar.php
+DEBUG - 2024-01-19 10:51:39 --> Global_library class already loaded. Second attempt ignored.
+DEBUG - 2024-01-19 10:51:39 --> Global_library class already loaded. Second attempt ignored.
+INFO - 2024-01-19 10:51:39 --> File loaded: C:\laragon\www\seminar\application\views\admin/layouts/sidebar.php
+INFO - 2024-01-19 10:51:39 --> File loaded: C:\laragon\www\seminar\application\views\admin/absensi/detail.php
+INFO - 2024-01-19 10:51:39 --> File loaded: C:\laragon\www\seminar\application\views\admin/layouts/footer.php
+INFO - 2024-01-19 10:51:39 --> Final output sent to browser
+DEBUG - 2024-01-19 10:51:39 --> Total execution time: 0.0630
+INFO - 2024-01-19 10:51:55 --> Config Class Initialized
+INFO - 2024-01-19 10:51:55 --> Hooks Class Initialized
+DEBUG - 2024-01-19 10:51:55 --> UTF-8 Support Enabled
+INFO - 2024-01-19 10:51:55 --> Utf8 Class Initialized
+INFO - 2024-01-19 10:51:55 --> URI Class Initialized
+INFO - 2024-01-19 10:51:55 --> Router Class Initialized
+INFO - 2024-01-19 10:51:55 --> Output Class Initialized
+INFO - 2024-01-19 10:51:55 --> Security Class Initialized
+DEBUG - 2024-01-19 10:51:55 --> Global POST, GET and COOKIE data sanitized
+INFO - 2024-01-19 10:51:55 --> Input Class Initialized
+INFO - 2024-01-19 10:51:55 --> Language Class Initialized
+INFO - 2024-01-19 10:51:55 --> Loader Class Initialized
+INFO - 2024-01-19 10:51:55 --> Helper loaded: url_helper
+INFO - 2024-01-19 10:51:55 --> Helper loaded: global_helper
+INFO - 2024-01-19 10:51:55 --> Helper loaded: security_helper
+INFO - 2024-01-19 10:51:55 --> Helper loaded: file_helper
+INFO - 2024-01-19 10:51:55 --> Helper loaded: mata_uang_helper
+INFO - 2024-01-19 10:51:55 --> Helper loaded: download_helper
+INFO - 2024-01-19 10:51:55 --> Helper loaded: wagw_helper
+INFO - 2024-01-19 10:51:55 --> Helper loaded: mail_helper
+INFO - 2024-01-19 10:51:55 --> Helper loaded: qr_helper
+INFO - 2024-01-19 10:51:55 --> Database Driver Class Initialized
+INFO - 2024-01-19 10:51:55 --> Session: Class initialized using 'files' driver.
+INFO - 2024-01-19 10:51:55 --> Helper loaded: form_helper
+INFO - 2024-01-19 10:51:55 --> Form Validation Class Initialized
+DEBUG - 2024-01-19 10:51:55 --> Encryption: Auto-configured driver 'openssl'.
+INFO - 2024-01-19 10:51:55 --> Encryption: OpenSSL initialized with method AES-128-CBC.
+INFO - 2024-01-19 10:51:55 --> Encryption Class Initialized
+INFO - 2024-01-19 10:51:55 --> Upload Class Initialized
+INFO - 2024-01-19 10:51:55 --> Email Class Initialized
+INFO - 2024-01-19 10:51:55 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2024-01-19 10:51:55 --> Pagination Class Initialized
+INFO - 2024-01-19 10:51:55 --> Controller Class Initialized
+INFO - 2024-01-19 10:51:55 --> Model "Events_model" initialized
+INFO - 2024-01-19 10:51:55 --> Model "Absensi_model" initialized
+INFO - 2024-01-19 10:51:55 --> Model "Penjualan_model" initialized
+DEBUG - 2024-01-19 10:51:55 --> Global_library class already loaded. Second attempt ignored.
+DEBUG - 2024-01-19 10:51:55 --> Global_library class already loaded. Second attempt ignored.
+INFO - 2024-01-19 10:51:55 --> File loaded: C:\laragon\www\seminar\application\views\admin/layouts/header.php
+INFO - 2024-01-19 10:51:55 --> File loaded: C:\laragon\www\seminar\application\views\admin/layouts/navbar.php
+DEBUG - 2024-01-19 10:51:55 --> Global_library class already loaded. Second attempt ignored.
+DEBUG - 2024-01-19 10:51:55 --> Global_library class already loaded. Second attempt ignored.
+INFO - 2024-01-19 10:51:55 --> File loaded: C:\laragon\www\seminar\application\views\admin/layouts/sidebar.php
+INFO - 2024-01-19 10:51:55 --> File loaded: C:\laragon\www\seminar\application\views\admin/absensi/detail.php
+INFO - 2024-01-19 10:51:55 --> File loaded: C:\laragon\www\seminar\application\views\admin/layouts/footer.php
+INFO - 2024-01-19 10:51:55 --> Final output sent to browser
+DEBUG - 2024-01-19 10:51:55 --> Total execution time: 0.0636
+INFO - 2024-01-19 10:51:59 --> Config Class Initialized
+INFO - 2024-01-19 10:51:59 --> Hooks Class Initialized
+DEBUG - 2024-01-19 10:51:59 --> UTF-8 Support Enabled
+INFO - 2024-01-19 10:51:59 --> Utf8 Class Initialized
+INFO - 2024-01-19 10:51:59 --> URI Class Initialized
+INFO - 2024-01-19 10:51:59 --> Router Class Initialized
+INFO - 2024-01-19 10:51:59 --> Output Class Initialized
+INFO - 2024-01-19 10:51:59 --> Security Class Initialized
+DEBUG - 2024-01-19 10:51:59 --> Global POST, GET and COOKIE data sanitized
+INFO - 2024-01-19 10:51:59 --> Input Class Initialized
+INFO - 2024-01-19 10:51:59 --> Language Class Initialized
+INFO - 2024-01-19 10:51:59 --> Loader Class Initialized
+INFO - 2024-01-19 10:51:59 --> Helper loaded: url_helper
+INFO - 2024-01-19 10:51:59 --> Helper loaded: global_helper
+INFO - 2024-01-19 10:51:59 --> Helper loaded: security_helper
+INFO - 2024-01-19 10:51:59 --> Helper loaded: file_helper
+INFO - 2024-01-19 10:51:59 --> Helper loaded: mata_uang_helper
+INFO - 2024-01-19 10:51:59 --> Helper loaded: download_helper
+INFO - 2024-01-19 10:51:59 --> Helper loaded: wagw_helper
+INFO - 2024-01-19 10:51:59 --> Helper loaded: mail_helper
+INFO - 2024-01-19 10:51:59 --> Helper loaded: qr_helper
+INFO - 2024-01-19 10:51:59 --> Database Driver Class Initialized
+INFO - 2024-01-19 10:51:59 --> Session: Class initialized using 'files' driver.
+INFO - 2024-01-19 10:51:59 --> Helper loaded: form_helper
+INFO - 2024-01-19 10:51:59 --> Form Validation Class Initialized
+DEBUG - 2024-01-19 10:51:59 --> Encryption: Auto-configured driver 'openssl'.
+INFO - 2024-01-19 10:51:59 --> Encryption: OpenSSL initialized with method AES-128-CBC.
+INFO - 2024-01-19 10:51:59 --> Encryption Class Initialized
+INFO - 2024-01-19 10:51:59 --> Upload Class Initialized
+INFO - 2024-01-19 10:51:59 --> Email Class Initialized
+INFO - 2024-01-19 10:51:59 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2024-01-19 10:51:59 --> Pagination Class Initialized
+INFO - 2024-01-19 10:51:59 --> Controller Class Initialized
+INFO - 2024-01-19 10:51:59 --> Model "Events_model" initialized
+INFO - 2024-01-19 10:51:59 --> Model "Absensi_model" initialized
+INFO - 2024-01-19 10:51:59 --> Model "Penjualan_model" initialized
+DEBUG - 2024-01-19 10:51:59 --> Global_library class already loaded. Second attempt ignored.
+DEBUG - 2024-01-19 10:51:59 --> Global_library class already loaded. Second attempt ignored.
+INFO - 2024-01-19 10:51:59 --> File loaded: C:\laragon\www\seminar\application\views\admin/layouts/header.php
+INFO - 2024-01-19 10:51:59 --> File loaded: C:\laragon\www\seminar\application\views\admin/layouts/navbar.php
+DEBUG - 2024-01-19 10:51:59 --> Global_library class already loaded. Second attempt ignored.
+DEBUG - 2024-01-19 10:51:59 --> Global_library class already loaded. Second attempt ignored.
+INFO - 2024-01-19 10:51:59 --> File loaded: C:\laragon\www\seminar\application\views\admin/layouts/sidebar.php
+INFO - 2024-01-19 10:51:59 --> File loaded: C:\laragon\www\seminar\application\views\admin/absensi/detail.php
+INFO - 2024-01-19 10:51:59 --> File loaded: C:\laragon\www\seminar\application\views\admin/layouts/footer.php
+INFO - 2024-01-19 10:51:59 --> Final output sent to browser
+DEBUG - 2024-01-19 10:51:59 --> Total execution time: 0.0625
+INFO - 2024-01-19 10:52:19 --> Config Class Initialized
+INFO - 2024-01-19 10:52:19 --> Hooks Class Initialized
+DEBUG - 2024-01-19 10:52:19 --> UTF-8 Support Enabled
+INFO - 2024-01-19 10:52:19 --> Utf8 Class Initialized
+INFO - 2024-01-19 10:52:19 --> URI Class Initialized
+INFO - 2024-01-19 10:52:19 --> Router Class Initialized
+INFO - 2024-01-19 10:52:19 --> Output Class Initialized
+INFO - 2024-01-19 10:52:19 --> Security Class Initialized
+DEBUG - 2024-01-19 10:52:19 --> Global POST, GET and COOKIE data sanitized
+INFO - 2024-01-19 10:52:19 --> Input Class Initialized
+INFO - 2024-01-19 10:52:19 --> Language Class Initialized
+INFO - 2024-01-19 10:52:19 --> Loader Class Initialized
+INFO - 2024-01-19 10:52:19 --> Helper loaded: url_helper
+INFO - 2024-01-19 10:52:19 --> Helper loaded: global_helper
+INFO - 2024-01-19 10:52:19 --> Helper loaded: security_helper
+INFO - 2024-01-19 10:52:19 --> Helper loaded: file_helper
+INFO - 2024-01-19 10:52:19 --> Helper loaded: mata_uang_helper
+INFO - 2024-01-19 10:52:19 --> Helper loaded: download_helper
+INFO - 2024-01-19 10:52:19 --> Helper loaded: wagw_helper
+INFO - 2024-01-19 10:52:19 --> Helper loaded: mail_helper
+INFO - 2024-01-19 10:52:19 --> Helper loaded: qr_helper
+INFO - 2024-01-19 10:52:19 --> Database Driver Class Initialized
+INFO - 2024-01-19 10:52:19 --> Session: Class initialized using 'files' driver.
+INFO - 2024-01-19 10:52:19 --> Helper loaded: form_helper
+INFO - 2024-01-19 10:52:19 --> Form Validation Class Initialized
+DEBUG - 2024-01-19 10:52:19 --> Encryption: Auto-configured driver 'openssl'.
+INFO - 2024-01-19 10:52:19 --> Encryption: OpenSSL initialized with method AES-128-CBC.
+INFO - 2024-01-19 10:52:19 --> Encryption Class Initialized
+INFO - 2024-01-19 10:52:19 --> Upload Class Initialized
+INFO - 2024-01-19 10:52:19 --> Email Class Initialized
+INFO - 2024-01-19 10:52:19 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2024-01-19 10:52:19 --> Pagination Class Initialized
+INFO - 2024-01-19 10:52:19 --> Controller Class Initialized
+INFO - 2024-01-19 10:52:19 --> Model "Events_model" initialized
+INFO - 2024-01-19 10:52:19 --> Model "Absensi_model" initialized
+INFO - 2024-01-19 10:52:19 --> Model "Penjualan_model" initialized
+DEBUG - 2024-01-19 10:52:19 --> Global_library class already loaded. Second attempt ignored.
+DEBUG - 2024-01-19 10:52:19 --> Global_library class already loaded. Second attempt ignored.
+INFO - 2024-01-19 10:52:19 --> File loaded: C:\laragon\www\seminar\application\views\admin/layouts/header.php
+INFO - 2024-01-19 10:52:19 --> File loaded: C:\laragon\www\seminar\application\views\admin/layouts/navbar.php
+DEBUG - 2024-01-19 10:52:19 --> Global_library class already loaded. Second attempt ignored.
+DEBUG - 2024-01-19 10:52:19 --> Global_library class already loaded. Second attempt ignored.
+INFO - 2024-01-19 10:52:19 --> File loaded: C:\laragon\www\seminar\application\views\admin/layouts/sidebar.php
+INFO - 2024-01-19 10:52:19 --> File loaded: C:\laragon\www\seminar\application\views\admin/absensi/detail.php
+INFO - 2024-01-19 10:52:19 --> File loaded: C:\laragon\www\seminar\application\views\admin/layouts/footer.php
+INFO - 2024-01-19 10:52:19 --> Final output sent to browser
+DEBUG - 2024-01-19 10:52:19 --> Total execution time: 0.0608
+INFO - 2024-01-19 10:52:36 --> Config Class Initialized
+INFO - 2024-01-19 10:52:36 --> Hooks Class Initialized
+DEBUG - 2024-01-19 10:52:36 --> UTF-8 Support Enabled
+INFO - 2024-01-19 10:52:36 --> Utf8 Class Initialized
+INFO - 2024-01-19 10:52:36 --> URI Class Initialized
+INFO - 2024-01-19 10:52:36 --> Router Class Initialized
+INFO - 2024-01-19 10:52:36 --> Output Class Initialized
+INFO - 2024-01-19 10:52:36 --> Security Class Initialized
+DEBUG - 2024-01-19 10:52:36 --> Global POST, GET and COOKIE data sanitized
+INFO - 2024-01-19 10:52:36 --> Input Class Initialized
+INFO - 2024-01-19 10:52:36 --> Language Class Initialized
+INFO - 2024-01-19 10:52:36 --> Loader Class Initialized
+INFO - 2024-01-19 10:52:36 --> Helper loaded: url_helper
+INFO - 2024-01-19 10:52:36 --> Helper loaded: global_helper
+INFO - 2024-01-19 10:52:36 --> Helper loaded: security_helper
+INFO - 2024-01-19 10:52:36 --> Helper loaded: file_helper
+INFO - 2024-01-19 10:52:36 --> Helper loaded: mata_uang_helper
+INFO - 2024-01-19 10:52:36 --> Helper loaded: download_helper
+INFO - 2024-01-19 10:52:36 --> Helper loaded: wagw_helper
+INFO - 2024-01-19 10:52:36 --> Helper loaded: mail_helper
+INFO - 2024-01-19 10:52:36 --> Helper loaded: qr_helper
+INFO - 2024-01-19 10:52:36 --> Database Driver Class Initialized
+INFO - 2024-01-19 10:52:36 --> Session: Class initialized using 'files' driver.
+INFO - 2024-01-19 10:52:36 --> Helper loaded: form_helper
+INFO - 2024-01-19 10:52:36 --> Form Validation Class Initialized
+DEBUG - 2024-01-19 10:52:36 --> Encryption: Auto-configured driver 'openssl'.
+INFO - 2024-01-19 10:52:36 --> Encryption: OpenSSL initialized with method AES-128-CBC.
+INFO - 2024-01-19 10:52:36 --> Encryption Class Initialized
+INFO - 2024-01-19 10:52:36 --> Upload Class Initialized
+INFO - 2024-01-19 10:52:36 --> Email Class Initialized
+INFO - 2024-01-19 10:52:36 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2024-01-19 10:52:36 --> Pagination Class Initialized
+INFO - 2024-01-19 10:52:36 --> Controller Class Initialized
+INFO - 2024-01-19 10:52:36 --> Model "Events_model" initialized
+INFO - 2024-01-19 10:52:36 --> Model "Absensi_model" initialized
+INFO - 2024-01-19 10:52:36 --> Model "Penjualan_model" initialized
+DEBUG - 2024-01-19 10:52:36 --> Global_library class already loaded. Second attempt ignored.
+DEBUG - 2024-01-19 10:52:36 --> Global_library class already loaded. Second attempt ignored.
+INFO - 2024-01-19 10:52:36 --> File loaded: C:\laragon\www\seminar\application\views\admin/layouts/header.php
+INFO - 2024-01-19 10:52:36 --> File loaded: C:\laragon\www\seminar\application\views\admin/layouts/navbar.php
+DEBUG - 2024-01-19 10:52:36 --> Global_library class already loaded. Second attempt ignored.
+DEBUG - 2024-01-19 10:52:36 --> Global_library class already loaded. Second attempt ignored.
+INFO - 2024-01-19 10:52:36 --> File loaded: C:\laragon\www\seminar\application\views\admin/layouts/sidebar.php
+INFO - 2024-01-19 10:52:36 --> File loaded: C:\laragon\www\seminar\application\views\admin/absensi/detail.php
+INFO - 2024-01-19 10:52:36 --> File loaded: C:\laragon\www\seminar\application\views\admin/layouts/footer.php
+INFO - 2024-01-19 10:52:36 --> Final output sent to browser
+DEBUG - 2024-01-19 10:52:36 --> Total execution time: 0.0660
+INFO - 2024-01-19 10:52:41 --> Config Class Initialized
+INFO - 2024-01-19 10:52:41 --> Hooks Class Initialized
+DEBUG - 2024-01-19 10:52:41 --> UTF-8 Support Enabled
+INFO - 2024-01-19 10:52:41 --> Utf8 Class Initialized
+INFO - 2024-01-19 10:52:41 --> URI Class Initialized
+INFO - 2024-01-19 10:52:41 --> Router Class Initialized
+INFO - 2024-01-19 10:52:41 --> Output Class Initialized
+INFO - 2024-01-19 10:52:41 --> Security Class Initialized
+DEBUG - 2024-01-19 10:52:41 --> Global POST, GET and COOKIE data sanitized
+INFO - 2024-01-19 10:52:41 --> Input Class Initialized
+INFO - 2024-01-19 10:52:41 --> Language Class Initialized
+INFO - 2024-01-19 10:52:41 --> Loader Class Initialized
+INFO - 2024-01-19 10:52:41 --> Helper loaded: url_helper
+INFO - 2024-01-19 10:52:41 --> Helper loaded: global_helper
+INFO - 2024-01-19 10:52:41 --> Helper loaded: security_helper
+INFO - 2024-01-19 10:52:41 --> Helper loaded: file_helper
+INFO - 2024-01-19 10:52:41 --> Helper loaded: mata_uang_helper
+INFO - 2024-01-19 10:52:41 --> Helper loaded: download_helper
+INFO - 2024-01-19 10:52:41 --> Helper loaded: wagw_helper
+INFO - 2024-01-19 10:52:41 --> Helper loaded: mail_helper
+INFO - 2024-01-19 10:52:41 --> Helper loaded: qr_helper
+INFO - 2024-01-19 10:52:41 --> Database Driver Class Initialized
+INFO - 2024-01-19 10:52:42 --> Session: Class initialized using 'files' driver.
+INFO - 2024-01-19 10:52:42 --> Helper loaded: form_helper
+INFO - 2024-01-19 10:52:42 --> Form Validation Class Initialized
+DEBUG - 2024-01-19 10:52:42 --> Encryption: Auto-configured driver 'openssl'.
+INFO - 2024-01-19 10:52:42 --> Encryption: OpenSSL initialized with method AES-128-CBC.
+INFO - 2024-01-19 10:52:42 --> Encryption Class Initialized
+INFO - 2024-01-19 10:52:42 --> Upload Class Initialized
+INFO - 2024-01-19 10:52:42 --> Email Class Initialized
+INFO - 2024-01-19 10:52:42 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2024-01-19 10:52:42 --> Pagination Class Initialized
+INFO - 2024-01-19 10:52:42 --> Controller Class Initialized
+INFO - 2024-01-19 10:52:42 --> Model "Events_model" initialized
+INFO - 2024-01-19 10:52:42 --> Model "Absensi_model" initialized
+INFO - 2024-01-19 10:52:42 --> Model "Penjualan_model" initialized
+DEBUG - 2024-01-19 10:52:42 --> Global_library class already loaded. Second attempt ignored.
+DEBUG - 2024-01-19 10:52:42 --> Global_library class already loaded. Second attempt ignored.
+INFO - 2024-01-19 10:52:42 --> File loaded: C:\laragon\www\seminar\application\views\admin/layouts/header.php
+INFO - 2024-01-19 10:52:42 --> File loaded: C:\laragon\www\seminar\application\views\admin/layouts/navbar.php
+DEBUG - 2024-01-19 10:52:42 --> Global_library class already loaded. Second attempt ignored.
+DEBUG - 2024-01-19 10:52:42 --> Global_library class already loaded. Second attempt ignored.
+INFO - 2024-01-19 10:52:42 --> File loaded: C:\laragon\www\seminar\application\views\admin/layouts/sidebar.php
+INFO - 2024-01-19 10:52:42 --> File loaded: C:\laragon\www\seminar\application\views\admin/absensi/detail.php
+INFO - 2024-01-19 10:52:42 --> File loaded: C:\laragon\www\seminar\application\views\admin/layouts/footer.php
+INFO - 2024-01-19 10:52:42 --> Final output sent to browser
+DEBUG - 2024-01-19 10:52:42 --> Total execution time: 0.0731
+INFO - 2024-01-19 10:52:49 --> Config Class Initialized
+INFO - 2024-01-19 10:52:49 --> Hooks Class Initialized
+DEBUG - 2024-01-19 10:52:49 --> UTF-8 Support Enabled
+INFO - 2024-01-19 10:52:49 --> Utf8 Class Initialized
+INFO - 2024-01-19 10:52:49 --> URI Class Initialized
+INFO - 2024-01-19 10:52:49 --> Router Class Initialized
+INFO - 2024-01-19 10:52:49 --> Output Class Initialized
+INFO - 2024-01-19 10:52:49 --> Security Class Initialized
+DEBUG - 2024-01-19 10:52:49 --> Global POST, GET and COOKIE data sanitized
+INFO - 2024-01-19 10:52:49 --> Input Class Initialized
+INFO - 2024-01-19 10:52:49 --> Language Class Initialized
+INFO - 2024-01-19 10:52:49 --> Loader Class Initialized
+INFO - 2024-01-19 10:52:49 --> Helper loaded: url_helper
+INFO - 2024-01-19 10:52:49 --> Helper loaded: global_helper
+INFO - 2024-01-19 10:52:49 --> Helper loaded: security_helper
+INFO - 2024-01-19 10:52:49 --> Helper loaded: file_helper
+INFO - 2024-01-19 10:52:49 --> Helper loaded: mata_uang_helper
+INFO - 2024-01-19 10:52:49 --> Helper loaded: download_helper
+INFO - 2024-01-19 10:52:49 --> Helper loaded: wagw_helper
+INFO - 2024-01-19 10:52:49 --> Helper loaded: mail_helper
+INFO - 2024-01-19 10:52:49 --> Helper loaded: qr_helper
+INFO - 2024-01-19 10:52:49 --> Database Driver Class Initialized
+INFO - 2024-01-19 10:52:49 --> Session: Class initialized using 'files' driver.
+INFO - 2024-01-19 10:52:49 --> Helper loaded: form_helper
+INFO - 2024-01-19 10:52:49 --> Form Validation Class Initialized
+DEBUG - 2024-01-19 10:52:49 --> Encryption: Auto-configured driver 'openssl'.
+INFO - 2024-01-19 10:52:49 --> Encryption: OpenSSL initialized with method AES-128-CBC.
+INFO - 2024-01-19 10:52:49 --> Encryption Class Initialized
+INFO - 2024-01-19 10:52:49 --> Upload Class Initialized
+INFO - 2024-01-19 10:52:49 --> Email Class Initialized
+INFO - 2024-01-19 10:52:49 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2024-01-19 10:52:49 --> Pagination Class Initialized
+INFO - 2024-01-19 10:52:49 --> Controller Class Initialized
+INFO - 2024-01-19 10:52:49 --> Model "Events_model" initialized
+INFO - 2024-01-19 10:52:49 --> Model "Absensi_model" initialized
+INFO - 2024-01-19 10:52:49 --> Model "Penjualan_model" initialized
+DEBUG - 2024-01-19 10:52:49 --> Global_library class already loaded. Second attempt ignored.
+DEBUG - 2024-01-19 10:52:49 --> Global_library class already loaded. Second attempt ignored.
+INFO - 2024-01-19 10:52:49 --> File loaded: C:\laragon\www\seminar\application\views\admin/layouts/header.php
+INFO - 2024-01-19 10:52:49 --> File loaded: C:\laragon\www\seminar\application\views\admin/layouts/navbar.php
+DEBUG - 2024-01-19 10:52:49 --> Global_library class already loaded. Second attempt ignored.
+DEBUG - 2024-01-19 10:52:49 --> Global_library class already loaded. Second attempt ignored.
+INFO - 2024-01-19 10:52:49 --> File loaded: C:\laragon\www\seminar\application\views\admin/layouts/sidebar.php
+INFO - 2024-01-19 10:52:49 --> File loaded: C:\laragon\www\seminar\application\views\admin/absensi/detail.php
+INFO - 2024-01-19 10:52:49 --> File loaded: C:\laragon\www\seminar\application\views\admin/layouts/footer.php
+INFO - 2024-01-19 10:52:49 --> Final output sent to browser
+DEBUG - 2024-01-19 10:52:49 --> Total execution time: 0.0606
+INFO - 2024-01-19 10:52:56 --> Config Class Initialized
+INFO - 2024-01-19 10:52:56 --> Hooks Class Initialized
+DEBUG - 2024-01-19 10:52:56 --> UTF-8 Support Enabled
+INFO - 2024-01-19 10:52:56 --> Utf8 Class Initialized
+INFO - 2024-01-19 10:52:56 --> URI Class Initialized
+INFO - 2024-01-19 10:52:56 --> Router Class Initialized
+INFO - 2024-01-19 10:52:56 --> Output Class Initialized
+INFO - 2024-01-19 10:52:56 --> Security Class Initialized
+DEBUG - 2024-01-19 10:52:56 --> Global POST, GET and COOKIE data sanitized
+INFO - 2024-01-19 10:52:56 --> Input Class Initialized
+INFO - 2024-01-19 10:52:56 --> Language Class Initialized
+INFO - 2024-01-19 10:52:56 --> Loader Class Initialized
+INFO - 2024-01-19 10:52:56 --> Helper loaded: url_helper
+INFO - 2024-01-19 10:52:56 --> Helper loaded: global_helper
+INFO - 2024-01-19 10:52:56 --> Helper loaded: security_helper
+INFO - 2024-01-19 10:52:56 --> Helper loaded: file_helper
+INFO - 2024-01-19 10:52:56 --> Helper loaded: mata_uang_helper
+INFO - 2024-01-19 10:52:56 --> Helper loaded: download_helper
+INFO - 2024-01-19 10:52:56 --> Helper loaded: wagw_helper
+INFO - 2024-01-19 10:52:56 --> Helper loaded: mail_helper
+INFO - 2024-01-19 10:52:56 --> Helper loaded: qr_helper
+INFO - 2024-01-19 10:52:56 --> Database Driver Class Initialized
+INFO - 2024-01-19 10:52:56 --> Session: Class initialized using 'files' driver.
+INFO - 2024-01-19 10:52:56 --> Helper loaded: form_helper
+INFO - 2024-01-19 10:52:56 --> Form Validation Class Initialized
+DEBUG - 2024-01-19 10:52:56 --> Encryption: Auto-configured driver 'openssl'.
+INFO - 2024-01-19 10:52:56 --> Encryption: OpenSSL initialized with method AES-128-CBC.
+INFO - 2024-01-19 10:52:56 --> Encryption Class Initialized
+INFO - 2024-01-19 10:52:56 --> Upload Class Initialized
+INFO - 2024-01-19 10:52:56 --> Email Class Initialized
+INFO - 2024-01-19 10:52:56 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2024-01-19 10:52:56 --> Pagination Class Initialized
+INFO - 2024-01-19 10:52:56 --> Controller Class Initialized
+INFO - 2024-01-19 10:52:56 --> Model "Events_model" initialized
+INFO - 2024-01-19 10:52:56 --> Model "Absensi_model" initialized
+INFO - 2024-01-19 10:52:56 --> Model "Penjualan_model" initialized
+DEBUG - 2024-01-19 10:52:56 --> Global_library class already loaded. Second attempt ignored.
+DEBUG - 2024-01-19 10:52:56 --> Global_library class already loaded. Second attempt ignored.
+INFO - 2024-01-19 10:52:56 --> File loaded: C:\laragon\www\seminar\application\views\admin/layouts/header.php
+INFO - 2024-01-19 10:52:56 --> File loaded: C:\laragon\www\seminar\application\views\admin/layouts/navbar.php
+DEBUG - 2024-01-19 10:52:56 --> Global_library class already loaded. Second attempt ignored.
+DEBUG - 2024-01-19 10:52:56 --> Global_library class already loaded. Second attempt ignored.
+INFO - 2024-01-19 10:52:56 --> File loaded: C:\laragon\www\seminar\application\views\admin/layouts/sidebar.php
+INFO - 2024-01-19 10:52:56 --> File loaded: C:\laragon\www\seminar\application\views\admin/absensi/detail.php
+INFO - 2024-01-19 10:52:56 --> File loaded: C:\laragon\www\seminar\application\views\admin/layouts/footer.php
+INFO - 2024-01-19 10:52:56 --> Final output sent to browser
+DEBUG - 2024-01-19 10:52:56 --> Total execution time: 0.0577
+INFO - 2024-01-19 10:58:42 --> Config Class Initialized
+INFO - 2024-01-19 10:58:42 --> Hooks Class Initialized
+DEBUG - 2024-01-19 10:58:42 --> UTF-8 Support Enabled
+INFO - 2024-01-19 10:58:42 --> Utf8 Class Initialized
+INFO - 2024-01-19 10:58:42 --> URI Class Initialized
+INFO - 2024-01-19 10:58:42 --> Router Class Initialized
+INFO - 2024-01-19 10:58:42 --> Output Class Initialized
+INFO - 2024-01-19 10:58:42 --> Security Class Initialized
+DEBUG - 2024-01-19 10:58:42 --> Global POST, GET and COOKIE data sanitized
+INFO - 2024-01-19 10:58:42 --> Input Class Initialized
+INFO - 2024-01-19 10:58:42 --> Language Class Initialized
+INFO - 2024-01-19 10:58:42 --> Loader Class Initialized
+INFO - 2024-01-19 10:58:42 --> Helper loaded: url_helper
+INFO - 2024-01-19 10:58:42 --> Helper loaded: global_helper
+INFO - 2024-01-19 10:58:42 --> Helper loaded: security_helper
+INFO - 2024-01-19 10:58:42 --> Helper loaded: file_helper
+INFO - 2024-01-19 10:58:42 --> Helper loaded: mata_uang_helper
+INFO - 2024-01-19 10:58:42 --> Helper loaded: download_helper
+INFO - 2024-01-19 10:58:42 --> Helper loaded: wagw_helper
+INFO - 2024-01-19 10:58:42 --> Helper loaded: mail_helper
+INFO - 2024-01-19 10:58:42 --> Helper loaded: qr_helper
+INFO - 2024-01-19 10:58:42 --> Database Driver Class Initialized
+INFO - 2024-01-19 10:58:42 --> Session: Class initialized using 'files' driver.
+INFO - 2024-01-19 10:58:42 --> Helper loaded: form_helper
+INFO - 2024-01-19 10:58:42 --> Form Validation Class Initialized
+DEBUG - 2024-01-19 10:58:42 --> Encryption: Auto-configured driver 'openssl'.
+INFO - 2024-01-19 10:58:42 --> Encryption: OpenSSL initialized with method AES-128-CBC.
+INFO - 2024-01-19 10:58:42 --> Encryption Class Initialized
+INFO - 2024-01-19 10:58:42 --> Upload Class Initialized
+INFO - 2024-01-19 10:58:42 --> Email Class Initialized
+INFO - 2024-01-19 10:58:42 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2024-01-19 10:58:42 --> Pagination Class Initialized
+INFO - 2024-01-19 10:58:42 --> Controller Class Initialized
+INFO - 2024-01-19 10:58:42 --> Model "Penjualan_model" initialized
+DEBUG - 2024-01-19 10:58:42 --> Global_library class already loaded. Second attempt ignored.
+DEBUG - 2024-01-19 10:58:42 --> Global_library class already loaded. Second attempt ignored.
+INFO - 2024-01-19 10:58:42 --> File loaded: C:\laragon\www\seminar\application\views\admin/layouts/header.php
+INFO - 2024-01-19 10:58:42 --> File loaded: C:\laragon\www\seminar\application\views\admin/layouts/navbar.php
+DEBUG - 2024-01-19 10:58:42 --> Global_library class already loaded. Second attempt ignored.
+DEBUG - 2024-01-19 10:58:42 --> Global_library class already loaded. Second attempt ignored.
+INFO - 2024-01-19 10:58:42 --> File loaded: C:\laragon\www\seminar\application\views\admin/layouts/sidebar.php
+ERROR - 2024-01-19 10:58:42 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 10:58:42 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 10:58:42 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 10:58:42 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 10:58:42 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 10:58:42 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 10:58:42 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 10:58:42 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 10:58:42 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 10:58:42 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 10:58:42 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 10:58:42 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 10:58:42 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 10:58:42 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 10:58:42 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 10:58:42 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 10:58:42 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 10:58:42 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 10:58:42 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 10:58:42 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 10:58:42 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 10:58:42 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 10:58:42 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 10:58:42 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 10:58:42 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 10:58:42 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 10:58:42 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 10:58:42 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 10:58:42 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 10:58:42 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 10:58:42 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 10:58:42 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 10:58:42 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 10:58:42 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 10:58:42 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 10:58:42 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 10:58:42 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 10:58:42 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 10:58:42 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 10:58:42 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 10:58:42 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 10:58:42 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 10:58:42 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 10:58:42 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 10:58:42 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 10:58:42 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 10:58:42 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 10:58:42 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 10:58:42 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 10:58:42 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 10:58:42 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 10:58:42 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 10:58:42 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 10:58:42 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 10:58:42 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 10:58:42 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 10:58:42 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 10:58:42 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 10:58:42 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 10:58:42 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 10:58:42 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 10:58:42 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 10:58:42 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 10:58:42 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 10:58:42 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 10:58:42 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 10:58:42 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 10:58:42 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 10:58:42 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 10:58:42 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 10:58:42 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 10:58:42 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 10:58:42 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 10:58:42 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 10:58:42 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 10:58:42 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 10:58:42 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 10:58:42 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 10:58:42 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 10:58:42 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 10:58:42 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 10:58:42 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 10:58:42 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 10:58:42 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 10:58:42 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 10:58:42 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 10:58:42 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 10:58:42 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 10:58:42 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 10:58:42 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 10:58:42 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 10:58:42 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 10:58:42 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 10:58:42 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 10:58:42 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 10:58:42 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 10:58:42 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 10:58:42 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 10:58:42 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 10:58:42 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 10:58:42 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 10:58:42 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 10:58:42 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 10:58:42 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 10:58:42 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 10:58:42 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 10:58:42 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 10:58:42 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 10:58:42 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 10:58:42 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 10:58:42 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 10:58:42 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 10:58:42 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 10:58:42 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 10:58:42 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 10:58:42 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 10:58:42 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 10:58:42 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 10:58:42 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 10:58:42 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 10:58:42 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 10:58:42 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 10:58:42 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 10:58:42 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 10:58:42 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 10:58:42 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 10:58:42 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 10:58:42 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 10:58:42 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 10:58:42 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 10:58:42 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 10:58:42 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+INFO - 2024-01-19 10:58:42 --> File loaded: C:\laragon\www\seminar\application\views\admin/penjualan/transaksi.php
+INFO - 2024-01-19 10:58:42 --> File loaded: C:\laragon\www\seminar\application\views\admin/layouts/footer.php
+INFO - 2024-01-19 10:58:42 --> Final output sent to browser
+DEBUG - 2024-01-19 10:58:42 --> Total execution time: 0.2241
+INFO - 2024-01-19 11:05:09 --> Config Class Initialized
+INFO - 2024-01-19 11:05:09 --> Hooks Class Initialized
+DEBUG - 2024-01-19 11:05:09 --> UTF-8 Support Enabled
+INFO - 2024-01-19 11:05:09 --> Utf8 Class Initialized
+INFO - 2024-01-19 11:05:09 --> URI Class Initialized
+INFO - 2024-01-19 11:05:09 --> Router Class Initialized
+INFO - 2024-01-19 11:05:09 --> Output Class Initialized
+INFO - 2024-01-19 11:05:09 --> Security Class Initialized
+DEBUG - 2024-01-19 11:05:09 --> Global POST, GET and COOKIE data sanitized
+INFO - 2024-01-19 11:05:09 --> Input Class Initialized
+INFO - 2024-01-19 11:05:09 --> Language Class Initialized
+INFO - 2024-01-19 11:05:09 --> Loader Class Initialized
+INFO - 2024-01-19 11:05:09 --> Helper loaded: url_helper
+INFO - 2024-01-19 11:05:09 --> Helper loaded: global_helper
+INFO - 2024-01-19 11:05:09 --> Helper loaded: security_helper
+INFO - 2024-01-19 11:05:09 --> Helper loaded: file_helper
+INFO - 2024-01-19 11:05:09 --> Helper loaded: mata_uang_helper
+INFO - 2024-01-19 11:05:09 --> Helper loaded: download_helper
+INFO - 2024-01-19 11:05:09 --> Helper loaded: wagw_helper
+INFO - 2024-01-19 11:05:09 --> Helper loaded: mail_helper
+INFO - 2024-01-19 11:05:09 --> Helper loaded: qr_helper
+INFO - 2024-01-19 11:05:09 --> Database Driver Class Initialized
+INFO - 2024-01-19 11:05:09 --> Session: Class initialized using 'files' driver.
+INFO - 2024-01-19 11:05:09 --> Helper loaded: form_helper
+INFO - 2024-01-19 11:05:09 --> Form Validation Class Initialized
+DEBUG - 2024-01-19 11:05:09 --> Encryption: Auto-configured driver 'openssl'.
+INFO - 2024-01-19 11:05:09 --> Encryption: OpenSSL initialized with method AES-128-CBC.
+INFO - 2024-01-19 11:05:09 --> Encryption Class Initialized
+INFO - 2024-01-19 11:05:09 --> Upload Class Initialized
+INFO - 2024-01-19 11:05:09 --> Email Class Initialized
+INFO - 2024-01-19 11:05:09 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2024-01-19 11:05:09 --> Pagination Class Initialized
+INFO - 2024-01-19 11:05:09 --> Controller Class Initialized
+INFO - 2024-01-19 11:05:09 --> Model "Penjualan_model" initialized
+DEBUG - 2024-01-19 11:05:09 --> Global_library class already loaded. Second attempt ignored.
+DEBUG - 2024-01-19 11:05:09 --> Global_library class already loaded. Second attempt ignored.
+INFO - 2024-01-19 11:05:09 --> File loaded: C:\laragon\www\seminar\application\views\admin/layouts/header.php
+INFO - 2024-01-19 11:05:09 --> File loaded: C:\laragon\www\seminar\application\views\admin/layouts/navbar.php
+DEBUG - 2024-01-19 11:05:09 --> Global_library class already loaded. Second attempt ignored.
+DEBUG - 2024-01-19 11:05:09 --> Global_library class already loaded. Second attempt ignored.
+INFO - 2024-01-19 11:05:09 --> File loaded: C:\laragon\www\seminar\application\views\admin/layouts/sidebar.php
+ERROR - 2024-01-19 11:05:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:05:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:05:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:05:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:05:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:05:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:05:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:05:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:05:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:05:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:05:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:05:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:05:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:05:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:05:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:05:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:05:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:05:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:05:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:05:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:05:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:05:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:05:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:05:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:05:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:05:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:05:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:05:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:05:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:05:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:05:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:05:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:05:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:05:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:05:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:05:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:05:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:05:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:05:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:05:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:05:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:05:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:05:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:05:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:05:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:05:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:05:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:05:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:05:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:05:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:05:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:05:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:05:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:05:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:05:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:05:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:05:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:05:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:05:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:05:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:05:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:05:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:05:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:05:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:05:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:05:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:05:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:05:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:05:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:05:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:05:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:05:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:05:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:05:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:05:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:05:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:05:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:05:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:05:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:05:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:05:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:05:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:05:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:05:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:05:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:05:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:05:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:05:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:05:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:05:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:05:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:05:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:05:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:05:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:05:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:05:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:05:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:05:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:05:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:05:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:05:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:05:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:05:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:05:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:05:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:05:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:05:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:05:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:05:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:05:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:05:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:05:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:05:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:05:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:05:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:05:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:05:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:05:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:05:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:05:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:05:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:05:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:05:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:05:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:05:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:05:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:05:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:05:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:05:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:05:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:05:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:05:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+INFO - 2024-01-19 11:05:09 --> File loaded: C:\laragon\www\seminar\application\views\admin/penjualan/transaksi.php
+INFO - 2024-01-19 11:05:09 --> File loaded: C:\laragon\www\seminar\application\views\admin/layouts/footer.php
+INFO - 2024-01-19 11:05:09 --> Final output sent to browser
+DEBUG - 2024-01-19 11:05:09 --> Total execution time: 0.1804
+INFO - 2024-01-19 11:06:09 --> Config Class Initialized
+INFO - 2024-01-19 11:06:09 --> Hooks Class Initialized
+DEBUG - 2024-01-19 11:06:09 --> UTF-8 Support Enabled
+INFO - 2024-01-19 11:06:09 --> Utf8 Class Initialized
+INFO - 2024-01-19 11:06:09 --> URI Class Initialized
+INFO - 2024-01-19 11:06:09 --> Router Class Initialized
+INFO - 2024-01-19 11:06:09 --> Output Class Initialized
+INFO - 2024-01-19 11:06:09 --> Security Class Initialized
+DEBUG - 2024-01-19 11:06:09 --> Global POST, GET and COOKIE data sanitized
+INFO - 2024-01-19 11:06:09 --> Input Class Initialized
+INFO - 2024-01-19 11:06:09 --> Language Class Initialized
+INFO - 2024-01-19 11:06:09 --> Loader Class Initialized
+INFO - 2024-01-19 11:06:09 --> Helper loaded: url_helper
+INFO - 2024-01-19 11:06:09 --> Helper loaded: global_helper
+INFO - 2024-01-19 11:06:09 --> Helper loaded: security_helper
+INFO - 2024-01-19 11:06:09 --> Helper loaded: file_helper
+INFO - 2024-01-19 11:06:09 --> Helper loaded: mata_uang_helper
+INFO - 2024-01-19 11:06:09 --> Helper loaded: download_helper
+INFO - 2024-01-19 11:06:09 --> Helper loaded: wagw_helper
+INFO - 2024-01-19 11:06:09 --> Helper loaded: mail_helper
+INFO - 2024-01-19 11:06:09 --> Helper loaded: qr_helper
+INFO - 2024-01-19 11:06:09 --> Database Driver Class Initialized
+INFO - 2024-01-19 11:06:09 --> Session: Class initialized using 'files' driver.
+INFO - 2024-01-19 11:06:09 --> Helper loaded: form_helper
+INFO - 2024-01-19 11:06:09 --> Form Validation Class Initialized
+DEBUG - 2024-01-19 11:06:09 --> Encryption: Auto-configured driver 'openssl'.
+INFO - 2024-01-19 11:06:09 --> Encryption: OpenSSL initialized with method AES-128-CBC.
+INFO - 2024-01-19 11:06:09 --> Encryption Class Initialized
+INFO - 2024-01-19 11:06:09 --> Upload Class Initialized
+INFO - 2024-01-19 11:06:09 --> Email Class Initialized
+INFO - 2024-01-19 11:06:09 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2024-01-19 11:06:09 --> Pagination Class Initialized
+INFO - 2024-01-19 11:06:09 --> Controller Class Initialized
+INFO - 2024-01-19 11:06:09 --> Model "Penjualan_model" initialized
+DEBUG - 2024-01-19 11:06:09 --> Global_library class already loaded. Second attempt ignored.
+DEBUG - 2024-01-19 11:06:09 --> Global_library class already loaded. Second attempt ignored.
+INFO - 2024-01-19 11:06:09 --> File loaded: C:\laragon\www\seminar\application\views\admin/layouts/header.php
+INFO - 2024-01-19 11:06:09 --> File loaded: C:\laragon\www\seminar\application\views\admin/layouts/navbar.php
+DEBUG - 2024-01-19 11:06:09 --> Global_library class already loaded. Second attempt ignored.
+DEBUG - 2024-01-19 11:06:09 --> Global_library class already loaded. Second attempt ignored.
+INFO - 2024-01-19 11:06:09 --> File loaded: C:\laragon\www\seminar\application\views\admin/layouts/sidebar.php
+ERROR - 2024-01-19 11:06:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:06:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:06:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:06:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:06:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:06:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:06:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:06:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:06:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:06:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:06:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:06:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:06:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:06:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:06:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:06:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:06:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:06:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:06:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:06:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:06:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:06:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:06:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:06:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:06:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:06:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:06:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:06:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:06:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:06:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:06:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:06:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:06:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:06:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:06:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:06:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:06:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:06:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:06:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:06:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:06:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:06:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:06:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:06:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:06:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:06:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:06:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:06:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:06:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:06:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:06:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:06:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:06:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:06:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:06:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:06:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:06:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:06:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:06:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:06:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:06:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:06:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:06:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:06:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:06:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:06:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:06:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:06:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:06:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:06:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:06:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:06:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:06:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:06:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:06:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:06:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:06:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:06:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:06:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:06:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:06:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:06:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:06:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:06:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:06:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:06:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:06:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:06:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:06:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:06:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:06:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:06:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:06:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:06:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:06:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:06:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:06:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:06:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:06:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:06:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:06:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:06:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:06:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:06:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:06:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:06:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:06:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:06:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:06:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:06:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:06:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:06:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:06:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:06:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:06:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:06:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:06:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:06:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:06:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:06:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:06:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:06:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:06:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:06:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:06:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:06:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:06:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:06:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:06:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:06:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:06:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:06:09 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+INFO - 2024-01-19 11:06:09 --> File loaded: C:\laragon\www\seminar\application\views\admin/penjualan/transaksi.php
+INFO - 2024-01-19 11:06:09 --> File loaded: C:\laragon\www\seminar\application\views\admin/layouts/footer.php
+INFO - 2024-01-19 11:06:09 --> Final output sent to browser
+DEBUG - 2024-01-19 11:06:09 --> Total execution time: 0.1666
+INFO - 2024-01-19 11:07:33 --> Config Class Initialized
+INFO - 2024-01-19 11:07:33 --> Hooks Class Initialized
+DEBUG - 2024-01-19 11:07:33 --> UTF-8 Support Enabled
+INFO - 2024-01-19 11:07:33 --> Utf8 Class Initialized
+INFO - 2024-01-19 11:07:33 --> URI Class Initialized
+INFO - 2024-01-19 11:07:33 --> Router Class Initialized
+INFO - 2024-01-19 11:07:33 --> Output Class Initialized
+INFO - 2024-01-19 11:07:33 --> Security Class Initialized
+DEBUG - 2024-01-19 11:07:33 --> Global POST, GET and COOKIE data sanitized
+INFO - 2024-01-19 11:07:33 --> Input Class Initialized
+INFO - 2024-01-19 11:07:33 --> Language Class Initialized
+INFO - 2024-01-19 11:07:33 --> Loader Class Initialized
+INFO - 2024-01-19 11:07:33 --> Helper loaded: url_helper
+INFO - 2024-01-19 11:07:33 --> Helper loaded: global_helper
+INFO - 2024-01-19 11:07:33 --> Helper loaded: security_helper
+INFO - 2024-01-19 11:07:33 --> Helper loaded: file_helper
+INFO - 2024-01-19 11:07:33 --> Helper loaded: mata_uang_helper
+INFO - 2024-01-19 11:07:33 --> Helper loaded: download_helper
+INFO - 2024-01-19 11:07:33 --> Helper loaded: wagw_helper
+INFO - 2024-01-19 11:07:33 --> Helper loaded: mail_helper
+INFO - 2024-01-19 11:07:33 --> Helper loaded: qr_helper
+INFO - 2024-01-19 11:07:33 --> Database Driver Class Initialized
+INFO - 2024-01-19 11:07:33 --> Session: Class initialized using 'files' driver.
+INFO - 2024-01-19 11:07:33 --> Helper loaded: form_helper
+INFO - 2024-01-19 11:07:33 --> Form Validation Class Initialized
+DEBUG - 2024-01-19 11:07:33 --> Encryption: Auto-configured driver 'openssl'.
+INFO - 2024-01-19 11:07:33 --> Encryption: OpenSSL initialized with method AES-128-CBC.
+INFO - 2024-01-19 11:07:33 --> Encryption Class Initialized
+INFO - 2024-01-19 11:07:33 --> Upload Class Initialized
+INFO - 2024-01-19 11:07:33 --> Email Class Initialized
+INFO - 2024-01-19 11:07:33 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2024-01-19 11:07:33 --> Pagination Class Initialized
+INFO - 2024-01-19 11:07:33 --> Controller Class Initialized
+INFO - 2024-01-19 11:07:33 --> Model "Penjualan_model" initialized
+DEBUG - 2024-01-19 11:07:33 --> Global_library class already loaded. Second attempt ignored.
+DEBUG - 2024-01-19 11:07:33 --> Global_library class already loaded. Second attempt ignored.
+INFO - 2024-01-19 11:07:33 --> File loaded: C:\laragon\www\seminar\application\views\admin/layouts/header.php
+INFO - 2024-01-19 11:07:33 --> File loaded: C:\laragon\www\seminar\application\views\admin/layouts/navbar.php
+DEBUG - 2024-01-19 11:07:33 --> Global_library class already loaded. Second attempt ignored.
+DEBUG - 2024-01-19 11:07:33 --> Global_library class already loaded. Second attempt ignored.
+INFO - 2024-01-19 11:07:33 --> File loaded: C:\laragon\www\seminar\application\views\admin/layouts/sidebar.php
+ERROR - 2024-01-19 11:07:33 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:07:33 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:07:33 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:07:33 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:07:33 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:07:33 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:07:33 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:07:33 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:07:33 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:07:33 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:07:33 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:07:33 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:07:33 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:07:33 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:07:33 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:07:33 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:07:33 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:07:33 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:07:33 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:07:33 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:07:33 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:07:33 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:07:33 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:07:33 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:07:33 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:07:33 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:07:33 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:07:33 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:07:33 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:07:33 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:07:33 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:07:33 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:07:33 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:07:33 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:07:33 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:07:33 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:07:33 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:07:33 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:07:33 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:07:33 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:07:33 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:07:33 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:07:33 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:07:33 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:07:33 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:07:33 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:07:33 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:07:33 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:07:33 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:07:33 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:07:33 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:07:33 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:07:33 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:07:33 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:07:33 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:07:33 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:07:33 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:07:33 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:07:33 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:07:33 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:07:33 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:07:33 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:07:33 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:07:33 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:07:33 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:07:33 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+INFO - 2024-01-19 11:07:33 --> File loaded: C:\laragon\www\seminar\application\views\admin/penjualan/transaksi.php
+INFO - 2024-01-19 11:07:33 --> File loaded: C:\laragon\www\seminar\application\views\admin/layouts/footer.php
+INFO - 2024-01-19 11:07:33 --> Final output sent to browser
+DEBUG - 2024-01-19 11:07:33 --> Total execution time: 0.1034
+INFO - 2024-01-19 11:07:41 --> Config Class Initialized
+INFO - 2024-01-19 11:07:41 --> Hooks Class Initialized
+DEBUG - 2024-01-19 11:07:41 --> UTF-8 Support Enabled
+INFO - 2024-01-19 11:07:41 --> Utf8 Class Initialized
+INFO - 2024-01-19 11:07:41 --> URI Class Initialized
+INFO - 2024-01-19 11:07:41 --> Router Class Initialized
+INFO - 2024-01-19 11:07:41 --> Output Class Initialized
+INFO - 2024-01-19 11:07:41 --> Security Class Initialized
+DEBUG - 2024-01-19 11:07:41 --> Global POST, GET and COOKIE data sanitized
+INFO - 2024-01-19 11:07:41 --> Input Class Initialized
+INFO - 2024-01-19 11:07:41 --> Language Class Initialized
+INFO - 2024-01-19 11:07:41 --> Loader Class Initialized
+INFO - 2024-01-19 11:07:41 --> Helper loaded: url_helper
+INFO - 2024-01-19 11:07:41 --> Helper loaded: global_helper
+INFO - 2024-01-19 11:07:41 --> Helper loaded: security_helper
+INFO - 2024-01-19 11:07:41 --> Helper loaded: file_helper
+INFO - 2024-01-19 11:07:41 --> Helper loaded: mata_uang_helper
+INFO - 2024-01-19 11:07:41 --> Helper loaded: download_helper
+INFO - 2024-01-19 11:07:41 --> Helper loaded: wagw_helper
+INFO - 2024-01-19 11:07:41 --> Helper loaded: mail_helper
+INFO - 2024-01-19 11:07:41 --> Helper loaded: qr_helper
+INFO - 2024-01-19 11:07:41 --> Database Driver Class Initialized
+INFO - 2024-01-19 11:07:41 --> Session: Class initialized using 'files' driver.
+INFO - 2024-01-19 11:07:41 --> Helper loaded: form_helper
+INFO - 2024-01-19 11:07:41 --> Form Validation Class Initialized
+DEBUG - 2024-01-19 11:07:41 --> Encryption: Auto-configured driver 'openssl'.
+INFO - 2024-01-19 11:07:41 --> Encryption: OpenSSL initialized with method AES-128-CBC.
+INFO - 2024-01-19 11:07:41 --> Encryption Class Initialized
+INFO - 2024-01-19 11:07:41 --> Upload Class Initialized
+INFO - 2024-01-19 11:07:41 --> Email Class Initialized
+INFO - 2024-01-19 11:07:41 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2024-01-19 11:07:41 --> Pagination Class Initialized
+INFO - 2024-01-19 11:07:41 --> Controller Class Initialized
+INFO - 2024-01-19 11:07:41 --> Model "Penjualan_model" initialized
+DEBUG - 2024-01-19 11:07:41 --> Global_library class already loaded. Second attempt ignored.
+DEBUG - 2024-01-19 11:07:41 --> Global_library class already loaded. Second attempt ignored.
+INFO - 2024-01-19 11:07:41 --> File loaded: C:\laragon\www\seminar\application\views\admin/layouts/header.php
+INFO - 2024-01-19 11:07:41 --> File loaded: C:\laragon\www\seminar\application\views\admin/layouts/navbar.php
+DEBUG - 2024-01-19 11:07:41 --> Global_library class already loaded. Second attempt ignored.
+DEBUG - 2024-01-19 11:07:41 --> Global_library class already loaded. Second attempt ignored.
+INFO - 2024-01-19 11:07:41 --> File loaded: C:\laragon\www\seminar\application\views\admin/layouts/sidebar.php
+ERROR - 2024-01-19 11:07:41 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:07:41 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:07:41 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:07:41 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:07:41 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:07:41 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:07:41 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:07:41 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:07:41 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:07:41 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:07:41 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:07:41 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:07:41 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:07:41 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:07:41 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:07:41 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:07:41 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:07:41 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:07:41 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:07:41 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:07:41 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:07:41 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:07:41 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:07:41 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:07:41 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:07:41 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:07:41 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:07:41 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:07:41 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:07:41 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:07:41 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:07:41 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:07:41 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:07:41 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:07:41 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:07:42 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:07:42 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:07:42 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:07:42 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:07:42 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:07:42 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:07:42 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:07:42 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:07:42 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:07:42 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:07:42 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:07:42 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:07:42 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:07:42 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:07:42 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:07:42 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:07:42 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:07:42 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:07:42 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:07:42 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:07:42 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:07:42 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:07:42 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:07:42 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:07:42 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:07:42 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:07:42 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:07:42 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:07:42 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:07:42 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:07:42 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+INFO - 2024-01-19 11:07:42 --> File loaded: C:\laragon\www\seminar\application\views\admin/penjualan/transaksi.php
+INFO - 2024-01-19 11:07:42 --> File loaded: C:\laragon\www\seminar\application\views\admin/layouts/footer.php
+INFO - 2024-01-19 11:07:42 --> Final output sent to browser
+DEBUG - 2024-01-19 11:07:42 --> Total execution time: 0.1164
+INFO - 2024-01-19 11:07:55 --> Config Class Initialized
+INFO - 2024-01-19 11:07:55 --> Hooks Class Initialized
+DEBUG - 2024-01-19 11:07:55 --> UTF-8 Support Enabled
+INFO - 2024-01-19 11:07:55 --> Utf8 Class Initialized
+INFO - 2024-01-19 11:07:55 --> URI Class Initialized
+INFO - 2024-01-19 11:07:55 --> Router Class Initialized
+INFO - 2024-01-19 11:07:55 --> Output Class Initialized
+INFO - 2024-01-19 11:07:55 --> Security Class Initialized
+DEBUG - 2024-01-19 11:07:55 --> Global POST, GET and COOKIE data sanitized
+INFO - 2024-01-19 11:07:55 --> Input Class Initialized
+INFO - 2024-01-19 11:07:55 --> Language Class Initialized
+INFO - 2024-01-19 11:07:55 --> Loader Class Initialized
+INFO - 2024-01-19 11:07:55 --> Helper loaded: url_helper
+INFO - 2024-01-19 11:07:55 --> Helper loaded: global_helper
+INFO - 2024-01-19 11:07:55 --> Helper loaded: security_helper
+INFO - 2024-01-19 11:07:55 --> Helper loaded: file_helper
+INFO - 2024-01-19 11:07:55 --> Helper loaded: mata_uang_helper
+INFO - 2024-01-19 11:07:55 --> Helper loaded: download_helper
+INFO - 2024-01-19 11:07:55 --> Helper loaded: wagw_helper
+INFO - 2024-01-19 11:07:55 --> Helper loaded: mail_helper
+INFO - 2024-01-19 11:07:55 --> Helper loaded: qr_helper
+INFO - 2024-01-19 11:07:55 --> Database Driver Class Initialized
+INFO - 2024-01-19 11:07:55 --> Session: Class initialized using 'files' driver.
+INFO - 2024-01-19 11:07:55 --> Helper loaded: form_helper
+INFO - 2024-01-19 11:07:55 --> Form Validation Class Initialized
+DEBUG - 2024-01-19 11:07:55 --> Encryption: Auto-configured driver 'openssl'.
+INFO - 2024-01-19 11:07:55 --> Encryption: OpenSSL initialized with method AES-128-CBC.
+INFO - 2024-01-19 11:07:55 --> Encryption Class Initialized
+INFO - 2024-01-19 11:07:55 --> Upload Class Initialized
+INFO - 2024-01-19 11:07:55 --> Email Class Initialized
+INFO - 2024-01-19 11:07:55 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2024-01-19 11:07:55 --> Pagination Class Initialized
+INFO - 2024-01-19 11:07:55 --> Controller Class Initialized
+INFO - 2024-01-19 11:07:55 --> Model "Penjualan_model" initialized
+DEBUG - 2024-01-19 11:07:55 --> Global_library class already loaded. Second attempt ignored.
+DEBUG - 2024-01-19 11:07:55 --> Global_library class already loaded. Second attempt ignored.
+INFO - 2024-01-19 11:07:55 --> File loaded: C:\laragon\www\seminar\application\views\admin/layouts/header.php
+INFO - 2024-01-19 11:07:55 --> File loaded: C:\laragon\www\seminar\application\views\admin/layouts/navbar.php
+DEBUG - 2024-01-19 11:07:55 --> Global_library class already loaded. Second attempt ignored.
+DEBUG - 2024-01-19 11:07:55 --> Global_library class already loaded. Second attempt ignored.
+INFO - 2024-01-19 11:07:55 --> File loaded: C:\laragon\www\seminar\application\views\admin/layouts/sidebar.php
+ERROR - 2024-01-19 11:07:55 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:07:55 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:07:55 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:07:55 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:07:55 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:07:55 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:07:55 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:07:55 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:07:55 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:07:55 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:07:55 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:07:55 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:07:55 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:07:55 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:07:55 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:07:55 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:07:55 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:07:55 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:07:55 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:07:55 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:07:55 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:07:55 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:07:55 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:07:55 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:07:55 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:07:55 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:07:55 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:07:55 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:07:55 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:07:55 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:07:55 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:07:55 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:07:55 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:07:55 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:07:55 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:07:55 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:07:55 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:07:55 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:07:55 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:07:55 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:07:55 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:07:55 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:07:55 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:07:55 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:07:55 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:07:55 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:07:55 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:07:55 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:07:55 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:07:55 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:07:55 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:07:55 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:07:55 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:07:55 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:07:55 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:07:55 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:07:55 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:07:55 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:07:55 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:07:55 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:07:55 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:07:55 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:07:55 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:07:55 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:07:55 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:07:55 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:07:55 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:07:55 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:07:55 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:07:55 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:07:55 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:07:55 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:07:55 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:07:55 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:07:55 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:07:55 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:07:55 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:07:55 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:07:55 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:07:55 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:07:55 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:07:55 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:07:55 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:07:55 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:07:55 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:07:55 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:07:55 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:07:55 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:07:55 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:07:55 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:07:55 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:07:55 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:07:55 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:07:55 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:07:55 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:07:55 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:07:55 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:07:55 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:07:55 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:07:55 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:07:55 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:07:55 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:07:55 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:07:55 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:07:55 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:07:55 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:07:55 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:07:55 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:07:55 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:07:55 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:07:55 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:07:55 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:07:55 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:07:55 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:07:55 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:07:55 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:07:55 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:07:55 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:07:55 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:07:55 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:07:55 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:07:55 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:07:55 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:07:55 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:07:55 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:07:55 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:07:55 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:07:55 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:07:55 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:07:55 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:07:55 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:07:55 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:07:55 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:07:55 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:07:55 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+INFO - 2024-01-19 11:07:55 --> File loaded: C:\laragon\www\seminar\application\views\admin/penjualan/transaksi.php
+INFO - 2024-01-19 11:07:55 --> File loaded: C:\laragon\www\seminar\application\views\admin/layouts/footer.php
+INFO - 2024-01-19 11:07:55 --> Final output sent to browser
+DEBUG - 2024-01-19 11:07:55 --> Total execution time: 0.1607
+INFO - 2024-01-19 11:11:46 --> Config Class Initialized
+INFO - 2024-01-19 11:11:46 --> Hooks Class Initialized
+DEBUG - 2024-01-19 11:11:46 --> UTF-8 Support Enabled
+INFO - 2024-01-19 11:11:46 --> Utf8 Class Initialized
+INFO - 2024-01-19 11:11:46 --> URI Class Initialized
+INFO - 2024-01-19 11:11:46 --> Router Class Initialized
+INFO - 2024-01-19 11:11:46 --> Output Class Initialized
+INFO - 2024-01-19 11:11:46 --> Security Class Initialized
+DEBUG - 2024-01-19 11:11:46 --> Global POST, GET and COOKIE data sanitized
+INFO - 2024-01-19 11:11:46 --> Input Class Initialized
+INFO - 2024-01-19 11:11:46 --> Language Class Initialized
+INFO - 2024-01-19 11:11:46 --> Loader Class Initialized
+INFO - 2024-01-19 11:11:46 --> Helper loaded: url_helper
+INFO - 2024-01-19 11:11:46 --> Helper loaded: global_helper
+INFO - 2024-01-19 11:11:46 --> Helper loaded: security_helper
+INFO - 2024-01-19 11:11:46 --> Helper loaded: file_helper
+INFO - 2024-01-19 11:11:46 --> Helper loaded: mata_uang_helper
+INFO - 2024-01-19 11:11:46 --> Helper loaded: download_helper
+INFO - 2024-01-19 11:11:46 --> Helper loaded: wagw_helper
+INFO - 2024-01-19 11:11:46 --> Helper loaded: mail_helper
+INFO - 2024-01-19 11:11:46 --> Helper loaded: qr_helper
+INFO - 2024-01-19 11:11:46 --> Database Driver Class Initialized
+INFO - 2024-01-19 11:11:46 --> Session: Class initialized using 'files' driver.
+INFO - 2024-01-19 11:11:46 --> Helper loaded: form_helper
+INFO - 2024-01-19 11:11:46 --> Form Validation Class Initialized
+DEBUG - 2024-01-19 11:11:46 --> Encryption: Auto-configured driver 'openssl'.
+INFO - 2024-01-19 11:11:46 --> Encryption: OpenSSL initialized with method AES-128-CBC.
+INFO - 2024-01-19 11:11:46 --> Encryption Class Initialized
+INFO - 2024-01-19 11:11:46 --> Upload Class Initialized
+INFO - 2024-01-19 11:11:46 --> Email Class Initialized
+INFO - 2024-01-19 11:11:46 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2024-01-19 11:11:46 --> Pagination Class Initialized
+INFO - 2024-01-19 11:11:46 --> Controller Class Initialized
+INFO - 2024-01-19 11:11:46 --> Model "Penjualan_model" initialized
+ERROR - 2024-01-19 11:11:46 --> Query error: Not unique table/alias: 'users' - Invalid query: SELECT `transaksi`.*, `events`.*, `peserta`.`name` AS `peserta_name`, `users`.`name` AS `user_name`
+FROM `transaksi`
+LEFT JOIN `events` ON `events`.`id_events` = `transaksi`.`events_id`
+LEFT JOIN `peserta` ON `peserta`.`id_peserta` = `transaksi`.`peserta_id`
+LEFT JOIN `users` ON `users`.`id_user` = `transaksi`.`user_id`
+LEFT JOIN `users` ON `users`.`id_user` = `transaksi`.`order_by`
+ORDER BY `id_transaksi` DESC
+INFO - 2024-01-19 11:11:46 --> Language file loaded: language/english/db_lang.php
+INFO - 2024-01-19 11:12:55 --> Config Class Initialized
+INFO - 2024-01-19 11:12:55 --> Hooks Class Initialized
+DEBUG - 2024-01-19 11:12:55 --> UTF-8 Support Enabled
+INFO - 2024-01-19 11:12:55 --> Utf8 Class Initialized
+INFO - 2024-01-19 11:12:55 --> URI Class Initialized
+INFO - 2024-01-19 11:12:55 --> Router Class Initialized
+INFO - 2024-01-19 11:12:55 --> Output Class Initialized
+INFO - 2024-01-19 11:12:55 --> Security Class Initialized
+DEBUG - 2024-01-19 11:12:55 --> Global POST, GET and COOKIE data sanitized
+INFO - 2024-01-19 11:12:55 --> Input Class Initialized
+INFO - 2024-01-19 11:12:55 --> Language Class Initialized
+INFO - 2024-01-19 11:12:55 --> Loader Class Initialized
+INFO - 2024-01-19 11:12:55 --> Helper loaded: url_helper
+INFO - 2024-01-19 11:12:55 --> Helper loaded: global_helper
+INFO - 2024-01-19 11:12:55 --> Helper loaded: security_helper
+INFO - 2024-01-19 11:12:55 --> Helper loaded: file_helper
+INFO - 2024-01-19 11:12:55 --> Helper loaded: mata_uang_helper
+INFO - 2024-01-19 11:12:55 --> Helper loaded: download_helper
+INFO - 2024-01-19 11:12:55 --> Helper loaded: wagw_helper
+INFO - 2024-01-19 11:12:55 --> Helper loaded: mail_helper
+INFO - 2024-01-19 11:12:55 --> Helper loaded: qr_helper
+INFO - 2024-01-19 11:12:55 --> Database Driver Class Initialized
+INFO - 2024-01-19 11:12:55 --> Session: Class initialized using 'files' driver.
+INFO - 2024-01-19 11:12:55 --> Helper loaded: form_helper
+INFO - 2024-01-19 11:12:55 --> Form Validation Class Initialized
+DEBUG - 2024-01-19 11:12:55 --> Encryption: Auto-configured driver 'openssl'.
+INFO - 2024-01-19 11:12:55 --> Encryption: OpenSSL initialized with method AES-128-CBC.
+INFO - 2024-01-19 11:12:55 --> Encryption Class Initialized
+INFO - 2024-01-19 11:12:55 --> Upload Class Initialized
+INFO - 2024-01-19 11:12:55 --> Email Class Initialized
+INFO - 2024-01-19 11:12:55 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2024-01-19 11:12:55 --> Pagination Class Initialized
+INFO - 2024-01-19 11:12:55 --> Controller Class Initialized
+INFO - 2024-01-19 11:12:55 --> Model "Penjualan_model" initialized
+DEBUG - 2024-01-19 11:12:55 --> Global_library class already loaded. Second attempt ignored.
+DEBUG - 2024-01-19 11:12:55 --> Global_library class already loaded. Second attempt ignored.
+INFO - 2024-01-19 11:12:55 --> File loaded: C:\laragon\www\seminar\application\views\admin/layouts/header.php
+INFO - 2024-01-19 11:12:55 --> File loaded: C:\laragon\www\seminar\application\views\admin/layouts/navbar.php
+DEBUG - 2024-01-19 11:12:55 --> Global_library class already loaded. Second attempt ignored.
+DEBUG - 2024-01-19 11:12:55 --> Global_library class already loaded. Second attempt ignored.
+INFO - 2024-01-19 11:12:55 --> File loaded: C:\laragon\www\seminar\application\views\admin/layouts/sidebar.php
+ERROR - 2024-01-19 11:12:55 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:12:55 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:12:55 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:12:55 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:12:55 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:12:55 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:12:55 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:12:55 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:12:55 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:12:55 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:12:55 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:12:55 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:12:55 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:12:55 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:12:55 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:12:55 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:12:55 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:12:55 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:12:55 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:12:55 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:12:55 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:12:55 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:12:55 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:12:55 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:12:55 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:12:55 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:12:55 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:12:55 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:12:55 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:12:55 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:12:55 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:12:55 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:12:55 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:12:55 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:12:55 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:12:55 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:12:55 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:12:55 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:12:55 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:12:55 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:12:55 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:12:55 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:12:55 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:12:55 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:12:55 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:12:55 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:12:55 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:12:55 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:12:55 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:12:55 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:12:55 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:12:55 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:12:55 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:12:55 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:12:55 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:12:55 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:12:55 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:12:55 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:12:55 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:12:55 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:12:55 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:12:55 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:12:55 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:12:55 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:12:55 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:12:55 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:12:55 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:12:55 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:12:55 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:12:55 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:12:55 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:12:55 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:12:55 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:12:55 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:12:55 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:12:55 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:12:55 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:12:55 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:12:55 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:12:55 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:12:55 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:12:55 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:12:55 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:12:55 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:12:55 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:12:55 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:12:55 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:12:55 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:12:55 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:12:55 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:12:55 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:12:55 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:12:55 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:12:55 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:12:55 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:12:55 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:12:55 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:12:55 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:12:55 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:12:55 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:12:55 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:12:55 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:12:55 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:12:55 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:12:55 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:12:55 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:12:55 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:12:55 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:12:55 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:12:55 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:12:55 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:12:55 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:12:55 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:12:55 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:12:55 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:12:55 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:12:55 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:12:55 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:12:55 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:12:55 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:12:55 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:12:55 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:12:55 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:12:55 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:12:55 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:12:55 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:12:55 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:12:55 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:12:55 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:12:55 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:12:55 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:12:55 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:12:55 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:12:55 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:12:55 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+INFO - 2024-01-19 11:12:55 --> File loaded: C:\laragon\www\seminar\application\views\admin/penjualan/transaksi.php
+INFO - 2024-01-19 11:12:55 --> File loaded: C:\laragon\www\seminar\application\views\admin/layouts/footer.php
+INFO - 2024-01-19 11:12:55 --> Final output sent to browser
+DEBUG - 2024-01-19 11:12:55 --> Total execution time: 0.1353
+INFO - 2024-01-19 11:13:54 --> Config Class Initialized
+INFO - 2024-01-19 11:13:54 --> Hooks Class Initialized
+DEBUG - 2024-01-19 11:13:54 --> UTF-8 Support Enabled
+INFO - 2024-01-19 11:13:54 --> Utf8 Class Initialized
+INFO - 2024-01-19 11:13:54 --> URI Class Initialized
+INFO - 2024-01-19 11:13:54 --> Router Class Initialized
+INFO - 2024-01-19 11:13:54 --> Output Class Initialized
+INFO - 2024-01-19 11:13:54 --> Security Class Initialized
+DEBUG - 2024-01-19 11:13:54 --> Global POST, GET and COOKIE data sanitized
+INFO - 2024-01-19 11:13:54 --> Input Class Initialized
+INFO - 2024-01-19 11:13:54 --> Language Class Initialized
+INFO - 2024-01-19 11:13:54 --> Loader Class Initialized
+INFO - 2024-01-19 11:13:54 --> Helper loaded: url_helper
+INFO - 2024-01-19 11:13:54 --> Helper loaded: global_helper
+INFO - 2024-01-19 11:13:54 --> Helper loaded: security_helper
+INFO - 2024-01-19 11:13:54 --> Helper loaded: file_helper
+INFO - 2024-01-19 11:13:54 --> Helper loaded: mata_uang_helper
+INFO - 2024-01-19 11:13:54 --> Helper loaded: download_helper
+INFO - 2024-01-19 11:13:54 --> Helper loaded: wagw_helper
+INFO - 2024-01-19 11:13:54 --> Helper loaded: mail_helper
+INFO - 2024-01-19 11:13:54 --> Helper loaded: qr_helper
+INFO - 2024-01-19 11:13:54 --> Database Driver Class Initialized
+INFO - 2024-01-19 11:13:54 --> Session: Class initialized using 'files' driver.
+INFO - 2024-01-19 11:13:54 --> Helper loaded: form_helper
+INFO - 2024-01-19 11:13:54 --> Form Validation Class Initialized
+DEBUG - 2024-01-19 11:13:54 --> Encryption: Auto-configured driver 'openssl'.
+INFO - 2024-01-19 11:13:54 --> Encryption: OpenSSL initialized with method AES-128-CBC.
+INFO - 2024-01-19 11:13:54 --> Encryption Class Initialized
+INFO - 2024-01-19 11:13:54 --> Upload Class Initialized
+INFO - 2024-01-19 11:13:54 --> Email Class Initialized
+INFO - 2024-01-19 11:13:54 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2024-01-19 11:13:54 --> Pagination Class Initialized
+INFO - 2024-01-19 11:13:54 --> Controller Class Initialized
+INFO - 2024-01-19 11:13:54 --> Model "Penjualan_model" initialized
+ERROR - 2024-01-19 11:13:54 --> Query error: Not unique table/alias: 'users' - Invalid query: SELECT `transaksi`.*, `events`.*, `peserta`.`name` AS `peserta_name`, `users`.`name` AS `user_name`
+FROM `transaksi`
+LEFT JOIN `events` ON `events`.`id_events` = `transaksi`.`events_id`
+LEFT JOIN `peserta` ON `peserta`.`id_peserta` = `transaksi`.`peserta_id`
+LEFT JOIN `users` ON `users`.`id_user` = `transaksi`.`user_id`
+LEFT JOIN `users` ON `users`.`id_user` = `transaksi`.`by_order`
+ORDER BY `id_transaksi` DESC
+INFO - 2024-01-19 11:13:54 --> Language file loaded: language/english/db_lang.php
+INFO - 2024-01-19 11:14:22 --> Config Class Initialized
+INFO - 2024-01-19 11:14:22 --> Hooks Class Initialized
+DEBUG - 2024-01-19 11:14:22 --> UTF-8 Support Enabled
+INFO - 2024-01-19 11:14:22 --> Utf8 Class Initialized
+INFO - 2024-01-19 11:14:22 --> URI Class Initialized
+INFO - 2024-01-19 11:14:22 --> Router Class Initialized
+INFO - 2024-01-19 11:14:22 --> Output Class Initialized
+INFO - 2024-01-19 11:14:22 --> Security Class Initialized
+DEBUG - 2024-01-19 11:14:22 --> Global POST, GET and COOKIE data sanitized
+INFO - 2024-01-19 11:14:22 --> Input Class Initialized
+INFO - 2024-01-19 11:14:22 --> Language Class Initialized
+INFO - 2024-01-19 11:14:22 --> Loader Class Initialized
+INFO - 2024-01-19 11:14:22 --> Helper loaded: url_helper
+INFO - 2024-01-19 11:14:22 --> Helper loaded: global_helper
+INFO - 2024-01-19 11:14:22 --> Helper loaded: security_helper
+INFO - 2024-01-19 11:14:22 --> Helper loaded: file_helper
+INFO - 2024-01-19 11:14:22 --> Helper loaded: mata_uang_helper
+INFO - 2024-01-19 11:14:22 --> Helper loaded: download_helper
+INFO - 2024-01-19 11:14:22 --> Helper loaded: wagw_helper
+INFO - 2024-01-19 11:14:22 --> Helper loaded: mail_helper
+INFO - 2024-01-19 11:14:22 --> Helper loaded: qr_helper
+INFO - 2024-01-19 11:14:22 --> Database Driver Class Initialized
+INFO - 2024-01-19 11:14:22 --> Session: Class initialized using 'files' driver.
+INFO - 2024-01-19 11:14:22 --> Helper loaded: form_helper
+INFO - 2024-01-19 11:14:22 --> Form Validation Class Initialized
+DEBUG - 2024-01-19 11:14:22 --> Encryption: Auto-configured driver 'openssl'.
+INFO - 2024-01-19 11:14:22 --> Encryption: OpenSSL initialized with method AES-128-CBC.
+INFO - 2024-01-19 11:14:22 --> Encryption Class Initialized
+INFO - 2024-01-19 11:14:22 --> Upload Class Initialized
+INFO - 2024-01-19 11:14:22 --> Email Class Initialized
+INFO - 2024-01-19 11:14:22 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2024-01-19 11:14:22 --> Pagination Class Initialized
+INFO - 2024-01-19 11:14:22 --> Controller Class Initialized
+INFO - 2024-01-19 11:14:22 --> Model "Penjualan_model" initialized
+DEBUG - 2024-01-19 11:14:22 --> Global_library class already loaded. Second attempt ignored.
+DEBUG - 2024-01-19 11:14:22 --> Global_library class already loaded. Second attempt ignored.
+INFO - 2024-01-19 11:14:22 --> File loaded: C:\laragon\www\seminar\application\views\admin/layouts/header.php
+INFO - 2024-01-19 11:14:22 --> File loaded: C:\laragon\www\seminar\application\views\admin/layouts/navbar.php
+DEBUG - 2024-01-19 11:14:22 --> Global_library class already loaded. Second attempt ignored.
+DEBUG - 2024-01-19 11:14:22 --> Global_library class already loaded. Second attempt ignored.
+INFO - 2024-01-19 11:14:22 --> File loaded: C:\laragon\www\seminar\application\views\admin/layouts/sidebar.php
+ERROR - 2024-01-19 11:14:22 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:14:22 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:14:22 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:14:22 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:14:22 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:14:22 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:14:22 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:14:22 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:14:22 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:14:22 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:14:22 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:14:22 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:14:22 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:14:22 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:14:22 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:14:22 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:14:22 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:14:22 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:14:22 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:14:22 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:14:22 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:14:22 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:14:22 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:14:22 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:14:22 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:14:22 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:14:22 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:14:22 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:14:22 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:14:22 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:14:22 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:14:22 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:14:22 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:14:22 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:14:22 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:14:22 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:14:22 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:14:22 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:14:22 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:14:22 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:14:22 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:14:22 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:14:22 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:14:22 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:14:22 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:14:22 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:14:22 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:14:22 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:14:22 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:14:22 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:14:22 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:14:22 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:14:22 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:14:22 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:14:22 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:14:22 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:14:22 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:14:22 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:14:22 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:14:22 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:14:22 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:14:22 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:14:22 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:14:22 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:14:22 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:14:22 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:14:22 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:14:22 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:14:22 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:14:22 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:14:22 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:14:22 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:14:22 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:14:22 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:14:22 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:14:22 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:14:22 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:14:22 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:14:22 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:14:22 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:14:22 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:14:22 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:14:22 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:14:22 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:14:22 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:14:22 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:14:22 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:14:22 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:14:22 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:14:22 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:14:22 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:14:22 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:14:22 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:14:22 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:14:22 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:14:22 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:14:22 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:14:22 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:14:22 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:14:22 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:14:22 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:14:22 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:14:22 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:14:22 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:14:22 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:14:22 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:14:22 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:14:22 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:14:22 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:14:22 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:14:22 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:14:22 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:14:22 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:14:22 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:14:22 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:14:22 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:14:22 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:14:22 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:14:22 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:14:22 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:14:22 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:14:22 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:14:22 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:14:22 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:14:22 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:14:22 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:14:22 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:14:22 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:14:22 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:14:22 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:14:22 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:14:22 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:14:22 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:14:22 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:14:22 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+INFO - 2024-01-19 11:14:22 --> File loaded: C:\laragon\www\seminar\application\views\admin/penjualan/transaksi.php
+INFO - 2024-01-19 11:14:22 --> File loaded: C:\laragon\www\seminar\application\views\admin/layouts/footer.php
+INFO - 2024-01-19 11:14:22 --> Final output sent to browser
+DEBUG - 2024-01-19 11:14:22 --> Total execution time: 0.1451
+INFO - 2024-01-19 11:14:36 --> Config Class Initialized
+INFO - 2024-01-19 11:14:36 --> Hooks Class Initialized
+DEBUG - 2024-01-19 11:14:36 --> UTF-8 Support Enabled
+INFO - 2024-01-19 11:14:36 --> Utf8 Class Initialized
+INFO - 2024-01-19 11:14:36 --> URI Class Initialized
+INFO - 2024-01-19 11:14:36 --> Router Class Initialized
+INFO - 2024-01-19 11:14:36 --> Output Class Initialized
+INFO - 2024-01-19 11:14:36 --> Security Class Initialized
+DEBUG - 2024-01-19 11:14:36 --> Global POST, GET and COOKIE data sanitized
+INFO - 2024-01-19 11:14:36 --> Input Class Initialized
+INFO - 2024-01-19 11:14:36 --> Language Class Initialized
+INFO - 2024-01-19 11:14:36 --> Loader Class Initialized
+INFO - 2024-01-19 11:14:36 --> Helper loaded: url_helper
+INFO - 2024-01-19 11:14:36 --> Helper loaded: global_helper
+INFO - 2024-01-19 11:14:36 --> Helper loaded: security_helper
+INFO - 2024-01-19 11:14:36 --> Helper loaded: file_helper
+INFO - 2024-01-19 11:14:36 --> Helper loaded: mata_uang_helper
+INFO - 2024-01-19 11:14:36 --> Helper loaded: download_helper
+INFO - 2024-01-19 11:14:36 --> Helper loaded: wagw_helper
+INFO - 2024-01-19 11:14:36 --> Helper loaded: mail_helper
+INFO - 2024-01-19 11:14:36 --> Helper loaded: qr_helper
+INFO - 2024-01-19 11:14:36 --> Database Driver Class Initialized
+INFO - 2024-01-19 11:14:36 --> Session: Class initialized using 'files' driver.
+INFO - 2024-01-19 11:14:36 --> Helper loaded: form_helper
+INFO - 2024-01-19 11:14:36 --> Form Validation Class Initialized
+DEBUG - 2024-01-19 11:14:36 --> Encryption: Auto-configured driver 'openssl'.
+INFO - 2024-01-19 11:14:36 --> Encryption: OpenSSL initialized with method AES-128-CBC.
+INFO - 2024-01-19 11:14:36 --> Encryption Class Initialized
+INFO - 2024-01-19 11:14:36 --> Upload Class Initialized
+INFO - 2024-01-19 11:14:36 --> Email Class Initialized
+INFO - 2024-01-19 11:14:36 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2024-01-19 11:14:36 --> Pagination Class Initialized
+INFO - 2024-01-19 11:14:36 --> Controller Class Initialized
+INFO - 2024-01-19 11:14:36 --> Model "Penjualan_model" initialized
+DEBUG - 2024-01-19 11:14:36 --> Global_library class already loaded. Second attempt ignored.
+DEBUG - 2024-01-19 11:14:36 --> Global_library class already loaded. Second attempt ignored.
+INFO - 2024-01-19 11:14:36 --> File loaded: C:\laragon\www\seminar\application\views\admin/layouts/header.php
+INFO - 2024-01-19 11:14:36 --> File loaded: C:\laragon\www\seminar\application\views\admin/layouts/navbar.php
+DEBUG - 2024-01-19 11:14:36 --> Global_library class already loaded. Second attempt ignored.
+DEBUG - 2024-01-19 11:14:36 --> Global_library class already loaded. Second attempt ignored.
+INFO - 2024-01-19 11:14:36 --> File loaded: C:\laragon\www\seminar\application\views\admin/layouts/sidebar.php
+ERROR - 2024-01-19 11:14:36 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:14:36 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:14:36 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+INFO - 2024-01-19 11:14:36 --> File loaded: C:\laragon\www\seminar\application\views\admin/penjualan/transaksi.php
+INFO - 2024-01-19 11:14:36 --> File loaded: C:\laragon\www\seminar\application\views\admin/layouts/footer.php
+INFO - 2024-01-19 11:14:36 --> Final output sent to browser
+DEBUG - 2024-01-19 11:14:36 --> Total execution time: 0.0595
+INFO - 2024-01-19 11:15:09 --> Config Class Initialized
+INFO - 2024-01-19 11:15:09 --> Hooks Class Initialized
+DEBUG - 2024-01-19 11:15:09 --> UTF-8 Support Enabled
+INFO - 2024-01-19 11:15:09 --> Utf8 Class Initialized
+INFO - 2024-01-19 11:15:09 --> URI Class Initialized
+INFO - 2024-01-19 11:15:09 --> Router Class Initialized
+INFO - 2024-01-19 11:15:09 --> Output Class Initialized
+INFO - 2024-01-19 11:15:09 --> Security Class Initialized
+DEBUG - 2024-01-19 11:15:09 --> Global POST, GET and COOKIE data sanitized
+INFO - 2024-01-19 11:15:09 --> Input Class Initialized
+INFO - 2024-01-19 11:15:09 --> Language Class Initialized
+INFO - 2024-01-19 11:15:09 --> Loader Class Initialized
+INFO - 2024-01-19 11:15:09 --> Helper loaded: url_helper
+INFO - 2024-01-19 11:15:09 --> Helper loaded: global_helper
+INFO - 2024-01-19 11:15:09 --> Helper loaded: security_helper
+INFO - 2024-01-19 11:15:09 --> Helper loaded: file_helper
+INFO - 2024-01-19 11:15:09 --> Helper loaded: mata_uang_helper
+INFO - 2024-01-19 11:15:09 --> Helper loaded: download_helper
+INFO - 2024-01-19 11:15:09 --> Helper loaded: wagw_helper
+INFO - 2024-01-19 11:15:09 --> Helper loaded: mail_helper
+INFO - 2024-01-19 11:15:09 --> Helper loaded: qr_helper
+INFO - 2024-01-19 11:15:10 --> Database Driver Class Initialized
+INFO - 2024-01-19 11:15:10 --> Session: Class initialized using 'files' driver.
+INFO - 2024-01-19 11:15:10 --> Helper loaded: form_helper
+INFO - 2024-01-19 11:15:10 --> Form Validation Class Initialized
+DEBUG - 2024-01-19 11:15:10 --> Encryption: Auto-configured driver 'openssl'.
+INFO - 2024-01-19 11:15:10 --> Encryption: OpenSSL initialized with method AES-128-CBC.
+INFO - 2024-01-19 11:15:10 --> Encryption Class Initialized
+INFO - 2024-01-19 11:15:10 --> Upload Class Initialized
+INFO - 2024-01-19 11:15:10 --> Email Class Initialized
+INFO - 2024-01-19 11:15:10 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2024-01-19 11:15:10 --> Pagination Class Initialized
+INFO - 2024-01-19 11:15:10 --> Controller Class Initialized
+INFO - 2024-01-19 11:15:10 --> Model "Penjualan_model" initialized
+DEBUG - 2024-01-19 11:15:10 --> Global_library class already loaded. Second attempt ignored.
+DEBUG - 2024-01-19 11:15:10 --> Global_library class already loaded. Second attempt ignored.
+INFO - 2024-01-19 11:15:10 --> File loaded: C:\laragon\www\seminar\application\views\admin/layouts/header.php
+INFO - 2024-01-19 11:15:10 --> File loaded: C:\laragon\www\seminar\application\views\admin/layouts/navbar.php
+DEBUG - 2024-01-19 11:15:10 --> Global_library class already loaded. Second attempt ignored.
+DEBUG - 2024-01-19 11:15:10 --> Global_library class already loaded. Second attempt ignored.
+INFO - 2024-01-19 11:15:10 --> File loaded: C:\laragon\www\seminar\application\views\admin/layouts/sidebar.php
+ERROR - 2024-01-19 11:15:10 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:15:10 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:15:10 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+INFO - 2024-01-19 11:15:10 --> File loaded: C:\laragon\www\seminar\application\views\admin/penjualan/transaksi.php
+INFO - 2024-01-19 11:15:10 --> File loaded: C:\laragon\www\seminar\application\views\admin/layouts/footer.php
+INFO - 2024-01-19 11:15:10 --> Final output sent to browser
+DEBUG - 2024-01-19 11:15:10 --> Total execution time: 0.0853
+INFO - 2024-01-19 11:15:23 --> Config Class Initialized
+INFO - 2024-01-19 11:15:23 --> Hooks Class Initialized
+DEBUG - 2024-01-19 11:15:23 --> UTF-8 Support Enabled
+INFO - 2024-01-19 11:15:23 --> Utf8 Class Initialized
+INFO - 2024-01-19 11:15:23 --> URI Class Initialized
+INFO - 2024-01-19 11:15:23 --> Router Class Initialized
+INFO - 2024-01-19 11:15:23 --> Output Class Initialized
+INFO - 2024-01-19 11:15:23 --> Security Class Initialized
+DEBUG - 2024-01-19 11:15:23 --> Global POST, GET and COOKIE data sanitized
+INFO - 2024-01-19 11:15:23 --> Input Class Initialized
+INFO - 2024-01-19 11:15:23 --> Language Class Initialized
+INFO - 2024-01-19 11:15:23 --> Loader Class Initialized
+INFO - 2024-01-19 11:15:23 --> Helper loaded: url_helper
+INFO - 2024-01-19 11:15:23 --> Helper loaded: global_helper
+INFO - 2024-01-19 11:15:23 --> Helper loaded: security_helper
+INFO - 2024-01-19 11:15:23 --> Helper loaded: file_helper
+INFO - 2024-01-19 11:15:23 --> Helper loaded: mata_uang_helper
+INFO - 2024-01-19 11:15:23 --> Helper loaded: download_helper
+INFO - 2024-01-19 11:15:23 --> Helper loaded: wagw_helper
+INFO - 2024-01-19 11:15:23 --> Helper loaded: mail_helper
+INFO - 2024-01-19 11:15:23 --> Helper loaded: qr_helper
+INFO - 2024-01-19 11:15:23 --> Database Driver Class Initialized
+INFO - 2024-01-19 11:15:23 --> Session: Class initialized using 'files' driver.
+INFO - 2024-01-19 11:15:23 --> Helper loaded: form_helper
+INFO - 2024-01-19 11:15:23 --> Form Validation Class Initialized
+DEBUG - 2024-01-19 11:15:23 --> Encryption: Auto-configured driver 'openssl'.
+INFO - 2024-01-19 11:15:23 --> Encryption: OpenSSL initialized with method AES-128-CBC.
+INFO - 2024-01-19 11:15:23 --> Encryption Class Initialized
+INFO - 2024-01-19 11:15:23 --> Upload Class Initialized
+INFO - 2024-01-19 11:15:23 --> Email Class Initialized
+INFO - 2024-01-19 11:15:23 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2024-01-19 11:15:23 --> Pagination Class Initialized
+INFO - 2024-01-19 11:15:23 --> Controller Class Initialized
+INFO - 2024-01-19 11:15:23 --> Model "Penjualan_model" initialized
+DEBUG - 2024-01-19 11:15:23 --> Global_library class already loaded. Second attempt ignored.
+DEBUG - 2024-01-19 11:15:23 --> Global_library class already loaded. Second attempt ignored.
+INFO - 2024-01-19 11:15:23 --> File loaded: C:\laragon\www\seminar\application\views\admin/layouts/header.php
+INFO - 2024-01-19 11:15:23 --> File loaded: C:\laragon\www\seminar\application\views\admin/layouts/navbar.php
+DEBUG - 2024-01-19 11:15:23 --> Global_library class already loaded. Second attempt ignored.
+DEBUG - 2024-01-19 11:15:23 --> Global_library class already loaded. Second attempt ignored.
+INFO - 2024-01-19 11:15:23 --> File loaded: C:\laragon\www\seminar\application\views\admin/layouts/sidebar.php
+ERROR - 2024-01-19 11:15:23 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:15:23 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:15:23 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:15:23 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:15:23 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:15:23 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:15:23 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:15:23 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:15:23 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:15:23 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:15:23 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:15:23 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:15:23 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:15:23 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:15:23 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:15:23 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:15:23 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:15:23 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:15:23 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:15:23 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:15:23 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:15:23 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:15:23 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:15:23 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:15:23 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:15:23 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:15:23 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:15:23 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:15:23 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:15:23 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:15:23 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:15:23 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:15:23 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:15:23 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:15:23 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:15:23 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:15:23 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:15:23 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:15:23 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:15:23 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:15:23 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:15:23 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:15:23 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:15:23 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:15:23 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:15:23 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:15:23 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:15:23 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:15:23 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:15:23 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:15:23 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:15:23 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:15:23 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:15:23 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:15:23 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:15:23 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:15:23 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:15:23 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:15:23 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:15:23 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:15:23 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:15:23 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:15:23 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:15:23 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:15:23 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:15:23 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:15:23 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:15:23 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:15:23 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:15:23 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:15:23 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:15:23 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:15:23 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:15:23 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:15:23 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:15:23 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:15:23 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:15:23 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:15:23 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:15:23 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:15:23 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:15:23 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:15:23 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:15:23 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:15:23 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:15:23 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:15:23 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:15:23 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:15:23 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:15:23 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:15:23 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:15:23 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:15:23 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:15:23 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:15:23 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:15:23 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:15:23 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:15:23 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:15:23 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:15:23 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:15:23 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:15:23 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:15:23 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:15:23 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:15:23 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:15:23 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:15:23 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:15:23 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:15:23 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:15:23 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:15:23 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:15:23 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:15:23 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:15:23 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:15:23 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:15:23 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:15:23 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:15:23 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:15:23 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:15:23 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:15:23 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:15:23 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:15:23 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:15:23 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:15:23 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:15:23 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:15:23 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:15:23 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:15:23 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:15:23 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:15:23 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:15:23 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:15:23 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:15:23 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:15:23 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+INFO - 2024-01-19 11:15:23 --> File loaded: C:\laragon\www\seminar\application\views\admin/penjualan/transaksi.php
+INFO - 2024-01-19 11:15:23 --> File loaded: C:\laragon\www\seminar\application\views\admin/layouts/footer.php
+INFO - 2024-01-19 11:15:23 --> Final output sent to browser
+DEBUG - 2024-01-19 11:15:23 --> Total execution time: 0.1332
+INFO - 2024-01-19 11:15:31 --> Config Class Initialized
+INFO - 2024-01-19 11:15:31 --> Hooks Class Initialized
+DEBUG - 2024-01-19 11:15:31 --> UTF-8 Support Enabled
+INFO - 2024-01-19 11:15:31 --> Utf8 Class Initialized
+INFO - 2024-01-19 11:15:31 --> URI Class Initialized
+INFO - 2024-01-19 11:15:31 --> Router Class Initialized
+INFO - 2024-01-19 11:15:31 --> Output Class Initialized
+INFO - 2024-01-19 11:15:31 --> Security Class Initialized
+DEBUG - 2024-01-19 11:15:31 --> Global POST, GET and COOKIE data sanitized
+INFO - 2024-01-19 11:15:31 --> Input Class Initialized
+INFO - 2024-01-19 11:15:31 --> Language Class Initialized
+INFO - 2024-01-19 11:15:31 --> Loader Class Initialized
+INFO - 2024-01-19 11:15:31 --> Helper loaded: url_helper
+INFO - 2024-01-19 11:15:31 --> Helper loaded: global_helper
+INFO - 2024-01-19 11:15:31 --> Helper loaded: security_helper
+INFO - 2024-01-19 11:15:31 --> Helper loaded: file_helper
+INFO - 2024-01-19 11:15:31 --> Helper loaded: mata_uang_helper
+INFO - 2024-01-19 11:15:31 --> Helper loaded: download_helper
+INFO - 2024-01-19 11:15:31 --> Helper loaded: wagw_helper
+INFO - 2024-01-19 11:15:31 --> Helper loaded: mail_helper
+INFO - 2024-01-19 11:15:31 --> Helper loaded: qr_helper
+INFO - 2024-01-19 11:15:31 --> Database Driver Class Initialized
+INFO - 2024-01-19 11:15:31 --> Session: Class initialized using 'files' driver.
+INFO - 2024-01-19 11:15:31 --> Helper loaded: form_helper
+INFO - 2024-01-19 11:15:31 --> Form Validation Class Initialized
+DEBUG - 2024-01-19 11:15:31 --> Encryption: Auto-configured driver 'openssl'.
+INFO - 2024-01-19 11:15:31 --> Encryption: OpenSSL initialized with method AES-128-CBC.
+INFO - 2024-01-19 11:15:31 --> Encryption Class Initialized
+INFO - 2024-01-19 11:15:31 --> Upload Class Initialized
+INFO - 2024-01-19 11:15:31 --> Email Class Initialized
+INFO - 2024-01-19 11:15:31 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2024-01-19 11:15:31 --> Pagination Class Initialized
+INFO - 2024-01-19 11:15:31 --> Controller Class Initialized
+INFO - 2024-01-19 11:15:31 --> Model "Penjualan_model" initialized
+DEBUG - 2024-01-19 11:15:31 --> Global_library class already loaded. Second attempt ignored.
+DEBUG - 2024-01-19 11:15:31 --> Global_library class already loaded. Second attempt ignored.
+INFO - 2024-01-19 11:15:31 --> File loaded: C:\laragon\www\seminar\application\views\admin/layouts/header.php
+INFO - 2024-01-19 11:15:31 --> File loaded: C:\laragon\www\seminar\application\views\admin/layouts/navbar.php
+DEBUG - 2024-01-19 11:15:31 --> Global_library class already loaded. Second attempt ignored.
+DEBUG - 2024-01-19 11:15:31 --> Global_library class already loaded. Second attempt ignored.
+INFO - 2024-01-19 11:15:31 --> File loaded: C:\laragon\www\seminar\application\views\admin/layouts/sidebar.php
+ERROR - 2024-01-19 11:15:31 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:15:31 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:15:31 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:15:31 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:15:31 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:15:31 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:15:31 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:15:31 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:15:31 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:15:31 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:15:31 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:15:31 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:15:31 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:15:31 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:15:31 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:15:31 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:15:31 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:15:31 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:15:31 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:15:31 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:15:31 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:15:31 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:15:31 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:15:31 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:15:31 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:15:31 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:15:31 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:15:31 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:15:31 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:15:31 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:15:31 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:15:31 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:15:31 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:15:31 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:15:31 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:15:31 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:15:31 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:15:31 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:15:31 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:15:31 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:15:31 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:15:31 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:15:31 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:15:31 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:15:31 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:15:31 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:15:31 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:15:31 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:15:31 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:15:31 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:15:31 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:15:31 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:15:31 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:15:31 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:15:31 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:15:31 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:15:31 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:15:31 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:15:31 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:15:31 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:15:31 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:15:31 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:15:31 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:15:31 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:15:31 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:15:31 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:15:31 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:15:31 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:15:31 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 11:15:31 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:15:31 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:15:31 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:15:31 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:15:31 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:15:31 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:15:31 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:15:31 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:15:31 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:15:31 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:15:31 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:15:31 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:15:31 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:15:31 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:15:31 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:15:31 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:15:31 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:15:31 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:15:31 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:15:31 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:15:31 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:15:31 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:15:31 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:15:31 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:15:31 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:15:31 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:15:31 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:15:31 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:15:31 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:15:31 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:15:31 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:15:31 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:15:31 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:15:31 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:15:31 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:15:31 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:15:31 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:15:31 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:15:31 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:15:31 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:15:31 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:15:31 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:15:31 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:15:31 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:15:31 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:15:31 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:15:31 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:15:31 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:15:31 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:15:31 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:15:31 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:15:31 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:15:31 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:15:31 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:15:31 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:15:31 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:15:31 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:15:31 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:15:31 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:15:31 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:15:31 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:15:31 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:15:31 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:15:31 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:15:31 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-19 11:15:31 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+INFO - 2024-01-19 11:15:31 --> File loaded: C:\laragon\www\seminar\application\views\admin/penjualan/transaksi.php
+INFO - 2024-01-19 11:15:31 --> File loaded: C:\laragon\www\seminar\application\views\admin/layouts/footer.php
+INFO - 2024-01-19 11:15:31 --> Final output sent to browser
+DEBUG - 2024-01-19 11:15:31 --> Total execution time: 0.1517
+INFO - 2024-01-19 11:17:33 --> Config Class Initialized
+INFO - 2024-01-19 11:17:33 --> Hooks Class Initialized
+DEBUG - 2024-01-19 11:17:33 --> UTF-8 Support Enabled
+INFO - 2024-01-19 11:17:33 --> Utf8 Class Initialized
+INFO - 2024-01-19 11:17:33 --> URI Class Initialized
+INFO - 2024-01-19 11:17:33 --> Router Class Initialized
+INFO - 2024-01-19 11:17:33 --> Output Class Initialized
+INFO - 2024-01-19 11:17:33 --> Security Class Initialized
+DEBUG - 2024-01-19 11:17:33 --> Global POST, GET and COOKIE data sanitized
+INFO - 2024-01-19 11:17:33 --> Input Class Initialized
+INFO - 2024-01-19 11:17:33 --> Language Class Initialized
+INFO - 2024-01-19 11:17:33 --> Loader Class Initialized
+INFO - 2024-01-19 11:17:33 --> Helper loaded: url_helper
+INFO - 2024-01-19 11:17:33 --> Helper loaded: global_helper
+INFO - 2024-01-19 11:17:33 --> Helper loaded: security_helper
+INFO - 2024-01-19 11:17:33 --> Helper loaded: file_helper
+INFO - 2024-01-19 11:17:33 --> Helper loaded: mata_uang_helper
+INFO - 2024-01-19 11:17:33 --> Helper loaded: download_helper
+INFO - 2024-01-19 11:17:33 --> Helper loaded: wagw_helper
+INFO - 2024-01-19 11:17:33 --> Helper loaded: mail_helper
+INFO - 2024-01-19 11:17:33 --> Helper loaded: qr_helper
+INFO - 2024-01-19 11:17:33 --> Database Driver Class Initialized
+INFO - 2024-01-19 11:17:33 --> Session: Class initialized using 'files' driver.
+INFO - 2024-01-19 11:17:33 --> Helper loaded: form_helper
+INFO - 2024-01-19 11:17:33 --> Form Validation Class Initialized
+DEBUG - 2024-01-19 11:17:33 --> Encryption: Auto-configured driver 'openssl'.
+INFO - 2024-01-19 11:17:33 --> Encryption: OpenSSL initialized with method AES-128-CBC.
+INFO - 2024-01-19 11:17:33 --> Encryption Class Initialized
+INFO - 2024-01-19 11:17:33 --> Upload Class Initialized
+INFO - 2024-01-19 11:17:33 --> Email Class Initialized
+INFO - 2024-01-19 11:17:33 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2024-01-19 11:17:33 --> Pagination Class Initialized
+INFO - 2024-01-19 11:17:33 --> Controller Class Initialized
+INFO - 2024-01-19 11:17:33 --> Config Class Initialized
+INFO - 2024-01-19 11:17:33 --> Hooks Class Initialized
+DEBUG - 2024-01-19 11:17:33 --> UTF-8 Support Enabled
+INFO - 2024-01-19 11:17:33 --> Utf8 Class Initialized
+INFO - 2024-01-19 11:17:33 --> URI Class Initialized
+DEBUG - 2024-01-19 11:17:33 --> No URI present. Default controller set.
+INFO - 2024-01-19 11:17:33 --> Router Class Initialized
+INFO - 2024-01-19 11:17:33 --> Output Class Initialized
+INFO - 2024-01-19 11:17:33 --> Security Class Initialized
+DEBUG - 2024-01-19 11:17:33 --> Global POST, GET and COOKIE data sanitized
+INFO - 2024-01-19 11:17:33 --> Input Class Initialized
+INFO - 2024-01-19 11:17:33 --> Language Class Initialized
+INFO - 2024-01-19 11:17:33 --> Loader Class Initialized
+INFO - 2024-01-19 11:17:33 --> Helper loaded: url_helper
+INFO - 2024-01-19 11:17:33 --> Helper loaded: global_helper
+INFO - 2024-01-19 11:17:33 --> Helper loaded: security_helper
+INFO - 2024-01-19 11:17:33 --> Helper loaded: file_helper
+INFO - 2024-01-19 11:17:33 --> Helper loaded: mata_uang_helper
+INFO - 2024-01-19 11:17:33 --> Helper loaded: download_helper
+INFO - 2024-01-19 11:17:33 --> Helper loaded: wagw_helper
+INFO - 2024-01-19 11:17:33 --> Helper loaded: mail_helper
+INFO - 2024-01-19 11:17:33 --> Helper loaded: qr_helper
+INFO - 2024-01-19 11:17:33 --> Database Driver Class Initialized
+INFO - 2024-01-19 11:17:33 --> Session: Class initialized using 'files' driver.
+INFO - 2024-01-19 11:17:33 --> Helper loaded: form_helper
+INFO - 2024-01-19 11:17:33 --> Form Validation Class Initialized
+DEBUG - 2024-01-19 11:17:33 --> Encryption: Auto-configured driver 'openssl'.
+INFO - 2024-01-19 11:17:33 --> Encryption: OpenSSL initialized with method AES-128-CBC.
+INFO - 2024-01-19 11:17:33 --> Encryption Class Initialized
+INFO - 2024-01-19 11:17:33 --> Upload Class Initialized
+INFO - 2024-01-19 11:17:33 --> Email Class Initialized
+INFO - 2024-01-19 11:17:33 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2024-01-19 11:17:33 --> Pagination Class Initialized
+INFO - 2024-01-19 11:17:33 --> Controller Class Initialized
+DEBUG - 2024-01-19 11:17:33 --> Global_library class already loaded. Second attempt ignored.
+DEBUG - 2024-01-19 11:17:33 --> Global_library class already loaded. Second attempt ignored.
+DEBUG - 2024-01-19 11:17:33 --> Global_library class already loaded. Second attempt ignored.
+DEBUG - 2024-01-19 11:17:33 --> Global_library class already loaded. Second attempt ignored.
+DEBUG - 2024-01-19 11:17:33 --> Global_library class already loaded. Second attempt ignored.
+INFO - 2024-01-19 11:17:33 --> File loaded: C:\laragon\www\seminar\application\views\frontend/layout/header.php
+INFO - 2024-01-19 11:17:33 --> File loaded: C:\laragon\www\seminar\application\views\frontend/home.php
+DEBUG - 2024-01-19 11:17:33 --> Global_library class already loaded. Second attempt ignored.
+INFO - 2024-01-19 11:17:33 --> File loaded: C:\laragon\www\seminar\application\views\frontend/layout/footer.php
+INFO - 2024-01-19 11:17:33 --> Final output sent to browser
+DEBUG - 2024-01-19 11:17:33 --> Total execution time: 0.1316
+INFO - 2024-01-19 11:17:38 --> Config Class Initialized
+INFO - 2024-01-19 11:17:38 --> Hooks Class Initialized
+DEBUG - 2024-01-19 11:17:38 --> UTF-8 Support Enabled
+INFO - 2024-01-19 11:17:38 --> Utf8 Class Initialized
+INFO - 2024-01-19 11:17:38 --> URI Class Initialized
+INFO - 2024-01-19 11:17:38 --> Router Class Initialized
+INFO - 2024-01-19 11:17:38 --> Output Class Initialized
+INFO - 2024-01-19 11:17:38 --> Security Class Initialized
+DEBUG - 2024-01-19 11:17:38 --> Global POST, GET and COOKIE data sanitized
+INFO - 2024-01-19 11:17:38 --> Input Class Initialized
+INFO - 2024-01-19 11:17:38 --> Language Class Initialized
+INFO - 2024-01-19 11:17:38 --> Loader Class Initialized
+INFO - 2024-01-19 11:17:38 --> Helper loaded: url_helper
+INFO - 2024-01-19 11:17:38 --> Helper loaded: global_helper
+INFO - 2024-01-19 11:17:38 --> Helper loaded: security_helper
+INFO - 2024-01-19 11:17:38 --> Helper loaded: file_helper
+INFO - 2024-01-19 11:17:38 --> Helper loaded: mata_uang_helper
+INFO - 2024-01-19 11:17:38 --> Helper loaded: download_helper
+INFO - 2024-01-19 11:17:38 --> Helper loaded: wagw_helper
+INFO - 2024-01-19 11:17:38 --> Helper loaded: mail_helper
+INFO - 2024-01-19 11:17:38 --> Helper loaded: qr_helper
+INFO - 2024-01-19 11:17:38 --> Database Driver Class Initialized
+INFO - 2024-01-19 11:17:38 --> Session: Class initialized using 'files' driver.
+INFO - 2024-01-19 11:17:38 --> Helper loaded: form_helper
+INFO - 2024-01-19 11:17:38 --> Form Validation Class Initialized
+DEBUG - 2024-01-19 11:17:38 --> Encryption: Auto-configured driver 'openssl'.
+INFO - 2024-01-19 11:17:38 --> Encryption: OpenSSL initialized with method AES-128-CBC.
+INFO - 2024-01-19 11:17:38 --> Encryption Class Initialized
+INFO - 2024-01-19 11:17:38 --> Upload Class Initialized
+INFO - 2024-01-19 11:17:38 --> Email Class Initialized
+INFO - 2024-01-19 11:17:38 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2024-01-19 11:17:38 --> Pagination Class Initialized
+INFO - 2024-01-19 11:17:38 --> Controller Class Initialized
+DEBUG - 2024-01-19 11:17:38 --> Global_library class already loaded. Second attempt ignored.
+DEBUG - 2024-01-19 11:17:38 --> Global_library class already loaded. Second attempt ignored.
+DEBUG - 2024-01-19 11:17:38 --> Global_library class already loaded. Second attempt ignored.
+DEBUG - 2024-01-19 11:17:38 --> Global_library class already loaded. Second attempt ignored.
+INFO - 2024-01-19 11:17:38 --> File loaded: C:\laragon\www\seminar\application\views\frontend/layout/header.php
+INFO - 2024-01-19 11:17:38 --> File loaded: C:\laragon\www\seminar\application\views\auth/login.php
+INFO - 2024-01-19 11:17:38 --> Final output sent to browser
+DEBUG - 2024-01-19 11:17:38 --> Total execution time: 0.0803
+INFO - 2024-01-19 11:17:55 --> Config Class Initialized
+INFO - 2024-01-19 11:17:55 --> Hooks Class Initialized
+DEBUG - 2024-01-19 11:17:55 --> UTF-8 Support Enabled
+INFO - 2024-01-19 11:17:55 --> Utf8 Class Initialized
+INFO - 2024-01-19 11:17:55 --> URI Class Initialized
+INFO - 2024-01-19 11:17:55 --> Router Class Initialized
+INFO - 2024-01-19 11:17:55 --> Output Class Initialized
+INFO - 2024-01-19 11:17:55 --> Security Class Initialized
+DEBUG - 2024-01-19 11:17:55 --> Global POST, GET and COOKIE data sanitized
+INFO - 2024-01-19 11:17:55 --> Input Class Initialized
+INFO - 2024-01-19 11:17:55 --> Language Class Initialized
+INFO - 2024-01-19 11:17:55 --> Loader Class Initialized
+INFO - 2024-01-19 11:17:55 --> Helper loaded: url_helper
+INFO - 2024-01-19 11:17:55 --> Helper loaded: global_helper
+INFO - 2024-01-19 11:17:55 --> Helper loaded: security_helper
+INFO - 2024-01-19 11:17:55 --> Helper loaded: file_helper
+INFO - 2024-01-19 11:17:55 --> Helper loaded: mata_uang_helper
+INFO - 2024-01-19 11:17:55 --> Helper loaded: download_helper
+INFO - 2024-01-19 11:17:55 --> Helper loaded: wagw_helper
+INFO - 2024-01-19 11:17:55 --> Helper loaded: mail_helper
+INFO - 2024-01-19 11:17:55 --> Helper loaded: qr_helper
+INFO - 2024-01-19 11:17:55 --> Database Driver Class Initialized
+INFO - 2024-01-19 11:17:55 --> Session: Class initialized using 'files' driver.
+INFO - 2024-01-19 11:17:55 --> Helper loaded: form_helper
+INFO - 2024-01-19 11:17:55 --> Form Validation Class Initialized
+DEBUG - 2024-01-19 11:17:55 --> Encryption: Auto-configured driver 'openssl'.
+INFO - 2024-01-19 11:17:55 --> Encryption: OpenSSL initialized with method AES-128-CBC.
+INFO - 2024-01-19 11:17:55 --> Encryption Class Initialized
+INFO - 2024-01-19 11:17:55 --> Upload Class Initialized
+INFO - 2024-01-19 11:17:55 --> Email Class Initialized
+INFO - 2024-01-19 11:17:55 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2024-01-19 11:17:55 --> Pagination Class Initialized
+INFO - 2024-01-19 11:17:55 --> Controller Class Initialized
+INFO - 2024-01-19 11:17:55 --> Language file loaded: language/english/form_validation_lang.php
+INFO - 2024-01-19 11:17:55 --> Config Class Initialized
+INFO - 2024-01-19 11:17:55 --> Hooks Class Initialized
+DEBUG - 2024-01-19 11:17:55 --> UTF-8 Support Enabled
+INFO - 2024-01-19 11:17:55 --> Utf8 Class Initialized
+INFO - 2024-01-19 11:17:55 --> URI Class Initialized
+INFO - 2024-01-19 11:17:55 --> Router Class Initialized
+INFO - 2024-01-19 11:17:55 --> Output Class Initialized
+INFO - 2024-01-19 11:17:55 --> Security Class Initialized
+DEBUG - 2024-01-19 11:17:55 --> Global POST, GET and COOKIE data sanitized
+INFO - 2024-01-19 11:17:55 --> Input Class Initialized
+INFO - 2024-01-19 11:17:55 --> Language Class Initialized
+INFO - 2024-01-19 11:17:55 --> Loader Class Initialized
+INFO - 2024-01-19 11:17:55 --> Helper loaded: url_helper
+INFO - 2024-01-19 11:17:55 --> Helper loaded: global_helper
+INFO - 2024-01-19 11:17:55 --> Helper loaded: security_helper
+INFO - 2024-01-19 11:17:55 --> Helper loaded: file_helper
+INFO - 2024-01-19 11:17:55 --> Helper loaded: mata_uang_helper
+INFO - 2024-01-19 11:17:55 --> Helper loaded: download_helper
+INFO - 2024-01-19 11:17:55 --> Helper loaded: wagw_helper
+INFO - 2024-01-19 11:17:55 --> Helper loaded: mail_helper
+INFO - 2024-01-19 11:17:55 --> Helper loaded: qr_helper
+INFO - 2024-01-19 11:17:55 --> Database Driver Class Initialized
+INFO - 2024-01-19 11:17:55 --> Session: Class initialized using 'files' driver.
+INFO - 2024-01-19 11:17:55 --> Helper loaded: form_helper
+INFO - 2024-01-19 11:17:55 --> Form Validation Class Initialized
+DEBUG - 2024-01-19 11:17:55 --> Encryption: Auto-configured driver 'openssl'.
+INFO - 2024-01-19 11:17:55 --> Encryption: OpenSSL initialized with method AES-128-CBC.
+INFO - 2024-01-19 11:17:55 --> Encryption Class Initialized
+INFO - 2024-01-19 11:17:55 --> Upload Class Initialized
+INFO - 2024-01-19 11:17:55 --> Email Class Initialized
+INFO - 2024-01-19 11:17:55 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2024-01-19 11:17:55 --> Pagination Class Initialized
+INFO - 2024-01-19 11:17:55 --> Controller Class Initialized
+DEBUG - 2024-01-19 11:17:56 --> Global_library class already loaded. Second attempt ignored.
+DEBUG - 2024-01-19 11:17:56 --> Global_library class already loaded. Second attempt ignored.
+INFO - 2024-01-19 11:17:56 --> File loaded: C:\laragon\www\seminar\application\views\leader/layouts/header.php
+INFO - 2024-01-19 11:17:56 --> File loaded: C:\laragon\www\seminar\application\views\leader/layouts/navbar.php
+DEBUG - 2024-01-19 11:17:56 --> Global_library class already loaded. Second attempt ignored.
+DEBUG - 2024-01-19 11:17:56 --> Global_library class already loaded. Second attempt ignored.
+INFO - 2024-01-19 11:17:56 --> File loaded: C:\laragon\www\seminar\application\views\leader/layouts/sidebar.php
+INFO - 2024-01-19 11:17:56 --> File loaded: C:\laragon\www\seminar\application\views\leader/dashboard.php
+INFO - 2024-01-19 11:17:56 --> File loaded: C:\laragon\www\seminar\application\views\leader/layouts/footer.php
+INFO - 2024-01-19 11:17:56 --> Final output sent to browser
+DEBUG - 2024-01-19 11:17:56 --> Total execution time: 0.1347
+INFO - 2024-01-19 11:17:57 --> Config Class Initialized
+INFO - 2024-01-19 11:17:57 --> Hooks Class Initialized
+DEBUG - 2024-01-19 11:17:57 --> UTF-8 Support Enabled
+INFO - 2024-01-19 11:17:57 --> Utf8 Class Initialized
+INFO - 2024-01-19 11:17:57 --> URI Class Initialized
+INFO - 2024-01-19 11:17:57 --> Router Class Initialized
+INFO - 2024-01-19 11:17:57 --> Output Class Initialized
+INFO - 2024-01-19 11:17:57 --> Security Class Initialized
+DEBUG - 2024-01-19 11:17:57 --> Global POST, GET and COOKIE data sanitized
+INFO - 2024-01-19 11:17:57 --> Input Class Initialized
+INFO - 2024-01-19 11:17:57 --> Language Class Initialized
+INFO - 2024-01-19 11:17:57 --> Loader Class Initialized
+INFO - 2024-01-19 11:17:57 --> Helper loaded: url_helper
+INFO - 2024-01-19 11:17:57 --> Helper loaded: global_helper
+INFO - 2024-01-19 11:17:57 --> Helper loaded: security_helper
+INFO - 2024-01-19 11:17:57 --> Helper loaded: file_helper
+INFO - 2024-01-19 11:17:57 --> Helper loaded: mata_uang_helper
+INFO - 2024-01-19 11:17:57 --> Helper loaded: download_helper
+INFO - 2024-01-19 11:17:57 --> Helper loaded: wagw_helper
+INFO - 2024-01-19 11:17:57 --> Helper loaded: mail_helper
+INFO - 2024-01-19 11:17:57 --> Helper loaded: qr_helper
+INFO - 2024-01-19 11:17:57 --> Database Driver Class Initialized
+INFO - 2024-01-19 11:17:57 --> Session: Class initialized using 'files' driver.
+INFO - 2024-01-19 11:17:57 --> Helper loaded: form_helper
+INFO - 2024-01-19 11:17:57 --> Form Validation Class Initialized
+DEBUG - 2024-01-19 11:17:57 --> Encryption: Auto-configured driver 'openssl'.
+INFO - 2024-01-19 11:17:57 --> Encryption: OpenSSL initialized with method AES-128-CBC.
+INFO - 2024-01-19 11:17:57 --> Encryption Class Initialized
+INFO - 2024-01-19 11:17:57 --> Upload Class Initialized
+INFO - 2024-01-19 11:17:57 --> Email Class Initialized
+INFO - 2024-01-19 11:17:57 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2024-01-19 11:17:57 --> Pagination Class Initialized
+INFO - 2024-01-19 11:17:57 --> Controller Class Initialized
+INFO - 2024-01-19 11:17:57 --> Model "Partner_model" initialized
+INFO - 2024-01-19 11:17:57 --> Model "Leader_model" initialized
+INFO - 2024-01-19 11:17:57 --> Model "Integrasi_model" initialized
+DEBUG - 2024-01-19 11:17:57 --> Global_library class already loaded. Second attempt ignored.
+DEBUG - 2024-01-19 11:17:57 --> Global_library class already loaded. Second attempt ignored.
+INFO - 2024-01-19 11:17:57 --> File loaded: C:\laragon\www\seminar\application\views\leader/layouts/header.php
+INFO - 2024-01-19 11:17:57 --> File loaded: C:\laragon\www\seminar\application\views\leader/layouts/navbar.php
+DEBUG - 2024-01-19 11:17:57 --> Global_library class already loaded. Second attempt ignored.
+DEBUG - 2024-01-19 11:17:57 --> Global_library class already loaded. Second attempt ignored.
+INFO - 2024-01-19 11:17:57 --> File loaded: C:\laragon\www\seminar\application\views\leader/layouts/sidebar.php
+INFO - 2024-01-19 11:17:57 --> File loaded: C:\laragon\www\seminar\application\views\leader/transaksi/transaksi.php
+INFO - 2024-01-19 11:17:57 --> File loaded: C:\laragon\www\seminar\application\views\leader/layouts/footer.php
+INFO - 2024-01-19 11:17:57 --> Final output sent to browser
+DEBUG - 2024-01-19 11:17:57 --> Total execution time: 0.0666
+INFO - 2024-01-19 11:17:58 --> Config Class Initialized
+INFO - 2024-01-19 11:17:58 --> Hooks Class Initialized
+DEBUG - 2024-01-19 11:17:58 --> UTF-8 Support Enabled
+INFO - 2024-01-19 11:17:58 --> Utf8 Class Initialized
+INFO - 2024-01-19 11:17:58 --> URI Class Initialized
+INFO - 2024-01-19 11:17:58 --> Router Class Initialized
+INFO - 2024-01-19 11:17:58 --> Output Class Initialized
+INFO - 2024-01-19 11:17:58 --> Security Class Initialized
+DEBUG - 2024-01-19 11:17:58 --> Global POST, GET and COOKIE data sanitized
+INFO - 2024-01-19 11:17:58 --> Input Class Initialized
+INFO - 2024-01-19 11:17:58 --> Language Class Initialized
+INFO - 2024-01-19 11:17:58 --> Loader Class Initialized
+INFO - 2024-01-19 11:17:58 --> Helper loaded: url_helper
+INFO - 2024-01-19 11:17:58 --> Helper loaded: global_helper
+INFO - 2024-01-19 11:17:58 --> Helper loaded: security_helper
+INFO - 2024-01-19 11:17:58 --> Helper loaded: file_helper
+INFO - 2024-01-19 11:17:58 --> Helper loaded: mata_uang_helper
+INFO - 2024-01-19 11:17:58 --> Helper loaded: download_helper
+INFO - 2024-01-19 11:17:58 --> Helper loaded: wagw_helper
+INFO - 2024-01-19 11:17:58 --> Helper loaded: mail_helper
+INFO - 2024-01-19 11:17:58 --> Helper loaded: qr_helper
+INFO - 2024-01-19 11:17:58 --> Database Driver Class Initialized
+INFO - 2024-01-19 11:17:58 --> Session: Class initialized using 'files' driver.
+INFO - 2024-01-19 11:17:58 --> Helper loaded: form_helper
+INFO - 2024-01-19 11:17:58 --> Form Validation Class Initialized
+DEBUG - 2024-01-19 11:17:58 --> Encryption: Auto-configured driver 'openssl'.
+INFO - 2024-01-19 11:17:58 --> Encryption: OpenSSL initialized with method AES-128-CBC.
+INFO - 2024-01-19 11:17:58 --> Encryption Class Initialized
+INFO - 2024-01-19 11:17:58 --> Upload Class Initialized
+INFO - 2024-01-19 11:17:58 --> Email Class Initialized
+INFO - 2024-01-19 11:17:58 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2024-01-19 11:17:58 --> Pagination Class Initialized
+INFO - 2024-01-19 11:17:58 --> Controller Class Initialized
+INFO - 2024-01-19 11:17:58 --> Model "Partner_model" initialized
+INFO - 2024-01-19 11:17:58 --> Model "Leader_model" initialized
+INFO - 2024-01-19 11:17:58 --> Model "Integrasi_model" initialized
+DEBUG - 2024-01-19 11:17:58 --> Global_library class already loaded. Second attempt ignored.
+DEBUG - 2024-01-19 11:17:58 --> Global_library class already loaded. Second attempt ignored.
+INFO - 2024-01-19 11:17:58 --> File loaded: C:\laragon\www\seminar\application\views\leader/layouts/header.php
+INFO - 2024-01-19 11:17:58 --> File loaded: C:\laragon\www\seminar\application\views\leader/layouts/navbar.php
+DEBUG - 2024-01-19 11:17:58 --> Global_library class already loaded. Second attempt ignored.
+DEBUG - 2024-01-19 11:17:58 --> Global_library class already loaded. Second attempt ignored.
+INFO - 2024-01-19 11:17:58 --> File loaded: C:\laragon\www\seminar\application\views\leader/layouts/sidebar.php
+INFO - 2024-01-19 11:17:58 --> File loaded: C:\laragon\www\seminar\application\views\leader/transaksi/add.php
+INFO - 2024-01-19 11:17:58 --> File loaded: C:\laragon\www\seminar\application\views\leader/layouts/footer.php
+INFO - 2024-01-19 11:17:58 --> Final output sent to browser
+DEBUG - 2024-01-19 11:17:58 --> Total execution time: 0.0868
+INFO - 2024-01-19 11:18:01 --> Config Class Initialized
+INFO - 2024-01-19 11:18:01 --> Hooks Class Initialized
+DEBUG - 2024-01-19 11:18:01 --> UTF-8 Support Enabled
+INFO - 2024-01-19 11:18:01 --> Utf8 Class Initialized
+INFO - 2024-01-19 11:18:01 --> URI Class Initialized
+INFO - 2024-01-19 11:18:01 --> Router Class Initialized
+INFO - 2024-01-19 11:18:01 --> Output Class Initialized
+INFO - 2024-01-19 11:18:01 --> Security Class Initialized
+DEBUG - 2024-01-19 11:18:01 --> Global POST, GET and COOKIE data sanitized
+INFO - 2024-01-19 11:18:01 --> Input Class Initialized
+INFO - 2024-01-19 11:18:01 --> Language Class Initialized
+INFO - 2024-01-19 11:18:01 --> Loader Class Initialized
+INFO - 2024-01-19 11:18:01 --> Helper loaded: url_helper
+INFO - 2024-01-19 11:18:01 --> Helper loaded: global_helper
+INFO - 2024-01-19 11:18:01 --> Helper loaded: security_helper
+INFO - 2024-01-19 11:18:01 --> Helper loaded: file_helper
+INFO - 2024-01-19 11:18:01 --> Helper loaded: mata_uang_helper
+INFO - 2024-01-19 11:18:01 --> Helper loaded: download_helper
+INFO - 2024-01-19 11:18:01 --> Helper loaded: wagw_helper
+INFO - 2024-01-19 11:18:01 --> Helper loaded: mail_helper
+INFO - 2024-01-19 11:18:01 --> Helper loaded: qr_helper
+INFO - 2024-01-19 11:18:01 --> Database Driver Class Initialized
+INFO - 2024-01-19 11:18:01 --> Session: Class initialized using 'files' driver.
+INFO - 2024-01-19 11:18:01 --> Helper loaded: form_helper
+INFO - 2024-01-19 11:18:01 --> Form Validation Class Initialized
+DEBUG - 2024-01-19 11:18:01 --> Encryption: Auto-configured driver 'openssl'.
+INFO - 2024-01-19 11:18:01 --> Encryption: OpenSSL initialized with method AES-128-CBC.
+INFO - 2024-01-19 11:18:01 --> Encryption Class Initialized
+INFO - 2024-01-19 11:18:01 --> Upload Class Initialized
+INFO - 2024-01-19 11:18:01 --> Email Class Initialized
+INFO - 2024-01-19 11:18:01 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2024-01-19 11:18:01 --> Pagination Class Initialized
+INFO - 2024-01-19 11:18:01 --> Controller Class Initialized
+INFO - 2024-01-19 11:18:01 --> Model "Partner_model" initialized
+INFO - 2024-01-19 11:18:01 --> Model "Leader_model" initialized
+INFO - 2024-01-19 11:18:01 --> Model "Integrasi_model" initialized
+INFO - 2024-01-19 11:18:01 --> Language file loaded: language/english/form_validation_lang.php
+DEBUG - 2024-01-19 11:18:19 --> Curl class already loaded. Second attempt ignored.
+ERROR - 2024-01-19 11:18:19 --> Severity: Warning --> Cannot modify header information - headers already sent by (output started at C:\laragon\www\seminar\vendor\phpmailer\phpmailer\src\SMTP.php:284) C:\laragon\www\seminar\system\helpers\url_helper.php 565
+INFO - 2024-01-19 11:20:15 --> Config Class Initialized
+INFO - 2024-01-19 11:20:15 --> Hooks Class Initialized
+DEBUG - 2024-01-19 11:20:15 --> UTF-8 Support Enabled
+INFO - 2024-01-19 11:20:15 --> Utf8 Class Initialized
+INFO - 2024-01-19 11:20:15 --> URI Class Initialized
+INFO - 2024-01-19 11:20:15 --> Router Class Initialized
+INFO - 2024-01-19 11:20:15 --> Output Class Initialized
+INFO - 2024-01-19 11:20:15 --> Security Class Initialized
+DEBUG - 2024-01-19 11:20:15 --> Global POST, GET and COOKIE data sanitized
+INFO - 2024-01-19 11:20:15 --> Input Class Initialized
+INFO - 2024-01-19 11:20:15 --> Language Class Initialized
+INFO - 2024-01-19 11:20:15 --> Loader Class Initialized
+INFO - 2024-01-19 11:20:15 --> Helper loaded: url_helper
+INFO - 2024-01-19 11:20:15 --> Helper loaded: global_helper
+INFO - 2024-01-19 11:20:15 --> Helper loaded: security_helper
+INFO - 2024-01-19 11:20:15 --> Helper loaded: file_helper
+INFO - 2024-01-19 11:20:15 --> Helper loaded: mata_uang_helper
+INFO - 2024-01-19 11:20:15 --> Helper loaded: download_helper
+INFO - 2024-01-19 11:20:15 --> Helper loaded: wagw_helper
+INFO - 2024-01-19 11:20:15 --> Helper loaded: mail_helper
+INFO - 2024-01-19 11:20:15 --> Helper loaded: qr_helper
+INFO - 2024-01-19 11:20:15 --> Database Driver Class Initialized
+INFO - 2024-01-19 11:20:15 --> Session: Class initialized using 'files' driver.
+INFO - 2024-01-19 11:20:15 --> Helper loaded: form_helper
+INFO - 2024-01-19 11:20:15 --> Form Validation Class Initialized
+DEBUG - 2024-01-19 11:20:15 --> Encryption: Auto-configured driver 'openssl'.
+INFO - 2024-01-19 11:20:15 --> Encryption: OpenSSL initialized with method AES-128-CBC.
+INFO - 2024-01-19 11:20:15 --> Encryption Class Initialized
+INFO - 2024-01-19 11:20:15 --> Upload Class Initialized
+INFO - 2024-01-19 11:20:15 --> Email Class Initialized
+INFO - 2024-01-19 11:20:15 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2024-01-19 11:20:15 --> Pagination Class Initialized
+INFO - 2024-01-19 11:20:15 --> Controller Class Initialized
+INFO - 2024-01-19 11:20:15 --> Model "Partner_model" initialized
+INFO - 2024-01-19 11:20:15 --> Model "Leader_model" initialized
+INFO - 2024-01-19 11:20:15 --> Model "Integrasi_model" initialized
+DEBUG - 2024-01-19 11:20:15 --> Global_library class already loaded. Second attempt ignored.
+DEBUG - 2024-01-19 11:20:15 --> Global_library class already loaded. Second attempt ignored.
+INFO - 2024-01-19 11:20:15 --> File loaded: C:\laragon\www\seminar\application\views\leader/layouts/header.php
+INFO - 2024-01-19 11:20:15 --> File loaded: C:\laragon\www\seminar\application\views\leader/layouts/navbar.php
+DEBUG - 2024-01-19 11:20:15 --> Global_library class already loaded. Second attempt ignored.
+DEBUG - 2024-01-19 11:20:15 --> Global_library class already loaded. Second attempt ignored.
+INFO - 2024-01-19 11:20:15 --> File loaded: C:\laragon\www\seminar\application\views\leader/layouts/sidebar.php
+INFO - 2024-01-19 11:20:15 --> File loaded: C:\laragon\www\seminar\application\views\leader/transaksi/add.php
+INFO - 2024-01-19 11:20:15 --> File loaded: C:\laragon\www\seminar\application\views\leader/layouts/footer.php
+INFO - 2024-01-19 11:20:15 --> Final output sent to browser
+DEBUG - 2024-01-19 11:20:15 --> Total execution time: 0.0635
+INFO - 2024-01-19 11:20:17 --> Config Class Initialized
+INFO - 2024-01-19 11:20:17 --> Hooks Class Initialized
+DEBUG - 2024-01-19 11:20:17 --> UTF-8 Support Enabled
+INFO - 2024-01-19 11:20:17 --> Utf8 Class Initialized
+INFO - 2024-01-19 11:20:17 --> URI Class Initialized
+INFO - 2024-01-19 11:20:17 --> Router Class Initialized
+INFO - 2024-01-19 11:20:17 --> Output Class Initialized
+INFO - 2024-01-19 11:20:17 --> Security Class Initialized
+DEBUG - 2024-01-19 11:20:17 --> Global POST, GET and COOKIE data sanitized
+INFO - 2024-01-19 11:20:17 --> Input Class Initialized
+INFO - 2024-01-19 11:20:17 --> Language Class Initialized
+INFO - 2024-01-19 11:20:17 --> Loader Class Initialized
+INFO - 2024-01-19 11:20:17 --> Helper loaded: url_helper
+INFO - 2024-01-19 11:20:17 --> Helper loaded: global_helper
+INFO - 2024-01-19 11:20:17 --> Helper loaded: security_helper
+INFO - 2024-01-19 11:20:17 --> Helper loaded: file_helper
+INFO - 2024-01-19 11:20:17 --> Helper loaded: mata_uang_helper
+INFO - 2024-01-19 11:20:17 --> Helper loaded: download_helper
+INFO - 2024-01-19 11:20:17 --> Helper loaded: wagw_helper
+INFO - 2024-01-19 11:20:17 --> Helper loaded: mail_helper
+INFO - 2024-01-19 11:20:17 --> Helper loaded: qr_helper
+INFO - 2024-01-19 11:20:17 --> Database Driver Class Initialized
+INFO - 2024-01-19 11:20:17 --> Session: Class initialized using 'files' driver.
+INFO - 2024-01-19 11:20:17 --> Helper loaded: form_helper
+INFO - 2024-01-19 11:20:17 --> Form Validation Class Initialized
+DEBUG - 2024-01-19 11:20:17 --> Encryption: Auto-configured driver 'openssl'.
+INFO - 2024-01-19 11:20:17 --> Encryption: OpenSSL initialized with method AES-128-CBC.
+INFO - 2024-01-19 11:20:17 --> Encryption Class Initialized
+INFO - 2024-01-19 11:20:17 --> Upload Class Initialized
+INFO - 2024-01-19 11:20:17 --> Email Class Initialized
+INFO - 2024-01-19 11:20:17 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2024-01-19 11:20:17 --> Pagination Class Initialized
+INFO - 2024-01-19 11:20:17 --> Controller Class Initialized
+INFO - 2024-01-19 11:20:17 --> Model "Partner_model" initialized
+INFO - 2024-01-19 11:20:17 --> Model "Leader_model" initialized
+INFO - 2024-01-19 11:20:17 --> Model "Integrasi_model" initialized
+DEBUG - 2024-01-19 11:20:17 --> Global_library class already loaded. Second attempt ignored.
+DEBUG - 2024-01-19 11:20:17 --> Global_library class already loaded. Second attempt ignored.
+INFO - 2024-01-19 11:20:17 --> File loaded: C:\laragon\www\seminar\application\views\leader/layouts/header.php
+INFO - 2024-01-19 11:20:17 --> File loaded: C:\laragon\www\seminar\application\views\leader/layouts/navbar.php
+DEBUG - 2024-01-19 11:20:17 --> Global_library class already loaded. Second attempt ignored.
+DEBUG - 2024-01-19 11:20:17 --> Global_library class already loaded. Second attempt ignored.
+INFO - 2024-01-19 11:20:17 --> File loaded: C:\laragon\www\seminar\application\views\leader/layouts/sidebar.php
+INFO - 2024-01-19 11:20:17 --> File loaded: C:\laragon\www\seminar\application\views\leader/transaksi/add.php
+INFO - 2024-01-19 11:20:17 --> File loaded: C:\laragon\www\seminar\application\views\leader/layouts/footer.php
+INFO - 2024-01-19 11:20:17 --> Final output sent to browser
+DEBUG - 2024-01-19 11:20:17 --> Total execution time: 0.0642
+INFO - 2024-01-19 11:20:33 --> Config Class Initialized
+INFO - 2024-01-19 11:20:33 --> Hooks Class Initialized
+DEBUG - 2024-01-19 11:20:33 --> UTF-8 Support Enabled
+INFO - 2024-01-19 11:20:33 --> Utf8 Class Initialized
+INFO - 2024-01-19 11:20:33 --> URI Class Initialized
+INFO - 2024-01-19 11:20:33 --> Router Class Initialized
+INFO - 2024-01-19 11:20:33 --> Output Class Initialized
+INFO - 2024-01-19 11:20:33 --> Security Class Initialized
+DEBUG - 2024-01-19 11:20:33 --> Global POST, GET and COOKIE data sanitized
+INFO - 2024-01-19 11:20:33 --> Input Class Initialized
+INFO - 2024-01-19 11:20:33 --> Language Class Initialized
+INFO - 2024-01-19 11:20:33 --> Loader Class Initialized
+INFO - 2024-01-19 11:20:33 --> Helper loaded: url_helper
+INFO - 2024-01-19 11:20:33 --> Helper loaded: global_helper
+INFO - 2024-01-19 11:20:33 --> Helper loaded: security_helper
+INFO - 2024-01-19 11:20:33 --> Helper loaded: file_helper
+INFO - 2024-01-19 11:20:33 --> Helper loaded: mata_uang_helper
+INFO - 2024-01-19 11:20:33 --> Helper loaded: download_helper
+INFO - 2024-01-19 11:20:33 --> Helper loaded: wagw_helper
+INFO - 2024-01-19 11:20:33 --> Helper loaded: mail_helper
+INFO - 2024-01-19 11:20:33 --> Helper loaded: qr_helper
+INFO - 2024-01-19 11:20:33 --> Database Driver Class Initialized
+INFO - 2024-01-19 11:20:33 --> Session: Class initialized using 'files' driver.
+INFO - 2024-01-19 11:20:33 --> Helper loaded: form_helper
+INFO - 2024-01-19 11:20:33 --> Form Validation Class Initialized
+DEBUG - 2024-01-19 11:20:33 --> Encryption: Auto-configured driver 'openssl'.
+INFO - 2024-01-19 11:20:33 --> Encryption: OpenSSL initialized with method AES-128-CBC.
+INFO - 2024-01-19 11:20:33 --> Encryption Class Initialized
+INFO - 2024-01-19 11:20:33 --> Upload Class Initialized
+INFO - 2024-01-19 11:20:33 --> Email Class Initialized
+INFO - 2024-01-19 11:20:33 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2024-01-19 11:20:33 --> Pagination Class Initialized
+INFO - 2024-01-19 11:20:33 --> Controller Class Initialized
+INFO - 2024-01-19 11:20:33 --> Model "Leader_model" initialized
+DEBUG - 2024-01-19 11:20:33 --> Global_library class already loaded. Second attempt ignored.
+DEBUG - 2024-01-19 11:20:33 --> Global_library class already loaded. Second attempt ignored.
+INFO - 2024-01-19 11:20:33 --> File loaded: C:\laragon\www\seminar\application\views\leader/layouts/header.php
+INFO - 2024-01-19 11:20:33 --> File loaded: C:\laragon\www\seminar\application\views\leader/layouts/navbar.php
+DEBUG - 2024-01-19 11:20:33 --> Global_library class already loaded. Second attempt ignored.
+DEBUG - 2024-01-19 11:20:33 --> Global_library class already loaded. Second attempt ignored.
+INFO - 2024-01-19 11:20:33 --> File loaded: C:\laragon\www\seminar\application\views\leader/layouts/sidebar.php
+INFO - 2024-01-19 11:20:33 --> File loaded: C:\laragon\www\seminar\application\views\leader/tiket.php
+INFO - 2024-01-19 11:20:33 --> File loaded: C:\laragon\www\seminar\application\views\leader/layouts/footer.php
+INFO - 2024-01-19 11:20:33 --> Final output sent to browser
+DEBUG - 2024-01-19 11:20:33 --> Total execution time: 0.1130
+INFO - 2024-01-19 11:20:34 --> Config Class Initialized
+INFO - 2024-01-19 11:20:34 --> Hooks Class Initialized
+DEBUG - 2024-01-19 11:20:34 --> UTF-8 Support Enabled
+INFO - 2024-01-19 11:20:34 --> Utf8 Class Initialized
+INFO - 2024-01-19 11:20:34 --> URI Class Initialized
+INFO - 2024-01-19 11:20:34 --> Router Class Initialized
+INFO - 2024-01-19 11:20:34 --> Output Class Initialized
+INFO - 2024-01-19 11:20:34 --> Security Class Initialized
+DEBUG - 2024-01-19 11:20:34 --> Global POST, GET and COOKIE data sanitized
+INFO - 2024-01-19 11:20:34 --> Input Class Initialized
+INFO - 2024-01-19 11:20:34 --> Language Class Initialized
+INFO - 2024-01-19 11:20:34 --> Loader Class Initialized
+INFO - 2024-01-19 11:20:34 --> Helper loaded: url_helper
+INFO - 2024-01-19 11:20:34 --> Helper loaded: global_helper
+INFO - 2024-01-19 11:20:34 --> Helper loaded: security_helper
+INFO - 2024-01-19 11:20:34 --> Helper loaded: file_helper
+INFO - 2024-01-19 11:20:34 --> Helper loaded: mata_uang_helper
+INFO - 2024-01-19 11:20:34 --> Helper loaded: download_helper
+INFO - 2024-01-19 11:20:34 --> Helper loaded: wagw_helper
+INFO - 2024-01-19 11:20:34 --> Helper loaded: mail_helper
+INFO - 2024-01-19 11:20:34 --> Helper loaded: qr_helper
+INFO - 2024-01-19 11:20:34 --> Database Driver Class Initialized
+INFO - 2024-01-19 11:20:34 --> Session: Class initialized using 'files' driver.
+INFO - 2024-01-19 11:20:34 --> Helper loaded: form_helper
+INFO - 2024-01-19 11:20:34 --> Form Validation Class Initialized
+DEBUG - 2024-01-19 11:20:34 --> Encryption: Auto-configured driver 'openssl'.
+INFO - 2024-01-19 11:20:34 --> Encryption: OpenSSL initialized with method AES-128-CBC.
+INFO - 2024-01-19 11:20:34 --> Encryption Class Initialized
+INFO - 2024-01-19 11:20:34 --> Upload Class Initialized
+INFO - 2024-01-19 11:20:34 --> Email Class Initialized
+INFO - 2024-01-19 11:20:34 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2024-01-19 11:20:34 --> Pagination Class Initialized
+INFO - 2024-01-19 11:20:34 --> Controller Class Initialized
+INFO - 2024-01-19 11:20:34 --> Model "Events_model" initialized
+DEBUG - 2024-01-19 11:20:34 --> Global_library class already loaded. Second attempt ignored.
+DEBUG - 2024-01-19 11:20:34 --> Global_library class already loaded. Second attempt ignored.
+INFO - 2024-01-19 11:20:34 --> File loaded: C:\laragon\www\seminar\application\views\leader/layouts/header.php
+INFO - 2024-01-19 11:20:34 --> File loaded: C:\laragon\www\seminar\application\views\leader/layouts/navbar.php
+DEBUG - 2024-01-19 11:20:34 --> Global_library class already loaded. Second attempt ignored.
+DEBUG - 2024-01-19 11:20:34 --> Global_library class already loaded. Second attempt ignored.
+INFO - 2024-01-19 11:20:34 --> File loaded: C:\laragon\www\seminar\application\views\leader/layouts/sidebar.php
+INFO - 2024-01-19 11:20:34 --> File loaded: C:\laragon\www\seminar\application\views\leader/events.php
+INFO - 2024-01-19 11:20:34 --> File loaded: C:\laragon\www\seminar\application\views\leader/layouts/footer.php
+INFO - 2024-01-19 11:20:34 --> Final output sent to browser
+DEBUG - 2024-01-19 11:20:34 --> Total execution time: 0.0822
+INFO - 2024-01-19 11:21:00 --> Config Class Initialized
+INFO - 2024-01-19 11:21:00 --> Hooks Class Initialized
+DEBUG - 2024-01-19 11:21:00 --> UTF-8 Support Enabled
+INFO - 2024-01-19 11:21:00 --> Utf8 Class Initialized
+INFO - 2024-01-19 11:21:00 --> URI Class Initialized
+INFO - 2024-01-19 11:21:00 --> Router Class Initialized
+INFO - 2024-01-19 11:21:00 --> Output Class Initialized
+INFO - 2024-01-19 11:21:00 --> Security Class Initialized
+DEBUG - 2024-01-19 11:21:00 --> Global POST, GET and COOKIE data sanitized
+INFO - 2024-01-19 11:21:00 --> Input Class Initialized
+INFO - 2024-01-19 11:21:00 --> Language Class Initialized
+INFO - 2024-01-19 11:21:00 --> Loader Class Initialized
+INFO - 2024-01-19 11:21:00 --> Helper loaded: url_helper
+INFO - 2024-01-19 11:21:00 --> Helper loaded: global_helper
+INFO - 2024-01-19 11:21:00 --> Helper loaded: security_helper
+INFO - 2024-01-19 11:21:00 --> Helper loaded: file_helper
+INFO - 2024-01-19 11:21:00 --> Helper loaded: mata_uang_helper
+INFO - 2024-01-19 11:21:00 --> Helper loaded: download_helper
+INFO - 2024-01-19 11:21:00 --> Helper loaded: wagw_helper
+INFO - 2024-01-19 11:21:00 --> Helper loaded: mail_helper
+INFO - 2024-01-19 11:21:00 --> Helper loaded: qr_helper
+INFO - 2024-01-19 11:21:00 --> Database Driver Class Initialized
+INFO - 2024-01-19 11:21:00 --> Session: Class initialized using 'files' driver.
+INFO - 2024-01-19 11:21:00 --> Helper loaded: form_helper
+INFO - 2024-01-19 11:21:00 --> Form Validation Class Initialized
+DEBUG - 2024-01-19 11:21:00 --> Encryption: Auto-configured driver 'openssl'.
+INFO - 2024-01-19 11:21:00 --> Encryption: OpenSSL initialized with method AES-128-CBC.
+INFO - 2024-01-19 11:21:00 --> Encryption Class Initialized
+INFO - 2024-01-19 11:21:00 --> Upload Class Initialized
+INFO - 2024-01-19 11:21:01 --> Email Class Initialized
+INFO - 2024-01-19 11:21:01 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2024-01-19 11:21:01 --> Pagination Class Initialized
+INFO - 2024-01-19 11:21:01 --> Controller Class Initialized
+INFO - 2024-01-19 11:21:01 --> Model "Events_model" initialized
+INFO - 2024-01-19 11:21:01 --> Language file loaded: language/english/form_validation_lang.php
+INFO - 2024-01-19 11:21:01 --> Config Class Initialized
+INFO - 2024-01-19 11:21:01 --> Hooks Class Initialized
+DEBUG - 2024-01-19 11:21:01 --> UTF-8 Support Enabled
+INFO - 2024-01-19 11:21:01 --> Utf8 Class Initialized
+INFO - 2024-01-19 11:21:01 --> URI Class Initialized
+INFO - 2024-01-19 11:21:01 --> Router Class Initialized
+INFO - 2024-01-19 11:21:01 --> Output Class Initialized
+INFO - 2024-01-19 11:21:01 --> Security Class Initialized
+DEBUG - 2024-01-19 11:21:01 --> Global POST, GET and COOKIE data sanitized
+INFO - 2024-01-19 11:21:01 --> Input Class Initialized
+INFO - 2024-01-19 11:21:01 --> Language Class Initialized
+INFO - 2024-01-19 11:21:01 --> Loader Class Initialized
+INFO - 2024-01-19 11:21:01 --> Helper loaded: url_helper
+INFO - 2024-01-19 11:21:01 --> Helper loaded: global_helper
+INFO - 2024-01-19 11:21:01 --> Helper loaded: security_helper
+INFO - 2024-01-19 11:21:01 --> Helper loaded: file_helper
+INFO - 2024-01-19 11:21:01 --> Helper loaded: mata_uang_helper
+INFO - 2024-01-19 11:21:01 --> Helper loaded: download_helper
+INFO - 2024-01-19 11:21:01 --> Helper loaded: wagw_helper
+INFO - 2024-01-19 11:21:01 --> Helper loaded: mail_helper
+INFO - 2024-01-19 11:21:01 --> Helper loaded: qr_helper
+INFO - 2024-01-19 11:21:01 --> Database Driver Class Initialized
+INFO - 2024-01-19 11:21:01 --> Session: Class initialized using 'files' driver.
+INFO - 2024-01-19 11:21:01 --> Helper loaded: form_helper
+INFO - 2024-01-19 11:21:01 --> Form Validation Class Initialized
+DEBUG - 2024-01-19 11:21:01 --> Encryption: Auto-configured driver 'openssl'.
+INFO - 2024-01-19 11:21:01 --> Encryption: OpenSSL initialized with method AES-128-CBC.
+INFO - 2024-01-19 11:21:01 --> Encryption Class Initialized
+INFO - 2024-01-19 11:21:01 --> Upload Class Initialized
+INFO - 2024-01-19 11:21:01 --> Email Class Initialized
+INFO - 2024-01-19 11:21:01 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2024-01-19 11:21:01 --> Pagination Class Initialized
+INFO - 2024-01-19 11:21:01 --> Controller Class Initialized
+INFO - 2024-01-19 11:21:01 --> Model "Leader_model" initialized
+DEBUG - 2024-01-19 11:21:01 --> Global_library class already loaded. Second attempt ignored.
+DEBUG - 2024-01-19 11:21:01 --> Global_library class already loaded. Second attempt ignored.
+INFO - 2024-01-19 11:21:01 --> File loaded: C:\laragon\www\seminar\application\views\leader/layouts/header.php
+INFO - 2024-01-19 11:21:01 --> File loaded: C:\laragon\www\seminar\application\views\leader/layouts/navbar.php
+DEBUG - 2024-01-19 11:21:01 --> Global_library class already loaded. Second attempt ignored.
+DEBUG - 2024-01-19 11:21:01 --> Global_library class already loaded. Second attempt ignored.
+INFO - 2024-01-19 11:21:01 --> File loaded: C:\laragon\www\seminar\application\views\leader/layouts/sidebar.php
+INFO - 2024-01-19 11:21:01 --> File loaded: C:\laragon\www\seminar\application\views\leader/tiket.php
+INFO - 2024-01-19 11:21:01 --> File loaded: C:\laragon\www\seminar\application\views\leader/layouts/footer.php
+INFO - 2024-01-19 11:21:01 --> Final output sent to browser
+DEBUG - 2024-01-19 11:21:01 --> Total execution time: 0.0711
+INFO - 2024-01-19 11:21:09 --> Config Class Initialized
+INFO - 2024-01-19 11:21:09 --> Hooks Class Initialized
+DEBUG - 2024-01-19 11:21:09 --> UTF-8 Support Enabled
+INFO - 2024-01-19 11:21:09 --> Utf8 Class Initialized
+INFO - 2024-01-19 11:21:09 --> URI Class Initialized
+INFO - 2024-01-19 11:21:09 --> Router Class Initialized
+INFO - 2024-01-19 11:21:09 --> Output Class Initialized
+INFO - 2024-01-19 11:21:09 --> Security Class Initialized
+DEBUG - 2024-01-19 11:21:09 --> Global POST, GET and COOKIE data sanitized
+INFO - 2024-01-19 11:21:09 --> Input Class Initialized
+INFO - 2024-01-19 11:21:09 --> Language Class Initialized
+INFO - 2024-01-19 11:21:09 --> Loader Class Initialized
+INFO - 2024-01-19 11:21:09 --> Helper loaded: url_helper
+INFO - 2024-01-19 11:21:09 --> Helper loaded: global_helper
+INFO - 2024-01-19 11:21:09 --> Helper loaded: security_helper
+INFO - 2024-01-19 11:21:09 --> Helper loaded: file_helper
+INFO - 2024-01-19 11:21:09 --> Helper loaded: mata_uang_helper
+INFO - 2024-01-19 11:21:09 --> Helper loaded: download_helper
+INFO - 2024-01-19 11:21:09 --> Helper loaded: wagw_helper
+INFO - 2024-01-19 11:21:09 --> Helper loaded: mail_helper
+INFO - 2024-01-19 11:21:09 --> Helper loaded: qr_helper
+INFO - 2024-01-19 11:21:09 --> Database Driver Class Initialized
+INFO - 2024-01-19 11:21:09 --> Session: Class initialized using 'files' driver.
+INFO - 2024-01-19 11:21:09 --> Helper loaded: form_helper
+INFO - 2024-01-19 11:21:09 --> Form Validation Class Initialized
+DEBUG - 2024-01-19 11:21:09 --> Encryption: Auto-configured driver 'openssl'.
+INFO - 2024-01-19 11:21:09 --> Encryption: OpenSSL initialized with method AES-128-CBC.
+INFO - 2024-01-19 11:21:09 --> Encryption Class Initialized
+INFO - 2024-01-19 11:21:09 --> Upload Class Initialized
+INFO - 2024-01-19 11:21:09 --> Email Class Initialized
+INFO - 2024-01-19 11:21:09 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2024-01-19 11:21:09 --> Pagination Class Initialized
+INFO - 2024-01-19 11:21:09 --> Controller Class Initialized
+INFO - 2024-01-19 11:21:09 --> Model "Leader_model" initialized
+INFO - 2024-01-19 11:21:09 --> Config Class Initialized
+INFO - 2024-01-19 11:21:09 --> Hooks Class Initialized
+DEBUG - 2024-01-19 11:21:09 --> UTF-8 Support Enabled
+INFO - 2024-01-19 11:21:09 --> Utf8 Class Initialized
+INFO - 2024-01-19 11:21:09 --> URI Class Initialized
+INFO - 2024-01-19 11:21:09 --> Router Class Initialized
+INFO - 2024-01-19 11:21:09 --> Output Class Initialized
+INFO - 2024-01-19 11:21:09 --> Security Class Initialized
+DEBUG - 2024-01-19 11:21:09 --> Global POST, GET and COOKIE data sanitized
+INFO - 2024-01-19 11:21:09 --> Input Class Initialized
+INFO - 2024-01-19 11:21:09 --> Language Class Initialized
+INFO - 2024-01-19 11:21:09 --> Loader Class Initialized
+INFO - 2024-01-19 11:21:09 --> Helper loaded: url_helper
+INFO - 2024-01-19 11:21:09 --> Helper loaded: global_helper
+INFO - 2024-01-19 11:21:09 --> Helper loaded: security_helper
+INFO - 2024-01-19 11:21:09 --> Helper loaded: file_helper
+INFO - 2024-01-19 11:21:09 --> Helper loaded: mata_uang_helper
+INFO - 2024-01-19 11:21:09 --> Helper loaded: download_helper
+INFO - 2024-01-19 11:21:09 --> Helper loaded: wagw_helper
+INFO - 2024-01-19 11:21:09 --> Helper loaded: mail_helper
+INFO - 2024-01-19 11:21:09 --> Helper loaded: qr_helper
+INFO - 2024-01-19 11:21:09 --> Database Driver Class Initialized
+INFO - 2024-01-19 11:21:09 --> Session: Class initialized using 'files' driver.
+INFO - 2024-01-19 11:21:09 --> Helper loaded: form_helper
+INFO - 2024-01-19 11:21:09 --> Form Validation Class Initialized
+DEBUG - 2024-01-19 11:21:09 --> Encryption: Auto-configured driver 'openssl'.
+INFO - 2024-01-19 11:21:09 --> Encryption: OpenSSL initialized with method AES-128-CBC.
+INFO - 2024-01-19 11:21:09 --> Encryption Class Initialized
+INFO - 2024-01-19 11:21:09 --> Upload Class Initialized
+INFO - 2024-01-19 11:21:09 --> Email Class Initialized
+INFO - 2024-01-19 11:21:09 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2024-01-19 11:21:09 --> Pagination Class Initialized
+INFO - 2024-01-19 11:21:09 --> Controller Class Initialized
+INFO - 2024-01-19 11:21:09 --> Model "Leader_model" initialized
+DEBUG - 2024-01-19 11:21:09 --> Global_library class already loaded. Second attempt ignored.
+DEBUG - 2024-01-19 11:21:09 --> Global_library class already loaded. Second attempt ignored.
+INFO - 2024-01-19 11:21:09 --> File loaded: C:\laragon\www\seminar\application\views\leader/layouts/header.php
+INFO - 2024-01-19 11:21:09 --> File loaded: C:\laragon\www\seminar\application\views\leader/layouts/navbar.php
+DEBUG - 2024-01-19 11:21:09 --> Global_library class already loaded. Second attempt ignored.
+DEBUG - 2024-01-19 11:21:09 --> Global_library class already loaded. Second attempt ignored.
+INFO - 2024-01-19 11:21:09 --> File loaded: C:\laragon\www\seminar\application\views\leader/layouts/sidebar.php
+INFO - 2024-01-19 11:21:09 --> File loaded: C:\laragon\www\seminar\application\views\leader/tiket.php
+INFO - 2024-01-19 11:21:09 --> File loaded: C:\laragon\www\seminar\application\views\leader/layouts/footer.php
+INFO - 2024-01-19 11:21:09 --> Final output sent to browser
+DEBUG - 2024-01-19 11:21:09 --> Total execution time: 0.0621
+INFO - 2024-01-19 11:21:19 --> Config Class Initialized
+INFO - 2024-01-19 11:21:19 --> Hooks Class Initialized
+DEBUG - 2024-01-19 11:21:19 --> UTF-8 Support Enabled
+INFO - 2024-01-19 11:21:19 --> Utf8 Class Initialized
+INFO - 2024-01-19 11:21:19 --> URI Class Initialized
+INFO - 2024-01-19 11:21:19 --> Router Class Initialized
+INFO - 2024-01-19 11:21:19 --> Output Class Initialized
+INFO - 2024-01-19 11:21:19 --> Security Class Initialized
+DEBUG - 2024-01-19 11:21:19 --> Global POST, GET and COOKIE data sanitized
+INFO - 2024-01-19 11:21:19 --> Input Class Initialized
+INFO - 2024-01-19 11:21:19 --> Language Class Initialized
+INFO - 2024-01-19 11:21:19 --> Loader Class Initialized
+INFO - 2024-01-19 11:21:19 --> Helper loaded: url_helper
+INFO - 2024-01-19 11:21:19 --> Helper loaded: global_helper
+INFO - 2024-01-19 11:21:19 --> Helper loaded: security_helper
+INFO - 2024-01-19 11:21:19 --> Helper loaded: file_helper
+INFO - 2024-01-19 11:21:19 --> Helper loaded: mata_uang_helper
+INFO - 2024-01-19 11:21:19 --> Helper loaded: download_helper
+INFO - 2024-01-19 11:21:19 --> Helper loaded: wagw_helper
+INFO - 2024-01-19 11:21:19 --> Helper loaded: mail_helper
+INFO - 2024-01-19 11:21:19 --> Helper loaded: qr_helper
+INFO - 2024-01-19 11:21:19 --> Database Driver Class Initialized
+INFO - 2024-01-19 11:21:19 --> Session: Class initialized using 'files' driver.
+INFO - 2024-01-19 11:21:19 --> Helper loaded: form_helper
+INFO - 2024-01-19 11:21:19 --> Form Validation Class Initialized
+DEBUG - 2024-01-19 11:21:19 --> Encryption: Auto-configured driver 'openssl'.
+INFO - 2024-01-19 11:21:19 --> Encryption: OpenSSL initialized with method AES-128-CBC.
+INFO - 2024-01-19 11:21:19 --> Encryption Class Initialized
+INFO - 2024-01-19 11:21:19 --> Upload Class Initialized
+INFO - 2024-01-19 11:21:19 --> Email Class Initialized
+INFO - 2024-01-19 11:21:19 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2024-01-19 11:21:19 --> Pagination Class Initialized
+INFO - 2024-01-19 11:21:19 --> Controller Class Initialized
+INFO - 2024-01-19 11:21:19 --> Config Class Initialized
+INFO - 2024-01-19 11:21:19 --> Hooks Class Initialized
+DEBUG - 2024-01-19 11:21:19 --> UTF-8 Support Enabled
+INFO - 2024-01-19 11:21:19 --> Utf8 Class Initialized
+INFO - 2024-01-19 11:21:19 --> URI Class Initialized
+DEBUG - 2024-01-19 11:21:19 --> No URI present. Default controller set.
+INFO - 2024-01-19 11:21:19 --> Router Class Initialized
+INFO - 2024-01-19 11:21:19 --> Output Class Initialized
+INFO - 2024-01-19 11:21:19 --> Security Class Initialized
+DEBUG - 2024-01-19 11:21:19 --> Global POST, GET and COOKIE data sanitized
+INFO - 2024-01-19 11:21:19 --> Input Class Initialized
+INFO - 2024-01-19 11:21:19 --> Language Class Initialized
+INFO - 2024-01-19 11:21:19 --> Loader Class Initialized
+INFO - 2024-01-19 11:21:19 --> Helper loaded: url_helper
+INFO - 2024-01-19 11:21:19 --> Helper loaded: global_helper
+INFO - 2024-01-19 11:21:19 --> Helper loaded: security_helper
+INFO - 2024-01-19 11:21:19 --> Helper loaded: file_helper
+INFO - 2024-01-19 11:21:19 --> Helper loaded: mata_uang_helper
+INFO - 2024-01-19 11:21:19 --> Helper loaded: download_helper
+INFO - 2024-01-19 11:21:19 --> Helper loaded: wagw_helper
+INFO - 2024-01-19 11:21:19 --> Helper loaded: mail_helper
+INFO - 2024-01-19 11:21:19 --> Helper loaded: qr_helper
+INFO - 2024-01-19 11:21:19 --> Database Driver Class Initialized
+INFO - 2024-01-19 11:21:19 --> Session: Class initialized using 'files' driver.
+INFO - 2024-01-19 11:21:19 --> Helper loaded: form_helper
+INFO - 2024-01-19 11:21:19 --> Form Validation Class Initialized
+DEBUG - 2024-01-19 11:21:19 --> Encryption: Auto-configured driver 'openssl'.
+INFO - 2024-01-19 11:21:19 --> Encryption: OpenSSL initialized with method AES-128-CBC.
+INFO - 2024-01-19 11:21:19 --> Encryption Class Initialized
+INFO - 2024-01-19 11:21:19 --> Upload Class Initialized
+INFO - 2024-01-19 11:21:19 --> Email Class Initialized
+INFO - 2024-01-19 11:21:19 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2024-01-19 11:21:19 --> Pagination Class Initialized
+INFO - 2024-01-19 11:21:19 --> Controller Class Initialized
+DEBUG - 2024-01-19 11:21:19 --> Global_library class already loaded. Second attempt ignored.
+DEBUG - 2024-01-19 11:21:19 --> Global_library class already loaded. Second attempt ignored.
+DEBUG - 2024-01-19 11:21:19 --> Global_library class already loaded. Second attempt ignored.
+DEBUG - 2024-01-19 11:21:19 --> Global_library class already loaded. Second attempt ignored.
+DEBUG - 2024-01-19 11:21:19 --> Global_library class already loaded. Second attempt ignored.
+INFO - 2024-01-19 11:21:19 --> File loaded: C:\laragon\www\seminar\application\views\frontend/layout/header.php
+INFO - 2024-01-19 11:21:19 --> File loaded: C:\laragon\www\seminar\application\views\frontend/home.php
+DEBUG - 2024-01-19 11:21:19 --> Global_library class already loaded. Second attempt ignored.
+INFO - 2024-01-19 11:21:19 --> File loaded: C:\laragon\www\seminar\application\views\frontend/layout/footer.php
+INFO - 2024-01-19 11:21:19 --> Final output sent to browser
+DEBUG - 2024-01-19 11:21:19 --> Total execution time: 0.0752
+INFO - 2024-01-19 11:21:20 --> Config Class Initialized
+INFO - 2024-01-19 11:21:20 --> Hooks Class Initialized
+DEBUG - 2024-01-19 11:21:20 --> UTF-8 Support Enabled
+INFO - 2024-01-19 11:21:20 --> Utf8 Class Initialized
+INFO - 2024-01-19 11:21:20 --> URI Class Initialized
+INFO - 2024-01-19 11:21:20 --> Router Class Initialized
+INFO - 2024-01-19 11:21:20 --> Output Class Initialized
+INFO - 2024-01-19 11:21:20 --> Security Class Initialized
+DEBUG - 2024-01-19 11:21:20 --> Global POST, GET and COOKIE data sanitized
+INFO - 2024-01-19 11:21:20 --> Input Class Initialized
+INFO - 2024-01-19 11:21:20 --> Language Class Initialized
+INFO - 2024-01-19 11:21:20 --> Loader Class Initialized
+INFO - 2024-01-19 11:21:20 --> Helper loaded: url_helper
+INFO - 2024-01-19 11:21:20 --> Helper loaded: global_helper
+INFO - 2024-01-19 11:21:20 --> Helper loaded: security_helper
+INFO - 2024-01-19 11:21:20 --> Helper loaded: file_helper
+INFO - 2024-01-19 11:21:20 --> Helper loaded: mata_uang_helper
+INFO - 2024-01-19 11:21:20 --> Helper loaded: download_helper
+INFO - 2024-01-19 11:21:20 --> Helper loaded: wagw_helper
+INFO - 2024-01-19 11:21:20 --> Helper loaded: mail_helper
+INFO - 2024-01-19 11:21:20 --> Helper loaded: qr_helper
+INFO - 2024-01-19 11:21:20 --> Database Driver Class Initialized
+INFO - 2024-01-19 11:21:20 --> Session: Class initialized using 'files' driver.
+INFO - 2024-01-19 11:21:20 --> Helper loaded: form_helper
+INFO - 2024-01-19 11:21:20 --> Form Validation Class Initialized
+DEBUG - 2024-01-19 11:21:20 --> Encryption: Auto-configured driver 'openssl'.
+INFO - 2024-01-19 11:21:20 --> Encryption: OpenSSL initialized with method AES-128-CBC.
+INFO - 2024-01-19 11:21:20 --> Encryption Class Initialized
+INFO - 2024-01-19 11:21:20 --> Upload Class Initialized
+INFO - 2024-01-19 11:21:20 --> Email Class Initialized
+INFO - 2024-01-19 11:21:20 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2024-01-19 11:21:20 --> Pagination Class Initialized
+INFO - 2024-01-19 11:21:20 --> Controller Class Initialized
+DEBUG - 2024-01-19 11:21:20 --> Global_library class already loaded. Second attempt ignored.
+DEBUG - 2024-01-19 11:21:20 --> Global_library class already loaded. Second attempt ignored.
+DEBUG - 2024-01-19 11:21:20 --> Global_library class already loaded. Second attempt ignored.
+DEBUG - 2024-01-19 11:21:20 --> Global_library class already loaded. Second attempt ignored.
+INFO - 2024-01-19 11:21:20 --> File loaded: C:\laragon\www\seminar\application\views\frontend/layout/header.php
+INFO - 2024-01-19 11:21:20 --> File loaded: C:\laragon\www\seminar\application\views\auth/login.php
+INFO - 2024-01-19 11:21:20 --> Final output sent to browser
+DEBUG - 2024-01-19 11:21:20 --> Total execution time: 0.0602
+INFO - 2024-01-19 11:21:24 --> Config Class Initialized
+INFO - 2024-01-19 11:21:24 --> Hooks Class Initialized
+DEBUG - 2024-01-19 11:21:24 --> UTF-8 Support Enabled
+INFO - 2024-01-19 11:21:24 --> Utf8 Class Initialized
+INFO - 2024-01-19 11:21:24 --> URI Class Initialized
+INFO - 2024-01-19 11:21:24 --> Router Class Initialized
+INFO - 2024-01-19 11:21:24 --> Output Class Initialized
+INFO - 2024-01-19 11:21:24 --> Security Class Initialized
+DEBUG - 2024-01-19 11:21:24 --> Global POST, GET and COOKIE data sanitized
+INFO - 2024-01-19 11:21:24 --> Input Class Initialized
+INFO - 2024-01-19 11:21:24 --> Language Class Initialized
+INFO - 2024-01-19 11:21:24 --> Loader Class Initialized
+INFO - 2024-01-19 11:21:24 --> Helper loaded: url_helper
+INFO - 2024-01-19 11:21:24 --> Helper loaded: global_helper
+INFO - 2024-01-19 11:21:24 --> Helper loaded: security_helper
+INFO - 2024-01-19 11:21:24 --> Helper loaded: file_helper
+INFO - 2024-01-19 11:21:24 --> Helper loaded: mata_uang_helper
+INFO - 2024-01-19 11:21:24 --> Helper loaded: download_helper
+INFO - 2024-01-19 11:21:24 --> Helper loaded: wagw_helper
+INFO - 2024-01-19 11:21:24 --> Helper loaded: mail_helper
+INFO - 2024-01-19 11:21:24 --> Helper loaded: qr_helper
+INFO - 2024-01-19 11:21:24 --> Database Driver Class Initialized
+INFO - 2024-01-19 11:21:24 --> Session: Class initialized using 'files' driver.
+INFO - 2024-01-19 11:21:24 --> Helper loaded: form_helper
+INFO - 2024-01-19 11:21:24 --> Form Validation Class Initialized
+DEBUG - 2024-01-19 11:21:24 --> Encryption: Auto-configured driver 'openssl'.
+INFO - 2024-01-19 11:21:24 --> Encryption: OpenSSL initialized with method AES-128-CBC.
+INFO - 2024-01-19 11:21:24 --> Encryption Class Initialized
+INFO - 2024-01-19 11:21:24 --> Upload Class Initialized
+INFO - 2024-01-19 11:21:24 --> Email Class Initialized
+INFO - 2024-01-19 11:21:24 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2024-01-19 11:21:24 --> Pagination Class Initialized
+INFO - 2024-01-19 11:21:24 --> Controller Class Initialized
+INFO - 2024-01-19 11:21:24 --> Language file loaded: language/english/form_validation_lang.php
+INFO - 2024-01-19 11:21:25 --> Config Class Initialized
+INFO - 2024-01-19 11:21:25 --> Hooks Class Initialized
+DEBUG - 2024-01-19 11:21:25 --> UTF-8 Support Enabled
+INFO - 2024-01-19 11:21:25 --> Utf8 Class Initialized
+INFO - 2024-01-19 11:21:25 --> URI Class Initialized
+INFO - 2024-01-19 11:21:25 --> Router Class Initialized
+INFO - 2024-01-19 11:21:25 --> Output Class Initialized
+INFO - 2024-01-19 11:21:25 --> Security Class Initialized
+DEBUG - 2024-01-19 11:21:25 --> Global POST, GET and COOKIE data sanitized
+INFO - 2024-01-19 11:21:25 --> Input Class Initialized
+INFO - 2024-01-19 11:21:25 --> Language Class Initialized
+INFO - 2024-01-19 11:21:25 --> Loader Class Initialized
+INFO - 2024-01-19 11:21:25 --> Helper loaded: url_helper
+INFO - 2024-01-19 11:21:25 --> Helper loaded: global_helper
+INFO - 2024-01-19 11:21:25 --> Helper loaded: security_helper
+INFO - 2024-01-19 11:21:25 --> Helper loaded: file_helper
+INFO - 2024-01-19 11:21:25 --> Helper loaded: mata_uang_helper
+INFO - 2024-01-19 11:21:25 --> Helper loaded: download_helper
+INFO - 2024-01-19 11:21:25 --> Helper loaded: wagw_helper
+INFO - 2024-01-19 11:21:25 --> Helper loaded: mail_helper
+INFO - 2024-01-19 11:21:25 --> Helper loaded: qr_helper
+INFO - 2024-01-19 11:21:25 --> Database Driver Class Initialized
+INFO - 2024-01-19 11:21:25 --> Session: Class initialized using 'files' driver.
+INFO - 2024-01-19 11:21:25 --> Helper loaded: form_helper
+INFO - 2024-01-19 11:21:25 --> Form Validation Class Initialized
+DEBUG - 2024-01-19 11:21:25 --> Encryption: Auto-configured driver 'openssl'.
+INFO - 2024-01-19 11:21:25 --> Encryption: OpenSSL initialized with method AES-128-CBC.
+INFO - 2024-01-19 11:21:25 --> Encryption Class Initialized
+INFO - 2024-01-19 11:21:25 --> Upload Class Initialized
+INFO - 2024-01-19 11:21:25 --> Email Class Initialized
+INFO - 2024-01-19 11:21:25 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2024-01-19 11:21:25 --> Pagination Class Initialized
+INFO - 2024-01-19 11:21:25 --> Controller Class Initialized
+DEBUG - 2024-01-19 11:21:25 --> Global_library class already loaded. Second attempt ignored.
+DEBUG - 2024-01-19 11:21:25 --> Global_library class already loaded. Second attempt ignored.
+INFO - 2024-01-19 11:21:25 --> File loaded: C:\laragon\www\seminar\application\views\admin/layouts/header.php
+INFO - 2024-01-19 11:21:25 --> File loaded: C:\laragon\www\seminar\application\views\admin/layouts/navbar.php
+DEBUG - 2024-01-19 11:21:25 --> Global_library class already loaded. Second attempt ignored.
+DEBUG - 2024-01-19 11:21:25 --> Global_library class already loaded. Second attempt ignored.
+INFO - 2024-01-19 11:21:25 --> File loaded: C:\laragon\www\seminar\application\views\admin/layouts/sidebar.php
+INFO - 2024-01-19 11:21:25 --> File loaded: C:\laragon\www\seminar\application\views\admin/dashboard.php
+INFO - 2024-01-19 11:21:25 --> File loaded: C:\laragon\www\seminar\application\views\admin/layouts/footer.php
+INFO - 2024-01-19 11:21:25 --> Final output sent to browser
+DEBUG - 2024-01-19 11:21:25 --> Total execution time: 0.0560
+INFO - 2024-01-19 11:21:29 --> Config Class Initialized
+INFO - 2024-01-19 11:21:29 --> Hooks Class Initialized
+DEBUG - 2024-01-19 11:21:29 --> UTF-8 Support Enabled
+INFO - 2024-01-19 11:21:29 --> Utf8 Class Initialized
+INFO - 2024-01-19 11:21:29 --> URI Class Initialized
+INFO - 2024-01-19 11:21:29 --> Router Class Initialized
+INFO - 2024-01-19 11:21:29 --> Output Class Initialized
+INFO - 2024-01-19 11:21:29 --> Security Class Initialized
+DEBUG - 2024-01-19 11:21:29 --> Global POST, GET and COOKIE data sanitized
+INFO - 2024-01-19 11:21:29 --> Input Class Initialized
+INFO - 2024-01-19 11:21:29 --> Language Class Initialized
+INFO - 2024-01-19 11:21:29 --> Loader Class Initialized
+INFO - 2024-01-19 11:21:29 --> Helper loaded: url_helper
+INFO - 2024-01-19 11:21:29 --> Helper loaded: global_helper
+INFO - 2024-01-19 11:21:29 --> Helper loaded: security_helper
+INFO - 2024-01-19 11:21:29 --> Helper loaded: file_helper
+INFO - 2024-01-19 11:21:29 --> Helper loaded: mata_uang_helper
+INFO - 2024-01-19 11:21:29 --> Helper loaded: download_helper
+INFO - 2024-01-19 11:21:29 --> Helper loaded: wagw_helper
+INFO - 2024-01-19 11:21:29 --> Helper loaded: mail_helper
+INFO - 2024-01-19 11:21:29 --> Helper loaded: qr_helper
+INFO - 2024-01-19 11:21:29 --> Database Driver Class Initialized
+INFO - 2024-01-19 11:21:29 --> Session: Class initialized using 'files' driver.
+INFO - 2024-01-19 11:21:29 --> Helper loaded: form_helper
+INFO - 2024-01-19 11:21:29 --> Form Validation Class Initialized
+DEBUG - 2024-01-19 11:21:29 --> Encryption: Auto-configured driver 'openssl'.
+INFO - 2024-01-19 11:21:29 --> Encryption: OpenSSL initialized with method AES-128-CBC.
+INFO - 2024-01-19 11:21:29 --> Encryption Class Initialized
+INFO - 2024-01-19 11:21:29 --> Upload Class Initialized
+INFO - 2024-01-19 11:21:29 --> Email Class Initialized
+INFO - 2024-01-19 11:21:29 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2024-01-19 11:21:29 --> Pagination Class Initialized
+INFO - 2024-01-19 11:21:29 --> Controller Class Initialized
+INFO - 2024-01-19 11:21:29 --> Model "Integrasi_model" initialized
+INFO - 2024-01-19 11:21:29 --> Model "Events_model" initialized
+DEBUG - 2024-01-19 11:21:29 --> Global_library class already loaded. Second attempt ignored.
+DEBUG - 2024-01-19 11:21:29 --> Global_library class already loaded. Second attempt ignored.
+INFO - 2024-01-19 11:21:29 --> File loaded: C:\laragon\www\seminar\application\views\admin/layouts/header.php
+INFO - 2024-01-19 11:21:29 --> File loaded: C:\laragon\www\seminar\application\views\admin/layouts/navbar.php
+DEBUG - 2024-01-19 11:21:29 --> Global_library class already loaded. Second attempt ignored.
+DEBUG - 2024-01-19 11:21:29 --> Global_library class already loaded. Second attempt ignored.
+INFO - 2024-01-19 11:21:29 --> File loaded: C:\laragon\www\seminar\application\views\admin/layouts/sidebar.php
+INFO - 2024-01-19 11:21:29 --> File loaded: C:\laragon\www\seminar\application\views\admin/events/publish.php
+INFO - 2024-01-19 11:21:29 --> File loaded: C:\laragon\www\seminar\application\views\admin/layouts/footer.php
+INFO - 2024-01-19 11:21:29 --> Final output sent to browser
+DEBUG - 2024-01-19 11:21:29 --> Total execution time: 0.1031
+INFO - 2024-01-19 11:21:31 --> Config Class Initialized
+INFO - 2024-01-19 11:21:31 --> Hooks Class Initialized
+DEBUG - 2024-01-19 11:21:31 --> UTF-8 Support Enabled
+INFO - 2024-01-19 11:21:31 --> Utf8 Class Initialized
+INFO - 2024-01-19 11:21:31 --> URI Class Initialized
+INFO - 2024-01-19 11:21:31 --> Router Class Initialized
+INFO - 2024-01-19 11:21:31 --> Output Class Initialized
+INFO - 2024-01-19 11:21:31 --> Security Class Initialized
+DEBUG - 2024-01-19 11:21:31 --> Global POST, GET and COOKIE data sanitized
+INFO - 2024-01-19 11:21:31 --> Input Class Initialized
+INFO - 2024-01-19 11:21:31 --> Language Class Initialized
+INFO - 2024-01-19 11:21:31 --> Loader Class Initialized
+INFO - 2024-01-19 11:21:31 --> Helper loaded: url_helper
+INFO - 2024-01-19 11:21:31 --> Helper loaded: global_helper
+INFO - 2024-01-19 11:21:31 --> Helper loaded: security_helper
+INFO - 2024-01-19 11:21:31 --> Helper loaded: file_helper
+INFO - 2024-01-19 11:21:31 --> Helper loaded: mata_uang_helper
+INFO - 2024-01-19 11:21:31 --> Helper loaded: download_helper
+INFO - 2024-01-19 11:21:31 --> Helper loaded: wagw_helper
+INFO - 2024-01-19 11:21:31 --> Helper loaded: mail_helper
+INFO - 2024-01-19 11:21:31 --> Helper loaded: qr_helper
+INFO - 2024-01-19 11:21:31 --> Database Driver Class Initialized
+INFO - 2024-01-19 11:21:31 --> Session: Class initialized using 'files' driver.
+INFO - 2024-01-19 11:21:31 --> Helper loaded: form_helper
+INFO - 2024-01-19 11:21:31 --> Form Validation Class Initialized
+DEBUG - 2024-01-19 11:21:31 --> Encryption: Auto-configured driver 'openssl'.
+INFO - 2024-01-19 11:21:31 --> Encryption: OpenSSL initialized with method AES-128-CBC.
+INFO - 2024-01-19 11:21:31 --> Encryption Class Initialized
+INFO - 2024-01-19 11:21:31 --> Upload Class Initialized
+INFO - 2024-01-19 11:21:31 --> Email Class Initialized
+INFO - 2024-01-19 11:21:31 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2024-01-19 11:21:31 --> Pagination Class Initialized
+INFO - 2024-01-19 11:21:31 --> Controller Class Initialized
+INFO - 2024-01-19 11:21:31 --> Model "Penjualan_model" initialized
+DEBUG - 2024-01-19 11:21:31 --> Global_library class already loaded. Second attempt ignored.
+DEBUG - 2024-01-19 11:21:31 --> Global_library class already loaded. Second attempt ignored.
+INFO - 2024-01-19 11:21:31 --> File loaded: C:\laragon\www\seminar\application\views\admin/layouts/header.php
+INFO - 2024-01-19 11:21:31 --> File loaded: C:\laragon\www\seminar\application\views\admin/layouts/navbar.php
+DEBUG - 2024-01-19 11:21:31 --> Global_library class already loaded. Second attempt ignored.
+DEBUG - 2024-01-19 11:21:31 --> Global_library class already loaded. Second attempt ignored.
+INFO - 2024-01-19 11:21:31 --> File loaded: C:\laragon\www\seminar\application\views\admin/layouts/sidebar.php
+ERROR - 2024-01-19 11:21:31 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+INFO - 2024-01-19 11:21:31 --> File loaded: C:\laragon\www\seminar\application\views\admin/penjualan/transaksi.php
+INFO - 2024-01-19 11:21:31 --> File loaded: C:\laragon\www\seminar\application\views\admin/layouts/footer.php
+INFO - 2024-01-19 11:21:31 --> Final output sent to browser
+DEBUG - 2024-01-19 11:21:31 --> Total execution time: 0.0639
+INFO - 2024-01-19 11:21:42 --> Config Class Initialized
+INFO - 2024-01-19 11:21:42 --> Hooks Class Initialized
+DEBUG - 2024-01-19 11:21:42 --> UTF-8 Support Enabled
+INFO - 2024-01-19 11:21:42 --> Utf8 Class Initialized
+INFO - 2024-01-19 11:21:42 --> URI Class Initialized
+INFO - 2024-01-19 11:21:42 --> Router Class Initialized
+INFO - 2024-01-19 11:21:42 --> Output Class Initialized
+INFO - 2024-01-19 11:21:42 --> Security Class Initialized
+DEBUG - 2024-01-19 11:21:42 --> Global POST, GET and COOKIE data sanitized
+INFO - 2024-01-19 11:21:42 --> Input Class Initialized
+INFO - 2024-01-19 11:21:42 --> Language Class Initialized
+INFO - 2024-01-19 11:21:42 --> Loader Class Initialized
+INFO - 2024-01-19 11:21:42 --> Helper loaded: url_helper
+INFO - 2024-01-19 11:21:42 --> Helper loaded: global_helper
+INFO - 2024-01-19 11:21:42 --> Helper loaded: security_helper
+INFO - 2024-01-19 11:21:42 --> Helper loaded: file_helper
+INFO - 2024-01-19 11:21:42 --> Helper loaded: mata_uang_helper
+INFO - 2024-01-19 11:21:42 --> Helper loaded: download_helper
+INFO - 2024-01-19 11:21:42 --> Helper loaded: wagw_helper
+INFO - 2024-01-19 11:21:42 --> Helper loaded: mail_helper
+INFO - 2024-01-19 11:21:42 --> Helper loaded: qr_helper
+INFO - 2024-01-19 11:21:42 --> Database Driver Class Initialized
+INFO - 2024-01-19 11:21:42 --> Session: Class initialized using 'files' driver.
+INFO - 2024-01-19 11:21:42 --> Helper loaded: form_helper
+INFO - 2024-01-19 11:21:42 --> Form Validation Class Initialized
+DEBUG - 2024-01-19 11:21:42 --> Encryption: Auto-configured driver 'openssl'.
+INFO - 2024-01-19 11:21:42 --> Encryption: OpenSSL initialized with method AES-128-CBC.
+INFO - 2024-01-19 11:21:42 --> Encryption Class Initialized
+INFO - 2024-01-19 11:21:42 --> Upload Class Initialized
+INFO - 2024-01-19 11:21:42 --> Email Class Initialized
+INFO - 2024-01-19 11:21:42 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2024-01-19 11:21:42 --> Pagination Class Initialized
+INFO - 2024-01-19 11:21:42 --> Controller Class Initialized
+INFO - 2024-01-19 11:21:42 --> Model "Penjualan_model" initialized
+INFO - 2024-01-19 11:21:42 --> Language file loaded: language/english/form_validation_lang.php
+INFO - 2024-01-19 11:21:42 --> Config Class Initialized
+INFO - 2024-01-19 11:21:42 --> Hooks Class Initialized
+DEBUG - 2024-01-19 11:21:42 --> UTF-8 Support Enabled
+INFO - 2024-01-19 11:21:42 --> Utf8 Class Initialized
+INFO - 2024-01-19 11:21:42 --> URI Class Initialized
+INFO - 2024-01-19 11:21:42 --> Router Class Initialized
+INFO - 2024-01-19 11:21:42 --> Output Class Initialized
+INFO - 2024-01-19 11:21:42 --> Security Class Initialized
+DEBUG - 2024-01-19 11:21:42 --> Global POST, GET and COOKIE data sanitized
+INFO - 2024-01-19 11:21:42 --> Input Class Initialized
+INFO - 2024-01-19 11:21:42 --> Language Class Initialized
+INFO - 2024-01-19 11:21:42 --> Loader Class Initialized
+INFO - 2024-01-19 11:21:42 --> Helper loaded: url_helper
+INFO - 2024-01-19 11:21:42 --> Helper loaded: global_helper
+INFO - 2024-01-19 11:21:42 --> Helper loaded: security_helper
+INFO - 2024-01-19 11:21:42 --> Helper loaded: file_helper
+INFO - 2024-01-19 11:21:42 --> Helper loaded: mata_uang_helper
+INFO - 2024-01-19 11:21:42 --> Helper loaded: download_helper
+INFO - 2024-01-19 11:21:42 --> Helper loaded: wagw_helper
+INFO - 2024-01-19 11:21:42 --> Helper loaded: mail_helper
+INFO - 2024-01-19 11:21:42 --> Helper loaded: qr_helper
+INFO - 2024-01-19 11:21:42 --> Database Driver Class Initialized
+INFO - 2024-01-19 11:21:42 --> Session: Class initialized using 'files' driver.
+INFO - 2024-01-19 11:21:42 --> Helper loaded: form_helper
+INFO - 2024-01-19 11:21:42 --> Form Validation Class Initialized
+DEBUG - 2024-01-19 11:21:42 --> Encryption: Auto-configured driver 'openssl'.
+INFO - 2024-01-19 11:21:42 --> Encryption: OpenSSL initialized with method AES-128-CBC.
+INFO - 2024-01-19 11:21:42 --> Encryption Class Initialized
+INFO - 2024-01-19 11:21:42 --> Upload Class Initialized
+INFO - 2024-01-19 11:21:42 --> Email Class Initialized
+INFO - 2024-01-19 11:21:42 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2024-01-19 11:21:42 --> Pagination Class Initialized
+INFO - 2024-01-19 11:21:42 --> Controller Class Initialized
+INFO - 2024-01-19 11:21:42 --> Model "Penjualan_model" initialized
+DEBUG - 2024-01-19 11:21:42 --> Global_library class already loaded. Second attempt ignored.
+DEBUG - 2024-01-19 11:21:42 --> Global_library class already loaded. Second attempt ignored.
+INFO - 2024-01-19 11:21:42 --> File loaded: C:\laragon\www\seminar\application\views\admin/layouts/header.php
+INFO - 2024-01-19 11:21:42 --> File loaded: C:\laragon\www\seminar\application\views\admin/layouts/navbar.php
+DEBUG - 2024-01-19 11:21:42 --> Global_library class already loaded. Second attempt ignored.
+DEBUG - 2024-01-19 11:21:42 --> Global_library class already loaded. Second attempt ignored.
+INFO - 2024-01-19 11:21:42 --> File loaded: C:\laragon\www\seminar\application\views\admin/layouts/sidebar.php
+ERROR - 2024-01-19 11:21:42 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+INFO - 2024-01-19 11:21:42 --> File loaded: C:\laragon\www\seminar\application\views\admin/penjualan/transaksi.php
+INFO - 2024-01-19 11:21:42 --> File loaded: C:\laragon\www\seminar\application\views\admin/layouts/footer.php
+INFO - 2024-01-19 11:21:42 --> Final output sent to browser
+DEBUG - 2024-01-19 11:21:42 --> Total execution time: 0.0668
+INFO - 2024-01-19 11:21:46 --> Config Class Initialized
+INFO - 2024-01-19 11:21:46 --> Hooks Class Initialized
+DEBUG - 2024-01-19 11:21:46 --> UTF-8 Support Enabled
+INFO - 2024-01-19 11:21:46 --> Utf8 Class Initialized
+INFO - 2024-01-19 11:21:46 --> URI Class Initialized
+INFO - 2024-01-19 11:21:46 --> Router Class Initialized
+INFO - 2024-01-19 11:21:46 --> Output Class Initialized
+INFO - 2024-01-19 11:21:46 --> Security Class Initialized
+DEBUG - 2024-01-19 11:21:46 --> Global POST, GET and COOKIE data sanitized
+INFO - 2024-01-19 11:21:46 --> Input Class Initialized
+INFO - 2024-01-19 11:21:46 --> Language Class Initialized
+INFO - 2024-01-19 11:21:46 --> Loader Class Initialized
+INFO - 2024-01-19 11:21:46 --> Helper loaded: url_helper
+INFO - 2024-01-19 11:21:46 --> Helper loaded: global_helper
+INFO - 2024-01-19 11:21:46 --> Helper loaded: security_helper
+INFO - 2024-01-19 11:21:46 --> Helper loaded: file_helper
+INFO - 2024-01-19 11:21:46 --> Helper loaded: mata_uang_helper
+INFO - 2024-01-19 11:21:46 --> Helper loaded: download_helper
+INFO - 2024-01-19 11:21:46 --> Helper loaded: wagw_helper
+INFO - 2024-01-19 11:21:46 --> Helper loaded: mail_helper
+INFO - 2024-01-19 11:21:46 --> Helper loaded: qr_helper
+INFO - 2024-01-19 11:21:46 --> Database Driver Class Initialized
+INFO - 2024-01-19 11:21:46 --> Session: Class initialized using 'files' driver.
+INFO - 2024-01-19 11:21:46 --> Helper loaded: form_helper
+INFO - 2024-01-19 11:21:46 --> Form Validation Class Initialized
+DEBUG - 2024-01-19 11:21:46 --> Encryption: Auto-configured driver 'openssl'.
+INFO - 2024-01-19 11:21:46 --> Encryption: OpenSSL initialized with method AES-128-CBC.
+INFO - 2024-01-19 11:21:46 --> Encryption Class Initialized
+INFO - 2024-01-19 11:21:46 --> Upload Class Initialized
+INFO - 2024-01-19 11:21:46 --> Email Class Initialized
+INFO - 2024-01-19 11:21:46 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2024-01-19 11:21:46 --> Pagination Class Initialized
+INFO - 2024-01-19 11:21:46 --> Controller Class Initialized
+INFO - 2024-01-19 11:21:46 --> Model "Integrasi_model" initialized
+INFO - 2024-01-19 11:21:46 --> Model "Events_model" initialized
+DEBUG - 2024-01-19 11:21:46 --> Global_library class already loaded. Second attempt ignored.
+DEBUG - 2024-01-19 11:21:46 --> Global_library class already loaded. Second attempt ignored.
+INFO - 2024-01-19 11:21:46 --> File loaded: C:\laragon\www\seminar\application\views\admin/layouts/header.php
+INFO - 2024-01-19 11:21:46 --> File loaded: C:\laragon\www\seminar\application\views\admin/layouts/navbar.php
+DEBUG - 2024-01-19 11:21:46 --> Global_library class already loaded. Second attempt ignored.
+DEBUG - 2024-01-19 11:21:46 --> Global_library class already loaded. Second attempt ignored.
+INFO - 2024-01-19 11:21:46 --> File loaded: C:\laragon\www\seminar\application\views\admin/layouts/sidebar.php
+INFO - 2024-01-19 11:21:46 --> File loaded: C:\laragon\www\seminar\application\views\admin/events/publish.php
+INFO - 2024-01-19 11:21:46 --> File loaded: C:\laragon\www\seminar\application\views\admin/layouts/footer.php
+INFO - 2024-01-19 11:21:46 --> Final output sent to browser
+DEBUG - 2024-01-19 11:21:46 --> Total execution time: 0.0856
+INFO - 2024-01-19 11:21:51 --> Config Class Initialized
+INFO - 2024-01-19 11:21:51 --> Hooks Class Initialized
+DEBUG - 2024-01-19 11:21:51 --> UTF-8 Support Enabled
+INFO - 2024-01-19 11:21:51 --> Utf8 Class Initialized
+INFO - 2024-01-19 11:21:51 --> URI Class Initialized
+INFO - 2024-01-19 11:21:51 --> Router Class Initialized
+INFO - 2024-01-19 11:21:51 --> Output Class Initialized
+INFO - 2024-01-19 11:21:51 --> Security Class Initialized
+DEBUG - 2024-01-19 11:21:51 --> Global POST, GET and COOKIE data sanitized
+INFO - 2024-01-19 11:21:51 --> Input Class Initialized
+INFO - 2024-01-19 11:21:51 --> Language Class Initialized
+INFO - 2024-01-19 11:21:51 --> Loader Class Initialized
+INFO - 2024-01-19 11:21:51 --> Helper loaded: url_helper
+INFO - 2024-01-19 11:21:51 --> Helper loaded: global_helper
+INFO - 2024-01-19 11:21:51 --> Helper loaded: security_helper
+INFO - 2024-01-19 11:21:51 --> Helper loaded: file_helper
+INFO - 2024-01-19 11:21:51 --> Helper loaded: mata_uang_helper
+INFO - 2024-01-19 11:21:51 --> Helper loaded: download_helper
+INFO - 2024-01-19 11:21:51 --> Helper loaded: wagw_helper
+INFO - 2024-01-19 11:21:51 --> Helper loaded: mail_helper
+INFO - 2024-01-19 11:21:51 --> Helper loaded: qr_helper
+INFO - 2024-01-19 11:21:51 --> Database Driver Class Initialized
+INFO - 2024-01-19 11:21:51 --> Session: Class initialized using 'files' driver.
+INFO - 2024-01-19 11:21:51 --> Helper loaded: form_helper
+INFO - 2024-01-19 11:21:51 --> Form Validation Class Initialized
+DEBUG - 2024-01-19 11:21:51 --> Encryption: Auto-configured driver 'openssl'.
+INFO - 2024-01-19 11:21:51 --> Encryption: OpenSSL initialized with method AES-128-CBC.
+INFO - 2024-01-19 11:21:51 --> Encryption Class Initialized
+INFO - 2024-01-19 11:21:51 --> Upload Class Initialized
+INFO - 2024-01-19 11:21:51 --> Email Class Initialized
+INFO - 2024-01-19 11:21:51 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2024-01-19 11:21:51 --> Pagination Class Initialized
+INFO - 2024-01-19 11:21:51 --> Controller Class Initialized
+INFO - 2024-01-19 11:21:51 --> Config Class Initialized
+INFO - 2024-01-19 11:21:51 --> Hooks Class Initialized
+DEBUG - 2024-01-19 11:21:51 --> UTF-8 Support Enabled
+INFO - 2024-01-19 11:21:51 --> Utf8 Class Initialized
+INFO - 2024-01-19 11:21:51 --> URI Class Initialized
+DEBUG - 2024-01-19 11:21:51 --> No URI present. Default controller set.
+INFO - 2024-01-19 11:21:51 --> Router Class Initialized
+INFO - 2024-01-19 11:21:51 --> Output Class Initialized
+INFO - 2024-01-19 11:21:51 --> Security Class Initialized
+DEBUG - 2024-01-19 11:21:51 --> Global POST, GET and COOKIE data sanitized
+INFO - 2024-01-19 11:21:51 --> Input Class Initialized
+INFO - 2024-01-19 11:21:51 --> Language Class Initialized
+INFO - 2024-01-19 11:21:51 --> Loader Class Initialized
+INFO - 2024-01-19 11:21:51 --> Helper loaded: url_helper
+INFO - 2024-01-19 11:21:51 --> Helper loaded: global_helper
+INFO - 2024-01-19 11:21:51 --> Helper loaded: security_helper
+INFO - 2024-01-19 11:21:51 --> Helper loaded: file_helper
+INFO - 2024-01-19 11:21:51 --> Helper loaded: mata_uang_helper
+INFO - 2024-01-19 11:21:51 --> Helper loaded: download_helper
+INFO - 2024-01-19 11:21:51 --> Helper loaded: wagw_helper
+INFO - 2024-01-19 11:21:51 --> Helper loaded: mail_helper
+INFO - 2024-01-19 11:21:51 --> Helper loaded: qr_helper
+INFO - 2024-01-19 11:21:51 --> Database Driver Class Initialized
+INFO - 2024-01-19 11:21:51 --> Session: Class initialized using 'files' driver.
+INFO - 2024-01-19 11:21:51 --> Helper loaded: form_helper
+INFO - 2024-01-19 11:21:51 --> Form Validation Class Initialized
+DEBUG - 2024-01-19 11:21:51 --> Encryption: Auto-configured driver 'openssl'.
+INFO - 2024-01-19 11:21:51 --> Encryption: OpenSSL initialized with method AES-128-CBC.
+INFO - 2024-01-19 11:21:51 --> Encryption Class Initialized
+INFO - 2024-01-19 11:21:51 --> Upload Class Initialized
+INFO - 2024-01-19 11:21:51 --> Email Class Initialized
+INFO - 2024-01-19 11:21:51 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2024-01-19 11:21:51 --> Pagination Class Initialized
+INFO - 2024-01-19 11:21:51 --> Controller Class Initialized
+DEBUG - 2024-01-19 11:21:51 --> Global_library class already loaded. Second attempt ignored.
+DEBUG - 2024-01-19 11:21:51 --> Global_library class already loaded. Second attempt ignored.
+DEBUG - 2024-01-19 11:21:51 --> Global_library class already loaded. Second attempt ignored.
+DEBUG - 2024-01-19 11:21:51 --> Global_library class already loaded. Second attempt ignored.
+DEBUG - 2024-01-19 11:21:51 --> Global_library class already loaded. Second attempt ignored.
+INFO - 2024-01-19 11:21:51 --> File loaded: C:\laragon\www\seminar\application\views\frontend/layout/header.php
+INFO - 2024-01-19 11:21:51 --> File loaded: C:\laragon\www\seminar\application\views\frontend/home.php
+DEBUG - 2024-01-19 11:21:51 --> Global_library class already loaded. Second attempt ignored.
+INFO - 2024-01-19 11:21:51 --> File loaded: C:\laragon\www\seminar\application\views\frontend/layout/footer.php
+INFO - 2024-01-19 11:21:51 --> Final output sent to browser
+DEBUG - 2024-01-19 11:21:51 --> Total execution time: 0.0724
+INFO - 2024-01-19 11:21:52 --> Config Class Initialized
+INFO - 2024-01-19 11:21:52 --> Hooks Class Initialized
+DEBUG - 2024-01-19 11:21:52 --> UTF-8 Support Enabled
+INFO - 2024-01-19 11:21:52 --> Utf8 Class Initialized
+INFO - 2024-01-19 11:21:52 --> URI Class Initialized
+INFO - 2024-01-19 11:21:52 --> Router Class Initialized
+INFO - 2024-01-19 11:21:52 --> Output Class Initialized
+INFO - 2024-01-19 11:21:52 --> Security Class Initialized
+DEBUG - 2024-01-19 11:21:52 --> Global POST, GET and COOKIE data sanitized
+INFO - 2024-01-19 11:21:52 --> Input Class Initialized
+INFO - 2024-01-19 11:21:52 --> Language Class Initialized
+INFO - 2024-01-19 11:21:52 --> Loader Class Initialized
+INFO - 2024-01-19 11:21:52 --> Helper loaded: url_helper
+INFO - 2024-01-19 11:21:52 --> Helper loaded: global_helper
+INFO - 2024-01-19 11:21:52 --> Helper loaded: security_helper
+INFO - 2024-01-19 11:21:52 --> Helper loaded: file_helper
+INFO - 2024-01-19 11:21:52 --> Helper loaded: mata_uang_helper
+INFO - 2024-01-19 11:21:52 --> Helper loaded: download_helper
+INFO - 2024-01-19 11:21:52 --> Helper loaded: wagw_helper
+INFO - 2024-01-19 11:21:52 --> Helper loaded: mail_helper
+INFO - 2024-01-19 11:21:52 --> Helper loaded: qr_helper
+INFO - 2024-01-19 11:21:52 --> Database Driver Class Initialized
+INFO - 2024-01-19 11:21:52 --> Session: Class initialized using 'files' driver.
+INFO - 2024-01-19 11:21:52 --> Helper loaded: form_helper
+INFO - 2024-01-19 11:21:52 --> Form Validation Class Initialized
+DEBUG - 2024-01-19 11:21:52 --> Encryption: Auto-configured driver 'openssl'.
+INFO - 2024-01-19 11:21:52 --> Encryption: OpenSSL initialized with method AES-128-CBC.
+INFO - 2024-01-19 11:21:52 --> Encryption Class Initialized
+INFO - 2024-01-19 11:21:52 --> Upload Class Initialized
+INFO - 2024-01-19 11:21:52 --> Email Class Initialized
+INFO - 2024-01-19 11:21:52 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2024-01-19 11:21:52 --> Pagination Class Initialized
+INFO - 2024-01-19 11:21:52 --> Controller Class Initialized
+DEBUG - 2024-01-19 11:21:52 --> Global_library class already loaded. Second attempt ignored.
+DEBUG - 2024-01-19 11:21:52 --> Global_library class already loaded. Second attempt ignored.
+DEBUG - 2024-01-19 11:21:52 --> Global_library class already loaded. Second attempt ignored.
+DEBUG - 2024-01-19 11:21:52 --> Global_library class already loaded. Second attempt ignored.
+INFO - 2024-01-19 11:21:52 --> File loaded: C:\laragon\www\seminar\application\views\frontend/layout/header.php
+INFO - 2024-01-19 11:21:52 --> File loaded: C:\laragon\www\seminar\application\views\auth/login.php
+INFO - 2024-01-19 11:21:52 --> Final output sent to browser
+DEBUG - 2024-01-19 11:21:52 --> Total execution time: 0.0639
+INFO - 2024-01-19 11:21:55 --> Config Class Initialized
+INFO - 2024-01-19 11:21:55 --> Hooks Class Initialized
+DEBUG - 2024-01-19 11:21:55 --> UTF-8 Support Enabled
+INFO - 2024-01-19 11:21:55 --> Utf8 Class Initialized
+INFO - 2024-01-19 11:21:55 --> URI Class Initialized
+INFO - 2024-01-19 11:21:55 --> Router Class Initialized
+INFO - 2024-01-19 11:21:55 --> Output Class Initialized
+INFO - 2024-01-19 11:21:55 --> Security Class Initialized
+DEBUG - 2024-01-19 11:21:55 --> Global POST, GET and COOKIE data sanitized
+INFO - 2024-01-19 11:21:55 --> Input Class Initialized
+INFO - 2024-01-19 11:21:55 --> Language Class Initialized
+INFO - 2024-01-19 11:21:55 --> Loader Class Initialized
+INFO - 2024-01-19 11:21:55 --> Helper loaded: url_helper
+INFO - 2024-01-19 11:21:55 --> Helper loaded: global_helper
+INFO - 2024-01-19 11:21:55 --> Helper loaded: security_helper
+INFO - 2024-01-19 11:21:55 --> Helper loaded: file_helper
+INFO - 2024-01-19 11:21:55 --> Helper loaded: mata_uang_helper
+INFO - 2024-01-19 11:21:55 --> Helper loaded: download_helper
+INFO - 2024-01-19 11:21:55 --> Helper loaded: wagw_helper
+INFO - 2024-01-19 11:21:55 --> Helper loaded: mail_helper
+INFO - 2024-01-19 11:21:55 --> Helper loaded: qr_helper
+INFO - 2024-01-19 11:21:55 --> Database Driver Class Initialized
+INFO - 2024-01-19 11:21:55 --> Session: Class initialized using 'files' driver.
+INFO - 2024-01-19 11:21:55 --> Helper loaded: form_helper
+INFO - 2024-01-19 11:21:55 --> Form Validation Class Initialized
+DEBUG - 2024-01-19 11:21:55 --> Encryption: Auto-configured driver 'openssl'.
+INFO - 2024-01-19 11:21:55 --> Encryption: OpenSSL initialized with method AES-128-CBC.
+INFO - 2024-01-19 11:21:55 --> Encryption Class Initialized
+INFO - 2024-01-19 11:21:55 --> Upload Class Initialized
+INFO - 2024-01-19 11:21:55 --> Email Class Initialized
+INFO - 2024-01-19 11:21:55 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2024-01-19 11:21:55 --> Pagination Class Initialized
+INFO - 2024-01-19 11:21:55 --> Controller Class Initialized
+INFO - 2024-01-19 11:21:55 --> Language file loaded: language/english/form_validation_lang.php
+INFO - 2024-01-19 11:21:55 --> Config Class Initialized
+INFO - 2024-01-19 11:21:55 --> Hooks Class Initialized
+DEBUG - 2024-01-19 11:21:55 --> UTF-8 Support Enabled
+INFO - 2024-01-19 11:21:55 --> Utf8 Class Initialized
+INFO - 2024-01-19 11:21:55 --> URI Class Initialized
+INFO - 2024-01-19 11:21:55 --> Router Class Initialized
+INFO - 2024-01-19 11:21:55 --> Output Class Initialized
+INFO - 2024-01-19 11:21:55 --> Security Class Initialized
+DEBUG - 2024-01-19 11:21:55 --> Global POST, GET and COOKIE data sanitized
+INFO - 2024-01-19 11:21:55 --> Input Class Initialized
+INFO - 2024-01-19 11:21:55 --> Language Class Initialized
+INFO - 2024-01-19 11:21:55 --> Loader Class Initialized
+INFO - 2024-01-19 11:21:55 --> Helper loaded: url_helper
+INFO - 2024-01-19 11:21:55 --> Helper loaded: global_helper
+INFO - 2024-01-19 11:21:55 --> Helper loaded: security_helper
+INFO - 2024-01-19 11:21:55 --> Helper loaded: file_helper
+INFO - 2024-01-19 11:21:55 --> Helper loaded: mata_uang_helper
+INFO - 2024-01-19 11:21:55 --> Helper loaded: download_helper
+INFO - 2024-01-19 11:21:55 --> Helper loaded: wagw_helper
+INFO - 2024-01-19 11:21:55 --> Helper loaded: mail_helper
+INFO - 2024-01-19 11:21:55 --> Helper loaded: qr_helper
+INFO - 2024-01-19 11:21:55 --> Database Driver Class Initialized
+INFO - 2024-01-19 11:21:55 --> Session: Class initialized using 'files' driver.
+INFO - 2024-01-19 11:21:55 --> Helper loaded: form_helper
+INFO - 2024-01-19 11:21:55 --> Form Validation Class Initialized
+DEBUG - 2024-01-19 11:21:55 --> Encryption: Auto-configured driver 'openssl'.
+INFO - 2024-01-19 11:21:55 --> Encryption: OpenSSL initialized with method AES-128-CBC.
+INFO - 2024-01-19 11:21:55 --> Encryption Class Initialized
+INFO - 2024-01-19 11:21:55 --> Upload Class Initialized
+INFO - 2024-01-19 11:21:55 --> Email Class Initialized
+INFO - 2024-01-19 11:21:55 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2024-01-19 11:21:55 --> Pagination Class Initialized
+INFO - 2024-01-19 11:21:55 --> Controller Class Initialized
+DEBUG - 2024-01-19 11:21:55 --> Global_library class already loaded. Second attempt ignored.
+DEBUG - 2024-01-19 11:21:55 --> Global_library class already loaded. Second attempt ignored.
+INFO - 2024-01-19 11:21:55 --> File loaded: C:\laragon\www\seminar\application\views\leader/layouts/header.php
+INFO - 2024-01-19 11:21:55 --> File loaded: C:\laragon\www\seminar\application\views\leader/layouts/navbar.php
+DEBUG - 2024-01-19 11:21:55 --> Global_library class already loaded. Second attempt ignored.
+DEBUG - 2024-01-19 11:21:55 --> Global_library class already loaded. Second attempt ignored.
+INFO - 2024-01-19 11:21:55 --> File loaded: C:\laragon\www\seminar\application\views\leader/layouts/sidebar.php
+INFO - 2024-01-19 11:21:55 --> File loaded: C:\laragon\www\seminar\application\views\leader/dashboard.php
+INFO - 2024-01-19 11:21:55 --> File loaded: C:\laragon\www\seminar\application\views\leader/layouts/footer.php
+INFO - 2024-01-19 11:21:55 --> Final output sent to browser
+DEBUG - 2024-01-19 11:21:55 --> Total execution time: 0.0555
+INFO - 2024-01-19 11:21:56 --> Config Class Initialized
+INFO - 2024-01-19 11:21:56 --> Hooks Class Initialized
+DEBUG - 2024-01-19 11:21:56 --> UTF-8 Support Enabled
+INFO - 2024-01-19 11:21:56 --> Utf8 Class Initialized
+INFO - 2024-01-19 11:21:56 --> URI Class Initialized
+INFO - 2024-01-19 11:21:56 --> Router Class Initialized
+INFO - 2024-01-19 11:21:56 --> Output Class Initialized
+INFO - 2024-01-19 11:21:56 --> Security Class Initialized
+DEBUG - 2024-01-19 11:21:56 --> Global POST, GET and COOKIE data sanitized
+INFO - 2024-01-19 11:21:56 --> Input Class Initialized
+INFO - 2024-01-19 11:21:56 --> Language Class Initialized
+INFO - 2024-01-19 11:21:56 --> Loader Class Initialized
+INFO - 2024-01-19 11:21:56 --> Helper loaded: url_helper
+INFO - 2024-01-19 11:21:56 --> Helper loaded: global_helper
+INFO - 2024-01-19 11:21:56 --> Helper loaded: security_helper
+INFO - 2024-01-19 11:21:56 --> Helper loaded: file_helper
+INFO - 2024-01-19 11:21:56 --> Helper loaded: mata_uang_helper
+INFO - 2024-01-19 11:21:56 --> Helper loaded: download_helper
+INFO - 2024-01-19 11:21:56 --> Helper loaded: wagw_helper
+INFO - 2024-01-19 11:21:56 --> Helper loaded: mail_helper
+INFO - 2024-01-19 11:21:56 --> Helper loaded: qr_helper
+INFO - 2024-01-19 11:21:56 --> Database Driver Class Initialized
+INFO - 2024-01-19 11:21:56 --> Session: Class initialized using 'files' driver.
+INFO - 2024-01-19 11:21:56 --> Helper loaded: form_helper
+INFO - 2024-01-19 11:21:56 --> Form Validation Class Initialized
+DEBUG - 2024-01-19 11:21:56 --> Encryption: Auto-configured driver 'openssl'.
+INFO - 2024-01-19 11:21:56 --> Encryption: OpenSSL initialized with method AES-128-CBC.
+INFO - 2024-01-19 11:21:56 --> Encryption Class Initialized
+INFO - 2024-01-19 11:21:56 --> Upload Class Initialized
+INFO - 2024-01-19 11:21:56 --> Email Class Initialized
+INFO - 2024-01-19 11:21:56 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2024-01-19 11:21:56 --> Pagination Class Initialized
+INFO - 2024-01-19 11:21:56 --> Controller Class Initialized
+INFO - 2024-01-19 11:21:56 --> Model "Leader_model" initialized
+DEBUG - 2024-01-19 11:21:56 --> Global_library class already loaded. Second attempt ignored.
+DEBUG - 2024-01-19 11:21:56 --> Global_library class already loaded. Second attempt ignored.
+INFO - 2024-01-19 11:21:56 --> File loaded: C:\laragon\www\seminar\application\views\leader/layouts/header.php
+INFO - 2024-01-19 11:21:56 --> File loaded: C:\laragon\www\seminar\application\views\leader/layouts/navbar.php
+DEBUG - 2024-01-19 11:21:56 --> Global_library class already loaded. Second attempt ignored.
+DEBUG - 2024-01-19 11:21:56 --> Global_library class already loaded. Second attempt ignored.
+INFO - 2024-01-19 11:21:56 --> File loaded: C:\laragon\www\seminar\application\views\leader/layouts/sidebar.php
+INFO - 2024-01-19 11:21:56 --> File loaded: C:\laragon\www\seminar\application\views\leader/tiket.php
+INFO - 2024-01-19 11:21:56 --> File loaded: C:\laragon\www\seminar\application\views\leader/layouts/footer.php
+INFO - 2024-01-19 11:21:56 --> Final output sent to browser
+DEBUG - 2024-01-19 11:21:56 --> Total execution time: 0.0642
+INFO - 2024-01-19 11:21:58 --> Config Class Initialized
+INFO - 2024-01-19 11:21:58 --> Hooks Class Initialized
+DEBUG - 2024-01-19 11:21:58 --> UTF-8 Support Enabled
+INFO - 2024-01-19 11:21:58 --> Utf8 Class Initialized
+INFO - 2024-01-19 11:21:58 --> URI Class Initialized
+INFO - 2024-01-19 11:21:58 --> Router Class Initialized
+INFO - 2024-01-19 11:21:58 --> Output Class Initialized
+INFO - 2024-01-19 11:21:58 --> Security Class Initialized
+DEBUG - 2024-01-19 11:21:58 --> Global POST, GET and COOKIE data sanitized
+INFO - 2024-01-19 11:21:58 --> Input Class Initialized
+INFO - 2024-01-19 11:21:58 --> Language Class Initialized
+INFO - 2024-01-19 11:21:58 --> Loader Class Initialized
+INFO - 2024-01-19 11:21:58 --> Helper loaded: url_helper
+INFO - 2024-01-19 11:21:58 --> Helper loaded: global_helper
+INFO - 2024-01-19 11:21:58 --> Helper loaded: security_helper
+INFO - 2024-01-19 11:21:58 --> Helper loaded: file_helper
+INFO - 2024-01-19 11:21:58 --> Helper loaded: mata_uang_helper
+INFO - 2024-01-19 11:21:58 --> Helper loaded: download_helper
+INFO - 2024-01-19 11:21:58 --> Helper loaded: wagw_helper
+INFO - 2024-01-19 11:21:58 --> Helper loaded: mail_helper
+INFO - 2024-01-19 11:21:58 --> Helper loaded: qr_helper
+INFO - 2024-01-19 11:21:58 --> Database Driver Class Initialized
+INFO - 2024-01-19 11:21:58 --> Session: Class initialized using 'files' driver.
+INFO - 2024-01-19 11:21:58 --> Helper loaded: form_helper
+INFO - 2024-01-19 11:21:58 --> Form Validation Class Initialized
+DEBUG - 2024-01-19 11:21:58 --> Encryption: Auto-configured driver 'openssl'.
+INFO - 2024-01-19 11:21:58 --> Encryption: OpenSSL initialized with method AES-128-CBC.
+INFO - 2024-01-19 11:21:58 --> Encryption Class Initialized
+INFO - 2024-01-19 11:21:58 --> Upload Class Initialized
+INFO - 2024-01-19 11:21:58 --> Email Class Initialized
+INFO - 2024-01-19 11:21:58 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2024-01-19 11:21:58 --> Pagination Class Initialized
+INFO - 2024-01-19 11:21:58 --> Controller Class Initialized
+INFO - 2024-01-19 11:21:58 --> Model "Partner_model" initialized
+INFO - 2024-01-19 11:21:58 --> Model "Leader_model" initialized
+INFO - 2024-01-19 11:21:58 --> Model "Integrasi_model" initialized
+DEBUG - 2024-01-19 11:21:58 --> Global_library class already loaded. Second attempt ignored.
+DEBUG - 2024-01-19 11:21:58 --> Global_library class already loaded. Second attempt ignored.
+INFO - 2024-01-19 11:21:58 --> File loaded: C:\laragon\www\seminar\application\views\leader/layouts/header.php
+INFO - 2024-01-19 11:21:58 --> File loaded: C:\laragon\www\seminar\application\views\leader/layouts/navbar.php
+DEBUG - 2024-01-19 11:21:58 --> Global_library class already loaded. Second attempt ignored.
+DEBUG - 2024-01-19 11:21:58 --> Global_library class already loaded. Second attempt ignored.
+INFO - 2024-01-19 11:21:58 --> File loaded: C:\laragon\www\seminar\application\views\leader/layouts/sidebar.php
+INFO - 2024-01-19 11:21:58 --> File loaded: C:\laragon\www\seminar\application\views\leader/transaksi/transaksi.php
+INFO - 2024-01-19 11:21:58 --> File loaded: C:\laragon\www\seminar\application\views\leader/layouts/footer.php
+INFO - 2024-01-19 11:21:58 --> Final output sent to browser
+DEBUG - 2024-01-19 11:21:58 --> Total execution time: 0.1332
+INFO - 2024-01-19 11:21:59 --> Config Class Initialized
+INFO - 2024-01-19 11:21:59 --> Hooks Class Initialized
+DEBUG - 2024-01-19 11:21:59 --> UTF-8 Support Enabled
+INFO - 2024-01-19 11:21:59 --> Utf8 Class Initialized
+INFO - 2024-01-19 11:21:59 --> URI Class Initialized
+INFO - 2024-01-19 11:21:59 --> Router Class Initialized
+INFO - 2024-01-19 11:21:59 --> Output Class Initialized
+INFO - 2024-01-19 11:21:59 --> Security Class Initialized
+DEBUG - 2024-01-19 11:21:59 --> Global POST, GET and COOKIE data sanitized
+INFO - 2024-01-19 11:21:59 --> Input Class Initialized
+INFO - 2024-01-19 11:21:59 --> Language Class Initialized
+INFO - 2024-01-19 11:21:59 --> Loader Class Initialized
+INFO - 2024-01-19 11:21:59 --> Helper loaded: url_helper
+INFO - 2024-01-19 11:21:59 --> Helper loaded: global_helper
+INFO - 2024-01-19 11:21:59 --> Helper loaded: security_helper
+INFO - 2024-01-19 11:21:59 --> Helper loaded: file_helper
+INFO - 2024-01-19 11:21:59 --> Helper loaded: mata_uang_helper
+INFO - 2024-01-19 11:21:59 --> Helper loaded: download_helper
+INFO - 2024-01-19 11:21:59 --> Helper loaded: wagw_helper
+INFO - 2024-01-19 11:21:59 --> Helper loaded: mail_helper
+INFO - 2024-01-19 11:21:59 --> Helper loaded: qr_helper
+INFO - 2024-01-19 11:21:59 --> Database Driver Class Initialized
+INFO - 2024-01-19 11:21:59 --> Session: Class initialized using 'files' driver.
+INFO - 2024-01-19 11:21:59 --> Helper loaded: form_helper
+INFO - 2024-01-19 11:21:59 --> Form Validation Class Initialized
+DEBUG - 2024-01-19 11:21:59 --> Encryption: Auto-configured driver 'openssl'.
+INFO - 2024-01-19 11:21:59 --> Encryption: OpenSSL initialized with method AES-128-CBC.
+INFO - 2024-01-19 11:21:59 --> Encryption Class Initialized
+INFO - 2024-01-19 11:21:59 --> Upload Class Initialized
+INFO - 2024-01-19 11:21:59 --> Email Class Initialized
+INFO - 2024-01-19 11:21:59 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2024-01-19 11:21:59 --> Pagination Class Initialized
+INFO - 2024-01-19 11:21:59 --> Controller Class Initialized
+INFO - 2024-01-19 11:21:59 --> Model "Partner_model" initialized
+INFO - 2024-01-19 11:21:59 --> Model "Leader_model" initialized
+INFO - 2024-01-19 11:21:59 --> Model "Integrasi_model" initialized
+DEBUG - 2024-01-19 11:21:59 --> Global_library class already loaded. Second attempt ignored.
+DEBUG - 2024-01-19 11:21:59 --> Global_library class already loaded. Second attempt ignored.
+INFO - 2024-01-19 11:21:59 --> File loaded: C:\laragon\www\seminar\application\views\leader/layouts/header.php
+INFO - 2024-01-19 11:21:59 --> File loaded: C:\laragon\www\seminar\application\views\leader/layouts/navbar.php
+DEBUG - 2024-01-19 11:21:59 --> Global_library class already loaded. Second attempt ignored.
+DEBUG - 2024-01-19 11:21:59 --> Global_library class already loaded. Second attempt ignored.
+INFO - 2024-01-19 11:21:59 --> File loaded: C:\laragon\www\seminar\application\views\leader/layouts/sidebar.php
+INFO - 2024-01-19 11:21:59 --> File loaded: C:\laragon\www\seminar\application\views\leader/transaksi/add.php
+INFO - 2024-01-19 11:21:59 --> File loaded: C:\laragon\www\seminar\application\views\leader/layouts/footer.php
+INFO - 2024-01-19 11:21:59 --> Final output sent to browser
+DEBUG - 2024-01-19 11:21:59 --> Total execution time: 0.0666
+INFO - 2024-01-19 11:22:01 --> Config Class Initialized
+INFO - 2024-01-19 11:22:01 --> Hooks Class Initialized
+DEBUG - 2024-01-19 11:22:01 --> UTF-8 Support Enabled
+INFO - 2024-01-19 11:22:01 --> Utf8 Class Initialized
+INFO - 2024-01-19 11:22:01 --> URI Class Initialized
+INFO - 2024-01-19 11:22:01 --> Router Class Initialized
+INFO - 2024-01-19 11:22:01 --> Output Class Initialized
+INFO - 2024-01-19 11:22:01 --> Security Class Initialized
+DEBUG - 2024-01-19 11:22:01 --> Global POST, GET and COOKIE data sanitized
+INFO - 2024-01-19 11:22:01 --> Input Class Initialized
+INFO - 2024-01-19 11:22:01 --> Language Class Initialized
+INFO - 2024-01-19 11:22:01 --> Loader Class Initialized
+INFO - 2024-01-19 11:22:01 --> Helper loaded: url_helper
+INFO - 2024-01-19 11:22:01 --> Helper loaded: global_helper
+INFO - 2024-01-19 11:22:01 --> Helper loaded: security_helper
+INFO - 2024-01-19 11:22:01 --> Helper loaded: file_helper
+INFO - 2024-01-19 11:22:01 --> Helper loaded: mata_uang_helper
+INFO - 2024-01-19 11:22:01 --> Helper loaded: download_helper
+INFO - 2024-01-19 11:22:01 --> Helper loaded: wagw_helper
+INFO - 2024-01-19 11:22:01 --> Helper loaded: mail_helper
+INFO - 2024-01-19 11:22:01 --> Helper loaded: qr_helper
+INFO - 2024-01-19 11:22:01 --> Database Driver Class Initialized
+INFO - 2024-01-19 11:22:01 --> Session: Class initialized using 'files' driver.
+INFO - 2024-01-19 11:22:01 --> Helper loaded: form_helper
+INFO - 2024-01-19 11:22:01 --> Form Validation Class Initialized
+DEBUG - 2024-01-19 11:22:01 --> Encryption: Auto-configured driver 'openssl'.
+INFO - 2024-01-19 11:22:01 --> Encryption: OpenSSL initialized with method AES-128-CBC.
+INFO - 2024-01-19 11:22:01 --> Encryption Class Initialized
+INFO - 2024-01-19 11:22:01 --> Upload Class Initialized
+INFO - 2024-01-19 11:22:01 --> Email Class Initialized
+INFO - 2024-01-19 11:22:01 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2024-01-19 11:22:01 --> Pagination Class Initialized
+INFO - 2024-01-19 11:22:01 --> Controller Class Initialized
+INFO - 2024-01-19 11:22:01 --> Model "Partner_model" initialized
+INFO - 2024-01-19 11:22:01 --> Model "Leader_model" initialized
+INFO - 2024-01-19 11:22:01 --> Model "Integrasi_model" initialized
+INFO - 2024-01-19 11:22:01 --> Language file loaded: language/english/form_validation_lang.php
+DEBUG - 2024-01-19 11:22:19 --> Curl class already loaded. Second attempt ignored.
+ERROR - 2024-01-19 11:22:20 --> Severity: Warning --> Cannot modify header information - headers already sent by (output started at C:\laragon\www\seminar\vendor\phpmailer\phpmailer\src\SMTP.php:284) C:\laragon\www\seminar\system\helpers\url_helper.php 565
+INFO - 2024-01-19 13:54:02 --> Config Class Initialized
+INFO - 2024-01-19 13:54:02 --> Hooks Class Initialized
+DEBUG - 2024-01-19 13:54:02 --> UTF-8 Support Enabled
+INFO - 2024-01-19 13:54:02 --> Utf8 Class Initialized
+INFO - 2024-01-19 13:54:02 --> URI Class Initialized
+DEBUG - 2024-01-19 13:54:02 --> No URI present. Default controller set.
+INFO - 2024-01-19 13:54:02 --> Router Class Initialized
+INFO - 2024-01-19 13:54:02 --> Output Class Initialized
+INFO - 2024-01-19 13:54:02 --> Security Class Initialized
+DEBUG - 2024-01-19 13:54:02 --> Global POST, GET and COOKIE data sanitized
+INFO - 2024-01-19 13:54:02 --> Input Class Initialized
+INFO - 2024-01-19 13:54:02 --> Language Class Initialized
+INFO - 2024-01-19 13:54:02 --> Loader Class Initialized
+INFO - 2024-01-19 13:54:02 --> Helper loaded: url_helper
+INFO - 2024-01-19 13:54:02 --> Helper loaded: global_helper
+INFO - 2024-01-19 13:54:02 --> Helper loaded: security_helper
+INFO - 2024-01-19 13:54:02 --> Helper loaded: file_helper
+INFO - 2024-01-19 13:54:02 --> Helper loaded: mata_uang_helper
+INFO - 2024-01-19 13:54:02 --> Helper loaded: download_helper
+INFO - 2024-01-19 13:54:02 --> Helper loaded: wagw_helper
+INFO - 2024-01-19 13:54:02 --> Helper loaded: mail_helper
+INFO - 2024-01-19 13:54:02 --> Helper loaded: qr_helper
+INFO - 2024-01-19 13:54:02 --> Database Driver Class Initialized
+INFO - 2024-01-19 13:54:02 --> Session: Class initialized using 'files' driver.
+INFO - 2024-01-19 13:54:02 --> Helper loaded: form_helper
+INFO - 2024-01-19 13:54:02 --> Form Validation Class Initialized
+DEBUG - 2024-01-19 13:54:02 --> Encryption: Auto-configured driver 'openssl'.
+INFO - 2024-01-19 13:54:02 --> Encryption: OpenSSL initialized with method AES-128-CBC.
+INFO - 2024-01-19 13:54:02 --> Encryption Class Initialized
+INFO - 2024-01-19 13:54:02 --> Upload Class Initialized
+INFO - 2024-01-19 13:54:02 --> Email Class Initialized
+INFO - 2024-01-19 13:54:02 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2024-01-19 13:54:02 --> Pagination Class Initialized
+INFO - 2024-01-19 13:54:02 --> Controller Class Initialized
+DEBUG - 2024-01-19 13:54:02 --> Global_library class already loaded. Second attempt ignored.
+DEBUG - 2024-01-19 13:54:02 --> Global_library class already loaded. Second attempt ignored.
+DEBUG - 2024-01-19 13:54:02 --> Global_library class already loaded. Second attempt ignored.
+DEBUG - 2024-01-19 13:54:02 --> Global_library class already loaded. Second attempt ignored.
+DEBUG - 2024-01-19 13:54:02 --> Global_library class already loaded. Second attempt ignored.
+INFO - 2024-01-19 13:54:02 --> File loaded: C:\laragon\www\seminar\application\views\frontend/layout/header.php
+INFO - 2024-01-19 13:54:02 --> File loaded: C:\laragon\www\seminar\application\views\frontend/home.php
+DEBUG - 2024-01-19 13:54:02 --> Global_library class already loaded. Second attempt ignored.
+INFO - 2024-01-19 13:54:02 --> File loaded: C:\laragon\www\seminar\application\views\frontend/layout/footer.php
+INFO - 2024-01-19 13:54:02 --> Final output sent to browser
+DEBUG - 2024-01-19 13:54:02 --> Total execution time: 0.1136
+INFO - 2024-01-19 13:54:03 --> Config Class Initialized
+INFO - 2024-01-19 13:54:03 --> Hooks Class Initialized
+DEBUG - 2024-01-19 13:54:03 --> UTF-8 Support Enabled
+INFO - 2024-01-19 13:54:03 --> Utf8 Class Initialized
+INFO - 2024-01-19 13:54:03 --> URI Class Initialized
+INFO - 2024-01-19 13:54:03 --> Router Class Initialized
+INFO - 2024-01-19 13:54:03 --> Output Class Initialized
+INFO - 2024-01-19 13:54:03 --> Security Class Initialized
+DEBUG - 2024-01-19 13:54:03 --> Global POST, GET and COOKIE data sanitized
+INFO - 2024-01-19 13:54:03 --> Input Class Initialized
+INFO - 2024-01-19 13:54:03 --> Language Class Initialized
+INFO - 2024-01-19 13:54:03 --> Loader Class Initialized
+INFO - 2024-01-19 13:54:03 --> Helper loaded: url_helper
+INFO - 2024-01-19 13:54:03 --> Helper loaded: global_helper
+INFO - 2024-01-19 13:54:03 --> Helper loaded: security_helper
+INFO - 2024-01-19 13:54:03 --> Helper loaded: file_helper
+INFO - 2024-01-19 13:54:03 --> Helper loaded: mata_uang_helper
+INFO - 2024-01-19 13:54:03 --> Helper loaded: download_helper
+INFO - 2024-01-19 13:54:03 --> Helper loaded: wagw_helper
+INFO - 2024-01-19 13:54:03 --> Helper loaded: mail_helper
+INFO - 2024-01-19 13:54:03 --> Helper loaded: qr_helper
+INFO - 2024-01-19 13:54:03 --> Database Driver Class Initialized
+INFO - 2024-01-19 13:54:03 --> Session: Class initialized using 'files' driver.
+INFO - 2024-01-19 13:54:03 --> Helper loaded: form_helper
+INFO - 2024-01-19 13:54:03 --> Form Validation Class Initialized
+DEBUG - 2024-01-19 13:54:04 --> Encryption: Auto-configured driver 'openssl'.
+INFO - 2024-01-19 13:54:04 --> Encryption: OpenSSL initialized with method AES-128-CBC.
+INFO - 2024-01-19 13:54:04 --> Encryption Class Initialized
+INFO - 2024-01-19 13:54:04 --> Upload Class Initialized
+INFO - 2024-01-19 13:54:04 --> Email Class Initialized
+INFO - 2024-01-19 13:54:04 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2024-01-19 13:54:04 --> Pagination Class Initialized
+INFO - 2024-01-19 13:54:04 --> Controller Class Initialized
+DEBUG - 2024-01-19 13:54:04 --> Global_library class already loaded. Second attempt ignored.
+DEBUG - 2024-01-19 13:54:04 --> Global_library class already loaded. Second attempt ignored.
+DEBUG - 2024-01-19 13:54:04 --> Global_library class already loaded. Second attempt ignored.
+DEBUG - 2024-01-19 13:54:04 --> Global_library class already loaded. Second attempt ignored.
+INFO - 2024-01-19 13:54:04 --> File loaded: C:\laragon\www\seminar\application\views\frontend/layout/header.php
+INFO - 2024-01-19 13:54:04 --> File loaded: C:\laragon\www\seminar\application\views\auth/login.php
+INFO - 2024-01-19 13:54:04 --> Final output sent to browser
+DEBUG - 2024-01-19 13:54:04 --> Total execution time: 0.0511
+INFO - 2024-01-19 13:54:09 --> Config Class Initialized
+INFO - 2024-01-19 13:54:09 --> Hooks Class Initialized
+DEBUG - 2024-01-19 13:54:09 --> UTF-8 Support Enabled
+INFO - 2024-01-19 13:54:09 --> Utf8 Class Initialized
+INFO - 2024-01-19 13:54:09 --> URI Class Initialized
+INFO - 2024-01-19 13:54:09 --> Router Class Initialized
+INFO - 2024-01-19 13:54:09 --> Output Class Initialized
+INFO - 2024-01-19 13:54:09 --> Security Class Initialized
+DEBUG - 2024-01-19 13:54:09 --> Global POST, GET and COOKIE data sanitized
+INFO - 2024-01-19 13:54:09 --> Input Class Initialized
+INFO - 2024-01-19 13:54:09 --> Language Class Initialized
+INFO - 2024-01-19 13:54:09 --> Loader Class Initialized
+INFO - 2024-01-19 13:54:09 --> Helper loaded: url_helper
+INFO - 2024-01-19 13:54:09 --> Helper loaded: global_helper
+INFO - 2024-01-19 13:54:09 --> Helper loaded: security_helper
+INFO - 2024-01-19 13:54:09 --> Helper loaded: file_helper
+INFO - 2024-01-19 13:54:09 --> Helper loaded: mata_uang_helper
+INFO - 2024-01-19 13:54:09 --> Helper loaded: download_helper
+INFO - 2024-01-19 13:54:09 --> Helper loaded: wagw_helper
+INFO - 2024-01-19 13:54:09 --> Helper loaded: mail_helper
+INFO - 2024-01-19 13:54:09 --> Helper loaded: qr_helper
+INFO - 2024-01-19 13:54:09 --> Database Driver Class Initialized
+INFO - 2024-01-19 13:54:09 --> Session: Class initialized using 'files' driver.
+INFO - 2024-01-19 13:54:09 --> Helper loaded: form_helper
+INFO - 2024-01-19 13:54:09 --> Form Validation Class Initialized
+DEBUG - 2024-01-19 13:54:09 --> Encryption: Auto-configured driver 'openssl'.
+INFO - 2024-01-19 13:54:09 --> Encryption: OpenSSL initialized with method AES-128-CBC.
+INFO - 2024-01-19 13:54:09 --> Encryption Class Initialized
+INFO - 2024-01-19 13:54:09 --> Upload Class Initialized
+INFO - 2024-01-19 13:54:09 --> Email Class Initialized
+INFO - 2024-01-19 13:54:09 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2024-01-19 13:54:09 --> Pagination Class Initialized
+INFO - 2024-01-19 13:54:09 --> Controller Class Initialized
+INFO - 2024-01-19 13:54:09 --> Language file loaded: language/english/form_validation_lang.php
+INFO - 2024-01-19 13:54:09 --> Config Class Initialized
+INFO - 2024-01-19 13:54:09 --> Hooks Class Initialized
+DEBUG - 2024-01-19 13:54:09 --> UTF-8 Support Enabled
+INFO - 2024-01-19 13:54:09 --> Utf8 Class Initialized
+INFO - 2024-01-19 13:54:09 --> URI Class Initialized
+INFO - 2024-01-19 13:54:09 --> Router Class Initialized
+INFO - 2024-01-19 13:54:09 --> Output Class Initialized
+INFO - 2024-01-19 13:54:09 --> Security Class Initialized
+DEBUG - 2024-01-19 13:54:09 --> Global POST, GET and COOKIE data sanitized
+INFO - 2024-01-19 13:54:09 --> Input Class Initialized
+INFO - 2024-01-19 13:54:09 --> Language Class Initialized
+INFO - 2024-01-19 13:54:09 --> Loader Class Initialized
+INFO - 2024-01-19 13:54:09 --> Helper loaded: url_helper
+INFO - 2024-01-19 13:54:09 --> Helper loaded: global_helper
+INFO - 2024-01-19 13:54:09 --> Helper loaded: security_helper
+INFO - 2024-01-19 13:54:09 --> Helper loaded: file_helper
+INFO - 2024-01-19 13:54:09 --> Helper loaded: mata_uang_helper
+INFO - 2024-01-19 13:54:09 --> Helper loaded: download_helper
+INFO - 2024-01-19 13:54:09 --> Helper loaded: wagw_helper
+INFO - 2024-01-19 13:54:09 --> Helper loaded: mail_helper
+INFO - 2024-01-19 13:54:09 --> Helper loaded: qr_helper
+INFO - 2024-01-19 13:54:09 --> Database Driver Class Initialized
+INFO - 2024-01-19 13:54:09 --> Session: Class initialized using 'files' driver.
+INFO - 2024-01-19 13:54:09 --> Helper loaded: form_helper
+INFO - 2024-01-19 13:54:09 --> Form Validation Class Initialized
+DEBUG - 2024-01-19 13:54:09 --> Encryption: Auto-configured driver 'openssl'.
+INFO - 2024-01-19 13:54:09 --> Encryption: OpenSSL initialized with method AES-128-CBC.
+INFO - 2024-01-19 13:54:09 --> Encryption Class Initialized
+INFO - 2024-01-19 13:54:09 --> Upload Class Initialized
+INFO - 2024-01-19 13:54:09 --> Email Class Initialized
+INFO - 2024-01-19 13:54:09 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2024-01-19 13:54:09 --> Pagination Class Initialized
+INFO - 2024-01-19 13:54:09 --> Controller Class Initialized
+DEBUG - 2024-01-19 13:54:09 --> Global_library class already loaded. Second attempt ignored.
+DEBUG - 2024-01-19 13:54:09 --> Global_library class already loaded. Second attempt ignored.
+INFO - 2024-01-19 13:54:09 --> File loaded: C:\laragon\www\seminar\application\views\admin/layouts/header.php
+INFO - 2024-01-19 13:54:09 --> File loaded: C:\laragon\www\seminar\application\views\admin/layouts/navbar.php
+DEBUG - 2024-01-19 13:54:09 --> Global_library class already loaded. Second attempt ignored.
+DEBUG - 2024-01-19 13:54:09 --> Global_library class already loaded. Second attempt ignored.
+INFO - 2024-01-19 13:54:09 --> File loaded: C:\laragon\www\seminar\application\views\admin/layouts/sidebar.php
+INFO - 2024-01-19 13:54:09 --> File loaded: C:\laragon\www\seminar\application\views\admin/dashboard.php
+INFO - 2024-01-19 13:54:09 --> File loaded: C:\laragon\www\seminar\application\views\admin/layouts/footer.php
+INFO - 2024-01-19 13:54:09 --> Final output sent to browser
+DEBUG - 2024-01-19 13:54:09 --> Total execution time: 0.0710
+INFO - 2024-01-19 13:54:14 --> Config Class Initialized
+INFO - 2024-01-19 13:54:14 --> Hooks Class Initialized
+DEBUG - 2024-01-19 13:54:14 --> UTF-8 Support Enabled
+INFO - 2024-01-19 13:54:14 --> Utf8 Class Initialized
+INFO - 2024-01-19 13:54:14 --> URI Class Initialized
+INFO - 2024-01-19 13:54:14 --> Router Class Initialized
+INFO - 2024-01-19 13:54:14 --> Output Class Initialized
+INFO - 2024-01-19 13:54:14 --> Security Class Initialized
+DEBUG - 2024-01-19 13:54:14 --> Global POST, GET and COOKIE data sanitized
+INFO - 2024-01-19 13:54:14 --> Input Class Initialized
+INFO - 2024-01-19 13:54:14 --> Language Class Initialized
+INFO - 2024-01-19 13:54:14 --> Loader Class Initialized
+INFO - 2024-01-19 13:54:14 --> Helper loaded: url_helper
+INFO - 2024-01-19 13:54:14 --> Helper loaded: global_helper
+INFO - 2024-01-19 13:54:14 --> Helper loaded: security_helper
+INFO - 2024-01-19 13:54:14 --> Helper loaded: file_helper
+INFO - 2024-01-19 13:54:14 --> Helper loaded: mata_uang_helper
+INFO - 2024-01-19 13:54:14 --> Helper loaded: download_helper
+INFO - 2024-01-19 13:54:14 --> Helper loaded: wagw_helper
+INFO - 2024-01-19 13:54:14 --> Helper loaded: mail_helper
+INFO - 2024-01-19 13:54:14 --> Helper loaded: qr_helper
+INFO - 2024-01-19 13:54:14 --> Database Driver Class Initialized
+INFO - 2024-01-19 13:54:14 --> Session: Class initialized using 'files' driver.
+INFO - 2024-01-19 13:54:14 --> Helper loaded: form_helper
+INFO - 2024-01-19 13:54:14 --> Form Validation Class Initialized
+DEBUG - 2024-01-19 13:54:14 --> Encryption: Auto-configured driver 'openssl'.
+INFO - 2024-01-19 13:54:14 --> Encryption: OpenSSL initialized with method AES-128-CBC.
+INFO - 2024-01-19 13:54:14 --> Encryption Class Initialized
+INFO - 2024-01-19 13:54:14 --> Upload Class Initialized
+INFO - 2024-01-19 13:54:14 --> Email Class Initialized
+INFO - 2024-01-19 13:54:14 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2024-01-19 13:54:14 --> Pagination Class Initialized
+INFO - 2024-01-19 13:54:14 --> Controller Class Initialized
+INFO - 2024-01-19 13:54:14 --> Model "Penjualan_model" initialized
+DEBUG - 2024-01-19 13:54:14 --> Global_library class already loaded. Second attempt ignored.
+DEBUG - 2024-01-19 13:54:14 --> Global_library class already loaded. Second attempt ignored.
+INFO - 2024-01-19 13:54:14 --> File loaded: C:\laragon\www\seminar\application\views\admin/layouts/header.php
+INFO - 2024-01-19 13:54:14 --> File loaded: C:\laragon\www\seminar\application\views\admin/layouts/navbar.php
+DEBUG - 2024-01-19 13:54:14 --> Global_library class already loaded. Second attempt ignored.
+DEBUG - 2024-01-19 13:54:14 --> Global_library class already loaded. Second attempt ignored.
+INFO - 2024-01-19 13:54:14 --> File loaded: C:\laragon\www\seminar\application\views\admin/layouts/sidebar.php
+ERROR - 2024-01-19 13:54:14 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 13:54:14 --> Severity: Warning --> Undefined array key "name" C:\laragon\www\seminar\application\views\admin\penjualan\transaksi.php 79
+ERROR - 2024-01-19 13:54:14 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+INFO - 2024-01-19 13:54:14 --> File loaded: C:\laragon\www\seminar\application\views\admin/penjualan/transaksi.php
+INFO - 2024-01-19 13:54:14 --> File loaded: C:\laragon\www\seminar\application\views\admin/layouts/footer.php
+INFO - 2024-01-19 13:54:14 --> Final output sent to browser
+DEBUG - 2024-01-19 13:54:14 --> Total execution time: 0.0629
+INFO - 2024-01-19 13:54:39 --> Config Class Initialized
+INFO - 2024-01-19 13:54:39 --> Hooks Class Initialized
+DEBUG - 2024-01-19 13:54:39 --> UTF-8 Support Enabled
+INFO - 2024-01-19 13:54:39 --> Utf8 Class Initialized
+INFO - 2024-01-19 13:54:39 --> URI Class Initialized
+INFO - 2024-01-19 13:54:39 --> Router Class Initialized
+INFO - 2024-01-19 13:54:39 --> Output Class Initialized
+INFO - 2024-01-19 13:54:39 --> Security Class Initialized
+DEBUG - 2024-01-19 13:54:39 --> Global POST, GET and COOKIE data sanitized
+INFO - 2024-01-19 13:54:39 --> Input Class Initialized
+INFO - 2024-01-19 13:54:39 --> Language Class Initialized
+INFO - 2024-01-19 13:54:39 --> Loader Class Initialized
+INFO - 2024-01-19 13:54:39 --> Helper loaded: url_helper
+INFO - 2024-01-19 13:54:39 --> Helper loaded: global_helper
+INFO - 2024-01-19 13:54:39 --> Helper loaded: security_helper
+INFO - 2024-01-19 13:54:39 --> Helper loaded: file_helper
+INFO - 2024-01-19 13:54:39 --> Helper loaded: mata_uang_helper
+INFO - 2024-01-19 13:54:39 --> Helper loaded: download_helper
+INFO - 2024-01-19 13:54:39 --> Helper loaded: wagw_helper
+INFO - 2024-01-19 13:54:39 --> Helper loaded: mail_helper
+INFO - 2024-01-19 13:54:39 --> Helper loaded: qr_helper
+INFO - 2024-01-19 13:54:39 --> Database Driver Class Initialized
+INFO - 2024-01-19 13:54:39 --> Session: Class initialized using 'files' driver.
+INFO - 2024-01-19 13:54:39 --> Helper loaded: form_helper
+INFO - 2024-01-19 13:54:39 --> Form Validation Class Initialized
+DEBUG - 2024-01-19 13:54:39 --> Encryption: Auto-configured driver 'openssl'.
+INFO - 2024-01-19 13:54:39 --> Encryption: OpenSSL initialized with method AES-128-CBC.
+INFO - 2024-01-19 13:54:39 --> Encryption Class Initialized
+INFO - 2024-01-19 13:54:39 --> Upload Class Initialized
+INFO - 2024-01-19 13:54:39 --> Email Class Initialized
+INFO - 2024-01-19 13:54:39 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2024-01-19 13:54:39 --> Pagination Class Initialized
+INFO - 2024-01-19 13:54:39 --> Controller Class Initialized
+INFO - 2024-01-19 13:54:39 --> Model "Integrasi_model" initialized
+INFO - 2024-01-19 13:54:39 --> Model "Events_model" initialized
+DEBUG - 2024-01-19 13:54:39 --> Global_library class already loaded. Second attempt ignored.
+DEBUG - 2024-01-19 13:54:39 --> Global_library class already loaded. Second attempt ignored.
+INFO - 2024-01-19 13:54:39 --> File loaded: C:\laragon\www\seminar\application\views\admin/layouts/header.php
+INFO - 2024-01-19 13:54:39 --> File loaded: C:\laragon\www\seminar\application\views\admin/layouts/navbar.php
+DEBUG - 2024-01-19 13:54:39 --> Global_library class already loaded. Second attempt ignored.
+DEBUG - 2024-01-19 13:54:39 --> Global_library class already loaded. Second attempt ignored.
+INFO - 2024-01-19 13:54:39 --> File loaded: C:\laragon\www\seminar\application\views\admin/layouts/sidebar.php
+INFO - 2024-01-19 13:54:39 --> File loaded: C:\laragon\www\seminar\application\views\admin/events/publish.php
+INFO - 2024-01-19 13:54:39 --> File loaded: C:\laragon\www\seminar\application\views\admin/layouts/footer.php
+INFO - 2024-01-19 13:54:39 --> Final output sent to browser
+DEBUG - 2024-01-19 13:54:39 --> Total execution time: 0.0559
+INFO - 2024-01-19 13:54:44 --> Config Class Initialized
+INFO - 2024-01-19 13:54:44 --> Hooks Class Initialized
+DEBUG - 2024-01-19 13:54:44 --> UTF-8 Support Enabled
+INFO - 2024-01-19 13:54:44 --> Utf8 Class Initialized
+INFO - 2024-01-19 13:54:44 --> URI Class Initialized
+INFO - 2024-01-19 13:54:44 --> Router Class Initialized
+INFO - 2024-01-19 13:54:44 --> Output Class Initialized
+INFO - 2024-01-19 13:54:44 --> Security Class Initialized
+DEBUG - 2024-01-19 13:54:44 --> Global POST, GET and COOKIE data sanitized
+INFO - 2024-01-19 13:54:44 --> Input Class Initialized
+INFO - 2024-01-19 13:54:44 --> Language Class Initialized
+INFO - 2024-01-19 13:54:44 --> Loader Class Initialized
+INFO - 2024-01-19 13:54:44 --> Helper loaded: url_helper
+INFO - 2024-01-19 13:54:44 --> Helper loaded: global_helper
+INFO - 2024-01-19 13:54:44 --> Helper loaded: security_helper
+INFO - 2024-01-19 13:54:44 --> Helper loaded: file_helper
+INFO - 2024-01-19 13:54:44 --> Helper loaded: mata_uang_helper
+INFO - 2024-01-19 13:54:44 --> Helper loaded: download_helper
+INFO - 2024-01-19 13:54:44 --> Helper loaded: wagw_helper
+INFO - 2024-01-19 13:54:44 --> Helper loaded: mail_helper
+INFO - 2024-01-19 13:54:44 --> Helper loaded: qr_helper
+INFO - 2024-01-19 13:54:44 --> Database Driver Class Initialized
+INFO - 2024-01-19 13:54:44 --> Session: Class initialized using 'files' driver.
+INFO - 2024-01-19 13:54:44 --> Helper loaded: form_helper
+INFO - 2024-01-19 13:54:44 --> Form Validation Class Initialized
+DEBUG - 2024-01-19 13:54:44 --> Encryption: Auto-configured driver 'openssl'.
+INFO - 2024-01-19 13:54:44 --> Encryption: OpenSSL initialized with method AES-128-CBC.
+INFO - 2024-01-19 13:54:44 --> Encryption Class Initialized
+INFO - 2024-01-19 13:54:44 --> Upload Class Initialized
+INFO - 2024-01-19 13:54:44 --> Email Class Initialized
+INFO - 2024-01-19 13:54:44 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2024-01-19 13:54:44 --> Pagination Class Initialized
+INFO - 2024-01-19 13:54:44 --> Controller Class Initialized
+INFO - 2024-01-19 13:54:44 --> Model "Integrasi_model" initialized
+INFO - 2024-01-19 13:54:44 --> Model "Events_model" initialized
+DEBUG - 2024-01-19 13:54:44 --> Global_library class already loaded. Second attempt ignored.
+DEBUG - 2024-01-19 13:54:44 --> Global_library class already loaded. Second attempt ignored.
+INFO - 2024-01-19 13:54:44 --> File loaded: C:\laragon\www\seminar\application\views\admin/layouts/header.php
+INFO - 2024-01-19 13:54:44 --> File loaded: C:\laragon\www\seminar\application\views\admin/layouts/navbar.php
+DEBUG - 2024-01-19 13:54:44 --> Global_library class already loaded. Second attempt ignored.
+DEBUG - 2024-01-19 13:54:44 --> Global_library class already loaded. Second attempt ignored.
+INFO - 2024-01-19 13:54:44 --> File loaded: C:\laragon\www\seminar\application\views\admin/layouts/sidebar.php
+INFO - 2024-01-19 13:54:44 --> File loaded: C:\laragon\www\seminar\application\views\admin/events/event.php
+INFO - 2024-01-19 13:54:44 --> File loaded: C:\laragon\www\seminar\application\views\admin/layouts/footer.php
+INFO - 2024-01-19 13:54:44 --> Final output sent to browser
+DEBUG - 2024-01-19 13:54:44 --> Total execution time: 0.0571
+INFO - 2024-01-19 13:54:49 --> Config Class Initialized
+INFO - 2024-01-19 13:54:49 --> Hooks Class Initialized
+DEBUG - 2024-01-19 13:54:49 --> UTF-8 Support Enabled
+INFO - 2024-01-19 13:54:49 --> Utf8 Class Initialized
+INFO - 2024-01-19 13:54:49 --> URI Class Initialized
+INFO - 2024-01-19 13:54:49 --> Router Class Initialized
+INFO - 2024-01-19 13:54:49 --> Output Class Initialized
+INFO - 2024-01-19 13:54:49 --> Security Class Initialized
+DEBUG - 2024-01-19 13:54:49 --> Global POST, GET and COOKIE data sanitized
+INFO - 2024-01-19 13:54:49 --> Input Class Initialized
+INFO - 2024-01-19 13:54:49 --> Language Class Initialized
+INFO - 2024-01-19 13:54:49 --> Loader Class Initialized
+INFO - 2024-01-19 13:54:49 --> Helper loaded: url_helper
+INFO - 2024-01-19 13:54:49 --> Helper loaded: global_helper
+INFO - 2024-01-19 13:54:49 --> Helper loaded: security_helper
+INFO - 2024-01-19 13:54:49 --> Helper loaded: file_helper
+INFO - 2024-01-19 13:54:49 --> Helper loaded: mata_uang_helper
+INFO - 2024-01-19 13:54:49 --> Helper loaded: download_helper
+INFO - 2024-01-19 13:54:49 --> Helper loaded: wagw_helper
+INFO - 2024-01-19 13:54:49 --> Helper loaded: mail_helper
+INFO - 2024-01-19 13:54:49 --> Helper loaded: qr_helper
+INFO - 2024-01-19 13:54:49 --> Database Driver Class Initialized
+INFO - 2024-01-19 13:54:49 --> Session: Class initialized using 'files' driver.
+INFO - 2024-01-19 13:54:49 --> Helper loaded: form_helper
+INFO - 2024-01-19 13:54:49 --> Form Validation Class Initialized
+DEBUG - 2024-01-19 13:54:49 --> Encryption: Auto-configured driver 'openssl'.
+INFO - 2024-01-19 13:54:49 --> Encryption: OpenSSL initialized with method AES-128-CBC.
+INFO - 2024-01-19 13:54:49 --> Encryption Class Initialized
+INFO - 2024-01-19 13:54:49 --> Upload Class Initialized
+INFO - 2024-01-19 13:54:49 --> Email Class Initialized
+INFO - 2024-01-19 13:54:49 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2024-01-19 13:54:49 --> Pagination Class Initialized
+INFO - 2024-01-19 13:54:49 --> Controller Class Initialized
+INFO - 2024-01-19 13:54:49 --> Model "Events_model" initialized
+INFO - 2024-01-19 13:54:49 --> Model "Absensi_model" initialized
+INFO - 2024-01-19 13:54:49 --> Model "Penjualan_model" initialized
+DEBUG - 2024-01-19 13:54:49 --> Global_library class already loaded. Second attempt ignored.
+DEBUG - 2024-01-19 13:54:49 --> Global_library class already loaded. Second attempt ignored.
+INFO - 2024-01-19 13:54:49 --> File loaded: C:\laragon\www\seminar\application\views\admin/layouts/header.php
+INFO - 2024-01-19 13:54:49 --> File loaded: C:\laragon\www\seminar\application\views\admin/layouts/navbar.php
+DEBUG - 2024-01-19 13:54:49 --> Global_library class already loaded. Second attempt ignored.
+DEBUG - 2024-01-19 13:54:49 --> Global_library class already loaded. Second attempt ignored.
+INFO - 2024-01-19 13:54:49 --> File loaded: C:\laragon\www\seminar\application\views\admin/layouts/sidebar.php
+INFO - 2024-01-19 13:54:49 --> File loaded: C:\laragon\www\seminar\application\views\admin/absensi/event.php
+INFO - 2024-01-19 13:54:49 --> File loaded: C:\laragon\www\seminar\application\views\admin/layouts/footer.php
+INFO - 2024-01-19 13:54:49 --> Final output sent to browser
+DEBUG - 2024-01-19 13:54:49 --> Total execution time: 0.0583
+INFO - 2024-01-19 13:54:50 --> Config Class Initialized
+INFO - 2024-01-19 13:54:50 --> Hooks Class Initialized
+DEBUG - 2024-01-19 13:54:50 --> UTF-8 Support Enabled
+INFO - 2024-01-19 13:54:50 --> Utf8 Class Initialized
+INFO - 2024-01-19 13:54:50 --> URI Class Initialized
+INFO - 2024-01-19 13:54:50 --> Router Class Initialized
+INFO - 2024-01-19 13:54:50 --> Output Class Initialized
+INFO - 2024-01-19 13:54:50 --> Security Class Initialized
+DEBUG - 2024-01-19 13:54:50 --> Global POST, GET and COOKIE data sanitized
+INFO - 2024-01-19 13:54:50 --> Input Class Initialized
+INFO - 2024-01-19 13:54:50 --> Language Class Initialized
+INFO - 2024-01-19 13:54:50 --> Loader Class Initialized
+INFO - 2024-01-19 13:54:50 --> Helper loaded: url_helper
+INFO - 2024-01-19 13:54:50 --> Helper loaded: global_helper
+INFO - 2024-01-19 13:54:50 --> Helper loaded: security_helper
+INFO - 2024-01-19 13:54:50 --> Helper loaded: file_helper
+INFO - 2024-01-19 13:54:50 --> Helper loaded: mata_uang_helper
+INFO - 2024-01-19 13:54:50 --> Helper loaded: download_helper
+INFO - 2024-01-19 13:54:50 --> Helper loaded: wagw_helper
+INFO - 2024-01-19 13:54:50 --> Helper loaded: mail_helper
+INFO - 2024-01-19 13:54:50 --> Helper loaded: qr_helper
+INFO - 2024-01-19 13:54:50 --> Database Driver Class Initialized
+INFO - 2024-01-19 13:54:50 --> Session: Class initialized using 'files' driver.
+INFO - 2024-01-19 13:54:50 --> Helper loaded: form_helper
+INFO - 2024-01-19 13:54:50 --> Form Validation Class Initialized
+DEBUG - 2024-01-19 13:54:50 --> Encryption: Auto-configured driver 'openssl'.
+INFO - 2024-01-19 13:54:50 --> Encryption: OpenSSL initialized with method AES-128-CBC.
+INFO - 2024-01-19 13:54:50 --> Encryption Class Initialized
+INFO - 2024-01-19 13:54:50 --> Upload Class Initialized
+INFO - 2024-01-19 13:54:50 --> Email Class Initialized
+INFO - 2024-01-19 13:54:50 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2024-01-19 13:54:50 --> Pagination Class Initialized
+INFO - 2024-01-19 13:54:50 --> Controller Class Initialized
+INFO - 2024-01-19 13:54:50 --> Model "Events_model" initialized
+INFO - 2024-01-19 13:54:50 --> Model "Absensi_model" initialized
+INFO - 2024-01-19 13:54:50 --> Model "Penjualan_model" initialized
+DEBUG - 2024-01-19 13:54:50 --> Global_library class already loaded. Second attempt ignored.
+DEBUG - 2024-01-19 13:54:50 --> Global_library class already loaded. Second attempt ignored.
+INFO - 2024-01-19 13:54:50 --> File loaded: C:\laragon\www\seminar\application\views\admin/layouts/header.php
+INFO - 2024-01-19 13:54:50 --> File loaded: C:\laragon\www\seminar\application\views\admin/layouts/navbar.php
+DEBUG - 2024-01-19 13:54:50 --> Global_library class already loaded. Second attempt ignored.
+DEBUG - 2024-01-19 13:54:50 --> Global_library class already loaded. Second attempt ignored.
+INFO - 2024-01-19 13:54:50 --> File loaded: C:\laragon\www\seminar\application\views\admin/layouts/sidebar.php
+INFO - 2024-01-19 13:54:50 --> File loaded: C:\laragon\www\seminar\application\views\admin/absensi/detail.php
+INFO - 2024-01-19 13:54:50 --> File loaded: C:\laragon\www\seminar\application\views\admin/layouts/footer.php
+INFO - 2024-01-19 13:54:50 --> Final output sent to browser
+DEBUG - 2024-01-19 13:54:50 --> Total execution time: 0.0665
+INFO - 2024-01-19 13:56:48 --> Config Class Initialized
+INFO - 2024-01-19 13:56:48 --> Hooks Class Initialized
+DEBUG - 2024-01-19 13:56:48 --> UTF-8 Support Enabled
+INFO - 2024-01-19 13:56:48 --> Utf8 Class Initialized
+INFO - 2024-01-19 13:56:48 --> URI Class Initialized
+INFO - 2024-01-19 13:56:48 --> Router Class Initialized
+INFO - 2024-01-19 13:56:48 --> Output Class Initialized
+INFO - 2024-01-19 13:56:48 --> Security Class Initialized
+DEBUG - 2024-01-19 13:56:48 --> Global POST, GET and COOKIE data sanitized
+INFO - 2024-01-19 13:56:48 --> Input Class Initialized
+INFO - 2024-01-19 13:56:48 --> Language Class Initialized
+INFO - 2024-01-19 13:56:48 --> Loader Class Initialized
+INFO - 2024-01-19 13:56:48 --> Helper loaded: url_helper
+INFO - 2024-01-19 13:56:48 --> Helper loaded: global_helper
+INFO - 2024-01-19 13:56:48 --> Helper loaded: security_helper
+INFO - 2024-01-19 13:56:48 --> Helper loaded: file_helper
+INFO - 2024-01-19 13:56:48 --> Helper loaded: mata_uang_helper
+INFO - 2024-01-19 13:56:48 --> Helper loaded: download_helper
+INFO - 2024-01-19 13:56:48 --> Helper loaded: wagw_helper
+INFO - 2024-01-19 13:56:48 --> Helper loaded: mail_helper
+INFO - 2024-01-19 13:56:48 --> Helper loaded: qr_helper
+INFO - 2024-01-19 13:56:48 --> Database Driver Class Initialized
+INFO - 2024-01-19 13:56:48 --> Session: Class initialized using 'files' driver.
+INFO - 2024-01-19 13:56:48 --> Helper loaded: form_helper
+INFO - 2024-01-19 13:56:48 --> Form Validation Class Initialized
+DEBUG - 2024-01-19 13:56:48 --> Encryption: Auto-configured driver 'openssl'.
+INFO - 2024-01-19 13:56:48 --> Encryption: OpenSSL initialized with method AES-128-CBC.
+INFO - 2024-01-19 13:56:48 --> Encryption Class Initialized
+INFO - 2024-01-19 13:56:48 --> Upload Class Initialized
+INFO - 2024-01-19 13:56:48 --> Email Class Initialized
+INFO - 2024-01-19 13:56:48 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2024-01-19 13:56:48 --> Pagination Class Initialized
+INFO - 2024-01-19 13:56:48 --> Controller Class Initialized
+INFO - 2024-01-19 13:56:48 --> Model "Events_model" initialized
+INFO - 2024-01-19 13:56:48 --> Model "Absensi_model" initialized
+INFO - 2024-01-19 13:56:48 --> Model "Penjualan_model" initialized
+INFO - 2024-01-19 13:56:48 --> Final output sent to browser
+DEBUG - 2024-01-19 13:56:48 --> Total execution time: 0.0550
+INFO - 2024-01-19 13:57:51 --> Config Class Initialized
+INFO - 2024-01-19 13:57:51 --> Hooks Class Initialized
+DEBUG - 2024-01-19 13:57:51 --> UTF-8 Support Enabled
+INFO - 2024-01-19 13:57:51 --> Utf8 Class Initialized
+INFO - 2024-01-19 13:57:51 --> URI Class Initialized
+INFO - 2024-01-19 13:57:51 --> Router Class Initialized
+INFO - 2024-01-19 13:57:51 --> Output Class Initialized
+INFO - 2024-01-19 13:57:51 --> Security Class Initialized
+DEBUG - 2024-01-19 13:57:51 --> Global POST, GET and COOKIE data sanitized
+INFO - 2024-01-19 13:57:51 --> Input Class Initialized
+INFO - 2024-01-19 13:57:51 --> Language Class Initialized
+INFO - 2024-01-19 13:57:51 --> Loader Class Initialized
+INFO - 2024-01-19 13:57:51 --> Helper loaded: url_helper
+INFO - 2024-01-19 13:57:51 --> Helper loaded: global_helper
+INFO - 2024-01-19 13:57:51 --> Helper loaded: security_helper
+INFO - 2024-01-19 13:57:51 --> Helper loaded: file_helper
+INFO - 2024-01-19 13:57:51 --> Helper loaded: mata_uang_helper
+INFO - 2024-01-19 13:57:51 --> Helper loaded: download_helper
+INFO - 2024-01-19 13:57:51 --> Helper loaded: wagw_helper
+INFO - 2024-01-19 13:57:51 --> Helper loaded: mail_helper
+INFO - 2024-01-19 13:57:51 --> Helper loaded: qr_helper
+INFO - 2024-01-19 13:57:51 --> Database Driver Class Initialized
+INFO - 2024-01-19 13:57:51 --> Session: Class initialized using 'files' driver.
+INFO - 2024-01-19 13:57:51 --> Helper loaded: form_helper
+INFO - 2024-01-19 13:57:51 --> Form Validation Class Initialized
+DEBUG - 2024-01-19 13:57:51 --> Encryption: Auto-configured driver 'openssl'.
+INFO - 2024-01-19 13:57:51 --> Encryption: OpenSSL initialized with method AES-128-CBC.
+INFO - 2024-01-19 13:57:51 --> Encryption Class Initialized
+INFO - 2024-01-19 13:57:51 --> Upload Class Initialized
+INFO - 2024-01-19 13:57:51 --> Email Class Initialized
+INFO - 2024-01-19 13:57:51 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2024-01-19 13:57:51 --> Pagination Class Initialized
+INFO - 2024-01-19 13:57:51 --> Controller Class Initialized
+INFO - 2024-01-19 13:57:51 --> Model "Events_model" initialized
+INFO - 2024-01-19 13:57:51 --> Model "Absensi_model" initialized
+INFO - 2024-01-19 13:57:51 --> Model "Penjualan_model" initialized
+DEBUG - 2024-01-19 13:57:51 --> Global_library class already loaded. Second attempt ignored.
+DEBUG - 2024-01-19 13:57:51 --> Global_library class already loaded. Second attempt ignored.
+INFO - 2024-01-19 13:57:51 --> File loaded: C:\laragon\www\seminar\application\views\admin/layouts/header.php
+INFO - 2024-01-19 13:57:51 --> File loaded: C:\laragon\www\seminar\application\views\admin/layouts/navbar.php
+DEBUG - 2024-01-19 13:57:51 --> Global_library class already loaded. Second attempt ignored.
+DEBUG - 2024-01-19 13:57:51 --> Global_library class already loaded. Second attempt ignored.
+INFO - 2024-01-19 13:57:51 --> File loaded: C:\laragon\www\seminar\application\views\admin/layouts/sidebar.php
+INFO - 2024-01-19 13:57:51 --> File loaded: C:\laragon\www\seminar\application\views\admin/absensi/detail.php
+INFO - 2024-01-19 13:57:51 --> File loaded: C:\laragon\www\seminar\application\views\admin/layouts/footer.php
+INFO - 2024-01-19 13:57:51 --> Final output sent to browser
+DEBUG - 2024-01-19 13:57:51 --> Total execution time: 0.0582
+INFO - 2024-01-19 13:58:01 --> Config Class Initialized
+INFO - 2024-01-19 13:58:01 --> Hooks Class Initialized
+DEBUG - 2024-01-19 13:58:01 --> UTF-8 Support Enabled
+INFO - 2024-01-19 13:58:01 --> Utf8 Class Initialized
+INFO - 2024-01-19 13:58:01 --> URI Class Initialized
+INFO - 2024-01-19 13:58:01 --> Router Class Initialized
+INFO - 2024-01-19 13:58:01 --> Output Class Initialized
+INFO - 2024-01-19 13:58:01 --> Security Class Initialized
+DEBUG - 2024-01-19 13:58:01 --> Global POST, GET and COOKIE data sanitized
+INFO - 2024-01-19 13:58:01 --> Input Class Initialized
+INFO - 2024-01-19 13:58:01 --> Language Class Initialized
+INFO - 2024-01-19 13:58:01 --> Loader Class Initialized
+INFO - 2024-01-19 13:58:01 --> Helper loaded: url_helper
+INFO - 2024-01-19 13:58:01 --> Helper loaded: global_helper
+INFO - 2024-01-19 13:58:01 --> Helper loaded: security_helper
+INFO - 2024-01-19 13:58:01 --> Helper loaded: file_helper
+INFO - 2024-01-19 13:58:01 --> Helper loaded: mata_uang_helper
+INFO - 2024-01-19 13:58:01 --> Helper loaded: download_helper
+INFO - 2024-01-19 13:58:01 --> Helper loaded: wagw_helper
+INFO - 2024-01-19 13:58:01 --> Helper loaded: mail_helper
+INFO - 2024-01-19 13:58:01 --> Helper loaded: qr_helper
+INFO - 2024-01-19 13:58:01 --> Database Driver Class Initialized
+INFO - 2024-01-19 13:58:01 --> Session: Class initialized using 'files' driver.
+INFO - 2024-01-19 13:58:01 --> Helper loaded: form_helper
+INFO - 2024-01-19 13:58:01 --> Form Validation Class Initialized
+DEBUG - 2024-01-19 13:58:01 --> Encryption: Auto-configured driver 'openssl'.
+INFO - 2024-01-19 13:58:01 --> Encryption: OpenSSL initialized with method AES-128-CBC.
+INFO - 2024-01-19 13:58:01 --> Encryption Class Initialized
+INFO - 2024-01-19 13:58:01 --> Upload Class Initialized
+INFO - 2024-01-19 13:58:01 --> Email Class Initialized
+INFO - 2024-01-19 13:58:01 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2024-01-19 13:58:01 --> Pagination Class Initialized
+INFO - 2024-01-19 13:58:01 --> Controller Class Initialized
+INFO - 2024-01-19 13:58:01 --> Model "Events_model" initialized
+INFO - 2024-01-19 13:58:01 --> Model "Absensi_model" initialized
+INFO - 2024-01-19 13:58:01 --> Model "Penjualan_model" initialized
+DEBUG - 2024-01-19 13:58:01 --> Global_library class already loaded. Second attempt ignored.
+DEBUG - 2024-01-19 13:58:01 --> Global_library class already loaded. Second attempt ignored.
+INFO - 2024-01-19 13:58:01 --> File loaded: C:\laragon\www\seminar\application\views\admin/layouts/header.php
+INFO - 2024-01-19 13:58:01 --> File loaded: C:\laragon\www\seminar\application\views\admin/layouts/navbar.php
+DEBUG - 2024-01-19 13:58:01 --> Global_library class already loaded. Second attempt ignored.
+DEBUG - 2024-01-19 13:58:01 --> Global_library class already loaded. Second attempt ignored.
+INFO - 2024-01-19 13:58:01 --> File loaded: C:\laragon\www\seminar\application\views\admin/layouts/sidebar.php
+INFO - 2024-01-19 13:58:01 --> File loaded: C:\laragon\www\seminar\application\views\admin/absensi/detail.php
+INFO - 2024-01-19 13:58:01 --> File loaded: C:\laragon\www\seminar\application\views\admin/layouts/footer.php
+INFO - 2024-01-19 13:58:01 --> Final output sent to browser
+DEBUG - 2024-01-19 13:58:01 --> Total execution time: 0.0749
+INFO - 2024-01-19 13:58:32 --> Config Class Initialized
+INFO - 2024-01-19 13:58:32 --> Hooks Class Initialized
+DEBUG - 2024-01-19 13:58:32 --> UTF-8 Support Enabled
+INFO - 2024-01-19 13:58:32 --> Utf8 Class Initialized
+INFO - 2024-01-19 13:58:32 --> URI Class Initialized
+INFO - 2024-01-19 13:58:32 --> Router Class Initialized
+INFO - 2024-01-19 13:58:32 --> Output Class Initialized
+INFO - 2024-01-19 13:58:32 --> Security Class Initialized
+DEBUG - 2024-01-19 13:58:32 --> Global POST, GET and COOKIE data sanitized
+INFO - 2024-01-19 13:58:32 --> Input Class Initialized
+INFO - 2024-01-19 13:58:32 --> Language Class Initialized
+INFO - 2024-01-19 13:58:32 --> Loader Class Initialized
+INFO - 2024-01-19 13:58:32 --> Helper loaded: url_helper
+INFO - 2024-01-19 13:58:32 --> Helper loaded: global_helper
+INFO - 2024-01-19 13:58:32 --> Helper loaded: security_helper
+INFO - 2024-01-19 13:58:32 --> Helper loaded: file_helper
+INFO - 2024-01-19 13:58:32 --> Helper loaded: mata_uang_helper
+INFO - 2024-01-19 13:58:32 --> Helper loaded: download_helper
+INFO - 2024-01-19 13:58:32 --> Helper loaded: wagw_helper
+INFO - 2024-01-19 13:58:32 --> Helper loaded: mail_helper
+INFO - 2024-01-19 13:58:32 --> Helper loaded: qr_helper
+INFO - 2024-01-19 13:58:32 --> Database Driver Class Initialized
+INFO - 2024-01-19 13:58:32 --> Session: Class initialized using 'files' driver.
+INFO - 2024-01-19 13:58:32 --> Helper loaded: form_helper
+INFO - 2024-01-19 13:58:32 --> Form Validation Class Initialized
+DEBUG - 2024-01-19 13:58:32 --> Encryption: Auto-configured driver 'openssl'.
+INFO - 2024-01-19 13:58:32 --> Encryption: OpenSSL initialized with method AES-128-CBC.
+INFO - 2024-01-19 13:58:32 --> Encryption Class Initialized
+INFO - 2024-01-19 13:58:32 --> Upload Class Initialized
+INFO - 2024-01-19 13:58:32 --> Email Class Initialized
+INFO - 2024-01-19 13:58:32 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2024-01-19 13:58:32 --> Pagination Class Initialized
+INFO - 2024-01-19 13:58:32 --> Controller Class Initialized
+INFO - 2024-01-19 13:58:32 --> Model "Events_model" initialized
+INFO - 2024-01-19 13:58:32 --> Model "Absensi_model" initialized
+INFO - 2024-01-19 13:58:32 --> Model "Penjualan_model" initialized
+DEBUG - 2024-01-19 13:58:32 --> Global_library class already loaded. Second attempt ignored.
+DEBUG - 2024-01-19 13:58:32 --> Global_library class already loaded. Second attempt ignored.
+INFO - 2024-01-19 13:58:32 --> File loaded: C:\laragon\www\seminar\application\views\admin/layouts/header.php
+INFO - 2024-01-19 13:58:32 --> File loaded: C:\laragon\www\seminar\application\views\admin/layouts/navbar.php
+DEBUG - 2024-01-19 13:58:32 --> Global_library class already loaded. Second attempt ignored.
+DEBUG - 2024-01-19 13:58:32 --> Global_library class already loaded. Second attempt ignored.
+INFO - 2024-01-19 13:58:32 --> File loaded: C:\laragon\www\seminar\application\views\admin/layouts/sidebar.php
+INFO - 2024-01-19 13:58:32 --> File loaded: C:\laragon\www\seminar\application\views\admin/absensi/detail.php
+INFO - 2024-01-19 13:58:32 --> File loaded: C:\laragon\www\seminar\application\views\admin/layouts/footer.php
+INFO - 2024-01-19 13:58:32 --> Final output sent to browser
+DEBUG - 2024-01-19 13:58:32 --> Total execution time: 0.0618
+INFO - 2024-01-19 13:58:36 --> Config Class Initialized
+INFO - 2024-01-19 13:58:36 --> Hooks Class Initialized
+DEBUG - 2024-01-19 13:58:36 --> UTF-8 Support Enabled
+INFO - 2024-01-19 13:58:36 --> Utf8 Class Initialized
+INFO - 2024-01-19 13:58:36 --> URI Class Initialized
+INFO - 2024-01-19 13:58:36 --> Router Class Initialized
+INFO - 2024-01-19 13:58:36 --> Output Class Initialized
+INFO - 2024-01-19 13:58:36 --> Security Class Initialized
+DEBUG - 2024-01-19 13:58:36 --> Global POST, GET and COOKIE data sanitized
+INFO - 2024-01-19 13:58:36 --> Input Class Initialized
+INFO - 2024-01-19 13:58:36 --> Language Class Initialized
+INFO - 2024-01-19 13:58:36 --> Loader Class Initialized
+INFO - 2024-01-19 13:58:36 --> Helper loaded: url_helper
+INFO - 2024-01-19 13:58:36 --> Helper loaded: global_helper
+INFO - 2024-01-19 13:58:36 --> Helper loaded: security_helper
+INFO - 2024-01-19 13:58:36 --> Helper loaded: file_helper
+INFO - 2024-01-19 13:58:36 --> Helper loaded: mata_uang_helper
+INFO - 2024-01-19 13:58:36 --> Helper loaded: download_helper
+INFO - 2024-01-19 13:58:36 --> Helper loaded: wagw_helper
+INFO - 2024-01-19 13:58:36 --> Helper loaded: mail_helper
+INFO - 2024-01-19 13:58:36 --> Helper loaded: qr_helper
+INFO - 2024-01-19 13:58:36 --> Database Driver Class Initialized
+INFO - 2024-01-19 13:58:36 --> Session: Class initialized using 'files' driver.
+INFO - 2024-01-19 13:58:36 --> Helper loaded: form_helper
+INFO - 2024-01-19 13:58:36 --> Form Validation Class Initialized
+DEBUG - 2024-01-19 13:58:36 --> Encryption: Auto-configured driver 'openssl'.
+INFO - 2024-01-19 13:58:36 --> Encryption: OpenSSL initialized with method AES-128-CBC.
+INFO - 2024-01-19 13:58:36 --> Encryption Class Initialized
+INFO - 2024-01-19 13:58:36 --> Upload Class Initialized
+INFO - 2024-01-19 13:58:36 --> Email Class Initialized
+INFO - 2024-01-19 13:58:36 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2024-01-19 13:58:36 --> Pagination Class Initialized
+INFO - 2024-01-19 13:58:36 --> Controller Class Initialized
+INFO - 2024-01-19 13:58:36 --> Model "Events_model" initialized
+INFO - 2024-01-19 13:58:36 --> Model "Absensi_model" initialized
+INFO - 2024-01-19 13:58:36 --> Model "Penjualan_model" initialized
+INFO - 2024-01-19 13:58:36 --> Final output sent to browser
+DEBUG - 2024-01-19 13:58:36 --> Total execution time: 0.0529
+INFO - 2024-01-19 14:09:03 --> Config Class Initialized
+INFO - 2024-01-19 14:09:03 --> Hooks Class Initialized
+DEBUG - 2024-01-19 14:09:03 --> UTF-8 Support Enabled
+INFO - 2024-01-19 14:09:03 --> Utf8 Class Initialized
+INFO - 2024-01-19 14:09:03 --> URI Class Initialized
+INFO - 2024-01-19 14:09:03 --> Router Class Initialized
+INFO - 2024-01-19 14:09:03 --> Output Class Initialized
+INFO - 2024-01-19 14:09:03 --> Security Class Initialized
+DEBUG - 2024-01-19 14:09:03 --> Global POST, GET and COOKIE data sanitized
+INFO - 2024-01-19 14:09:03 --> Input Class Initialized
+INFO - 2024-01-19 14:09:03 --> Language Class Initialized
+INFO - 2024-01-19 14:09:03 --> Loader Class Initialized
+INFO - 2024-01-19 14:09:03 --> Helper loaded: url_helper
+INFO - 2024-01-19 14:09:03 --> Helper loaded: global_helper
+INFO - 2024-01-19 14:09:03 --> Helper loaded: security_helper
+INFO - 2024-01-19 14:09:03 --> Helper loaded: file_helper
+INFO - 2024-01-19 14:09:03 --> Helper loaded: mata_uang_helper
+INFO - 2024-01-19 14:09:03 --> Helper loaded: download_helper
+INFO - 2024-01-19 14:09:03 --> Helper loaded: wagw_helper
+INFO - 2024-01-19 14:09:03 --> Helper loaded: mail_helper
+INFO - 2024-01-19 14:09:03 --> Helper loaded: qr_helper
+INFO - 2024-01-19 14:09:03 --> Database Driver Class Initialized
+INFO - 2024-01-19 14:09:03 --> Session: Class initialized using 'files' driver.
+INFO - 2024-01-19 14:09:03 --> Helper loaded: form_helper
+INFO - 2024-01-19 14:09:03 --> Form Validation Class Initialized
+DEBUG - 2024-01-19 14:09:03 --> Encryption: Auto-configured driver 'openssl'.
+INFO - 2024-01-19 14:09:03 --> Encryption: OpenSSL initialized with method AES-128-CBC.
+INFO - 2024-01-19 14:09:03 --> Encryption Class Initialized
+INFO - 2024-01-19 14:09:03 --> Upload Class Initialized
+INFO - 2024-01-19 14:09:03 --> Email Class Initialized
+INFO - 2024-01-19 14:09:03 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2024-01-19 14:09:03 --> Pagination Class Initialized
+INFO - 2024-01-19 14:09:03 --> Controller Class Initialized
+INFO - 2024-01-19 14:09:03 --> Model "Events_model" initialized
+INFO - 2024-01-19 14:09:03 --> Model "Absensi_model" initialized
+INFO - 2024-01-19 14:09:03 --> Model "Penjualan_model" initialized
+DEBUG - 2024-01-19 14:09:03 --> Global_library class already loaded. Second attempt ignored.
+DEBUG - 2024-01-19 14:09:03 --> Global_library class already loaded. Second attempt ignored.
+INFO - 2024-01-19 14:09:03 --> File loaded: C:\laragon\www\seminar\application\views\admin/layouts/header.php
+INFO - 2024-01-19 14:09:03 --> File loaded: C:\laragon\www\seminar\application\views\admin/layouts/navbar.php
+DEBUG - 2024-01-19 14:09:03 --> Global_library class already loaded. Second attempt ignored.
+DEBUG - 2024-01-19 14:09:03 --> Global_library class already loaded. Second attempt ignored.
+INFO - 2024-01-19 14:09:03 --> File loaded: C:\laragon\www\seminar\application\views\admin/layouts/sidebar.php
+INFO - 2024-01-19 14:09:03 --> File loaded: C:\laragon\www\seminar\application\views\admin/absensi/detail.php
+INFO - 2024-01-19 14:09:03 --> File loaded: C:\laragon\www\seminar\application\views\admin/layouts/footer.php
+INFO - 2024-01-19 14:09:03 --> Final output sent to browser
+DEBUG - 2024-01-19 14:09:03 --> Total execution time: 0.0625
+INFO - 2024-01-19 14:09:48 --> Config Class Initialized
+INFO - 2024-01-19 14:09:48 --> Hooks Class Initialized
+DEBUG - 2024-01-19 14:09:48 --> UTF-8 Support Enabled
+INFO - 2024-01-19 14:09:48 --> Utf8 Class Initialized
+INFO - 2024-01-19 14:09:48 --> URI Class Initialized
+INFO - 2024-01-19 14:09:48 --> Router Class Initialized
+INFO - 2024-01-19 14:09:48 --> Output Class Initialized
+INFO - 2024-01-19 14:09:48 --> Security Class Initialized
+DEBUG - 2024-01-19 14:09:48 --> Global POST, GET and COOKIE data sanitized
+INFO - 2024-01-19 14:09:48 --> Input Class Initialized
+INFO - 2024-01-19 14:09:48 --> Language Class Initialized
+INFO - 2024-01-19 14:09:48 --> Loader Class Initialized
+INFO - 2024-01-19 14:09:48 --> Helper loaded: url_helper
+INFO - 2024-01-19 14:09:48 --> Helper loaded: global_helper
+INFO - 2024-01-19 14:09:48 --> Helper loaded: security_helper
+INFO - 2024-01-19 14:09:48 --> Helper loaded: file_helper
+INFO - 2024-01-19 14:09:48 --> Helper loaded: mata_uang_helper
+INFO - 2024-01-19 14:09:48 --> Helper loaded: download_helper
+INFO - 2024-01-19 14:09:48 --> Helper loaded: wagw_helper
+INFO - 2024-01-19 14:09:48 --> Helper loaded: mail_helper
+INFO - 2024-01-19 14:09:48 --> Helper loaded: qr_helper
+INFO - 2024-01-19 14:09:48 --> Database Driver Class Initialized
+INFO - 2024-01-19 14:09:48 --> Session: Class initialized using 'files' driver.
+INFO - 2024-01-19 14:09:48 --> Helper loaded: form_helper
+INFO - 2024-01-19 14:09:48 --> Form Validation Class Initialized
+DEBUG - 2024-01-19 14:09:48 --> Encryption: Auto-configured driver 'openssl'.
+INFO - 2024-01-19 14:09:48 --> Encryption: OpenSSL initialized with method AES-128-CBC.
+INFO - 2024-01-19 14:09:48 --> Encryption Class Initialized
+INFO - 2024-01-19 14:09:48 --> Upload Class Initialized
+INFO - 2024-01-19 14:09:48 --> Email Class Initialized
+INFO - 2024-01-19 14:09:48 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2024-01-19 14:09:48 --> Pagination Class Initialized
+INFO - 2024-01-19 14:09:48 --> Controller Class Initialized
+INFO - 2024-01-19 14:09:48 --> Model "Events_model" initialized
+INFO - 2024-01-19 14:09:48 --> Model "Absensi_model" initialized
+INFO - 2024-01-19 14:09:48 --> Model "Penjualan_model" initialized
+INFO - 2024-01-19 14:10:12 --> Config Class Initialized
+INFO - 2024-01-19 14:10:12 --> Hooks Class Initialized
+DEBUG - 2024-01-19 14:10:12 --> UTF-8 Support Enabled
+INFO - 2024-01-19 14:10:12 --> Utf8 Class Initialized
+INFO - 2024-01-19 14:10:12 --> URI Class Initialized
+INFO - 2024-01-19 14:10:12 --> Router Class Initialized
+INFO - 2024-01-19 14:10:12 --> Output Class Initialized
+INFO - 2024-01-19 14:10:12 --> Security Class Initialized
+DEBUG - 2024-01-19 14:10:12 --> Global POST, GET and COOKIE data sanitized
+INFO - 2024-01-19 14:10:12 --> Input Class Initialized
+INFO - 2024-01-19 14:10:12 --> Language Class Initialized
+INFO - 2024-01-19 14:10:12 --> Loader Class Initialized
+INFO - 2024-01-19 14:10:12 --> Helper loaded: url_helper
+INFO - 2024-01-19 14:10:12 --> Helper loaded: global_helper
+INFO - 2024-01-19 14:10:12 --> Helper loaded: security_helper
+INFO - 2024-01-19 14:10:12 --> Helper loaded: file_helper
+INFO - 2024-01-19 14:10:12 --> Helper loaded: mata_uang_helper
+INFO - 2024-01-19 14:10:12 --> Helper loaded: download_helper
+INFO - 2024-01-19 14:10:12 --> Helper loaded: wagw_helper
+INFO - 2024-01-19 14:10:12 --> Helper loaded: mail_helper
+INFO - 2024-01-19 14:10:12 --> Helper loaded: qr_helper
+INFO - 2024-01-19 14:10:12 --> Database Driver Class Initialized
+INFO - 2024-01-19 14:10:12 --> Session: Class initialized using 'files' driver.
+INFO - 2024-01-19 14:10:12 --> Helper loaded: form_helper
+INFO - 2024-01-19 14:10:12 --> Form Validation Class Initialized
+DEBUG - 2024-01-19 14:10:12 --> Encryption: Auto-configured driver 'openssl'.
+INFO - 2024-01-19 14:10:12 --> Encryption: OpenSSL initialized with method AES-128-CBC.
+INFO - 2024-01-19 14:10:12 --> Encryption Class Initialized
+INFO - 2024-01-19 14:10:12 --> Upload Class Initialized
+INFO - 2024-01-19 14:10:12 --> Email Class Initialized
+INFO - 2024-01-19 14:10:12 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2024-01-19 14:10:12 --> Pagination Class Initialized
+INFO - 2024-01-19 14:10:12 --> Controller Class Initialized
+INFO - 2024-01-19 14:10:12 --> Model "Events_model" initialized
+INFO - 2024-01-19 14:10:13 --> Model "Absensi_model" initialized
+INFO - 2024-01-19 14:10:13 --> Model "Penjualan_model" initialized
+DEBUG - 2024-01-19 14:10:13 --> Global_library class already loaded. Second attempt ignored.
+DEBUG - 2024-01-19 14:10:13 --> Global_library class already loaded. Second attempt ignored.
+INFO - 2024-01-19 14:10:13 --> File loaded: C:\laragon\www\seminar\application\views\admin/layouts/header.php
+INFO - 2024-01-19 14:10:13 --> File loaded: C:\laragon\www\seminar\application\views\admin/layouts/navbar.php
+DEBUG - 2024-01-19 14:10:13 --> Global_library class already loaded. Second attempt ignored.
+DEBUG - 2024-01-19 14:10:13 --> Global_library class already loaded. Second attempt ignored.
+INFO - 2024-01-19 14:10:13 --> File loaded: C:\laragon\www\seminar\application\views\admin/layouts/sidebar.php
+INFO - 2024-01-19 14:10:13 --> File loaded: C:\laragon\www\seminar\application\views\admin/absensi/detail.php
+INFO - 2024-01-19 14:10:13 --> File loaded: C:\laragon\www\seminar\application\views\admin/layouts/footer.php
+INFO - 2024-01-19 14:10:13 --> Final output sent to browser
+DEBUG - 2024-01-19 14:10:13 --> Total execution time: 0.0622
+INFO - 2024-01-19 14:10:26 --> Config Class Initialized
+INFO - 2024-01-19 14:10:26 --> Hooks Class Initialized
+DEBUG - 2024-01-19 14:10:26 --> UTF-8 Support Enabled
+INFO - 2024-01-19 14:10:26 --> Utf8 Class Initialized
+INFO - 2024-01-19 14:10:26 --> URI Class Initialized
+INFO - 2024-01-19 14:10:26 --> Router Class Initialized
+INFO - 2024-01-19 14:10:26 --> Output Class Initialized
+INFO - 2024-01-19 14:10:26 --> Security Class Initialized
+DEBUG - 2024-01-19 14:10:26 --> Global POST, GET and COOKIE data sanitized
+INFO - 2024-01-19 14:10:26 --> Input Class Initialized
+INFO - 2024-01-19 14:10:26 --> Language Class Initialized
+INFO - 2024-01-19 14:10:26 --> Loader Class Initialized
+INFO - 2024-01-19 14:10:26 --> Helper loaded: url_helper
+INFO - 2024-01-19 14:10:26 --> Helper loaded: global_helper
+INFO - 2024-01-19 14:10:26 --> Helper loaded: security_helper
+INFO - 2024-01-19 14:10:26 --> Helper loaded: file_helper
+INFO - 2024-01-19 14:10:26 --> Helper loaded: mata_uang_helper
+INFO - 2024-01-19 14:10:26 --> Helper loaded: download_helper
+INFO - 2024-01-19 14:10:26 --> Helper loaded: wagw_helper
+INFO - 2024-01-19 14:10:26 --> Helper loaded: mail_helper
+INFO - 2024-01-19 14:10:26 --> Helper loaded: qr_helper
+INFO - 2024-01-19 14:10:26 --> Database Driver Class Initialized
+INFO - 2024-01-19 14:10:26 --> Session: Class initialized using 'files' driver.
+INFO - 2024-01-19 14:10:26 --> Helper loaded: form_helper
+INFO - 2024-01-19 14:10:26 --> Form Validation Class Initialized
+DEBUG - 2024-01-19 14:10:26 --> Encryption: Auto-configured driver 'openssl'.
+INFO - 2024-01-19 14:10:26 --> Encryption: OpenSSL initialized with method AES-128-CBC.
+INFO - 2024-01-19 14:10:26 --> Encryption Class Initialized
+INFO - 2024-01-19 14:10:26 --> Upload Class Initialized
+INFO - 2024-01-19 14:10:26 --> Email Class Initialized
+INFO - 2024-01-19 14:10:26 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2024-01-19 14:10:26 --> Pagination Class Initialized
+INFO - 2024-01-19 14:10:26 --> Controller Class Initialized
+INFO - 2024-01-19 14:10:26 --> Model "Events_model" initialized
+INFO - 2024-01-19 14:10:26 --> Model "Absensi_model" initialized
+INFO - 2024-01-19 14:10:26 --> Model "Penjualan_model" initialized
+INFO - 2024-01-19 14:10:34 --> Config Class Initialized
+INFO - 2024-01-19 14:10:34 --> Hooks Class Initialized
+DEBUG - 2024-01-19 14:10:34 --> UTF-8 Support Enabled
+INFO - 2024-01-19 14:10:34 --> Utf8 Class Initialized
+INFO - 2024-01-19 14:10:34 --> URI Class Initialized
+INFO - 2024-01-19 14:10:34 --> Router Class Initialized
+INFO - 2024-01-19 14:10:34 --> Output Class Initialized
+INFO - 2024-01-19 14:10:34 --> Security Class Initialized
+DEBUG - 2024-01-19 14:10:34 --> Global POST, GET and COOKIE data sanitized
+INFO - 2024-01-19 14:10:34 --> Input Class Initialized
+INFO - 2024-01-19 14:10:34 --> Language Class Initialized
+INFO - 2024-01-19 14:10:34 --> Loader Class Initialized
+INFO - 2024-01-19 14:10:34 --> Helper loaded: url_helper
+INFO - 2024-01-19 14:10:34 --> Helper loaded: global_helper
+INFO - 2024-01-19 14:10:34 --> Helper loaded: security_helper
+INFO - 2024-01-19 14:10:34 --> Helper loaded: file_helper
+INFO - 2024-01-19 14:10:34 --> Helper loaded: mata_uang_helper
+INFO - 2024-01-19 14:10:34 --> Helper loaded: download_helper
+INFO - 2024-01-19 14:10:34 --> Helper loaded: wagw_helper
+INFO - 2024-01-19 14:10:34 --> Helper loaded: mail_helper
+INFO - 2024-01-19 14:10:34 --> Helper loaded: qr_helper
+INFO - 2024-01-19 14:10:34 --> Database Driver Class Initialized
+INFO - 2024-01-19 14:10:34 --> Session: Class initialized using 'files' driver.
+INFO - 2024-01-19 14:10:34 --> Helper loaded: form_helper
+INFO - 2024-01-19 14:10:34 --> Form Validation Class Initialized
+DEBUG - 2024-01-19 14:10:34 --> Encryption: Auto-configured driver 'openssl'.
+INFO - 2024-01-19 14:10:34 --> Encryption: OpenSSL initialized with method AES-128-CBC.
+INFO - 2024-01-19 14:10:34 --> Encryption Class Initialized
+INFO - 2024-01-19 14:10:34 --> Upload Class Initialized
+INFO - 2024-01-19 14:10:34 --> Email Class Initialized
+INFO - 2024-01-19 14:10:34 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2024-01-19 14:10:34 --> Pagination Class Initialized
+INFO - 2024-01-19 14:10:34 --> Controller Class Initialized
+INFO - 2024-01-19 14:10:34 --> Model "Events_model" initialized
+INFO - 2024-01-19 14:10:34 --> Model "Absensi_model" initialized
+INFO - 2024-01-19 14:10:34 --> Model "Penjualan_model" initialized

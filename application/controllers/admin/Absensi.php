@@ -50,7 +50,8 @@ class Absensi extends CI_Controller
     public function getdataScan()
     {
         $id_order = $this->input->post('id_order');
-
+        var_dump($id_order);
+        die;
         try {
             // Use your model to get data based on id_order
             $data = $this->penjualan->getDataByIdOrder($id_order);
