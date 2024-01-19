@@ -6,8 +6,18 @@ $vendorDir = dirname(__DIR__);
 $baseDir = dirname($vendorDir);
 
 return array(
+    'Symfony\\Component\\OptionsResolver\\' => array($vendorDir . '/symfony/options-resolver'),
+    'Psr\\Http\\Message\\' => array($vendorDir . '/psr/http-factory/src', $vendorDir . '/psr/http-message/src'),
+    'Psr\\Http\\Client\\' => array($vendorDir . '/psr/http-client/src'),
     'PhpParser\\' => array($vendorDir . '/nikic/php-parser/lib/PhpParser'),
     'PHPMailer\\PHPMailer\\' => array($vendorDir . '/phpmailer/phpmailer/src'),
+    'Nyholm\\Psr7\\' => array($vendorDir . '/nyholm/psr7/src'),
+    'Http\\Promise\\' => array($vendorDir . '/php-http/promise/src'),
+    'Http\\Message\\' => array($vendorDir . '/php-http/message/src'),
+    'Http\\Discovery\\' => array($vendorDir . '/php-http/discovery/src'),
+    'Http\\Client\\Curl\\' => array($vendorDir . '/php-http/curl-client/src'),
+    'Http\\Client\\' => array($vendorDir . '/php-http/httplug/src'),
     'Doctrine\\Instantiator\\' => array($vendorDir . '/doctrine/instantiator/src/Doctrine/Instantiator'),
     'DeepCopy\\' => array($vendorDir . '/myclabs/deep-copy/src/DeepCopy'),
+    'Clue\\StreamFilter\\' => array($vendorDir . '/clue/stream-filter/src'),
 );

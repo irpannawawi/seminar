@@ -56,6 +56,9 @@
 <script src="<?= base_url('assets/backend') ?>/dist/js/event/table.js"></script>
 <script src="<?= base_url('assets/backend') ?>/dist/js/event/partnership.js"></script>
 
+<!-- scanner -->
+<script src="https://rawgit.com/schmich/instascan-builds/master/instascan.min.js"></script>
+
 <script>
     const baseurl = '<?= base_url() ?>';
 </script>

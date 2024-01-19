@@ -65,7 +65,24 @@
                 </div>
                 <div class="modal-body">
                     <div class="form-group">
-                        <!-- Kamera scan -->
+                        <video id="reader" class="scann__qr"></video>
+                        <br>
+                        <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                            <label class="btn btn-primary">
+                                <input class="custom-control-input" type="radio" name="options" value="1" checked> Camera Depan
+                            </label>
+                            <label class="btn btn-secondary active">
+                                <input class="custom-control-input" type="radio" name="options" value="2"> Camera Belakang
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <p id="id_order"></p>
+                        <p id="name"></p>
+                        <p id="event_title"></p>
+                        <p id="email"></p>
+                        <p id="whatsapp"></p>
+                        <p id="domisili"></p>
                     </div>
                 </div>
                 <div class="modal-footer justify-content-between">
@@ -78,3 +95,5 @@
     </div>
     <!-- /.modal-dialog -->
 </div>
+
+<script src="<?= base_url('assets/backend') ?>/dist/js/absensi/scanqr.js"></script>

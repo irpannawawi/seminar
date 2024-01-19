@@ -9,6 +9,7 @@ class Absensi extends CI_Controller
         is_logged_in();
         $this->load->model('Events_model', 'events');
         $this->load->model('Absensi_model', 'absensi');
+        $this->load->model('Penjualan_model', 'penjualan');
     }
 
     public function index()
@@ -43,5 +44,30 @@ class Absensi extends CI_Controller
         $this->load->view('admin/layouts/sidebar');
         $this->load->view('admin/absensi/detail');
         $this->load->view('admin/layouts/footer');
+    }
+
+    // In your controller
+    public function getdataScan()
+    {
+        $id_order = $this->input->post('id_order');
+
+        try {
+            // Use your model to get data based on id_order
+            $data = $this->penjualan->getDataByIdOrder($id_order);
+
+            if ($data) {
+                // Return the data as JSON
+                echo json_encode(array('success' => true, 'data' => $data));
+            } else {
+                // Data not found
+                echo json_encode(array('success' => false, 'message' => 'Data not found.'));
+            }
+        } catch (Exception $e) {
+            // Log the error or handle it accordingly
+            log_message('error', 'Error in getdataScan: ' . $e->getMessage());
+
+            // Return an error message
+            echo json_encode(array('success' => false, 'message' => 'An error occurred.'));
+        }
     }
 }

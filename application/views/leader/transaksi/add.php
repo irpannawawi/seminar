@@ -69,29 +69,29 @@
                 '<div class="col-6">' +
                 '<div class="form-group">' +
                 '<label for="qty">Qty</label>' +
-                '<input type="text" class="form-control" name="qty" id="qty" value="<?= set_value('qty') ?>">' +
+                '<input type="text" class="form-control" value="1" name="qty" id="qty" value="<?= set_value('qty') ?>">' +
                 '</div>' +
                 '<div class="form-group">' +
                 '<label for="nama">Nama</label>' +
-                '<input type="text" class="form-control" name="name" id="name" value="<?= set_value('name') ?>">' +
+                '<input type="text" class="form-control" value="Sandi" name="name" id="name" value="<?= set_value('name') ?>">' +
                 '</div>' +
                 '</div>' +
 
                 '<div class="col-6">' +
                 '<div class="form-group">' +
                 '<label for="email">Email</label>' +
-                '<input type="email" class="form-control" name="email" id="email" value="<?= set_value('email') ?>">' +
+                '<input type="email" class="form-control" value="infosandemo@gmail.com" name="email" id="email" value="<?= set_value('email') ?>">' +
                 '</div>' +
                 '<div class="form-group">' +
                 '<label for="no_whatsapp">No. Whatsapp</label>' +
-                '<input type="text" class="form-control" name="nowa" id="nowa" value="<?= set_value('nowa') ?>">' +
+                '<input type="text" class="form-control" value="082182877737" name="nowa" id="nowa" value="<?= set_value('nowa') ?>">' +
                 '</div>' +
                 '</div>' +
                 '</div>' +
 
                 '<div class="form-group">' +
                 '<label for="no_whatsapp">Domisili</label>' +
-                '<input type="text" class="form-control" name="domisili" id="domisili" value="<?= set_value('domisili') ?>">' +
+                '<input type="text" class="form-control" value="Jakarta" name="domisili" id="domisili" value="<?= set_value('domisili') ?>">' +
                 '</div>' +
                 '</div>';
             // Tambahkan formulir tambahan ke dalam elemen dengan class card-body

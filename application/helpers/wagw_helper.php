@@ -84,6 +84,7 @@ if (!function_exists('sendWhatsappQR')) {
             CURLOPT_POSTFIELDS => array(
                 'target' => $whatsapp,
                 'message' => $message,
+                // 'file' => new CURLFile($file),
             ),
             CURLOPT_HTTPHEADER => array(
                 'Authorization: ' . $wagw['token']

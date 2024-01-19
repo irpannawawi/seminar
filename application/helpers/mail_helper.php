@@ -7,7 +7,7 @@ use PHPMailer\PHPMailer\SMTP;
 use PHPMailer\PHPMailer\Exception;
 
 if (!function_exists('send_email')) {
-    function send_email($recive, $subject)
+    function send_email($data)
     {
         $ci = &get_instance();
         $mailer = $ci->integrasi->mailer();
@@ -27,26 +27,26 @@ if (!function_exists('send_email')) {
 
         //Recipients
         $mail->setFrom($mailer['mail_address'], $mailer['mail_name']);
-        $mail->addAddress($recive); // Penerima
+        $mail->addAddress($data['email']); // Penerima
         $mail->addReplyTo($mailer['mail_reply'], $mailer['mail_name']);
 
         //Attachments
-        // $mail->addAttachment('/var/tmp/file.tar.gz');
+        if ($data['qr_code']) {
+            $mail->addAttachment($data['qr_code'], "QR Absensi");
+        } else {
+        }
 
         //Content
         $mail->isHTML(true);
-        $mail->Subject = $subject;
+        $mail->Subject = $data['event_title'];
         $mail->Body    = 'testing';
 
         // Send recive
-        if (!$mail->send()) {
-            log_message('error', 'Failed to send email: ' . $mail->ErrorInfo);
-            set_pesan($mail->ErrorInfo, false);
-            redirect($_SERVER['HTTP_REFERER']);
+        if ($mail->send()) {
+            return true;
         } else {
-            log_message('debug', 'Email sent successfully');
-            set_pesan('Berhasil kirim pesan!');
-            redirect($_SERVER['HTTP_REFERER']);
+            echo $mail->ErrorInfo;
+            exit;
         }
     }
 }

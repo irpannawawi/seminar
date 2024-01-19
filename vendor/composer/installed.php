@@ -3,7 +3,7 @@
         'name' => 'codeigniter/framework',
         'pretty_version' => 'dev-main',
         'version' => 'dev-main',
-        'reference' => '0d7fa64359c667bd13e0b35c6b366f40a361256c',
+        'reference' => '34c83997f2ee505a40b6a5f19ad5f9f340e457d2',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -22,7 +22,7 @@
         'codeigniter/framework' => array(
             'pretty_version' => 'dev-main',
             'version' => 'dev-main',
-            'reference' => '0d7fa64359c667bd13e0b35c6b366f40a361256c',
+            'reference' => '34c83997f2ee505a40b6a5f19ad5f9f340e457d2',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
@@ -56,13 +56,22 @@
             'dev_requirement' => true,
         ),
         'nikic/php-parser' => array(
-            'pretty_version' => 'v4.18.0',
-            'version' => '4.18.0.0',
-            'reference' => '1bcbb2179f97633e98bbbc87044ee2611c7d7999',
+            'pretty_version' => 'v5.0.0',
+            'version' => '5.0.0.0',
+            'reference' => '4a21235f7e56e713259a6f76bf4b5ea08502b9dc',
             'type' => 'library',
             'install_path' => __DIR__ . '/../nikic/php-parser',
             'aliases' => array(),
             'dev_requirement' => true,
+        ),
+        'nyholm/psr7' => array(
+            'pretty_version' => '1.8.1',
+            'version' => '1.8.1.0',
+            'reference' => 'aa5fc277a4f5508013d571341ade0c3886d4d00e',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../nyholm/psr7',
+            'aliases' => array(),
+            'dev_requirement' => false,
         ),
         'phar-io/manifest' => array(
             'pretty_version' => '2.0.3',
@@ -85,15 +94,15 @@
         'php-http/async-client-implementation' => array(
             'dev_requirement' => false,
             'provided' => array(
-                0 => '*',
-                1 => '1.0',
+                0 => '1.0',
+                1 => '*',
             ),
         ),
         'php-http/client-implementation' => array(
             'dev_requirement' => false,
             'provided' => array(
-                0 => '*',
-                1 => '1.0',
+                0 => '1.0',
+                1 => '*',
             ),
         ),
         'php-http/curl-client' => array(
@@ -222,14 +231,24 @@
         'psr/http-client-implementation' => array(
             'dev_requirement' => false,
             'provided' => array(
-                0 => '*',
-                1 => '1.0',
+                0 => '1.0',
+                1 => '*',
             ),
+        ),
+        'psr/http-factory' => array(
+            'pretty_version' => '1.0.2',
+            'version' => '1.0.2.0',
+            'reference' => 'e616d01114759c4c489f93b099585439f795fe35',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../psr/http-factory',
+            'aliases' => array(),
+            'dev_requirement' => false,
         ),
         'psr/http-factory-implementation' => array(
             'dev_requirement' => false,
             'provided' => array(
-                0 => '*',
+                0 => '1.0',
+                1 => '*',
             ),
         ),
         'psr/http-message' => array(
@@ -244,7 +263,8 @@
         'psr/http-message-implementation' => array(
             'dev_requirement' => false,
             'provided' => array(
-                0 => '*',
+                0 => '1.0',
+                1 => '*',
             ),
         ),
         'sebastian/cli-parser' => array(

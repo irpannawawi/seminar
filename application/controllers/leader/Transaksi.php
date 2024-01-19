@@ -93,7 +93,7 @@ class Transaksi extends CI_Controller
                 $peserta_id = $this->db->insert_id();
 
                 // Mengenerate ID Transaksi
-                $number = str_pad(rand(100000000000, 999999999999), 13);
+                $number = trim(str_pad(rand(100000000000, 999999999999), 13));
                 $idOrder = 'TS' . $number;
 
                 // Ambil data transaksi dari form
@@ -139,12 +139,26 @@ class Transaksi extends CI_Controller
                 $whatsapp = $nowa . '|' . $name . '|' . $event_title . '|' . $idOrder . '|' . $waktu . '|' . $qty_requested;
 
                 if ($type_event == 'offline') {
-                    sendWhatsappQR($whatsapp, 'Wa qr');
+                    // Generate QR Code
+                    $qr_filename = $idOrder;
+                    $qr_code = generateQRCode($idOrder, $qr_filename);
+
+                    $params = array(
+                        'email' => $email,
+                        'event_title' => $event_title,
+                        'qr_code' => $qr_code,
+                        'name' => $name,
+                        'idOrder' => $idOrder,
+                        'waktu' => $waktu,
+                        'qty_requested' => $qty_requested,
+                    );
+                    // Panggil helper sendWhatsappQR
+                    send_email($params);
+                    sendWhatsappQR($whatsapp, $setting['sukses_bayar']);
                 } else {
                     sendWhatsapp($whatsapp, $setting['sukses_bayar']);
-                    send_email($email, $event_title);
+                    // send_email($email, $event_title);
                 }
-
                 redirect($_SERVER['HTTP_REFERER']);
             } else {
                 set_pesan('Kuota tiket tidak mencukupi!', false);
