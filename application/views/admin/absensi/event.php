@@ -27,6 +27,7 @@
                                 <tr>
                                     <th>No</th>
                                     <th>Nama Event</th>
+                                    <th>Waktu Pelaksanaan</th>
                                     <th>Aksi</th>
                                 </tr>
                             </thead>
@@ -37,6 +38,7 @@
                                     <tr>
                                         <td><?= $no++ ?></td>
                                         <td><?= $event['title'] ?></td>
+                                        <td><?= tanggal($event['date_start']) ?></td>
                                         <td class="text-center">
                                             <a href="<?= site_url('admin/absensi/detail/') . $event['id_events'] ?>" class="btn btn-info">
                                                 <i class="fas fa-users"></i> Detail Absensi

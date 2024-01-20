@@ -1,4 +1,4 @@
-<div class="content-header pr-lg-5">
+<div class="content-header">
     <div class="container-fluid">
         <div class="row mb-2">
             <div class="col-sm-6">
@@ -13,47 +13,48 @@
         </div><!-- /.row -->
     </div><!-- /.container-fluid -->
 </div>
-<section class="content pr-lg-5">
+<section class="content">
     <div class="container-fluid">
-        <div class="row">
-            <div class="col-12">
-                <div class="card">
-                    <div class="card-header">
-                        <h3 class="card-title"><?php echo 'Tabel ' . $title ?></h3>
-                    </div>
-                    <!-- /.card-header -->
-                    <div class="card-body">
-                        <table id="table-data" class="table table-bordered table-striped">
-                            <thead>
-                                <tr>
-                                    <th>No</th>
-                                    <th>Nama</th>
-                                    <th>Waktu</th>
-                                    <th>Status</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <?php
-                                $no = 1;
-                                foreach ($absensi as $absensi) : ?>
-                                    <tr>
-                                        <td><?= $no++ ?></td>
-                                        <td><?= $absensi['name'] ?></td>
-                                        <td><?= $absensi['date_absensi'] ?></td>
-                                        <td><?= status_absensi($absensi['status_kehadiran']) ?></td>
-                                    </tr>
-                                <?php endforeach ?>
-                            </tbody>
-                        </table>
-                    </div>
-                    <!-- /.card-body -->
-                </div>
+        <div class="card">
+            <div class="card-header">
+                <h3 class="card-title">Data absensi</h3>
             </div>
+            <!-- /.card-header -->
+            <div class="card-body">
+                <table id="table-data" class="table table-bordered table-striped">
+                    <thead>
+                        <tr>
+                            <th>No</th>
+                            <th>Invoice</th>
+                            <th>Nama</th>
+                            <th>Waktu</th>
+                            <th>Status</th>
+                            <th>Pembayarna</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <?php
+                        $no = 1;
+                        foreach ($absensi as $absensi) : ?>
+                            <tr>
+                                <td><?= $no++ ?></td>
+                                <td><?= $absensi['id_order'] ?></td>
+                                <td><?= $absensi['name'] ?></td>
+                                <td><?= $absensi['date_absensi'] ?></td>
+                                <td><?= status_transaksi($absensi['status_transaksi']) ?></td>
+                                <td><?= status_absensi($absensi['status_kehadiran']) ?></td>
+                            </tr>
+                        <?php endforeach ?>
+                    </tbody>
+                </table>
+            </div>
+            <!-- /.card-body -->
+            <video id="reader" class="scann__qr d-none"></video>
         </div>
     </div>
 </section>
 
-<div class="modal fade" id="addModal">
+<!-- <div class="modal fade" id="addModal">
     <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
             <form action="<?= base_url('admin/rekening') ?>" method="post">
@@ -83,6 +84,7 @@
                         <p id="email"></p>
                         <p id="whatsapp"></p>
                         <p id="domisili"></p>
+                        <p id="status"></p>
                     </div>
                 </div>
                 <div class="modal-footer justify-content-between">
@@ -91,9 +93,7 @@
                 </div>
             </form>
         </div>
-        <!-- /.modal-content -->
     </div>
-    <!-- /.modal-dialog -->
-</div>
+</div> -->
 
 <script src="<?= base_url('assets/backend') ?>/dist/js/absensi/scanqr.js"></script>

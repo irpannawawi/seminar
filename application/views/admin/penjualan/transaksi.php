@@ -76,7 +76,7 @@
                         <div class="form-group">
                             <tr>
                                 <td><b>Order By: </b></td>
-                                <td><?= $value['name']; ?></td><br>
+                                <td><?= $value['by_order']; ?></td><br>
                                 <td><b>Nama: </b></td>
                                 <td><?= $value['peserta_name']; ?></td><br>
                                 <td><b>Nama Event: </b></td>

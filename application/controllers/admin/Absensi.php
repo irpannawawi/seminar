@@ -46,29 +46,70 @@ class Absensi extends CI_Controller
         $this->load->view('admin/layouts/footer');
     }
 
-    // In your controller
-    public function getdataScan()
+    public function insertAbsensi()
     {
         $id_order = $this->input->post('id_order');
-        var_dump($id_order);
-        die;
-        try {
-            // Use your model to get data based on id_order
-            $data = $this->penjualan->getDataByIdOrder($id_order);
+        // Ambil data peserta dari tabel transaksi
+        $dataPeserta = $this->absensi->getDataByIdOrder($id_order);
+        $existingAbsensi = $this->absensi->cekAbsensi($id_order);
 
-            if ($data) {
-                // Return the data as JSON
-                echo json_encode(array('success' => true, 'data' => $data));
+        if ($existingAbsensi) {
+            $this->output->set_content_type('application/json');
+            echo json_encode(['success' => false, 'message' => 'ID Order ' . $id_order . ' sudah terdaftar dalam absensi']);
+            return;
+        }
+
+        if ($dataPeserta) {
+            if ($dataPeserta['status_transaksi'] == 'Lunas') {
+                $status_kehadiran = 'Hadir';
             } else {
-                // Data not found
-                echo json_encode(array('success' => false, 'message' => 'Data not found.'));
+                $status_kehadiran = 'Belum Lunas';
             }
-        } catch (Exception $e) {
-            // Log the error or handle it accordingly
-            log_message('error', 'Error in getdataScan: ' . $e->getMessage());
 
-            // Return an error message
-            echo json_encode(array('success' => false, 'message' => 'An error occurred.'));
+            // Insert data ke tabel absensi
+            $dataAbsensi = [
+                'peserta_id' => $dataPeserta['peserta_id'],
+                'events_id' => $dataPeserta['events_id'],
+                'order_id' => $id_order,
+                'date_absensi' => date('Y-m-d H:i:s'),
+                'status_kehadiran' => $status_kehadiran
+            ];
+
+            if ($this->absensi->insert($dataAbsensi)) {
+                $this->output->set_content_type('application/json');
+                echo json_encode(['success' => true, 'message' => 'Absensi berhasil ditambahkan']);
+            } else {
+                $this->output->set_content_type('application/json');
+                echo json_encode(['success' => false, 'message' => 'Terjadi kesalahan saat insert absensi']);
+            }
+        } else {
+            $this->output->set_content_type('application/json');
+            echo json_encode(['success' => false, 'message' => 'INVC ' . $id_order . ' Tidak Ditemukan']);
         }
     }
+
+    // In your controller
+    // public function getdataScan()
+    // {
+    //     $id_order = $this->input->post('id_order');
+
+    //     try {
+    //         // Use your model to get data based on id_order
+    //         $data = $this->penjualan->getDataByIdOrder($id_order);
+
+    //         if ($data) {
+    //             // Return the data as JSON
+    //             echo json_encode(array('success' => true, 'data' => $data));
+    //         } else {
+    //             // Data not found
+    //             echo json_encode(array('success' => false, 'message' => 'Data not found.'));
+    //         }
+    //     } catch (Exception $e) {
+    //         // Log the error or handle it accordingly
+    //         log_message('error', 'Error in getdataScan: ' . $e->getMessage());
+
+    //         // Return an error message
+    //         echo json_encode(array('success' => false, 'message' => 'An error occurred.'));
+    //     }
+    // }
 }

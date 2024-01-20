@@ -1,4 +1,7 @@
 $(document).ready(function() {
+    const audio = new Audio();
+    audio.src = navigator.userAgent.match(/Firefox/) ? 'assets/backend/dist/sound/shutter.ogg' : 'assets/backend/dist/sound/shutter.mp3';
+
     let scanner = new Instascan.Scanner({ 
         video: document.getElementById('reader'),
         backgroundScan: false,
@@ -6,26 +9,21 @@ $(document).ready(function() {
     });
 
     scanner.addListener('scan', function (content) {
-        // Make an AJAX request to fetch data based on the scanned id_order
+        // audio.play();
         $.ajax({
-            url: baseurl + '/admin/absensi/getdataScan',
+            url: baseurl + 'admin/absensi/insertAbsensi',
             type: 'POST',
             data: { id_order: content },
             success: function(response) {
                 if (response.success) {
-                    // Update the view with the fetched data
-                    $('#id_order').html(response.id_order);
-                    $('#name').html(response.name);
-                    $('#event_title').html(response.title);
-                    $('#email').html(response.email);
-                    $('#whatsapp').html(response.whatsapp);
-                    $('#domisili').html(response.domisili);
+                    toastr.success('Absensi berhasil ditambahkan!');
+                    location.reload();
                 } else {
-                    toastr.error('Data ' + content + ' Tidak Ditemukan')
+                    toastr.error(response.message); // Tampilkan pesan error dari server
                 }
             },
             error: function(xhr, status, error) {
-                toastr.error(error)
+                toastr.error(error);
             }
         });
     });
