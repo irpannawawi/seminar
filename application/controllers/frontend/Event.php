@@ -32,8 +32,8 @@ class Event extends CI_Controller
         // Simpan hasil ke dalam data event
         $data['event']['categories'] = $categories;
 
-        $this->load->view('frontend/layout/header', $data);
-        $this->load->view('frontend/events/event_detail');
+        // $this->load->view('frontend/layout/header');
+        $this->load->view('frontend/events/event_detail', $data);
         $this->load->view('frontend/layout/footer');
     }
 
@@ -58,7 +58,7 @@ class Event extends CI_Controller
         $data['quantity'] = $quantity;
         $data['subtotal'] = $data['event']['price'] * $data['quantity'];
 
-        $this->form_validation->set_rules('name', 'Nama Lengkap', 'required|trim', [
+        $this->form_validation->set_rules('name', 'Nama Lengkap', 'required', [
             'required' => 'Nama Lengkap harus diisi.',
         ]);
         $this->form_validation->set_rules('email', 'Email', 'required|valid_email|trim', [
@@ -99,9 +99,8 @@ class Event extends CI_Controller
 
 
             // Mengenerate ID Transaksi
-            $number = str_pad(rand(100000000000, 999999999999), 13);
+            $number = trim(str_pad(rand(100000000000, 999999999999), 13));
             $idOrder = 'TS' . $number;
-
 
             // Ambil data transaksi dari form
             $transaksi_data = array(
@@ -110,7 +109,7 @@ class Event extends CI_Controller
                 'events_id' => $this->input->post('events_id'),
                 'bank_transfer' => $this->input->post('bank'),
                 'date_transaksi' => date('Y-m-d'),
-                'bukti_transfer' => $this->input->post('bukti_transfer'), // Sesuaikan dengan nama input form untuk bukti transfer
+                'bukti_transfer' => $this->input->post('bukti_transfer'),
                 'code_promo' => $this->input->post('code_promo') ?? '',
                 'tiket' => $this->input->post('tiket'),
                 'nominal' => $this->input->post('nominal'),

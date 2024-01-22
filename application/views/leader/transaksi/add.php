@@ -79,12 +79,12 @@
 
                 '<div class="col-6">' +
                 '<div class="form-group">' +
-                '<label for="email">Email</label>' +
+                '<label for="email">Alamat Email Aktif</label>' +
                 '<input type="email" class="form-control" value="infosandemo@gmail.com" name="email" id="email" value="<?= set_value('email') ?>">' +
                 '</div>' +
                 '<div class="form-group">' +
-                '<label for="no_whatsapp">No. Whatsapp</label>' +
-                '<input type="text" class="form-control" value="082182877737" name="nowa" id="nowa" value="<?= set_value('nowa') ?>">' +
+                '<label for="no_whatsapp">No. Whatsapp Aktif</label>' +
+                '<input type="text" class="form-control" value="085380948596" name="nowa" id="nowa" value="<?= set_value('nowa') ?>">' +
                 '</div>' +
                 '</div>' +
                 '</div>' +

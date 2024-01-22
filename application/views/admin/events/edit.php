@@ -164,7 +164,7 @@
                                 </div>
                                 <div class="col-6">
                                     <label>Kuota</label>
-                                    <input type="text" placeholder="0" name="kuota" class="form-control" id="kuota" value="<?= set_value('kuota', $events['kuota']) ?>">
+                                    <input type="text" placeholder="0" name="sisa_kuota" class="form-control" id="sisa_kuota" value="<?= set_value('sisa_kuota', $events['sisa_kuota']) ?>">
                                 </div>
                             </div>
                         </div>

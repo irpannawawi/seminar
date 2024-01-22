@@ -20,7 +20,7 @@
             <div class="col-12">
                 <div class="card">
                     <div class="card-header">
-                        <h3 class="card-title"><?php echo 'Data ' . $title ?></h3>
+                        <h3 class="card-title"><?php echo 'Data ' . $title . ' Anda' ?></h3>
                         <div class="card-tools">
                             <form action="<?= base_url('leader/transaksi') ?>" method="post">
                                 <div class="input-group input-group-sm" style="width: 150px;">

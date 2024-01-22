@@ -48,6 +48,35 @@ class Leader_model extends CI_Model
         return $this->db->get()->row()->total;
     }
 
+    public function count_events()
+    {
+        $this->db->select('COUNT(*) as count');
+        $this->db->from('events');
+        $this->db->where('events.date_finish >=', date('Y-m-d'));
+
+        return $this->db->get()->row()->count;
+    }
+
+    public function count_transaksi($id)
+    {
+        $this->db->select('COUNT(*) as count');
+        $this->db->from('transaksi');
+        $this->db->where('transaksi.user_id', $id);
+
+        return $this->db->get()->row()->count;
+    }
+
+    public function count_tiket($user_id)
+    {
+        $this->db->select('COUNT(*) as count');
+        $this->db->from('transaksi');
+        $this->db->join('partnership', 'partnership.id_leader = transaksi.leader_id');
+        $this->db->where('transaksi.user_id', $user_id);
+        $this->db->where('partnership.user_id', $user_id);
+
+        return $this->db->get()->row()->count;
+    }
+
     public function getTransaksiLeader($limit = null, $offset = null, $keyword = null)
     {
         $this->db->select('transaksi.*, events.title, peserta.name');

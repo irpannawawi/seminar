@@ -17,6 +17,7 @@ user_guide_src/cilexer/dist/*
 user_guide_src/cilexer/pycilexer.egg-info/*
 # /vendor/
 assets/backend/dist/img/bukti_tf/*
+assets/backend/dist/img/peserta_offline/*
 assets/frontend/img/events/*
 
 # IDE Files

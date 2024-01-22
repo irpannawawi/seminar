@@ -8,10 +8,10 @@
         <div class="row">
             <div class="col-12 col-md-8 mb-3">
                 <div class="detail__event padding shadow-sm">
-                    <h4 class="mb-3">Data Diri</h4>
+                    <h4 class="mb-3">Form Data Diri</h4>
                     <div class="mb-3">
                         <label class="form-label">Nama Lengkap</label>
-                        <input type="text" id="name" name="name" class="form-control" placeholder="beserta gelar lengkap" value="<?= set_value('name') ?>">
+                        <input type="text" id="name" name="name" class="form-control" placeholder="beserta gelar lengkap (jika ada)" value="<?= set_value('name') ?>">
                         <?= form_error('name', '<span class="text-danger pl-3">', '</span>'); ?>
                     </div>
                     <div class="mb-3">
@@ -21,7 +21,7 @@
                     </div>
                     <div class="mb-3">
                         <label class="form-label">No WhatsApp</label>
-                        <input type="text" name="nowa" id="nowa" value="08" class="form-control" value="<?= set_value('nowa') ?>">
+                        <input type="text" name="nowa" id="nowa" value="<?= set_value('nowa') ?>" class="form-control" value="<?= set_value('nowa') ?>">
                         <?= form_error('nowa', '<span class="text-danger pl-3">', '</span>'); ?>
                     </div>
                     <div class="mb-3">
@@ -30,10 +30,13 @@
                         <?= form_error('domisili', '<span class="text-danger pl-3">', '</span>'); ?>
                     </div>
                     <h4 class="mb-3 mt-4">Metode Pembayaran</h4>
-                    <?php foreach ($rekening as $rekening) : ?>
+                    <?php foreach ($rekening as $value) : ?>
                         <div class="form-check mb-3">
-                            <input type="radio" id="bank" class="form-check-input" name="bank" value="<?= $rekening['name_bank'] ?>">
-                            <label class="form-check-label" for="<?= $rekening['name_bank'] ?>"><?= $rekening['name_bank'] ?></label>
+                            <?php
+                            $isChecked = set_checkbox('bank', $value['name_bank']);
+                            ?>
+                            <input type="radio" id="bank_<?= $value['name_bank'] ?>" class="form-check-input" name="bank" value="<?= $value['name_bank'] ?>" <?= $isChecked ?>>
+                            <label class="form-check-label" for="bank_<?= $value['name_bank'] ?>"><?= $value['name_bank'] ?></label>
                         </div>
                     <?php endforeach ?>
                     <?= form_error('bank', '<span class="text-danger pl-3">', '</span>'); ?>

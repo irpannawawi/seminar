@@ -4,12 +4,8 @@
 <head>
     <!-- Title -->
     <?php
-    if ($this->uri->segment(1) == '') {
-        $title = get_setting('title_web') . ' - ' . get_setting('sub_title');
-        $description = get_setting('meta_google');
-    } else {
-        $title = $title . ' - ' . get_setting('title_web');
-    }
+    $description = get_setting('meta_google');
+    $title = $title . ' - ' . get_setting('title_web');
     ?>
     <!-- Required Meta Tags Always Come First -->
     <title itemprop="title"><?= $title ?></title>
@@ -46,6 +42,8 @@
     <meta property="og:image:height" content="630" />
     <meta property="fb:app_id" content="" />
     <meta property="fb:pages" content="" />
+    <meta property="article:author" content="">
+    <meta property="article:section" content="">
 
     <!-- Favicon -->
     <link rel="shortcut icon" href="<?= base_url('assets/backend/dist/img/') . get_setting('logo_web') ?>">

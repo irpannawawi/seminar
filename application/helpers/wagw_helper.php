@@ -6,9 +6,6 @@ if (!function_exists('sendWhatsapp')) {
         // Dapatkan instance CI
         $CI = &get_instance();
 
-        // Load library cURL
-        $CI->load->library('curl');
-
         // Dapatkan konfigurasi wagw dari integrasi
         $wagw = $CI->integrasi->wagw();
 
@@ -53,63 +50,5 @@ if (!function_exists('sendWhatsapp')) {
         }
 
         curl_close($curl);
-
-        redirect($_SERVER['HTTP_REFERER']);
-    }
-}
-if (!function_exists('sendWhatsappQR')) {
-    function sendWhatsappQR($whatsapp, $message)
-    {
-        // Dapatkan instance CI
-        $CI = &get_instance();
-
-        // Load library cURL
-        $CI->load->library('curl');
-
-        // Dapatkan konfigurasi wagw dari integrasi
-        $wagw = $CI->integrasi->wagw();
-
-        // Set URL dan data untuk cURL
-        $curl = curl_init();
-
-        curl_setopt_array($curl, array(
-            CURLOPT_URL => $wagw['link_send'],
-            CURLOPT_RETURNTRANSFER => true,
-            CURLOPT_ENCODING => '',
-            CURLOPT_MAXREDIRS => 10,
-            CURLOPT_TIMEOUT => 0,
-            CURLOPT_FOLLOWLOCATION => true,
-            CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
-            CURLOPT_CUSTOMREQUEST => 'POST',
-            CURLOPT_POSTFIELDS => array(
-                'target' => $whatsapp,
-                'message' => $message,
-                // 'file' => new CURLFile($file),
-            ),
-            CURLOPT_HTTPHEADER => array(
-                'Authorization: ' . $wagw['token']
-            ),
-        ));
-
-        // Lakukan request cURL
-        $response = curl_exec($curl);
-
-        if ($response === false) {
-            // Handle cURL error
-            set_pesan('Error during cURL request: ' . curl_error($curl), false);
-        } else {
-            // Decode respons JSON
-            $api_response = json_decode($response, true);
-
-            if ($api_response['status'] == true) {
-                set_pesan($api_response['detail']);
-            } else {
-                set_pesan('Kirim gagal: ' . $api_response['reason'], false);
-            }
-        }
-
-        curl_close($curl);
-
-        redirect($_SERVER['HTTP_REFERER']);
     }
 }

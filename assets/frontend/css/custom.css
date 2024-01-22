@@ -379,6 +379,7 @@ span.text-truncate{
     position: -webkit-sticky;
     position: sticky;
     top: 25px;
+    z-index: 99;
 }
 .header__sticky{
     position: -webkit-sticky;
@@ -415,4 +416,19 @@ span.text-truncate{
 .events{
     padding-top: 1.5rem; 
     padding-bottom: 3rem;
+}
+.navbar-toggler .navbar-toggler-default {
+    color: #fff !important;
+}
+
+.navbar-toggler .navbar-toggler-toggled {
+    color: #fff !important;
+}
+
+.navbar-toggler[aria-expanded=true] .navbar-toggler-default {
+    color: #fff !important;
+}
+
+.navbar-toggler[aria-expanded=true] .navbar-toggler-toggled {
+    color: #fff !important;
 }

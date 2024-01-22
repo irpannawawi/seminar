@@ -238,7 +238,7 @@ class Events extends CI_Controller
             $time_start = $this->input->post('time_start');
             $time_finish = $this->input->post('time_finish');
             $price = htmlspecialchars($this->input->post('price'));
-            $kuota = htmlspecialchars($this->input->post('kuota'));
+            $sisa_kuota = htmlspecialchars($this->input->post('sisa_kuota'));
             $location = htmlspecialchars($this->input->post('location'));
             $url_location = htmlspecialchars($this->input->post('url_location'));
             $type_event = $this->input->post('type_event');
@@ -265,7 +265,7 @@ class Events extends CI_Controller
                 $this->form_validation->set_rules('time_start', 'Jam Mulai Event', 'required');
                 $this->form_validation->set_rules('time_finish', 'Jam Selesai Event', 'required');
                 $this->form_validation->set_rules('price', 'Harga Event', 'required');
-                $this->form_validation->set_rules('kuota', 'Kuota Tiket Event', 'required');
+                $this->form_validation->set_rules('sisa_kuota', 'Kuota Tiket Event', 'required');
             }
 
             // Aturan validasi berdasarkan jenis lokasi
@@ -295,8 +295,7 @@ class Events extends CI_Controller
                     'time_start' => $time_start,
                     'time_finish' => $time_finish,
                     'type_event' => $type_event,
-                    'kuota' => $kuota,
-                    'sisa_kuota' => $kuota,
+                    'sisa_kuota' => $sisa_kuota,
                     'location' => $location,
                     'price' => $price,
                     'url_location' => $url_location,

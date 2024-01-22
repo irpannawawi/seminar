@@ -138,31 +138,36 @@ class Transaksi extends CI_Controller
                 // Menambahkan informasi ke variabel WhatsApp
                 $whatsapp = $nowa . '|' . $name . '|' . $event_title . '|' . $idOrder . '|' . $waktu . '|' . $qty_requested;
 
-                if ($type_event == 'offline') {
-                    // Generate QR Code
-                    $qr_filename = $idOrder;
-                    $qr_code = generateQRCode($idOrder, $qr_filename);
-
-                    $params = array(
-                        'email' => $email,
-                        'event_title' => $event_title,
-                        'qr_code' => $qr_code,
-                        'name' => $name,
-                        'idOrder' => $idOrder,
-                        'waktu' => $waktu,
-                        'qty_requested' => $qty_requested,
-                    );
-                    // Panggil helper sendWhatsappQR
-                    send_email($params);
-                    sendWhatsappQR($whatsapp, $setting['sukses_bayar']);
-                } else {
-                    sendWhatsapp($whatsapp, $setting['sukses_bayar']);
-                    // send_email($email, $event_title);
+                try {
+                    if ($type_event == 'offline') {
+                        // Generate QR Code
+                        $qr_filename = $idOrder;
+                        $qr_code = generateQRCode($idOrder, $qr_filename);
+                        $params = array(
+                            'email' => $email,
+                            'title' => $event_title,
+                            'qr_code' => $qr_code,
+                            'name' => $name,
+                            'idOrder' => $idOrder,
+                            'waktu' => $waktu,
+                            'qty_requested' => $qty_requested,
+                        );
+                        // Call helper functions
+                        send_email($params);
+                        sendWhatsapp($whatsapp, $setting['sukses_bayar']);
+                    } else {
+                        // For online events (assuming 'offline' is the only other option)
+                        // send_email($email);
+                        sendWhatsapp($whatsapp, $setting['sukses_bayar']);
+                    }
+                    // Redirect back to the previous page
+                    redirect('leader/transaksi/add');
+                } catch (Exception $e) {
+                    echo 'An error occurred: ' . $e->getMessage();
                 }
-                redirect($_SERVER['HTTP_REFERER']);
             } else {
                 set_pesan('Kuota tiket tidak mencukupi!', false);
-                redirect($_SERVER['HTTP_REFERER']);
+                redirect('leader/transaksi/add');
             }
         }
     }

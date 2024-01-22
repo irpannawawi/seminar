@@ -18,11 +18,11 @@ if (!function_exists('send_email')) {
         // Server settings
         $mail->SMTPDebug = SMTP::DEBUG_SERVER;
         $mail->isSMTP();
-        $mail->Host     = $mailer['mail_host'];
+        $mail->Host = $mailer['mail_host'];
         $mail->SMTPAuth = true;
         $mail->Username = $mailer['mail_address'];
         $mail->Password = $mailer['mail_password'];
-        $mail->Port     = $mailer['mail_port'];
+        $mail->Port = $mailer['mail_port'];
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
 
         //Recipients
@@ -30,23 +30,23 @@ if (!function_exists('send_email')) {
         $mail->addAddress($data['email']); // Penerima
         $mail->addReplyTo($mailer['mail_reply'], $mailer['mail_name']);
 
-        //Attachments
-        if ($data['qr_code']) {
-            $mail->addAttachment($data['qr_code'], "QR Absensi");
-        } else {
-        }
-
         //Content
         $mail->isHTML(true);
-        $mail->Subject = $data['event_title'];
-        $mail->Body    = 'testing';
+        $mail->Subject = $data['title'];
+        $mail->Body = '<p><strong>Halo ' . $data['name'] . '</strong><br>Terima kasih telah melakukan pembayaran tiket <strong>"' . $data['title'] . '"</strong>, Berikut detail pemesanan Anda:</p>
+        <p>Invoice: <strong>' . $data['idOrder'] . '</strong><br>Nama Event: <strong>' . $data['title'] . '</strong><br>Waktu Pelaksanaan: <strong>' . tanggal($data['waktu']) . '</strong><br>Jumlah Tiket: <strong>' . $data['qty_requested'] . '</strong><br>Status: <strong>LUNAS</strong></p>
+        <p>Silahkan gunakan QR Code untuk absensi di acara</p>
+        <p>Terimas Kasih,</p>';
 
-        // Send recive
-        if ($mail->send()) {
-            return true;
+        //Attachments
+        if ($data['qr_code']) {
+            $mail->addAttachment($data['qr_code'], 'QR Absensi ' . $data['idOrder'] . '.png');
         } else {
-            echo $mail->ErrorInfo;
-            exit;
         }
+
+        // Clear output buffer
+        ob_clean();
+        // Send email
+        $mail->send();
     }
 }

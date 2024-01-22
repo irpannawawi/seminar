@@ -137,6 +137,8 @@
                     <div class="modal-body">
                         <div class="form-group">
                             <tr>
+                                <td><b>Order By: </b></td>
+                                <td><?= $value['by_order']; ?></td><br>
                                 <td><b>Nama: </b></td>
                                 <td><?= $value['user_name']; ?></td><br>
                                 <td><b>Nama Event: </b></td>

@@ -1,3 +1,5 @@
+<?php $this->load->view('frontend/layout/event_header'); ?>
+
 <div hidden id="eventId"><?= $event['id_events'] ?></div>
 <div class="container events">
     <div class="row">
