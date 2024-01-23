@@ -40,7 +40,7 @@ if (!function_exists('send_email')) {
 
         //Attachments
         if ($data['qr_code']) {
-            $mail->addAttachment($data['qr_code'], 'QR Absensi ' . $data['idOrder'] . '.png');
+            $mail->addAttachment($data['qr_code'], 'QR Absensi.png');
         } else {
         }
 

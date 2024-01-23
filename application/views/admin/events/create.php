@@ -54,6 +54,10 @@
                             <input type="text" class="form-control" name="title" id="title" value="<?= set_value('title') ?>">
                         </div>
                         <div class="form-group">
+                            <label>Regional</label>
+                            <input type="text" class="form-control" name="region" id="region" value="<?= set_value('region') ?>">
+                        </div>
+                        <div class="form-group">
                             <label>Kategori Event</label>
                             <select class="select2" multiple="multiple" name="id_category[]" id="id_category" data-placeholder="Pilih Kategori" style="width: 100%;">
                                 <?php foreach ($category as $key) : ?>

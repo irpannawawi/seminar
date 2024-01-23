@@ -117,6 +117,7 @@ class Events extends CI_Controller
             }
 
             $title = htmlspecialchars($this->input->post('title'));
+            $region = htmlspecialchars($this->input->post('region'));
             $categories_json = json_encode($this->input->post('id_category'));
             $description = $this->input->post('description');
             $snk = $this->input->post('snk');
@@ -153,6 +154,7 @@ class Events extends CI_Controller
                 $this->form_validation->set_rules('time_finish', 'Jam Selesai Event', 'required');
                 $this->form_validation->set_rules('price', 'Harga Event', 'required');
                 $this->form_validation->set_rules('kuota', 'Kuota Tiket Event', 'required');
+                $this->form_validation->set_rules('region', 'Region Tiket Event', 'required');
             }
 
             // Aturan validasi berdasarkan jenis lokasi
@@ -165,6 +167,7 @@ class Events extends CI_Controller
 
             $save = [
                 'title' => $title,
+                'region' => $region,
                 'slug' => strtolower(str_replace(' ', '-', $title)),
                 'id_category' => $categories_json,
                 'description' => $description,
@@ -230,6 +233,7 @@ class Events extends CI_Controller
         // Jika tombol 'publish' atau 'save_draft' diklik
         if ($action == 'publish' || $action == 'save_draft') {
             $title = htmlspecialchars($this->input->post('title'));
+            $region = htmlspecialchars($this->input->post('region'));
             $categories = json_encode($this->input->post('id_category'));
             $description = $this->input->post('description');
             $snk = $this->input->post('snk');
@@ -266,6 +270,7 @@ class Events extends CI_Controller
                 $this->form_validation->set_rules('time_finish', 'Jam Selesai Event', 'required');
                 $this->form_validation->set_rules('price', 'Harga Event', 'required');
                 $this->form_validation->set_rules('sisa_kuota', 'Kuota Tiket Event', 'required');
+                $this->form_validation->set_rules('region', 'Region', 'required');
             }
 
             // Aturan validasi berdasarkan jenis lokasi
@@ -286,6 +291,7 @@ class Events extends CI_Controller
             } else {
                 $save = [
                     'title' => $title,
+                    'region' => $region,
                     'slug' => strtolower(str_replace(' ', '-', $title)),
                     'id_category' => $categories,
                     'description' => $description,
@@ -365,6 +371,7 @@ class Events extends CI_Controller
         // Jika tombol 'publish' atau 'save_draft' diklik
         if ($action == 'publish' || $action == 'save_draft') {
             $title = htmlspecialchars($this->input->post('title'));
+            $region = htmlspecialchars($this->input->post('region'));
             $categories = json_encode($this->input->post('id_category'));
             $description = $this->input->post('description');
             $snk = $this->input->post('snk');
@@ -401,6 +408,7 @@ class Events extends CI_Controller
                 $this->form_validation->set_rules('time_finish', 'Jam Selesai Event', 'required');
                 $this->form_validation->set_rules('price', 'Harga Event', 'required');
                 $this->form_validation->set_rules('kuota', 'Kuota Tiket Event', 'required');
+                $this->form_validation->set_rules('region', 'Region Tiket Event', 'required');
             }
 
             // Aturan validasi berdasarkan jenis lokasi
@@ -421,6 +429,7 @@ class Events extends CI_Controller
             } else {
                 $save = [
                     'title' => $title,
+                    'region' => $region,
                     'slug' => strtolower(str_replace(' ', '-', $title)),
                     'id_category' => $categories,
                     'description' => $description,

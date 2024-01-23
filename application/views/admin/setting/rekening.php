@@ -7,7 +7,7 @@
             <div class="col-sm-6">
                 <div class="float-right">
                     <a href="javascript:history.back()" class="btn btn-default float-r"><i class="fas fa-long-arrow-alt-left"></i> Kembali</a>
-                    <a class="btn btn-info" href="javascript:;" data-toggle="modal" data-target="#addModal"><i class="far fa-calendar-plus"></i> <?php echo 'Buat ' . $title ?></a>
+                    <a class="btn btn-info" href="javascript:;" data-toggle="modal" data-target="#addModal"><i class="far fa-calendar-plus"></i> <?php echo 'Tambah ' . $title ?></a>
                 </div>
             </div><!-- /.col -->
         </div><!-- /.row -->
@@ -140,3 +140,30 @@
         <!-- /.modal-dialog -->
     </div>
 <?php endforeach ?>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Ambil elemen select
+        var selectBank = document.getElementById('name_bank');
+
+        // Tambahkan event listener untuk memantau perubahan pada select
+        selectBank.addEventListener('change', function() {
+            // Ambil nilai terpilih dari select
+            var selectedBank = selectBank.value;
+
+            // Ambil elemen input dengan nama "code"
+            var codeInput = document.getElementById('code');
+
+            // Temukan data bank yang sesuai dalam array bank (diambil dari PHP)
+            var bankData = <?php echo json_encode($bank); ?>; // Gantilah dengan data bank yang sesuai
+
+            // Loop melalui array bank untuk mencari data yang sesuai dengan bank yang dipilih
+            for (var i = 0; i < bankData.length; i++) {
+                if (bankData[i].name === selectedBank) {
+                    // Isi input dengan nama "code" dengan nilai code yang sesuai
+                    codeInput.value = bankData[i].code;
+                    break;
+                }
+            }
+        });
+    });
+</script>

@@ -14,7 +14,7 @@ class Rekening extends CI_Controller
     {
         $data['users'] = $this->db->get_where('users', ['email' => $this->session->email])->row_array();
         $data['rekening'] = $this->db->get('rekening')->result_array();
-        $data['title'] = 'Rekening Setting';
+        $data['title'] = 'Rekening';
 
         // get bank
         $data_json = file_get_contents('assets/backend/dist/js/bank.json');
@@ -41,6 +41,7 @@ class Rekening extends CI_Controller
             ];
 
             $this->db->insert('rekening', $data);
+
             set_pesan('Berhasil tambah rekening');
             redirect('admin/rekening');
         }
