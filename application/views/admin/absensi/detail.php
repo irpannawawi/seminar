@@ -29,7 +29,7 @@
                             <th>Nama</th>
                             <th>Waktu</th>
                             <th>Status</th>
-                            <th>Pembayarna</th>
+                            <th>Pembayaran</th>
                         </tr>
                     </thead>
                     <tbody>

@@ -89,7 +89,7 @@
                                 <!-- End Row -->
                             </div>
                             <div class="form-check mb-3">
-                                <input type="checkbox" class="form-check-input" id="ceksnk" name="ceksnk" required checked>
+                                <input type="checkbox" class="form-check-input" id="ceksnk" name="ceksnk" required>
                                 <label class="form-check-label small" for="ceksnk"> Saya telah menyetujui dan mamahami <a href="#">Syarat dan Ketentuan</a> yang berlaku.</label>
                                 <span class="invalid-feedback">Harap terima Syarat dan Ketentuan kami.</span>
                             </div>

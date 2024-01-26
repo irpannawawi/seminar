@@ -92,7 +92,7 @@
                                 <td><b>Status Pembayaran: </b></td>
                                 <td><?= $value['status_transaksi']; ?></td><br>
                                 <td><b>Bukti Transfer: </b></td>
-                                <td><a href="#">Lihat Bukti Transfer</a></td>
+                                <td><a data-toggle="modal" data-target="#lihatModal<?= $value['id_transaksi'] ?>" href="javascript:;">Lihat Bukti Transfer</a></td>
                             </tr>
                         </div>
                         <form action="" method=" post">
@@ -154,7 +154,7 @@
                                 <td><b>Status Pembayaran: </b></td>
                                 <td><?= $value['status_transaksi']; ?></td><br>
                                 <td><b>Bukti Transfer: </b></td>
-                                <td><a data-toggle="modal" data-target="#lihatModal<?= $value['id_transaksi'] ?>" href="<?= site_url('assets/backend/dist/img/bukti_tf/') . $value['bukti_tf'] ?>">Lihat Bukti Transfer</a></td>
+                                <td><a data-toggle="modal" data-target="#lihatModal<?= $value['id_transaksi'] ?>" href="javascript:;">Lihat Bukti Transfer</a></td>
                             </tr>
                         </div>
                         <div class="row">

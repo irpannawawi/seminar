@@ -146,13 +146,19 @@
                                                             </div>
                                                         </div>
                                                         <div class="ticket-buy align-items-center">
-                                                            <label>Sisa:</label>
-                                                            <span id="count-2"><?= $event['sisa_kuota'] ?></span>
-                                                            <div class="counter">
-                                                                <button id="decrement1" class="btn btn-sm btn-warning disabled left" type="button">-</button>
-                                                                <span id="counter-1">0</span>
-                                                                <button class="btn btn-sm btn-warning" id="increment1" type="button">+</button>
-                                                            </div>
+                                                            <?php if ($event['sisa_kuota'] == 0) : ?>
+                                                                <span class="badge bg-danger">
+                                                                    <i class="bi bi-ticket-perforated-fill"></i> Sold
+                                                                </span>
+                                                            <?php else : ?>
+                                                                <label>Sisa:</label>
+                                                                <span id="count-2"><?= $event['sisa_kuota'] ?></span>
+                                                                <div class="counter">
+                                                                    <button id="decrement1" class="btn btn-sm btn-warning disabled left" type="button">-</button>
+                                                                    <span id="counter-1">0</span>
+                                                                    <button class="btn btn-sm btn-warning" id="increment1" type="button">+</button>
+                                                                </div>
+                                                            <?php endif ?>
                                                         </div>
                                                     </div>
                                                 </div>

@@ -35,10 +35,23 @@ class Events_model extends CI_Model
         return $this->db->query($query)->row_array();
     }
 
-    function pesertabyevent($event_id)
+    public function pesertabyevent($event_id)
     {
         $this->db->where('events_id', $event_id);
         return $this->db->get('peserta')->result_array();
+    }
+
+    public function getStatusTransaksi($peserta_id)
+    {
+        // Anda perlu menambahkan logika untuk mendapatkan status transaksi berdasarkan peserta_id
+        // Misalnya, jika Anda menyimpan status transaksi di dalam tabel transaksi, lakukan query ke sana
+        $status_transaksi = $this->db
+            ->select('status_transaksi')
+            ->where('peserta_id', $peserta_id)
+            ->get('transaksi')
+            ->row_array();
+
+        return isset($status_transaksi['status_transaksi']) ? $status_transaksi['status_transaksi'] : '';
     }
     public function getMax($table, $field, $kode = null)
     {

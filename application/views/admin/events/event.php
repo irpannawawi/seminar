@@ -135,14 +135,17 @@
                                         <?php if (!empty($event_data['peserta'])) : ?>
                                             <?php $no = 1; ?>
                                             <?php foreach ($event_data['peserta'] as $peserta) : ?>
-                                                <tr>
-                                                    <td><?= $no++; ?></td>
-                                                    <td><?= $peserta['name']; ?></td>
-                                                    <td><a target="_blank" href="<?= 'https://wa.me/62' . $peserta['nowa'] ?>"><?= $peserta['nowa'] ?></a></td>
-                                                    <td><?= $peserta['email']; ?></td>
-                                                    <td><?= tgl($peserta['date_participate']) ?></td>
-                                                </tr>
+                                                <?php if ($peserta['status_transaksi'] == 'Lunas') : ?>
+                                                    <tr>
+                                                        <td><?= $no++; ?></td>
+                                                        <td><?= $peserta['name']; ?></td>
+                                                        <td><a target="_blank" href="<?= 'https://wa.me/62' . $peserta['nowa'] ?>"><?= $peserta['nowa'] ?></a></td>
+                                                        <td><?= $peserta['email']; ?></td>
+                                                        <td><?= tgl($peserta['date_participate']) ?></td>
+                                                    </tr>
+                                                <?php endif; ?>
                                             <?php endforeach; ?>
+
                                         <?php else : ?>
                                             <tr>
                                                 <td colspan="5" class="text-center">Belum ada peserta untuk event ini.</td>

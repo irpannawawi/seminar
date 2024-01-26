@@ -25,7 +25,16 @@ class Events extends CI_Controller
         foreach ($data['events'] as $event) {
             $event_id = $event['id_events'];
             $data['event_peserta'][$event_id]['event'] = $event;
-            $data['event_peserta'][$event_id]['peserta'] = $this->events->pesertabyevent($event_id);
+
+            // Mengambil peserta dari model dan menambahkan status transaksi ke dalam data peserta
+            $pesertaData = $this->events->pesertabyevent($event_id);
+            foreach ($pesertaData as $key => $peserta) {
+                // Menambahkan status transaksi ke dalam data peserta
+                $status_transaksi = $this->events->getStatusTransaksi($peserta['id_peserta']);
+                $pesertaData[$key]['status_transaksi'] = $status_transaksi;
+            }
+
+            $data['event_peserta'][$event_id]['peserta'] = $pesertaData;
         }
 
         $this->form_validation->set_rules('pesan', 'Isi Pesan', 'required');
@@ -42,10 +51,17 @@ class Events extends CI_Controller
 
             $pesertaEvent = $this->events->pesertabyevent($event_id);
             $whatsapp = '';
+
             foreach ($pesertaEvent as $peserta) {
-                $nowa = $peserta['nowa'];
-                $name = $peserta['name'];
-                $whatsapp .= $nowa . '|' . $name . ',';
+                // Menambahkan pemeriksaan status transaksi
+                $status_transaksi = $this->events->getStatusTransaksi($peserta['id_peserta']);
+
+                // Hanya menjalankan query WhatsApp jika status transaksi adalah 'Lunas'
+                if ($status_transaksi == 'Lunas') {
+                    $nowa = $peserta['nowa'];
+                    $name = $peserta['name'];
+                    $whatsapp .= $nowa . '|' . $name . ',';
+                }
             }
 
             // Hapus koma di akhir string
@@ -53,6 +69,8 @@ class Events extends CI_Controller
 
             // $this->sendMessage($whatsapp, $message);
             sendWhatsapp($whatsapp, $message);
+
+            redirect('admin/events');
         }
     }
 
