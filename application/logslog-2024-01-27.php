@@ -630,3 +630,306 @@ OR  `name` LIKE '%sa%' ESCAPE '!'
  )
 ORDER BY `id_transaksi` DESC
 INFO - 2024-01-27 11:17:15 --> Language file loaded: language/english/db_lang.php
+INFO - 2024-01-27 11:17:47 --> Config Class Initialized
+INFO - 2024-01-27 11:17:47 --> Hooks Class Initialized
+DEBUG - 2024-01-27 11:17:47 --> UTF-8 Support Enabled
+INFO - 2024-01-27 11:17:47 --> Utf8 Class Initialized
+INFO - 2024-01-27 11:17:47 --> URI Class Initialized
+INFO - 2024-01-27 11:17:47 --> Router Class Initialized
+INFO - 2024-01-27 11:17:47 --> Output Class Initialized
+INFO - 2024-01-27 11:17:47 --> Security Class Initialized
+DEBUG - 2024-01-27 11:17:47 --> Global POST, GET and COOKIE data sanitized
+INFO - 2024-01-27 11:17:47 --> Input Class Initialized
+INFO - 2024-01-27 11:17:47 --> Language Class Initialized
+INFO - 2024-01-27 11:17:47 --> Loader Class Initialized
+INFO - 2024-01-27 11:17:47 --> Helper loaded: url_helper
+INFO - 2024-01-27 11:17:47 --> Helper loaded: global_helper
+INFO - 2024-01-27 11:17:47 --> Helper loaded: security_helper
+INFO - 2024-01-27 11:17:47 --> Helper loaded: file_helper
+INFO - 2024-01-27 11:17:47 --> Helper loaded: mata_uang_helper
+INFO - 2024-01-27 11:17:47 --> Helper loaded: download_helper
+INFO - 2024-01-27 11:17:47 --> Helper loaded: wagw_helper
+INFO - 2024-01-27 11:17:47 --> Helper loaded: mail_helper
+INFO - 2024-01-27 11:17:47 --> Helper loaded: qr_helper
+INFO - 2024-01-27 11:17:47 --> Database Driver Class Initialized
+INFO - 2024-01-27 11:17:47 --> Session: Class initialized using 'files' driver.
+INFO - 2024-01-27 11:17:47 --> Helper loaded: form_helper
+INFO - 2024-01-27 11:17:47 --> Form Validation Class Initialized
+DEBUG - 2024-01-27 11:17:47 --> Encryption: Auto-configured driver 'openssl'.
+INFO - 2024-01-27 11:17:47 --> Encryption: OpenSSL initialized with method AES-128-CBC.
+INFO - 2024-01-27 11:17:47 --> Encryption Class Initialized
+INFO - 2024-01-27 11:17:47 --> Upload Class Initialized
+INFO - 2024-01-27 11:17:47 --> Email Class Initialized
+INFO - 2024-01-27 11:17:47 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2024-01-27 11:17:47 --> Pagination Class Initialized
+INFO - 2024-01-27 11:17:47 --> Controller Class Initialized
+INFO - 2024-01-27 11:17:47 --> Model "Penjualan_model" initialized
+DEBUG - 2024-01-27 11:17:47 --> Global_library class already loaded. Second attempt ignored.
+DEBUG - 2024-01-27 11:17:47 --> Global_library class already loaded. Second attempt ignored.
+INFO - 2024-01-27 11:17:47 --> File loaded: C:\laragon\www\seminar\application\views\admin/layouts/header.php
+INFO - 2024-01-27 11:17:47 --> File loaded: C:\laragon\www\seminar\application\views\admin/layouts/navbar.php
+DEBUG - 2024-01-27 11:17:47 --> Global_library class already loaded. Second attempt ignored.
+DEBUG - 2024-01-27 11:17:47 --> Global_library class already loaded. Second attempt ignored.
+INFO - 2024-01-27 11:17:47 --> File loaded: C:\laragon\www\seminar\application\views\admin/layouts/sidebar.php
+ERROR - 2024-01-27 11:17:47 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-27 11:17:47 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+INFO - 2024-01-27 11:17:47 --> File loaded: C:\laragon\www\seminar\application\views\admin/penjualan/transaksi.php
+INFO - 2024-01-27 11:17:47 --> File loaded: C:\laragon\www\seminar\application\views\admin/layouts/footer.php
+INFO - 2024-01-27 11:17:47 --> Final output sent to browser
+DEBUG - 2024-01-27 11:17:47 --> Total execution time: 0.0620
+INFO - 2024-01-27 11:32:01 --> Config Class Initialized
+INFO - 2024-01-27 11:32:01 --> Hooks Class Initialized
+DEBUG - 2024-01-27 11:32:01 --> UTF-8 Support Enabled
+INFO - 2024-01-27 11:32:01 --> Utf8 Class Initialized
+INFO - 2024-01-27 11:32:01 --> URI Class Initialized
+INFO - 2024-01-27 11:32:01 --> Router Class Initialized
+INFO - 2024-01-27 11:32:01 --> Output Class Initialized
+INFO - 2024-01-27 11:32:01 --> Security Class Initialized
+DEBUG - 2024-01-27 11:32:01 --> Global POST, GET and COOKIE data sanitized
+INFO - 2024-01-27 11:32:01 --> Input Class Initialized
+INFO - 2024-01-27 11:32:01 --> Language Class Initialized
+INFO - 2024-01-27 11:32:01 --> Loader Class Initialized
+INFO - 2024-01-27 11:32:01 --> Helper loaded: url_helper
+INFO - 2024-01-27 11:32:01 --> Helper loaded: global_helper
+INFO - 2024-01-27 11:32:01 --> Helper loaded: security_helper
+INFO - 2024-01-27 11:32:01 --> Helper loaded: file_helper
+INFO - 2024-01-27 11:32:01 --> Helper loaded: mata_uang_helper
+INFO - 2024-01-27 11:32:01 --> Helper loaded: download_helper
+INFO - 2024-01-27 11:32:01 --> Helper loaded: wagw_helper
+INFO - 2024-01-27 11:32:01 --> Helper loaded: mail_helper
+INFO - 2024-01-27 11:32:01 --> Helper loaded: qr_helper
+INFO - 2024-01-27 11:32:01 --> Database Driver Class Initialized
+INFO - 2024-01-27 11:32:01 --> Session: Class initialized using 'files' driver.
+INFO - 2024-01-27 11:32:01 --> Helper loaded: form_helper
+INFO - 2024-01-27 11:32:01 --> Form Validation Class Initialized
+DEBUG - 2024-01-27 11:32:01 --> Encryption: Auto-configured driver 'openssl'.
+INFO - 2024-01-27 11:32:01 --> Encryption: OpenSSL initialized with method AES-128-CBC.
+INFO - 2024-01-27 11:32:01 --> Encryption Class Initialized
+INFO - 2024-01-27 11:32:02 --> Upload Class Initialized
+INFO - 2024-01-27 11:32:02 --> Email Class Initialized
+INFO - 2024-01-27 11:32:02 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2024-01-27 11:32:02 --> Pagination Class Initialized
+INFO - 2024-01-27 11:32:02 --> Controller Class Initialized
+INFO - 2024-01-27 11:32:02 --> Model "Penjualan_model" initialized
+DEBUG - 2024-01-27 11:32:02 --> Global_library class already loaded. Second attempt ignored.
+DEBUG - 2024-01-27 11:32:02 --> Global_library class already loaded. Second attempt ignored.
+INFO - 2024-01-27 11:32:02 --> File loaded: C:\laragon\www\seminar\application\views\admin/layouts/header.php
+INFO - 2024-01-27 11:32:02 --> File loaded: C:\laragon\www\seminar\application\views\admin/layouts/navbar.php
+DEBUG - 2024-01-27 11:32:02 --> Global_library class already loaded. Second attempt ignored.
+DEBUG - 2024-01-27 11:32:02 --> Global_library class already loaded. Second attempt ignored.
+INFO - 2024-01-27 11:32:02 --> File loaded: C:\laragon\www\seminar\application\views\admin/layouts/sidebar.php
+ERROR - 2024-01-27 11:32:02 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+INFO - 2024-01-27 11:32:02 --> File loaded: C:\laragon\www\seminar\application\views\admin/penjualan/transaksi.php
+INFO - 2024-01-27 11:32:02 --> File loaded: C:\laragon\www\seminar\application\views\admin/layouts/footer.php
+INFO - 2024-01-27 11:32:02 --> Final output sent to browser
+DEBUG - 2024-01-27 11:32:02 --> Total execution time: 1.3470
+INFO - 2024-01-27 11:32:04 --> Config Class Initialized
+INFO - 2024-01-27 11:32:04 --> Hooks Class Initialized
+DEBUG - 2024-01-27 11:32:04 --> UTF-8 Support Enabled
+INFO - 2024-01-27 11:32:04 --> Utf8 Class Initialized
+INFO - 2024-01-27 11:32:04 --> URI Class Initialized
+INFO - 2024-01-27 11:32:04 --> Router Class Initialized
+INFO - 2024-01-27 11:32:04 --> Output Class Initialized
+INFO - 2024-01-27 11:32:04 --> Security Class Initialized
+DEBUG - 2024-01-27 11:32:04 --> Global POST, GET and COOKIE data sanitized
+INFO - 2024-01-27 11:32:04 --> Input Class Initialized
+INFO - 2024-01-27 11:32:04 --> Language Class Initialized
+INFO - 2024-01-27 11:32:04 --> Loader Class Initialized
+INFO - 2024-01-27 11:32:04 --> Helper loaded: url_helper
+INFO - 2024-01-27 11:32:04 --> Helper loaded: global_helper
+INFO - 2024-01-27 11:32:04 --> Helper loaded: security_helper
+INFO - 2024-01-27 11:32:04 --> Helper loaded: file_helper
+INFO - 2024-01-27 11:32:04 --> Helper loaded: mata_uang_helper
+INFO - 2024-01-27 11:32:04 --> Helper loaded: download_helper
+INFO - 2024-01-27 11:32:04 --> Helper loaded: wagw_helper
+INFO - 2024-01-27 11:32:04 --> Helper loaded: mail_helper
+INFO - 2024-01-27 11:32:04 --> Helper loaded: qr_helper
+INFO - 2024-01-27 11:32:04 --> Database Driver Class Initialized
+INFO - 2024-01-27 11:32:04 --> Session: Class initialized using 'files' driver.
+INFO - 2024-01-27 11:32:04 --> Helper loaded: form_helper
+INFO - 2024-01-27 11:32:04 --> Form Validation Class Initialized
+DEBUG - 2024-01-27 11:32:04 --> Encryption: Auto-configured driver 'openssl'.
+INFO - 2024-01-27 11:32:04 --> Encryption: OpenSSL initialized with method AES-128-CBC.
+INFO - 2024-01-27 11:32:04 --> Encryption Class Initialized
+INFO - 2024-01-27 11:32:04 --> Upload Class Initialized
+INFO - 2024-01-27 11:32:04 --> Email Class Initialized
+INFO - 2024-01-27 11:32:04 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2024-01-27 11:32:04 --> Pagination Class Initialized
+INFO - 2024-01-27 11:32:04 --> Controller Class Initialized
+INFO - 2024-01-27 11:32:04 --> Model "Penjualan_model" initialized
+DEBUG - 2024-01-27 11:32:04 --> Global_library class already loaded. Second attempt ignored.
+DEBUG - 2024-01-27 11:32:04 --> Global_library class already loaded. Second attempt ignored.
+INFO - 2024-01-27 11:32:04 --> File loaded: C:\laragon\www\seminar\application\views\admin/layouts/header.php
+INFO - 2024-01-27 11:32:04 --> File loaded: C:\laragon\www\seminar\application\views\admin/layouts/navbar.php
+DEBUG - 2024-01-27 11:32:04 --> Global_library class already loaded. Second attempt ignored.
+DEBUG - 2024-01-27 11:32:04 --> Global_library class already loaded. Second attempt ignored.
+INFO - 2024-01-27 11:32:04 --> File loaded: C:\laragon\www\seminar\application\views\admin/layouts/sidebar.php
+ERROR - 2024-01-27 11:32:04 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-27 11:32:04 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+INFO - 2024-01-27 11:32:04 --> File loaded: C:\laragon\www\seminar\application\views\admin/penjualan/transaksi.php
+INFO - 2024-01-27 11:32:04 --> File loaded: C:\laragon\www\seminar\application\views\admin/layouts/footer.php
+INFO - 2024-01-27 11:32:04 --> Final output sent to browser
+DEBUG - 2024-01-27 11:32:04 --> Total execution time: 0.0539
+INFO - 2024-01-27 11:32:15 --> Config Class Initialized
+INFO - 2024-01-27 11:32:15 --> Hooks Class Initialized
+DEBUG - 2024-01-27 11:32:15 --> UTF-8 Support Enabled
+INFO - 2024-01-27 11:32:15 --> Utf8 Class Initialized
+INFO - 2024-01-27 11:32:15 --> URI Class Initialized
+INFO - 2024-01-27 11:32:15 --> Router Class Initialized
+INFO - 2024-01-27 11:32:15 --> Output Class Initialized
+INFO - 2024-01-27 11:32:15 --> Security Class Initialized
+DEBUG - 2024-01-27 11:32:15 --> Global POST, GET and COOKIE data sanitized
+INFO - 2024-01-27 11:32:15 --> Input Class Initialized
+INFO - 2024-01-27 11:32:15 --> Language Class Initialized
+INFO - 2024-01-27 11:32:15 --> Loader Class Initialized
+INFO - 2024-01-27 11:32:15 --> Helper loaded: url_helper
+INFO - 2024-01-27 11:32:15 --> Helper loaded: global_helper
+INFO - 2024-01-27 11:32:15 --> Helper loaded: security_helper
+INFO - 2024-01-27 11:32:15 --> Helper loaded: file_helper
+INFO - 2024-01-27 11:32:15 --> Helper loaded: mata_uang_helper
+INFO - 2024-01-27 11:32:15 --> Helper loaded: download_helper
+INFO - 2024-01-27 11:32:15 --> Helper loaded: wagw_helper
+INFO - 2024-01-27 11:32:15 --> Helper loaded: mail_helper
+INFO - 2024-01-27 11:32:15 --> Helper loaded: qr_helper
+INFO - 2024-01-27 11:32:15 --> Database Driver Class Initialized
+INFO - 2024-01-27 11:32:15 --> Session: Class initialized using 'files' driver.
+INFO - 2024-01-27 11:32:15 --> Helper loaded: form_helper
+INFO - 2024-01-27 11:32:15 --> Form Validation Class Initialized
+DEBUG - 2024-01-27 11:32:15 --> Encryption: Auto-configured driver 'openssl'.
+INFO - 2024-01-27 11:32:15 --> Encryption: OpenSSL initialized with method AES-128-CBC.
+INFO - 2024-01-27 11:32:15 --> Encryption Class Initialized
+INFO - 2024-01-27 11:32:15 --> Upload Class Initialized
+INFO - 2024-01-27 11:32:15 --> Email Class Initialized
+INFO - 2024-01-27 11:32:15 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2024-01-27 11:32:15 --> Pagination Class Initialized
+INFO - 2024-01-27 11:32:15 --> Controller Class Initialized
+INFO - 2024-01-27 11:32:15 --> Model "Penjualan_model" initialized
+DEBUG - 2024-01-27 11:32:15 --> Global_library class already loaded. Second attempt ignored.
+DEBUG - 2024-01-27 11:32:15 --> Global_library class already loaded. Second attempt ignored.
+INFO - 2024-01-27 11:32:15 --> File loaded: C:\laragon\www\seminar\application\views\admin/layouts/header.php
+INFO - 2024-01-27 11:32:15 --> File loaded: C:\laragon\www\seminar\application\views\admin/layouts/navbar.php
+DEBUG - 2024-01-27 11:32:15 --> Global_library class already loaded. Second attempt ignored.
+DEBUG - 2024-01-27 11:32:15 --> Global_library class already loaded. Second attempt ignored.
+INFO - 2024-01-27 11:32:15 --> File loaded: C:\laragon\www\seminar\application\views\admin/layouts/sidebar.php
+INFO - 2024-01-27 11:32:15 --> File loaded: C:\laragon\www\seminar\application\views\admin/penjualan/transaksi.php
+INFO - 2024-01-27 11:32:15 --> File loaded: C:\laragon\www\seminar\application\views\admin/layouts/footer.php
+INFO - 2024-01-27 11:32:15 --> Final output sent to browser
+DEBUG - 2024-01-27 11:32:15 --> Total execution time: 0.0596
+INFO - 2024-01-27 11:32:15 --> Config Class Initialized
+INFO - 2024-01-27 11:32:15 --> Hooks Class Initialized
+INFO - 2024-01-27 11:32:15 --> Config Class Initialized
+INFO - 2024-01-27 11:32:15 --> Hooks Class Initialized
+DEBUG - 2024-01-27 11:32:15 --> UTF-8 Support Enabled
+INFO - 2024-01-27 11:32:15 --> Utf8 Class Initialized
+INFO - 2024-01-27 11:32:15 --> URI Class Initialized
+DEBUG - 2024-01-27 11:32:15 --> UTF-8 Support Enabled
+INFO - 2024-01-27 11:32:15 --> Utf8 Class Initialized
+INFO - 2024-01-27 11:32:15 --> Router Class Initialized
+INFO - 2024-01-27 11:32:15 --> URI Class Initialized
+INFO - 2024-01-27 11:32:15 --> Router Class Initialized
+INFO - 2024-01-27 11:32:15 --> Output Class Initialized
+INFO - 2024-01-27 11:32:15 --> Security Class Initialized
+INFO - 2024-01-27 11:32:15 --> Output Class Initialized
+DEBUG - 2024-01-27 11:32:15 --> Global POST, GET and COOKIE data sanitized
+INFO - 2024-01-27 11:32:15 --> Input Class Initialized
+INFO - 2024-01-27 11:32:15 --> Security Class Initialized
+INFO - 2024-01-27 11:32:15 --> Language Class Initialized
+DEBUG - 2024-01-27 11:32:15 --> Global POST, GET and COOKIE data sanitized
+INFO - 2024-01-27 11:32:15 --> Input Class Initialized
+ERROR - 2024-01-27 11:32:15 --> 404 Page Not Found: Assets/backend
+INFO - 2024-01-27 11:32:15 --> Language Class Initialized
+ERROR - 2024-01-27 11:32:15 --> 404 Page Not Found: Assets/backend
+INFO - 2024-01-27 11:32:15 --> Config Class Initialized
+INFO - 2024-01-27 11:32:15 --> Hooks Class Initialized
+DEBUG - 2024-01-27 11:32:15 --> UTF-8 Support Enabled
+INFO - 2024-01-27 11:32:15 --> Utf8 Class Initialized
+INFO - 2024-01-27 11:32:15 --> URI Class Initialized
+INFO - 2024-01-27 11:32:15 --> Router Class Initialized
+INFO - 2024-01-27 11:32:15 --> Output Class Initialized
+INFO - 2024-01-27 11:32:15 --> Security Class Initialized
+DEBUG - 2024-01-27 11:32:15 --> Global POST, GET and COOKIE data sanitized
+INFO - 2024-01-27 11:32:15 --> Input Class Initialized
+INFO - 2024-01-27 11:32:15 --> Language Class Initialized
+INFO - 2024-01-27 11:32:15 --> Loader Class Initialized
+INFO - 2024-01-27 11:32:15 --> Helper loaded: url_helper
+INFO - 2024-01-27 11:32:15 --> Helper loaded: global_helper
+INFO - 2024-01-27 11:32:15 --> Helper loaded: security_helper
+INFO - 2024-01-27 11:32:15 --> Helper loaded: file_helper
+INFO - 2024-01-27 11:32:15 --> Helper loaded: mata_uang_helper
+INFO - 2024-01-27 11:32:15 --> Helper loaded: download_helper
+INFO - 2024-01-27 11:32:15 --> Helper loaded: wagw_helper
+INFO - 2024-01-27 11:32:15 --> Helper loaded: mail_helper
+INFO - 2024-01-27 11:32:15 --> Helper loaded: qr_helper
+INFO - 2024-01-27 11:32:15 --> Database Driver Class Initialized
+INFO - 2024-01-27 11:32:15 --> Session: Class initialized using 'files' driver.
+INFO - 2024-01-27 11:32:15 --> Helper loaded: form_helper
+INFO - 2024-01-27 11:32:15 --> Form Validation Class Initialized
+DEBUG - 2024-01-27 11:32:15 --> Encryption: Auto-configured driver 'openssl'.
+INFO - 2024-01-27 11:32:15 --> Encryption: OpenSSL initialized with method AES-128-CBC.
+INFO - 2024-01-27 11:32:15 --> Encryption Class Initialized
+INFO - 2024-01-27 11:32:15 --> Upload Class Initialized
+INFO - 2024-01-27 11:32:15 --> Email Class Initialized
+INFO - 2024-01-27 11:32:15 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2024-01-27 11:32:15 --> Pagination Class Initialized
+INFO - 2024-01-27 11:32:15 --> Controller Class Initialized
+INFO - 2024-01-27 11:32:15 --> Model "Penjualan_model" initialized
+DEBUG - 2024-01-27 11:32:15 --> Global_library class already loaded. Second attempt ignored.
+DEBUG - 2024-01-27 11:32:15 --> Global_library class already loaded. Second attempt ignored.
+INFO - 2024-01-27 11:32:15 --> File loaded: C:\laragon\www\seminar\application\views\admin/layouts/header.php
+INFO - 2024-01-27 11:32:15 --> File loaded: C:\laragon\www\seminar\application\views\admin/layouts/navbar.php
+DEBUG - 2024-01-27 11:32:15 --> Global_library class already loaded. Second attempt ignored.
+DEBUG - 2024-01-27 11:32:15 --> Global_library class already loaded. Second attempt ignored.
+INFO - 2024-01-27 11:32:15 --> File loaded: C:\laragon\www\seminar\application\views\admin/layouts/sidebar.php
+ERROR - 2024-01-27 11:32:15 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-27 11:32:15 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+INFO - 2024-01-27 11:32:15 --> File loaded: C:\laragon\www\seminar\application\views\admin/penjualan/transaksi.php
+INFO - 2024-01-27 11:32:15 --> File loaded: C:\laragon\www\seminar\application\views\admin/layouts/footer.php
+INFO - 2024-01-27 11:32:15 --> Final output sent to browser
+DEBUG - 2024-01-27 11:32:15 --> Total execution time: 0.0599
+INFO - 2024-01-27 11:32:35 --> Config Class Initialized
+INFO - 2024-01-27 11:32:35 --> Hooks Class Initialized
+DEBUG - 2024-01-27 11:32:35 --> UTF-8 Support Enabled
+INFO - 2024-01-27 11:32:35 --> Utf8 Class Initialized
+INFO - 2024-01-27 11:32:35 --> URI Class Initialized
+INFO - 2024-01-27 11:32:35 --> Router Class Initialized
+INFO - 2024-01-27 11:32:35 --> Output Class Initialized
+INFO - 2024-01-27 11:32:35 --> Security Class Initialized
+DEBUG - 2024-01-27 11:32:35 --> Global POST, GET and COOKIE data sanitized
+INFO - 2024-01-27 11:32:35 --> Input Class Initialized
+INFO - 2024-01-27 11:32:35 --> Language Class Initialized
+INFO - 2024-01-27 11:32:35 --> Loader Class Initialized
+INFO - 2024-01-27 11:32:35 --> Helper loaded: url_helper
+INFO - 2024-01-27 11:32:35 --> Helper loaded: global_helper
+INFO - 2024-01-27 11:32:35 --> Helper loaded: security_helper
+INFO - 2024-01-27 11:32:35 --> Helper loaded: file_helper
+INFO - 2024-01-27 11:32:35 --> Helper loaded: mata_uang_helper
+INFO - 2024-01-27 11:32:35 --> Helper loaded: download_helper
+INFO - 2024-01-27 11:32:35 --> Helper loaded: wagw_helper
+INFO - 2024-01-27 11:32:35 --> Helper loaded: mail_helper
+INFO - 2024-01-27 11:32:35 --> Helper loaded: qr_helper
+INFO - 2024-01-27 11:32:35 --> Database Driver Class Initialized
+INFO - 2024-01-27 11:32:35 --> Session: Class initialized using 'files' driver.
+INFO - 2024-01-27 11:32:35 --> Helper loaded: form_helper
+INFO - 2024-01-27 11:32:35 --> Form Validation Class Initialized
+DEBUG - 2024-01-27 11:32:35 --> Encryption: Auto-configured driver 'openssl'.
+INFO - 2024-01-27 11:32:35 --> Encryption: OpenSSL initialized with method AES-128-CBC.
+INFO - 2024-01-27 11:32:35 --> Encryption Class Initialized
+INFO - 2024-01-27 11:32:35 --> Upload Class Initialized
+INFO - 2024-01-27 11:32:35 --> Email Class Initialized
+INFO - 2024-01-27 11:32:35 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2024-01-27 11:32:35 --> Pagination Class Initialized
+INFO - 2024-01-27 11:32:35 --> Controller Class Initialized
+INFO - 2024-01-27 11:32:35 --> Model "Penjualan_model" initialized
+DEBUG - 2024-01-27 11:32:35 --> Global_library class already loaded. Second attempt ignored.
+DEBUG - 2024-01-27 11:32:35 --> Global_library class already loaded. Second attempt ignored.
+INFO - 2024-01-27 11:32:35 --> File loaded: C:\laragon\www\seminar\application\views\admin/layouts/header.php
+INFO - 2024-01-27 11:32:35 --> File loaded: C:\laragon\www\seminar\application\views\admin/layouts/navbar.php
+DEBUG - 2024-01-27 11:32:35 --> Global_library class already loaded. Second attempt ignored.
+DEBUG - 2024-01-27 11:32:35 --> Global_library class already loaded. Second attempt ignored.
+INFO - 2024-01-27 11:32:35 --> File loaded: C:\laragon\www\seminar\application\views\admin/layouts/sidebar.php
+ERROR - 2024-01-27 11:32:35 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+ERROR - 2024-01-27 11:32:35 --> Severity: 8192 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated C:\laragon\www\seminar\application\helpers\mata_uang_helper.php 5
+INFO - 2024-01-27 11:32:35 --> File loaded: C:\laragon\www\seminar\application\views\admin/penjualan/transaksi.php
+INFO - 2024-01-27 11:32:35 --> File loaded: C:\laragon\www\seminar\application\views\admin/layouts/footer.php
+INFO - 2024-01-27 11:32:35 --> Final output sent to browser
+DEBUG - 2024-01-27 11:32:35 --> Total execution time: 0.0639

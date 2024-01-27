@@ -16,13 +16,7 @@ class Penjualan extends CI_Controller
         $data['users'] = $this->db->get_where('users', ['email' => $this->session->email])->row_array();
         $data['title'] = 'Transaksi';
         // $data['transaksi'] = $this->penjualan->getPenjualan();
-        $data['status'] = [
-            'Tertunda' => '<span class="badge badge-warning">Tertunda</span>',
-            'Refund' => '<span class="badge badge-secondary">Refund</span>',
-            'Lunas' => '<span class="badge badge-success">Lunas</span>',
-            'Dibatalkan' => '<span class="badge badge-danger">Dibatalkan</span>',
-            'Proses' => '<span class="badge badge-info">Proses</span>',
-        ];
+
         // Handling search
         $keyword = $this->input->post('keyword');
 
