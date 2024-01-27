@@ -12,6 +12,7 @@ class Leader_model extends CI_Model
         $this->db->where('partnership.user_id', $user_id);
         $this->db->where('transaksi.status_transaksi', 'Lunas');
         $this->db->where('events.date_finish >=', date('Y-m-d'));
+        $this->db->order_by('events.id_events', 'DESC');
         $this->db->group_by('events.id_events');
 
         return $this->db->get()->result_array();
@@ -92,7 +93,7 @@ class Leader_model extends CI_Model
             $this->db->group_end();
         }
 
-        $this->db->order_by('transaksi.date_transaksi', 'DESC');
+        $this->db->order_by('transaksi.id_transaksi', 'DESC');
         $this->db->limit($limit, $offset);
 
         return $this->db->get()->result_array();

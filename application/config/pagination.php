@@ -1,5 +1,4 @@
 <?php // config
-$config['base_url'] = base_url('leader/transaksi/index');
 $config['num_links'] = 3;
 
 // customsize

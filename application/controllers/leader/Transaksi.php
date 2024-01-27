@@ -21,6 +21,7 @@ class Transaksi extends CI_Controller
         $keyword = $this->input->post('keyword');
 
         // Pagination config
+        $config['base_url'] = base_url('leader/transaksi/index');
         $config['total_rows'] = $this->leader->count_all_transaksi($keyword);
         $config['per_page'] = 10;
 
@@ -156,11 +157,19 @@ class Transaksi extends CI_Controller
                         send_email($params);
                         sendWhatsapp($whatsapp, $setting['sukses_bayar']);
                     } else {
-                        // For online events (assuming 'offline' is the only other option)
-                        // send_email($email);
+                        // jika acara nya online
+                        $params = array(
+                            'email' => $email,
+                            'title' => $event_title,
+                            'name' => $name,
+                            'idOrder' => $idOrder,
+                            'waktu' => $waktu,
+                            'qty_requested' => $qty_requested,
+                        );
+                        send_email($params);
                         sendWhatsapp($whatsapp, $setting['sukses_bayar']);
                     }
-                    // Redirect back to the previous page
+
                     redirect('leader/transaksi/add');
                 } catch (Exception $e) {
                     echo 'An error occurred: ' . $e->getMessage();

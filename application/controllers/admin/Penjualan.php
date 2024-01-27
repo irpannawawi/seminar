@@ -15,7 +15,7 @@ class Penjualan extends CI_Controller
     {
         $data['users'] = $this->db->get_where('users', ['email' => $this->session->email])->row_array();
         $data['title'] = 'Transaksi';
-        $data['transaksi'] = $this->penjualan->getPenjualan();
+        // $data['transaksi'] = $this->penjualan->getPenjualan();
         $data['status'] = [
             'Tertunda' => '<span class="badge badge-warning">Tertunda</span>',
             'Refund' => '<span class="badge badge-secondary">Refund</span>',
@@ -23,6 +23,23 @@ class Penjualan extends CI_Controller
             'Dibatalkan' => '<span class="badge badge-danger">Dibatalkan</span>',
             'Proses' => '<span class="badge badge-info">Proses</span>',
         ];
+        // Handling search
+        $keyword = $this->input->post('keyword');
+
+        // Pagination config
+        $config['base_url'] = base_url('admin/penjualan/transaksi');
+        $config['total_rows'] = $this->penjualan->countAllTransaksi($keyword);
+        $config['per_page'] = 2;
+
+        $this->pagination->initialize($config);
+
+        // Get current page offset
+        $data['offset'] = $this->uri->segment(4);
+        $limit = $config['per_page'];
+
+        // Get transactions
+        $data['transaksi'] = $this->penjualan->getTransaksiLeader($limit, $data['offset'], $keyword);
+        $data['pagination'] = $this->pagination->create_links();
 
         $action = $this->input->post('action');
         $this->form_validation->set_rules('status_transaksi', 'Status Transaksi', 'trim|required');

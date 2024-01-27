@@ -19,10 +19,23 @@
                 <div class="card">
                     <div class="card-header">
                         <h3 class="card-title"><?php echo 'Data ' . $title ?></h3>
+                        <div class="card-tools">
+                            <form action="<?= base_url('admin/penjualan/transaksi') ?>" method="post">
+                                <div class="input-group input-group-sm" style="width: 150px;">
+                                    <input type="text" value="<?= set_value('keyword') ?>" name="keyword" class="form-control float-right" placeholder="Search" autocomplete="off" autofocus>
+
+                                    <div class="input-group-append">
+                                        <button type="submit" class="btn btn-default">
+                                            <i class="fas fa-search"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
                     </div>
                     <!-- /.card-header -->
-                    <div class="card-body">
-                        <table id="table-data" class="table table-bordered table-striped">
+                    <div class="card-body table-responsive p-0">
+                        <table class="table table-head-fixed table-hover text-nowrap">
                             <thead>
                                 <tr>
                                     <th>No</th>
@@ -52,6 +65,10 @@
                                 <?php endforeach ?>
                             </tbody>
                         </table>
+                        <!-- /.card-body -->
+                        <div class="card-footer clearfix">
+                            <?= $pagination ?>
+                        </div>
                     </div>
                     <!-- /.card-body -->
                 </div>
