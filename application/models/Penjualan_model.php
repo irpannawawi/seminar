@@ -3,6 +3,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
 
 class Penjualan_model extends CI_Model
 {
+    // Fungsi Method get All Penjualan yang lama
     public function getPenjualan()
     {
         $this->db->select('transaksi.*, events.*, peserta.name AS peserta_name, users.name AS user_name');
