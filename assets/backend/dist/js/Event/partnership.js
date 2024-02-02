@@ -8,7 +8,7 @@ $(document).ready(function () {
 
         loadingOverlay.show();
         $.ajax({
-            url: baseurl + `/admin/partnership/get_partnership_data/${selectedEventId}`,
+            url: `${baseurl}/admin/partnership/get_partnership_data/${selectedEventId}`,
             method: 'GET',
             dataType: 'json',
             success: function (data) {
@@ -24,7 +24,7 @@ $(document).ready(function () {
     });
 
     function updateTable(data) {
-        console.log('Selected Event ID:', eventsId.val()); // Tambahkan ini
+    console.log('Selected Event ID:', eventsId.val()); // Tambahkan ini
     tableData.find('tbody').empty();
 
         if (data.length > 0) {

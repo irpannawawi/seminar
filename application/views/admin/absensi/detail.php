@@ -49,12 +49,12 @@
                 </table>
             </div>
             <!-- /.card-body -->
-            <video id="reader" class="scann__qr d-none"></video>
+            <!-- <video id="reader" class="scann__qr d-none"></video> -->
         </div>
     </div>
 </section>
 
-<!-- <div class="modal fade" id="addModal">
+<div class="modal fade" id="addModal">
     <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
             <form action="<?= base_url('admin/rekening') ?>" method="post">
@@ -94,6 +94,6 @@
             </form>
         </div>
     </div>
-</div> -->
+</div>
 
 <script src="<?= base_url('assets/backend') ?>/dist/js/absensi/scanqr.js"></script>

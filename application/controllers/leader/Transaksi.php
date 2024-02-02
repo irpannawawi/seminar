@@ -68,7 +68,7 @@ class Transaksi extends CI_Controller
             // Ambil nilai kuota_tiket dari database
             $kuota_tiket = $partner['kuota_tiket'];
 
-            // Ambil nilai qty dari form
+            // Hitung jumlah tiket yang diminta
             $qty_requested = $this->input->post('qty');
 
             // Cek apakah kuota_tiket mencukupi
@@ -116,68 +116,68 @@ class Transaksi extends CI_Controller
                 $this->db->set('kuota_tiket', 'kuota_tiket - ' . $qty_requested, FALSE);
                 $this->db->set('tiket_terjual', 'tiket_terjual + ' . $qty_requested, FALSE);
                 $this->db->update('partnership');
-
-                $this->db->trans_complete();
-
-                if ($this->db->trans_status() === FALSE) {
-                    $this->db->trans_rollback();
-                    set_pesan('Gagal tambah peserta', false);
-                } else {
-                    $this->db->trans_commit();
-                    set_pesan('Berhasil tambah peserta');
-                }
-
-                // Memastikan data ditemukan
-                $query = $this->db->get_where('events', array('id_events' => $event_id));
-                if ($query->num_rows() > 0) {
-                    $event_title = $query->row()->title;
-                    $waktu = $query->row()->date_start;
-                    $type_event = $query->row()->type_event; // Menambahkan ini
-                }
-                $whatsapp = '';
-
-                // Menambahkan informasi ke variabel WhatsApp
-                $whatsapp = $nowa . '|' . $name . '|' . $event_title . '|' . $idOrder . '|' . $waktu . '|' . $qty_requested;
-
-                try {
-                    if ($type_event == 'offline') {
-                        // Generate QR Code
-                        $qr_filename = $idOrder;
-                        $qr_code = generateQRCode($idOrder, $qr_filename);
-                        $params = array(
-                            'email' => $email,
-                            'title' => $event_title,
-                            'qr_code' => $qr_code,
-                            'name' => $name,
-                            'idOrder' => $idOrder,
-                            'waktu' => $waktu,
-                            'qty_requested' => $qty_requested,
-                        );
-                        // Call helper functions
-                        send_email($params);
-                        sendWhatsapp($whatsapp, $setting['sukses_bayar']);
-                    } else {
-                        // jika acara nya online
-                        $params = array(
-                            'email' => $email,
-                            'title' => $event_title,
-                            'name' => $name,
-                            'idOrder' => $idOrder,
-                            'waktu' => $waktu,
-                            'qty_requested' => $qty_requested,
-                        );
-                        send_email($params);
-                        sendWhatsapp($whatsapp, $setting['sukses_bayar']);
-                    }
-
-                    redirect('leader/transaksi/add');
-                } catch (Exception $e) {
-                    echo 'An error occurred: ' . $e->getMessage();
-                }
             } else {
                 set_pesan('Kuota tiket tidak mencukupi!', false);
                 redirect('leader/transaksi/add');
             }
+
+            $this->db->trans_complete();
+
+            if ($this->db->trans_status() === FALSE) {
+                $this->db->trans_rollback();
+                set_pesan('Gagal tambah peserta', false);
+            } else {
+                $this->db->trans_commit();
+                set_pesan('Berhasil tambah peserta');
+            }
+
+            // Memastikan data ditemukan
+            $query = $this->db->get_where('events', array('id_events' => $event_id));
+            if ($query->num_rows() > 0) {
+                $event_title = $query->row()->title;
+                $waktu = $query->row()->date_start;
+                $type_event = $query->row()->type_event; // Menambahkan ini
+            }
+            $whatsapp = '';
+
+            // Menambahkan informasi ke variabel WhatsApp
+            $whatsapp = $nowa . '|' . $name . '|' . $event_title . '|' . $idOrder . '|' . $waktu . '|' . $qty_requested;
+
+            try {
+                if ($type_event == 'offline') {
+                    // Generate QR Code
+                    $qr_filename = $idOrder;
+                    $qr_code = generateQRCode($idOrder, $qr_filename);
+                    $params = array(
+                        'email' => $email,
+                        'title' => $event_title,
+                        'qr_code' => $qr_code,
+                        'name' => $name,
+                        'idOrder' => $idOrder,
+                        'waktu' => $waktu,
+                        'qty_requested' => $qty_requested,
+                    );
+                    // Call helper functions
+                    send_email($params);
+                    sendWhatsapp($whatsapp, $setting['sukses_bayar']);
+                } else {
+                    // jika acara nya online
+                    $params = array(
+                        'email' => $email,
+                        'title' => $event_title,
+                        'name' => $name,
+                        'idOrder' => $idOrder,
+                        'waktu' => $waktu,
+                        'qty_requested' => $qty_requested,
+                    );
+                    send_email($params);
+                    sendWhatsapp($whatsapp, $setting['sukses_bayar']);
+                }
+            } catch (Exception $e) {
+                echo 'An error occurred: ' . $e->getMessage();
+            }
+
+            redirect('leader/transaksi/add');
         }
     }
 }

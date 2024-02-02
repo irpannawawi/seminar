@@ -99,7 +99,7 @@
                             <a class="nav-link " href="<?= site_url('/') ?>">Homes</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link " href="<?= site_url('/') ?>"><i class="bi bi-compass-fill"></i> Jelajahi</a>
+                            <a class="nav-link maintenance" href="javascript:void(0);"><i class="bi bi-compass-fill"></i> Jelajahi</a>
                         </li>
 
                         <li class="nav-item">

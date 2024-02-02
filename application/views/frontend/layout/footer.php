@@ -143,10 +143,7 @@
 <script src="<?= base_url('assets/frontend/') ?>vendor/hs-header/dist/hs-header.min.js"></script>
 <!-- <script src="<?= base_url('assets/frontend/') ?>vendor/hs-show-animation/dist/hs-show-animation.min.js"></script> -->
 <script src="<?= base_url('assets/frontend/') ?>vendor/hs-go-to/dist/hs-go-to.min.js"></script>
-<script src="<?= base_url('assets/frontend/') ?>vendor/aos/dist/aos.js"></script>
-<script src="<?= base_url('assets/frontend/') ?>vendor/typed.js/lib/typed.min.js"></script>
 <script src="<?= base_url('assets/frontend/') ?>vendor/swiper/swiper-bundle.min.js"></script>
-<script src="<?= base_url('assets/frontend/') ?>vendor/quill/dist/quill.min.js"></script>
 
 <!-- JS Front -->
 <script src="<?= base_url('assets/frontend/') ?>js/theme.min.js"></script>

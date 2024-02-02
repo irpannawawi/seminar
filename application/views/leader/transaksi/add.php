@@ -31,11 +31,47 @@
                                             <?php endforeach ?>
                                         </select>
                                     </div>
+                                    <div class="list_peserta_group list_peserta_group_template">
+                                        <span class="peserta_list">Peserta 1</span>
+                                        <div class="row">
+                                            <div class="col-lg-3 col-md-6 col-sm-12">
+                                                <div class="form-group">
+                                                    <label for="qty">Qty</label>
+                                                    <input type="text" class="form-control" readonly value="1" name="qty" id="qty" value="<?= set_value('qty') ?>">
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3 col-md-6 col-sm-12">
+                                                <div class="form-group">
+                                                    <label for="no_whatsapp">No. Whatsapp Aktif</label>
+                                                    <input type="text" class="form-control" name="nowa" id="nowa" value="<?= set_value('nowa') ?>">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 col-sm-12">
+                                                <div class="form-group">
+                                                    <label for="email">Alamat Email Aktif</label>
+                                                    <input type="email" class="form-control" name="email" id="email" value="<?= set_value('email') ?>">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 col-sm-12">
+                                                <div class="form-group">
+                                                    <label for="nama">Nama</label>
+                                                    <input type="text" class="form-control" name="name" id="name" value="<?= set_value('name') ?>">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 col-sm-12">
+                                                <div class="form-group">
+                                                    <label for="no_whatsapp">Domisili</label>
+                                                    <input type="text" class="form-control" name="domisili" id="domisili" value="<?= set_value('domisili') ?>">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                         <div class="card-footer justify-content-between">
                             <button type="submit" class="btn btn-success"><i class="far fa-save"></i> Simpan</button>
+                            <a type="button" class="btn btn-info"><i class="fas fa-plus"></i> Tambah Field</a>
                         </div>
                     </form>
                 </div>
@@ -44,58 +80,4 @@
     </div>
 </section>
 
-<script>
-    $(document).ready(function() {
-        // Menangani peristiwa perubahan pada elemen select
-        $("#event").change(function() {
-            // Dapatkan nilai yang dipilih
-            var selectedEvent = $(this).val();
-
-            // Hapus formulir tambahan yang mungkin ada
-            $(".additional-form").remove();
-
-            // Tambahkan formulir tambahan berdasarkan pilihan yang dipilih
-            if (selectedEvent !== "") {
-                appendAdditionalForm(selectedEvent);
-            }
-        });
-
-        // Fungsi untuk menambahkan formulir tambahan
-        function appendAdditionalForm(eventName) {
-            var additionalForm =
-                '<div class="additional-form">' +
-
-                '<div class="row">' +
-                '<div class="col-6">' +
-                '<div class="form-group">' +
-                '<label for="qty">Qty</label>' +
-                '<input type="text" class="form-control" value="1" name="qty" id="qty" value="<?= set_value('qty') ?>">' +
-                '</div>' +
-                '<div class="form-group">' +
-                '<label for="nama">Nama</label>' +
-                '<input type="text" class="form-control" value="Sandi" name="name" id="name" value="<?= set_value('name') ?>">' +
-                '</div>' +
-                '</div>' +
-
-                '<div class="col-6">' +
-                '<div class="form-group">' +
-                '<label for="email">Alamat Email Aktif</label>' +
-                '<input type="email" class="form-control" value="infosandemo@gmail.com" name="email" id="email" value="<?= set_value('email') ?>">' +
-                '</div>' +
-                '<div class="form-group">' +
-                '<label for="no_whatsapp">No. Whatsapp Aktif</label>' +
-                '<input type="text" class="form-control" value="085380948596" name="nowa" id="nowa" value="<?= set_value('nowa') ?>">' +
-                '</div>' +
-                '</div>' +
-                '</div>' +
-
-                '<div class="form-group">' +
-                '<label for="no_whatsapp">Domisili</label>' +
-                '<input type="text" class="form-control" value="Jakarta" name="domisili" id="domisili" value="<?= set_value('domisili') ?>">' +
-                '</div>' +
-                '</div>';
-            // Tambahkan formulir tambahan ke dalam elemen dengan class card-body
-            $(".card-body").append(additionalForm);
-        }
-    });
-</script>
+<script src="<?= base_url('assets/backend') ?>/dist/js/leader/transaksi.js"></script>

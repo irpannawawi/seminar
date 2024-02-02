@@ -431,3 +431,7 @@ span.text-truncate{
 .navbar-toggler[aria-expanded=true] .navbar-toggler-toggled {
     color: #fff !important;
 }
+
+.swal2-cancel {
+    background-color: #000000 !important;
+}
