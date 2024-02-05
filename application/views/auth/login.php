@@ -76,6 +76,27 @@
         new HSTogglePassword('.js-toggle-password')
     })()
 </script>
+
+<!-- sweetalert -->
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script>
+    var maintenanceLinks = document.getElementsByClassName('maintenance');
+
+    // Memastikan bahwa ada setidaknya satu elemen dengan class 'maintenance'
+    if (maintenanceLinks.length > 0) {
+        // Menambahkan event listener pada elemen pertama dengan class 'maintenance'
+        maintenanceLinks[0].addEventListener('click', function() {
+            // Menampilkan SweetAlert ketika elemen di klik
+            Swal.fire({
+                title: "Coming Soon",
+                icon: "info",
+                html: "Features in development",
+                showCancelButton: true,
+                showConfirmButton: false,
+            });
+        });
+    }
+</script>
 </body>
 
 </html>

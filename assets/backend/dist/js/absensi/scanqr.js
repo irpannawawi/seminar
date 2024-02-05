@@ -9,58 +9,84 @@ $(document).ready(function() {
     });
 
     scanner.addListener('scan', function (content) {
-        // audio.play();
+        // Handle the scanned content (id_order or barcode)
+        displayInfo(content);
+    });
+
+    function displayInfo(content) {
         $.ajax({
-            url: baseurl + 'admin/absensi/insertAbsensi',
-            type: 'POST',
+            url: baseurl + 'absensi/checkPesertaAbsensi',
+            method: 'GET',
             data: { id_order: content },
-            success: function(response) {
+            success: function (response) {
                 if (response.success) {
-                    toastr.success('Absensi berhasil ditambahkan!');
-                    location.reload();
+                    toastr.success('Scan successful!');
+                    console.log(response.data);
+                    // updateUI(response.data);
                 } else {
-                    toastr.error(response.message); // Tampilkan pesan error dari server
+                    toastr.error('Failed to fetch data.');
                 }
             },
-            error: function(xhr, status, error) {
-                toastr.error(error);
+            error: function (error) {
+                toastr.error('Error fetching data.');
             }
         });
-    });
-
-Instascan.Camera.getCameras().then(function(cameras) {
-    if (cameras.length > 0) {
-        let selectedCameraIndex = cameras.findIndex(camera => camera && camera.name.toLowerCase().includes('back'));
-
-        if (selectedCameraIndex === -1) {
-            // If the back camera is not found, use the first available camera
-            selectedCameraIndex = 0;
-        }
-
-        scanner.start(cameras[selectedCameraIndex]);
-
-        // Check if there are radio buttons for camera selection
-        let radioButtons = document.querySelectorAll('input[name="options"]');
-        if (radioButtons.length > 0) {
-            radioButtons.forEach((element) => {
-                element.addEventListener("change", function (event) {
-                    const item = event.target.value;
-                    if (item == 1 || item == 2) {
-                        if (cameras[item - 1]) {
-                            scanner.start(cameras[item - 1]);
-                        } else {
-                            toastr.error('Selected camera not available!');
-                        }
-                    } else {
-                        toastr.error('Invalid camera selection!');
-                    }
-                });
-            });
-        }
-    } else {
-        toastr.error('No cameras found.');
     }
-    }).catch(function(e) {
-        toastr.error(`${e}`);
-    });
+
+    function updateUI(data) {
+        $('#orderInfoForm').html(`
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" value="${data.name || ''}" readonly>
+            </div>
+            <div class="form-group">
+                <label for="nowa">No. WhatsApp:</label>
+                <input type="text" id="nowa" name="nowa" value="${data.nowa || ''}" readonly>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" value="${data.email || ''}" readonly>
+            </div>
+            <div class="form-group">
+                <label for="domisili">Domisili:</label>
+                <input type="text" id="domisili" name="domisili" value="${data.domisili || ''}" readonly>
+            </div>
+        `);
+    }
+
+    Instascan.Camera.getCameras().then(function(cameras) {
+        if (cameras.length > 0) {
+            let selectedCameraIndex = cameras.findIndex(camera => camera && camera.name.toLowerCase().includes('back'));
+    
+            if (selectedCameraIndex === -1) {
+                // If the back camera is not found, use the first available camera
+                selectedCameraIndex = 0;
+            }
+    
+            scanner.start(cameras[selectedCameraIndex]);
+    
+            // Check if there are radio buttons for camera selection
+            let radioButtons = document.querySelectorAll('input[name="options"]');
+            if (radioButtons.length > 0) {
+                radioButtons.forEach((element) => {
+                    element.addEventListener("change", function (event) {
+                        const item = event.target.value;
+                        if (item == 1 || item == 2) {
+                            if (cameras[item - 1]) {
+                                scanner.start(cameras[item - 1]);
+                            } else {
+                                toastr.error('Selected camera not available!');
+                            }
+                        } else {
+                            toastr.error('Invalid camera selection!');
+                        }
+                    });
+                });
+            }
+        } else {
+            toastr.error('No cameras found.');
+        }
+        }).catch(function(e) {
+            toastr.error(`${e}`);
+        });
 });

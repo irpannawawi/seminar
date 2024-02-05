@@ -27,7 +27,7 @@
                                         <select class="form-control select2" name="event" id="event">
                                             <option selected disabled>Pilih events</option>
                                             <?php foreach ($events as $event) : ?>
-                                                <option value="<?= $event['id_events'] ?>"><?= $event['title'] . ' - ' . tanggal($event['date_start']) ?></option>
+                                                <option value="<?= $event['id_events'] ?>"><?= tanggal($event['date_start'])  . ' - ' . $event['title'] ?></option>
                                             <?php endforeach ?>
                                         </select>
                                     </div>

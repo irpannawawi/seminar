@@ -1,4 +1,7 @@
 <?php
+
+use SebastianBergmann\Environment\Console;
+
 defined('BASEPATH') or exit('No direct script access allowed');
 
 class Absensi extends CI_Controller
@@ -38,12 +41,45 @@ class Absensi extends CI_Controller
         } else {
             $data['title'] = 'Detail Absensi: Data Masih Kosong';
         }
+        $data['events'] = $this->absensi->getEventsCheck($id_events);
 
         $this->load->view('admin/layouts/header', $data);
         $this->load->view('admin/layouts/navbar');
         $this->load->view('admin/layouts/sidebar');
         $this->load->view('admin/absensi/detail');
         $this->load->view('admin/layouts/footer');
+    }
+
+    public function checkPesertaAbsensi($id_order)
+    {
+        // Mendapatkan data transaksi berdasarkan id_order
+        $transaksiData = $this->absensi->getTransaksiDataByIdOrder($id_order);
+
+        if ($transaksiData) {
+            // Memeriksa apakah events_id dan peserta_id ada dalam data transaksi
+            $eventsId = $transaksiData->events_id;
+            $pesertaId = $transaksiData->peserta_id;
+
+            // Mendapatkan data peserta dengan melakukan join menggunakan events_id dan peserta_id
+            $pesertaData = $this->absensi->getPesertaDataByEventsIdAndPesertaId($eventsId, $pesertaId);
+
+            if ($pesertaData) {
+                // Mengirimkan data peserta sebagai respons JSON atau dapat melakukan pengolahan lebih lanjut
+                $response['success'] = true;
+                $response['data'] = $pesertaData;
+            } else {
+                $response['success'] = false;
+                $response['message'] = 'Peserta tidak ditemukan.';
+            }
+        } else {
+            $response['success'] = false;
+            $response['message'] = 'Transaksi tidak ditemukan.';
+        }
+
+        // Mengirimkan respons sebagai JSON
+        $this->output
+            ->set_content_type('application/json')
+            ->set_output(json_encode($response));
     }
 
     public function insertAbsensi()
@@ -55,7 +91,7 @@ class Absensi extends CI_Controller
 
         if ($existingAbsensi) {
             $this->output->set_content_type('application/json');
-            echo json_encode(['success' => false, 'message' => 'ID Order ' . $id_order . ' sudah terdaftar dalam absensi']);
+            echo json_encode(['success' => false, 'message' => 'ID Order ' . $id_order . ' sudah absen']);
             return;
         }
 
@@ -77,10 +113,10 @@ class Absensi extends CI_Controller
 
             if ($this->absensi->insert($dataAbsensi)) {
                 $this->output->set_content_type('application/json');
-                echo json_encode(['success' => true, 'message' => 'Absensi berhasil ditambahkan']);
+                echo json_encode(['success' => true, 'message' => 'Absensi berhasil']);
             } else {
                 $this->output->set_content_type('application/json');
-                echo json_encode(['success' => false, 'message' => 'Terjadi kesalahan saat insert absensi']);
+                echo json_encode(['success' => false, 'message' => 'Terjadi kesalahan saat absensi']);
             }
         } else {
             $this->output->set_content_type('application/json');

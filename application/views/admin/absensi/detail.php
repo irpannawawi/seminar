@@ -7,7 +7,10 @@
             <div class="col-sm-6">
                 <div class="float-right">
                     <a href="javascript:history.back()" class="btn btn-default float-r"><i class="fas fa-long-arrow-alt-left"></i> Kembali</a>
-                    <a href="javascript:;" class="btn btn-primary float-r" data-toggle="modal" data-target="#addModal"><i class="fas fa-qrcode"></i> Scan QR Code</a>
+                    <?php if ($events['type_event'] == 'offline') : ?>
+                        <a href="javascript:;" class="btn btn-primary float-r" data-toggle="modal" data-target="#addModal"><i class="fas fa-qrcode"></i> Scan QR Code</a>
+                    <?php else : ?>
+                    <?php endif ?>
                 </div>
             </div><!-- /.col -->
         </div><!-- /.row -->
@@ -25,7 +28,7 @@
                     <thead>
                         <tr>
                             <th>No</th>
-                            <th>Invoice</th>
+                            <th>ID Order</th>
                             <th>Nama</th>
                             <th>Waktu</th>
                             <th>Status</th>
@@ -77,15 +80,6 @@
                             </label>
                         </div>
                     </div>
-                    <div class="form-group">
-                        <p id="id_order"></p>
-                        <p id="name"></p>
-                        <p id="event_title"></p>
-                        <p id="email"></p>
-                        <p id="whatsapp"></p>
-                        <p id="domisili"></p>
-                        <p id="status"></p>
-                    </div>
                 </div>
                 <div class="modal-footer justify-content-between">
                     <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -95,5 +89,8 @@
         </div>
     </div>
 </div>
+<?php if ($events['type_event'] == 'offline') : ?>
+    <script src="<?= base_url('assets/backend') ?>/dist/js/absensi/scanqr.js"></script>
+<?php else : ?>
 
-<script src="<?= base_url('assets/backend') ?>/dist/js/absensi/scanqr.js"></script>
+<?php endif ?>

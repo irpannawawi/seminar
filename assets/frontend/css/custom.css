@@ -435,3 +435,6 @@ span.text-truncate{
 .swal2-cancel {
     background-color: #000000 !important;
 }
+.btn-icon {
+    z-index: -1 !important;
+  }

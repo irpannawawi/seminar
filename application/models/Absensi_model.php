@@ -45,4 +45,22 @@ class Absensi_model extends CI_Model
 
         return $query->row();
     }
+
+    public function getEventsCheck($id)
+    {
+        $this->db->where('id_events', $id);
+        $query = $this->db->get('events');
+        return $query->row_array();
+    }
+
+    public function getTransaksiDataByIdOrder($idOrder)
+    {
+        // Contoh query, sesuaikan dengan struktur basis data Anda
+        return $this->db->get_where('transaksi', ['id_order' => $idOrder])->row();
+    }
+    public function getPesertaDataByEventsIdAndPesertaId($eventsId, $pesertaId)
+    {
+        // Contoh query, sesuaikan dengan struktur basis data Anda
+        return $this->db->get_where('peserta', ['events_id' => $eventsId, 'peserta_id' => $pesertaId])->row();
+    }
 }

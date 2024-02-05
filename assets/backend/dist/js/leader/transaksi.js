@@ -1,44 +1,38 @@
-    document.addEventListener('DOMContentLoaded', function () {
+document.addEventListener('DOMContentLoaded', function () {
     let pesertaCounter = 1;
 
-    function addField() {
-        pesertaCounter++;
+function addField() {
+    pesertaCounter++;
 
-        // Clone template
-        const template = document.querySelector('.list_peserta_group_template');
-        const newField = template.cloneNode(true);
-        newField.classList.remove('list_peserta_group_template');
-        newField.classList.add('list_peserta_group');
+    const template = document.querySelector('.list_peserta_group_template');
+    const newField = template.cloneNode(true);
+    newField.classList.remove('list_peserta_group_template');
+    newField.classList.add('list_peserta_group');
 
-        // Update span text
-        newField.querySelector('.peserta_list').textContent = 'Peserta ' + pesertaCounter;
+    newField.querySelector('.peserta_list').textContent = `Peserta ${pesertaCounter}`;
 
-        // Update input name attributes
-        const inputs = newField.querySelectorAll('[name]');
-        inputs.forEach(input => {
+    const inputs = newField.querySelectorAll('[name]');
+    inputs.forEach(input => {
         const name = input.getAttribute('name');
         input.setAttribute('name', name.replace('1', pesertaCounter));
 
-        // Mengosongkan nilai input kecuali untuk input dengan id 'qty'
         if (input.id !== 'qty') {
             input.value = '';
         }
-        });
+    });
 
-        // Add remove button
-        const removeButton = document.createElement('a');
-        removeButton.href = '#';
-        removeButton.className = 'text-danger remove-field';
-        removeButton.innerHTML = '<i class="fas fa-minus-circle"></i>';
-        removeButton.addEventListener('click', function () {
+    const removeButton = document.createElement('a');
+    removeButton.href = '#';
+    removeButton.className = 'text-danger remove-field';
+    removeButton.innerHTML = '<i class="fas fa-minus-circle"></i>';
+    removeButton.addEventListener('click', () => {
         removeField(newField);
-        });
+    });
 
-        newField.appendChild(removeButton);
+    newField.appendChild(removeButton);
 
-        // Append new field to the form
-        document.querySelector('.card-body').appendChild(newField);
-    }
+    document.querySelector('.card-body').appendChild(newField);
+}
 
     function removeField(field) {
         // Only allow removing fields from the second one onward

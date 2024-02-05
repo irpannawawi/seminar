@@ -139,8 +139,8 @@
 <!-- ========== END SECONDARY CONTENTS ========== -->
 
 <!-- JS Implementing Plugins -->
-<script src="<?= base_url('assets/frontend/') ?>vendor/hs-sticky-block/dist/hs-sticky-block.min.js"></script>
-<script src="<?= base_url('assets/frontend/') ?>vendor/hs-header/dist/hs-header.min.js"></script>
+<!-- <script src="<?= base_url('assets/frontend/') ?>vendor/hs-sticky-block/dist/hs-sticky-block.min.js"></script>
+<script src="<?= base_url('assets/frontend/') ?>vendor/hs-header/dist/hs-header.min.js"></script> -->
 <!-- <script src="<?= base_url('assets/frontend/') ?>vendor/hs-show-animation/dist/hs-show-animation.min.js"></script> -->
 <script src="<?= base_url('assets/frontend/') ?>vendor/hs-go-to/dist/hs-go-to.min.js"></script>
 <script src="<?= base_url('assets/frontend/') ?>vendor/swiper/swiper-bundle.min.js"></script>
