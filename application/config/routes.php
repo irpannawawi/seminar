@@ -58,10 +58,12 @@ $route['registration'] = 'auth/registration';
 // user
 $route['admin'] = 'admin/dashboard';
 $route['leader'] = 'leader/dashboard';
-
+$route['admin/penjualan/update_transaksi/(:any)'] = 'admin/penjualan/update_trx/$1'; 
 // event
 $route['event/(:num)/(:any)'] = 'frontend/event/detail/$1/$2';
 $route['checkout'] = 'frontend/event/checkout';
+$route['status/(:any)'] = 'frontend/event/transaction_status/$1';
+$route['status'] = 'frontend/event/transaction_status/';
 
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = TRUE;

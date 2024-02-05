@@ -109,7 +109,7 @@ class Event extends CI_Controller
                 'events_id' => $this->input->post('events_id'),
                 'bank_transfer' => $this->input->post('bank'),
                 'date_transaksi' => date('Y-m-d'),
-                'bukti_transfer' => $this->input->post('bukti_transfer'),
+                'bukti_tf' => $this->input->post('bukti_transfer'),
                 'code_promo' => $this->input->post('code_promo') ?? '',
                 'tiket' => $this->input->post('tiket'),
                 'nominal' => $this->input->post('nominal'),
@@ -120,7 +120,51 @@ class Event extends CI_Controller
             $this->db->insert('transaksi', $transaksi_data);
 
             // Redirect ke halaman atau tampilkan pesan sukses
-            redirect('/'); // Ganti dengan path yang sesuai
+            redirect('/status/' . $idOrder); // Ganti dengan path yang sesuai
+        }
+    }
+
+
+    public function transaction_status($trxId=null)
+    {
+        if($this->input->get('trxId') != null){
+            $trxId = $this->input->get('trxId');           
+        }
+        
+        $data['event'] = null;
+        if($trxId != null){            
+            $data['event'] = $this->db->get_where('transaksi', ['id_order' => $trxId])->row_array();
+        }
+
+        $data['trxId'] = $trxId;
+        $this->load->view('frontend/layout/header');
+        $this->load->view('frontend/events/status', $data);
+        $this->load->view('frontend/layout/footer');
+    }
+
+    public function upload_bukti_tf($trxId)
+    {
+        $config['upload_path']          = './assets/bukti/';
+        $config['allowed_types']        = 'gif|jpg|png|jpeg';
+        $config['file_name']            = date('dmyHis') . '.jpeg';
+        $config['max_size']             = 2048;
+
+        $this->load->library('upload');
+        $this->upload->initialize($config);
+
+        if (!$this->upload->do_upload('bukti_tf')) {
+            $error = array('error' => $this->upload->display_errors());
+            var_dump($error);
+        } else {
+            $data = array('upload_data' => $this->upload->data());
+
+            $trx = $this->db->where('id_order', $trxId)
+                ->set([
+                    'bukti_tf' => $data['upload_data']['file_name'],
+                    'status_transaksi' => 'Prosses'
+                ])
+                ->update('transaksi');
+            return redirect('/status/' . $trxId);
         }
     }
 

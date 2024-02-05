@@ -175,7 +175,7 @@ if (!function_exists('status_transaksi')) {
             'Refund' => '<span class="badge badge-secondary">Refund</span>',
             'Lunas' => '<span class="badge badge-success">Lunas</span>',
             'Dibatalkan' => '<span class="badge badge-danger">Dibatalkan</span>',
-            'Proses' => '<span class="badge badge-info">Proses</span>',
+            'Prosses' => '<span class="badge badge-info">Proses</span>',
         ];
 
         return isset($status_data[$status]) ? $status_data[$status] : '<span class="badge badge-secondary">Undefined</span>';

@@ -82,7 +82,7 @@
     <div class="modal fade" id="detailModal<?= $value['id_transaksi'] ?>">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
-                <form action="<?= base_url('admin/penjualan/') ?>" method="post">
+                <form action="<?=site_url('admin/penjualan/update_transaksi/'.$value['id_order'])?>" method="POST">
                     <div class="modal-header">
                         <h4 class="modal-title">Detail <?= $value['peserta_name']; ?></h4>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -112,23 +112,21 @@
                                 <td><a data-toggle="modal" data-target="#lihatModal<?= $value['id_transaksi'] ?>" href="javascript:;">Lihat Bukti Transfer</a></td>
                             </tr>
                         </div>
-                        <form action="" method=" post">
                             <div class="form-group">
                                 <label>Ubah Status Transaksi</label>
                                 <select name="status_transaksi" id="status_transaksi" class="form-control">
-                                    <option value="Tertunda">Tertunda</option>
-                                    <option value="Refund">Refund</option>
-                                    <option value="Lunas">Lunas</option>
-                                    <option value="Prosses">Proses</option>
-                                    <option value="Dibatalkan">Batal</option>
+                                    <option <?=$value['status_transaksi']=='Tertunda'?'selected':''?> value="Tertunda">Tertunda</option>
+                                    <option <?=$value['status_transaksi']=='Refund'?'selected':''?> value="Refund">Refund</option>
+                                    <option <?=$value['status_transaksi']=='Lunas'?'selected':''?> value="Lunas">Lunas</option>
+                                    <option <?=$value['status_transaksi']=='Prosses'?'selected':''?> value="Prosses">Proses</option>
+                                    <option <?=$value['status_transaksi']=='Dibatalkan'?'selected':''?> value="Dibatalkan">Batal</option>
                                 </select>
                             </div>
-                        </form>
-                    </div>
-                    <div class="modal-footer justify-content-between">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                        <button type="submit" class="btn btn-primary">Submit</button>
-                    </div>
+                        </div>
+                        <div class="modal-footer justify-content-between">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </div>
                 </form>
             </div>
             <!-- /.modal-content -->
@@ -140,7 +138,7 @@
     <div class="modal fade" id="leaderDetailModal<?= $value['id_transaksi'] ?>">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
-                <form action="<?= site_url('admin/penjualan/transaksi') ?>" method="post">
+                <form action="<?=site_url('admin/penjualan/update_transaksi/'.$value['id_order'])?>" method="post">
                     <input type="hidden" name="events_id" value="<?= $value['id_events'] ?>">
                     <input type="hidden" name="id_transaksi" value="<?= $value['id_transaksi'] ?>">
                     <input type="hidden" name="user_id" value="<?= $value['user_id'] ?>">
@@ -179,11 +177,11 @@
                                 <div class="form-group">
                                     <label>Ubah Status Transaksi</label>
                                     <select name="status_transaksi" id="status_transaksi" class="form-control">
-                                        <option value="Tertunda">Tertunda</option>
-                                        <option value="Refund">Refund</option>
-                                        <option value="Lunas">Lunas</option>
-                                        <option value="Prosses">Proses</option>
-                                        <option value="Dibatalkan">Batal</option>
+                                        <option <?=$value['status']=='Tertunda'?'selected':''?> value="Tertunda">Tertunda</option>
+                                        <option <?=$value['status']=='Refund'?'selected':''?> value="Refund">Refund</option>
+                                        <option <?=$value['status']=='Lunas'?'selected':''?> value="Lunas">Lunas</option>
+                                        <option <?=$value['status']=='Prosses'?'selected':''?> value="Prosses">Proses</option>
+                                        <option <?=$value['status']=='Dibatalkan'?'selected':''?> value="Dibatalkan">Batal</option>
                                     </select>
                                 </div>
                             </div>
@@ -219,7 +217,7 @@
                 </div>
                 <div class="modal-body">
                     <div class="form-group">
-                        <img style="width: 100%;" src="<?= base_url('assets/backend/dist/img/bukti_tf/') . $key['bukti_tf'] ?>" alt="<?= $key['bukti_tf'] ?>">
+                        <img style="width: 100%;" src="<?= base_url('assets/bukti/') . $key['bukti_tf'] ?>" alt="<?= $key['bukti_tf'] ?>">
                     </div>
                 </div>
                 <div class="modal-footer justify-content-between">

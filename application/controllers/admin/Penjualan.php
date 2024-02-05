@@ -92,4 +92,13 @@ class Penjualan extends CI_Controller
             }
         }
     }
+
+    public function update_trx($trxId)
+    {
+        $status = $this->input->post('status_transaksi');
+        $trx = $this->db->where('id_order', $trxId)
+        ->set('status_transaksi', $status)
+        ->update('transaksi');
+        return redirect('/admin/penjualan/transaksi');
+    }
 }
